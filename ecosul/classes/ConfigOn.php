@@ -52,7 +52,7 @@ define(USER, 'kreea');
 * Senha do Bando de Dados.
 * Krrd@01*
 */
-define(PASS, 'panaca');
+define(PASS, '');
 
 /**
 * Localização do Banco de Dados.

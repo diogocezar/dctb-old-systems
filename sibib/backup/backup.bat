@@ -9,4 +9,4 @@ FOR %%A IN (%Day%) DO SET Day=%%A
 FOR %%A IN (%Month%) DO SET Month=%%A
 FOR %%A IN (%Year%) DO SET Year=%%A
 
-"C:\Arquivos de programas\Wamp\bin\mysql\mysql5.0.51b\bin\mysqldump" -u root -ppanaca --opt --default-character-set=latin1 --database sibib > F:\Sistema\backup\backup_%Day%-%Month%-%Year%.sql
+"C:\Arquivos de programas\Wamp\bin\mysql\mysql5.0.51b\bin\mysqldump" -u root -p --opt --default-character-set=latin1 --database sibib > F:\Sistema\backup\backup_%Day%-%Month%-%Year%.sql

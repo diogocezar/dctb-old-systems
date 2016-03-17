@@ -1,7 +1,7 @@
 <?php
 set_time_limit(0);
 
-mysql_connect('localhost','root','panaca') or die(mysql_error());
+mysql_connect('localhost','root','') or die(mysql_error());
 mysql_select_db('sibib') or die(mysql_error());
 
 $sql = "SELECT * FROM ACERVO WHERE qtd_volumes > 1 ORDER BY titulo, volume";

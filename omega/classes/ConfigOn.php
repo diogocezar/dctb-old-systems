@@ -51,7 +51,7 @@ define(USER, 'locadoraomega');
 /**
 * Senha do Bando de Dados.
 */
-define(PASS, 'panaca');
+define(PASS, '');
 
 /**
 * Localização do Banco de Dados.

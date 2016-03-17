@@ -197,7 +197,7 @@ abstract class XMLExports{
 			'base' => "sitrans",
 			'host' => "localhost",
 			'user' => "postgres",
-			'pass' => "panaca",
+			'pass' => "",
 			'path' => ""
 		);
 		
@@ -207,7 +207,7 @@ abstract class XMLExports{
 			'base' => "sibib",
 			'host' => "localhost",
 			'user' => "root",
-			'pass' => "panaca",
+			'pass' => "",
 			'path' => ""
 		);
 		

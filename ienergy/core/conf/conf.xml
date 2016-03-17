@@ -6,7 +6,7 @@
     <base>ienergydatabase</base>
     <host>localhost</host>
     <user>root</user>
-    <pass>panaca</pass>
+    <pass></pass>
     <path />
   </data_base>
   <template>

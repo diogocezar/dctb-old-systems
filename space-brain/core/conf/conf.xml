@@ -6,7 +6,7 @@
     <base>sitrans</base>
     <host>localhost</host>
     <user>postgres</user>
-    <pass>panaca</pass>
+    <pass></pass>
     <path />
   </data_base>
   <template>

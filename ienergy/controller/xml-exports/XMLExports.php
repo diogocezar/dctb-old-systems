@@ -197,7 +197,7 @@ abstract class XMLExports{
 			'base'      => "ienergydatabase",
 			'host'      => "localhost",
 			'user'      => "root",
-			'pass'      => "panaca",
+			'pass'      => "",
 			'path'      => ""
 		);
 		

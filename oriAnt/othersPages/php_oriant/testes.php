@@ -44,7 +44,7 @@ print_r($matriz);
 /*
 $controlador['parametrosadm']->__get_db();
 $controlador['parametrosadm']->setLogin('xg0rd0');
-$controlador['parametrosadm']->setSenha('panaca');
+$controlador['parametrosadm']->setSenha('');
 $controlador['parametrosadm']->setAcrescimo_feromonio(10);
 $controlador['parametrosadm']->setTx_evaporacao(10);
 $controlador['parametrosadm']->save();
