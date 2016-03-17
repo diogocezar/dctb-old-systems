@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+body{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	vertical-align:middle;
+}
+
+ol{
+	margin:0px;
+	padding:0px;
+}
+
+#container{
+	position:absolute;
+	left:50%;
+	margin-left:-383px;
+}
+
+#header{
+	position:relative;
+	float:left;
+	background-image:url(../images/topo.gif);
+	background-repeat:no-repeat;
+	height:82px;
+	width:766px;
+}
+
+#top{
+	position:relative;
+	float:left;
+	height:190px;
+	width:766px;
+}
+
+#foto{
+	position:relative;
+	float:left;
+	height:190px;
+	width:384px;
+	background-image:url(../images/foto.jpg);
+	background-repeat:no-repeat;
+}
+
+#menu{
+	position:relative;
+	float:left;
+	height:190px;
+	width:380px;
+	background-image:url(../images/bgMenu.jpg);
+	background-repeat:no-repeat;
+}
+
+#menuInterno{
+	position:relative;
+	float:left;
+	height:155px;
+	width:150px;
+	margin-left:9px;
+	margin-top:13px;
+	padding:5px;
+}
+
+#menuInterno li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	margin-left:-26px;
+	text-indent:-4px;
+}
+
+#titulo{
+	margin-bottom:10px;	
+}
+
+#tituloLink{
+	margin-bottom:5px;
+}
+
+#lista_completa{
+	margin-top:50px;
+	margin-left:25px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	height:170px;
+	width:335px;
+	padding:5px;
+}
+
+#grupo-noticias{
+	position:relative;
+	float:left;
+	margin-top:45px;
+	margin-left:15px;
+	width:340px;
+}
+
+#grupo-links{
+	position:relative;
+	float:left;
+	margin-top:50px;
+	margin-left:30px;
+	width:340px;
+}
+
+#destaque{
+	color:#000;
+	position:relative;
+	float:left;
+	height:120px;
+	width:150px;
+	margin-left:33px;
+	margin-top:43px;
+	padding:5px;
+}
+
+#meio{
+	position:relative;
+	float:left;
+	height:248px;
+	width:766px;
+}
+
+#quadro1{
+	position:relative;
+	float:left;
+	height:248px;
+	width:384px;
+	background-image:url(../images/bgSobreoCurso.gif);
+	background-repeat:no-repeat;
+}
+
+#quadro2{
+	position:relative;
+	float:left;
+	height:248px;
+	width:382px;
+	background-image:url(../images/bgNoticias.gif);
+	background-repeat:no-repeat;
+}
+
+#baixo{
+	position:relative;
+	float:left;
+	height:207px;
+	width:766px;
+}
+
+#quadro-baixo1{
+	position:relative;
+	float:left;
+	height:207px;
+	width:198px;
+	background-image:url(../images/bgProf01.gif);
+	background-repeat:no-repeat;
+}
+
+#quadro-baixo2{
+	position:relative;
+	float:left;
+	height:207px;
+	width:186px;
+	background-image:url(../images/bgProf02.gif);
+	background-repeat:no-repeat;
+}
+
+#quadro-baixo3{
+	position:relative;
+	float:left;
+	height:207px;
+	width:382px;
+	background-image:url(../images/bgDisciplinas.gif);
+	background-repeat:no-repeat;
+}
+
+#footer{
+	position:relative;
+	float:left;
+	height:53px;
+	width:766px;
+	background-image:url(../images/bgCopyright.jpg);
+	background-repeat:no-repeat;
+}
+
+#interna{
+	position:relative;
+	float:left;
+}
+
+#quadro-baixo1-foto{
+	position:relative;
+	float:left;
+	height:50px;
+	width:50px;
+	margin-top:40px;
+	margin-left:31px;
+	margin-right:18px;
+	margin-bottom:5px;
+}
+
+#quadro-baixo1-nick{
+	position:relative;
+	float:left;
+	margin-top:35px;
+	height:60px;
+	width:90px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#quadro-baixo1-desc{
+	position:relative;
+	float:left;
+	text-align:justify;
+	margin-top:15px;
+	margin-left:30px;
+	height:40px;
+	width:150px;
+}
+
+#quadro-baixo2-foto{
+	position:relative;
+	float:left;
+	height:50px;
+	width:50px;
+	margin:37px 15px 0 14px;
+}
+
+#quadro-baixo2-nick{
+	position:relative;
+	float:left;
+	margin-top:35px;
+	width:90px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#quadro-baixo2-desc{
+	position:relative;
+	float:left;
+	text-align:justify;
+	margin-top:15px;
+	margin-left:15px;
+	width:150px;
+}
+
+#veja-mais{
+	position:relative;
+	float:left;
+	clear:both;
+	margin-top:10px;
+	text-align:right;
+	width:100%;
+}
+
+#veja-mais-prof{
+	position:relative;
+	float:left;
+	clear:both;
+	text-align:right;
+	width:150px;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#disc-1{
+	position:relative;
+	float:left;
+	width:180px;
+	margin-left:1px;
+}
+
+#disc-1-titulo{
+	position:relative;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:10px;
+	margin-top:45px;
+	width:100%;
+	text-align:center;
+	clear:both;
+}
+
+#disc-1-desc{
+	text-align:justify;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#disc-2{
+	position:relative;
+	float:left;
+	width:180px;
+	margin-left:2px;
+}
+
+#disc-2-titulo{
+	position:relative;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:10px;
+	margin-top:45px;
+	width:100%;
+	text-align:center;
+	clear:both;
+}
+
+#disc-2-desc{
+	text-align:justify;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#veja-mais-disc{
+	position:relative;
+	float:left;
+	clear:both;
+	text-align:right;
+	margin-left:-22px;
+	width:100%;
+	margin-top:15px;
+}
+

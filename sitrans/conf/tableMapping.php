@@ -1,0 +1,678 @@
+<?php
+/**
+* Mapeamento das tabelas do sistema
+*/
+
+/**
+* Usuário
+******************************************************************/
+
+$tabelaMap['usuario'] = 'usuario';
+
+$camposMap['usuario'] = array('idusuario',
+							  'idnivel',
+						      'nome',
+						      'login',
+						      'senha',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao'							  						   
+						      );
+						   
+$aliasMap['usuario'] = array('identificação',
+                             'identificação do nível',
+						     'nome',
+					         'login',
+							 'senha',
+							 'data cadastro',
+							 'data baixa',
+							 'situação do usuário'
+						     );
+							 
+$hideMap['usuario'] = array(0,1,4,5,6,7); 
+						  
+$nomeTab['usuario'] = "Usuário";
+
+/**
+* Nível
+******************************************************************/
+
+$tabelaMap['nivel'] = 'nivel';
+
+$camposMap['nivel'] = array('idnivel',
+						    'descricao',
+							'datacadastro',
+							'databaixa',
+							'situacao'													   
+						    );
+								  
+$aliasMap['nivel'] = array('identificação',
+						   'descrição',
+						   'data cadastro',
+						   'data baixa',
+						   'situação do nível'
+						   );
+						   
+$hideMap['nivel'] = array(0,2,3,4); 
+								 
+$nomeTab['nivel'] = "Nível";
+
+/**
+* Pessoa
+******************************************************************/
+
+$tabelaMap['pessoa'] = 'pessoa';
+
+$camposMap['pessoa'] = array('idpessoa',
+							 'rua',
+							 'numero',
+							 'complemento',
+							 'bairro',
+							 'cep',
+							 'cidade',
+							 'estado',
+							 'telefone',
+							 'fax',
+							 'email'
+						     );
+								  
+$aliasMap['pessoa'] = array('identificação',
+							'rua',
+							'número',
+							'complemento',
+							'bairro',
+							'cep',
+							'cidade',
+							'estado',
+							'telefone',
+							'fax',
+							'email',
+						    );
+							
+$hideMap['pessoa'] = array(0);
+								 
+$nomeTab['pessoa'] = "Pessoa";
+
+/**
+* Fornecedor
+******************************************************************/
+
+$tabelaMap['fornecedor'] = 'fornecedor';
+
+$camposMap['fornecedor'] = array('idfornecedor',
+							     'idpessoa',
+							     'inscestadual',
+							     'cnpj',
+								 'nomefantasia',
+							     'razaosocial',
+								 'datacadastro',
+								 'databaixa',
+								 'situacao'
+						         );
+								  
+$aliasMap['fornecedor'] = array('identificação',
+						        'identificação da pessoa',
+							    'inscrição estadual',
+							    'cnpj',
+								'nome fantasia',
+							    'razão social',
+								'data cadastro',
+								'data baixa',
+								'situacao'
+						        );
+							
+$hideMap['fornecedor'] = array(0,1,2,6,7,8);
+								 
+$nomeTab['fornecedor'] = "Fornecedor";
+
+/**
+* Cliente
+******************************************************************/
+
+$tabelaMap['cliente'] = 'cliente';
+
+$camposMap['cliente'] = array('idcliente',
+							  'idpessoa',
+							  'idfrequenciacoleta',
+							  'nome',
+							  'cnpjcpf',
+							  'inscestadualrg',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao'
+						      );
+								  
+$aliasMap['cliente'] = array('identificação',
+						     'identificação da pessoa',
+							 'identificação da coleta',
+							 'nome',
+							 'cnpj / cpf',
+							 'inscrição estadual / rg',
+							 'data cadastro',
+							 'data baixa',
+							 'situacao'
+						        );
+							
+$hideMap['cliente'] = array(0,1,2,6,7,8);
+								 
+$nomeTab['cliente'] = "Cliente";
+
+/**
+* Freqüencia Coleta
+******************************************************************/
+
+$tabelaMap['frequenciacoleta'] = 'frequenciacoleta';
+
+$camposMap['frequenciacoleta'] = array('idfrequenciacoleta',
+							           'descricao',
+									   'qtdadedias',
+							           'datacadastro',
+							           'databaixa',
+							           'situacao'
+						               );
+								  
+$aliasMap['frequenciacoleta'] = array('identificação',
+									  'descrição',
+									  'quantidade de dias',
+									  'data cadastro',
+									  'data baixa',
+									  'situacao'
+						              );
+							
+$hideMap['frequenciacoleta'] = array(0,3,4,5);
+								 
+$nomeTab['frequenciacoleta'] = "Frequëncia de Coleta";
+
+/**
+* Contato
+******************************************************************/
+
+$tabelaMap['contato'] = 'contato';
+
+$camposMap['contato'] = array('idcontato',
+						      'idpessoa',
+							  'nome',
+							  'funcao',
+							  'telefone',
+							  'celular',
+							  'ramal',
+							  'email',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao',
+							  'login',
+							  'senha'
+						      );
+							  
+$aliasMap['contato'] = array('identificação',
+                             'identificação da pessoa',
+							 'nome',
+							 'função',
+							 'telefone',
+							 'celular',
+							 'ramal',
+							 'email',
+							 'data cadastro',
+							 'data baixa',
+							 'situacao',
+							 'login',
+							 'senha'
+						     );
+							 
+$hideMap['contato'] = array(0,1,8,9,10,11,12); 
+							 
+$nomeTab['contato'] = "Contato";
+
+/**
+* Veículo
+******************************************************************/
+
+$tabelaMap['veiculo'] = 'veiculo';
+
+$camposMap['veiculo'] = array('idveiculo',
+						      'idcategoria',
+							  'idagregado',
+							  'placa',
+							  'marca',
+							  'modelo',
+							  'prefixo',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao'
+						      );
+							  
+$aliasMap['veiculo'] = array('identificação',
+                             'identificação da categoria',
+							 'identificação do agregado',
+							 'placa',
+							 'marca',
+							 'modelo',
+							 'prefixo',
+							 'data cadastro',
+							 'data baixa',
+							 'situacao'
+						     );
+							 
+$hideMap['veiculo'] = array(0,1,2,7,8,9); 
+							 
+$nomeTab['veiculo'] = "Veículo";
+
+/**
+* Categoria
+******************************************************************/
+
+$tabelaMap['categoria'] = 'categoria';
+
+$camposMap['categoria'] = array('idcategoria',
+						        'descricao',
+							    'datacadastro',
+							    'databaixa',
+							    'situacao'
+						        );
+							  
+$aliasMap['categoria'] = array('identificação',
+							   'descrição',
+							   'data cadastro',
+							   'data baixa',
+							   'situacao'
+						       );
+							 
+$hideMap['categoria'] = array(0,2,3,4); 
+							 
+$nomeTab['categoria'] = "Categoria";
+
+/**
+* Agregado
+******************************************************************/
+
+$tabelaMap['agregado'] = 'agregado';
+
+$camposMap['agregado'] = array('idagregado',
+						       'idpessoa',
+							   'nome',
+							   'cnpjcpf',
+							   'inscestadualrg',
+							   'datacadastro',
+							   'databaixa',
+							   'situacao'
+						       );
+							  
+$aliasMap['agregado'] = array('identificação',
+							  'identificação da pessoa',
+							  'nome',
+							  'cnpj / cpf',
+							  'inscrição estadual / rg',
+					  	      'data cadastro',
+							  'data baixa',
+							  'situacao'
+						      );
+							 
+$hideMap['agregado'] = array(0,1,5,6,7); 
+							 
+$nomeTab['agregado'] = "agregado";
+
+/**
+* Motivo
+******************************************************************/
+
+$tabelaMap['motivo'] = 'motivo';
+
+$camposMap['motivo'] = array('idmotivo',
+						     'descricao',
+							 'datacadastro',
+							 'databaixa',
+							 'situacao'
+						     );
+							  
+$aliasMap['motivo'] = array('identificação',
+							'descrição',
+							'data cadastro',
+							'data baixa',
+							'situacao'
+						    );
+							 
+$hideMap['motivo'] = array(0,2,3,4); 
+							 
+$nomeTab['motivo'] = "Motivo";
+
+/**
+* Status
+******************************************************************/
+
+$tabelaMap['status'] = 'status';
+
+$camposMap['status'] = array('idstatus',
+						     'descricao',
+							 'datacadastro',
+							 'databaixa',
+							 'situacao'
+						     );
+							  
+$aliasMap['status'] = array('identificação',
+							'descricao',
+							'data cadastro',
+							'data baixa',
+							'situacao'
+						    );
+							 
+$hideMap['status'] = array(0,2,3,4); 
+							 
+$nomeTab['status'] = "Status";
+
+/**
+* Coleta
+******************************************************************/
+
+$tabelaMap['coleta'] = 'coleta';
+
+$camposMap['coleta'] = array('idcoleta',
+						     'versao',
+							 'codigo',
+							 'idcliente',
+							 'idcontato',
+							 'idveiculo',
+							 'idfornecedor',
+							 'idusuario',
+							 'idusuariobaixa',
+							 'idstatus',
+							 'idmotivo',
+							 'idembalagem',
+							 'idrestricao',
+							 'data',
+							 'hora',
+							 'qtdadenotafiscal',
+							 'qtdadevolumes',
+							 'peso',	
+							 'obscoleta',		 
+							 'datacadastro',
+							 'databaixa',
+						     );
+							  
+$aliasMap['coleta'] = array('identificação',
+						    'versão',
+							'código da coleta',
+							'identificação do cliente',
+							'identificação do contato',
+							'identificação do veículo',
+							'identificação do fornecedor',
+							'identificação do usuário',
+							'identificação do usuário que baixou coleta',
+							'identificação do status',
+							'identificação do motivo',
+							'identificação da embalagem',
+							'identificação da restrição',
+							'data',
+							'hora',
+							'quantidade nota fiscal',
+							'quantidade volumes',
+							'peso',	
+							'observação da coleta',
+							'data cadastro',
+							'data baixa',
+						    );
+							 
+$hideMap['coleta'] = array(0,1,3,4,5,6,7,8,9,10,11,12,18,19,20); 
+							 
+$nomeTab['coleta'] = "Coleta";
+
+/**
+* Embalagem
+******************************************************************/
+
+$tabelaMap['embalagem'] = 'embalagem';
+
+$camposMap['embalagem'] = array('idembalagem',
+						        'descricao',
+							    'datacadastro',
+							    'databaixa',
+							    'situacao'
+						        );
+							  
+$aliasMap['embalagem'] = array('identificação',
+							   'descricao',
+							   'data cadastro',
+							   'data baixa',
+							   'situacao'
+						       );
+							 
+$hideMap['embalagem'] = array(0,2,3,4); 
+							 
+$nomeTab['embalagem'] = "Status";
+
+/**
+* Restrição
+******************************************************************/
+
+$tabelaMap['restricao'] = 'restricao';
+
+$camposMap['restricao'] = array('idrestricao',
+						        'descricao',
+							    'datacadastro',
+							    'databaixa',
+							    'situacao'
+						        );
+							  
+$aliasMap['restricao'] = array('identificação',
+							   'descricao',
+							   'data cadastro',
+							   'data baixa',
+							   'situacao'
+						       );
+							 
+$hideMap['restricao'] = array(0,2,3,4); 
+							 
+$nomeTab['restricao'] = "Restrição";
+
+/**
+* Status Manifesto
+******************************************************************/
+
+$tabelaMap['statusmanifesto'] = 'statusmanifesto';
+
+$camposMap['statusmanifesto'] = array('idstatusmanifesto',
+						              'descricao',
+							          'datacadastro',
+							          'databaixa',
+							          'situacao'
+						              );
+							  
+$aliasMap['statusmanifesto'] = array('identificação',
+							         'descricao',
+							         'data cadastro',
+							         'data baixa',
+							         'situacao'
+						             );
+							 
+$hideMap['statusmanifesto'] = array(0,2,3,4); 
+							 
+$nomeTab['statusmanifesto'] = "Status do Manifesto";
+
+/**
+* Manifesto
+******************************************************************/
+
+$tabelaMap['manifesto'] = 'manifesto';
+
+$camposMap['manifesto'] = array('idmanifesto',
+						        'idfornecedor',
+							    'idstatusmanifesto',
+								'codigo',
+							    'cidade',
+							    'numero',
+								'horariochegada',
+								'totalctrc',
+								'totalvolumes',
+								'totalpeso',
+								'valortotalnotafiscal',
+								'valortotalfrete',
+								'datacadastro',
+							    'databaixa',
+							    'situacao'
+						        );
+							  
+$aliasMap['manifesto'] = array('identificação',
+							   'identificação do fornecedor',
+							   'identificação do status',
+							   'codigo',
+							   'cidade',
+							   'número',
+							   'horário de chegada',
+							   'total ctrc',
+							   'total volumes',
+							   'total peso',
+							   'valor total n.f.',
+							   'valor total frete',
+							   'data cadastro',
+							   'data baixa',
+							   'situacao'
+						       );
+							 
+$hideMap['manifesto'] = array(0,1,2,10,11,12); 
+							 
+$nomeTab['manifesto'] = "Manifesto";
+
+/**
+* Conhecimento
+******************************************************************/
+
+$tabelaMap['conhecimento'] = 'conhecimento';
+
+$camposMap['conhecimento'] = array('idconhecimento',
+						           'idmanifesto',
+							       'numero',
+								   'dataemissao',
+								   'idstatusconhecimento',
+								   'idclienteremetente',
+								   'idclientedestinatario',
+								   'peso',
+								   'volumes',
+								   'valornotafiscal',
+								   'valorfrete',
+								   'datacadastro',
+							       'databaixa',
+							       'situacao'
+						           );
+							  
+$aliasMap['conhecimento'] = array('identificação',
+							      'identificação do manifesto',
+							      'número',
+							      'data de emissão',
+								  'identificação do status do conhecimento',
+							      'identifiação do cliente remetenta',
+							      'identificação do cliente destinatario',
+							      'peso',
+							      'volumes',
+							      'valor da nota fiscal',
+								  'valor do frete',
+							      'data cadastro',
+							      'data baixa',
+							      'situacao'
+						          );
+							 
+$hideMap['conhecimento'] = array(0,1,4,5,10,11,12,13); 
+							 
+$nomeTab['conhecimento'] = "Conhecimento";
+
+/**
+* Status Conhecimento 
+******************************************************************/
+
+$tabelaMap['statusconhecimento'] = 'statusconhecimento';
+
+$camposMap['statusconhecimento'] = array('idstatusconhecimento',
+						                 'descricao',
+							             'datacadastro',
+							             'databaixa',
+							             'situacao'
+						                 );
+							  
+$aliasMap['statusconhecimento'] = array('identificação',
+							            'descricao',
+							            'data cadastro',
+							            'data baixa',
+							            'situacao'
+						                );
+							 
+$hideMap['statusconhecimento'] = array(0,2,3,4); 
+							 
+$nomeTab['statusconhecimento'] = "Status do Conhecimento";
+
+/**
+* Saída Manifesto 
+******************************************************************/
+$tabelaMap['saidamanifesto'] = 'saidamanifesto';
+
+$camposMap['saidamanifesto'] = array('idsaidamanifesto',
+						              'idveiculo',
+									  'data',
+									  'hora',
+							          'datacadastro',
+							          'databaixa',
+							          'situacao'
+						              );
+							  
+$aliasMap['saidamanifesto'] = array('identificação',
+							         'identificação do veículo',
+									 'data',
+									 'hora',
+							         'data cadastro',
+							         'data baixa',
+							         'situacao'
+						             );
+							 
+$hideMap['saidamanifesto'] = array(0,1,4,5,6); 
+							 
+$nomeTab['saidamanifesto'] = "Saída Manifesto";
+
+/**
+* Entregas N - N
+******************************************************************/
+$tabelaMap['entregas'] = 'NPN_entregas';
+
+$camposMap['entregas'] = array('idsaidamanifesto',
+						       'idconhecimento',
+							   'datacadastro',
+							   'databaixa',
+							   'situacao'
+						       );
+							  
+$aliasMap['entregas'] = array('identificação saída manifesto',
+							  'identificação do conhecimento',
+							  'data cadastro',
+							  'data baixa',
+							  'situacao'
+						      );
+							 
+$hideMap['entregas'] = array(0,1,2,3,4); 
+							 
+$nomeTab['entregas'] = "Entregas";
+
+/**
+* BaixaConhecimento
+******************************************************************/
+$tabelaMap['baixaconhecimento'] = 'baixaconhecimento';
+
+$camposMap['baixaconhecimento'] = array('idbaixaconhecimento',
+						                'idconhecimento',
+										'nome',
+									    'data',
+									    'hora',
+							            'datacadastro',
+							            'databaixa',
+							            'situacao'
+						                );
+							  
+$aliasMap['baixaconhecimento'] = array('identificação',
+							           'identificação do conhecimento',
+									   'nome',
+									   'data',
+									   'hora',
+							           'data cadastro',
+							           'data baixa',
+							           'situacao'
+						               );
+							 
+$hideMap['baixaconhecimento'] = array(0,1,5,6,7); 
+							 
+$nomeTab['baixaconhecimento'] = "Baixa de Conhecimento";
+?>

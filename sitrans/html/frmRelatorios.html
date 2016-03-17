@@ -1,0 +1,82 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../jscripts/reports/reports.js"></script>
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_datade, #frm_obg_dataate").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<script>jQuery.noConflict();</script>
+<div id="padraoFormAdmin">
+	<form name= "{formRelatorios}" action="{actionRelatorios}" method="post">
+    <div id="formGeral">
+        <div id="linha">
+            <div id="formTituloOBG">Tipo do relatório</div>
+                <select id="frm_opt_{campoTipoRelatorio}" name="{campoTipoRelatorio}" class="formDrop">
+                    {campoOpcoesTipoRelatorio}
+                </select>
+        </div>
+        <div id="linhaQuebra">
+            <div id="formTituloOBG">Tipo de data</div>
+            <input name="{opData}" type="radio" value="{valorOpCadastro}" align="absmiddle" id="{valorOpCadastro}" checked="checked"/>
+            <span class="cursorLink" onclick="{clickCadastro}">Data de Cadastro</span>
+            <input name="{opData}" type="radio" value="{valorOpColeta}" align="absmiddle" id="{valorOpColeta}"/>
+            <span class="cursorLink" onclick="{clickColeta}">Data da Coleta</span>
+        </div>
+        <div id="linhaQuebra">
+            <div id="formTituloOBG">De</div>
+            <input id="frm_obg_{campoDataDe}" name="{campoDataDeName}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" maxlength="10" value="{CampoDataDeValue}"/>
+        </div>
+        <div id="linha">
+            <div id="formTituloOBG">Até</div>
+            <input id="frm_obg_{campoDataAte}" name="{campoDataAteName}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" maxlength="10" value="{CampoDataAteValue}" />
+        </div>
+    </div>
+    <div id="formAnalitico">
+		<div id="linhaQuebra">
+			<div id="formTituloOBG">Cliente</div>
+			<select id="frm_obg_{campoCliente}" name="{campoCliente}" class="formDrop">
+				{campoOpcoesCliente}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Contato</div>
+		    <div id="contatosFiltrados">
+			<select id="frm_obg_contato" name="contato" class="formDrop">
+				<option value=""></option>
+			</select>
+			</div>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Véiculo</div>
+			<select id="frm_opt_veiculo" name="{campoVeiculo}" class="formDrop">
+				{campoOpcoesVeiculo}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Fornecedor</div>
+			<select id="frm_obg_{campoFornecedor}" name="{campoFornecedor}" class="formDrop">
+				{campoOpcoesFornecedor}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Usuário</div>
+			<select id="frm_obg_{campoUsuario}" name="{campoUsuario}" class="formDrop">
+				{campoOpcoesUsuario}
+			</select>
+		</div>
+
+    </div>
+  	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

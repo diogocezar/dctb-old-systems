@@ -1,0 +1,37 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name="{formCurso}" action="{actionCurso}" method="post" class="checkForm">
+    <fieldset id="curso">
+    <legend>Curso</legend> 
+	<div id="line">
+		<div id="formTitleReq">Nome</div>
+		<input id="frm_obg_{campoNome}" name="{campoNome}" type="text" value="{valorNome}" class="formLong" maxlength="150" />
+	</div>
+	<div id="line">
+		<div id="formTitleReq">Período de Inscrição</div>
+		<input id="frm_obg_{campoPeriodoInscricao}" name="{campoPeriodoInscricao}" type="text" value="{valorPeriodoInscricao}" class="formLong" maxlength="150" />
+	</div>
+    </fieldset>
+    <fieldset id="adicionais">
+    <legend>Informações Adicionais</legend>  
+	<div id="line">
+		<div id="formTitle">Situação</div>
+		<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+	</div>
+	<!-- BEGIN bloco_formulario_data_baixa -->
+	<div id="line">
+		<div id="formTitle">Data da baixa</div>
+		<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+	</div>
+	<!-- END bloco_formulario_data_baixa -->
+    </fieldset>
+	<div id="spacerSend"></div>
+	<div id="formField" align="center">
+		<input id="send_button" name="send_button" type="button" value="Enviar" class="button"/>
+		<input id="back_button" name="back_button" type="button" value="Voltar" class="button"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

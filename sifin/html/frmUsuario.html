@@ -1,0 +1,29 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSifin.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formUsuario}" action="{actionUsuario}" method="post">
+	<div id="formTitulo">Nível</div>
+	<select name="{comboNivel}" class="form" id="{comboNivel}">
+	{comboNiveisOpcoes}
+	</select>
+	<div id="formTitulo">Nome</div>
+	<input name="{campoNome}" type="text" value="{valorNome}" class="form" />
+	<div id="formTitulo">Login</div>
+	<input name="{campoLogin}" type="text" value="{valorLogin}" class="form" />
+	<div id="formTitulo">Senha</div>
+	<input name="{campoSenha}" type="password" value="{valorSenha}" class="form" />
+	<div id="formTitulo">Situação</div>
+	<input name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+	<!-- BEGIN bloco_formulario_baixa -->
+	<div id="formTitulo">Data da baixa</div>
+	<input name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+	<!-- END bloco_formulario_baixa -->
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" />
+		<input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" />
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

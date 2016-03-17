@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class PEAR_Error</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                    
+                                                                                                                                                                        	        [ <a href="../classtrees_PEAR.html">Class Tree: PEAR</a> ]
+            [ <a href="../elementindex_PEAR.html">Index: PEAR</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">PEAR</div>
+		<div id="packageTitle">PEAR</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../PEAR/_space-brain---core---components---Pear---PEAR.php.html">		PEAR.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../PEAR/PEAR.html">		PEAR
+		</a><br>
+			<a href="../PEAR/PEAR_Error.html">		PEAR_Error
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: PEAR_Error</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/Pear/PEAR.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 810]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Standard PEAR error class for PHP 4</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Stig Bakken &lt;<a href="mailto:ssb@php.net">ssb@php.net</a>&gt;</li>
+											<li>Tomas V.V. Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+											<li>Gregory Beaver &lt;<a href="mailto:cellog@php.net">cellog@php.net</a>&gt;</li>
+																																				</ul>
+	<h4>Version:</h4>
+	<ul>
+																							<li>Release: 1.4.2</li>
+																															</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																												<li>1997-2005 The PHP Group</li>
+																										</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../PEAR/PEAR_Error.html#var$backtrace">$backtrace</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$code">$code</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$error_message_prefix">$error_message_prefix</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$level">$level</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$message">$message</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$mode">$mode</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#var$userinfo">$userinfo</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../PEAR/PEAR_Error.html#methodPEAR_Error">PEAR_Error</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodaddUserInfo">addUserInfo</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetBacktrace">getBacktrace</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetCallback">getCallback</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetCode">getCode</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetDebugInfo">getDebugInfo</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetMessage">getMessage</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetMode">getMode</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetType">getType</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodgetUserInfo">getUserInfo</a></li>
+				<li><a href="../PEAR/PEAR_Error.html#methodtoString">toString</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	<h2>Child classes:</h2>
+		<dl>
+	<dt><a href="../DB/DB_Error.html">DB_Error</a></dt>
+		<dd>DB_Error implements a class for reporting portable database error  messages</dd>
+	</dl>
+		<dl>
+	<dt><a href="../HTML_Template_IT/IT_Error.html">IT_Error</a></dt>
+		<dd>IT[X] Error class</dd>
+	</dl>
+		<dl>
+	<dt><a href="../XML_Parser/XML_Parser_Error.html">XML_Parser_Error</a></dt>
+		<dd>error class, replaces PEAR_Error</dd>
+	</dl>
+	</p>
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Standard PEAR error class for PHP 4
+</strong></p>
+<p>This class is supserseded by PEAR_Exception in PHP 5</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stig Bakken &lt;<a href="mailto:ssb@php.net">ssb@php.net</a>&gt;</li>
+	<li><b>author</b> - Tomas V.V. Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+	<li><b>author</b> - Gregory Beaver &lt;<a href="mailto:cellog@php.net">cellog@php.net</a>&gt;</li>
+	<li><b>version</b> - Release: 1.4.2</li>
+	<li><b>copyright</b> - 1997-2005 The PHP Group</li>
+	<li><b>see</b> - <a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a>, <a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a></li>
+	<li><b>link</b> - <a href="http://pear.php.net/manual/en/core.pear.pear-error.php">http://pear.php.net/manual/en/core.pear.pear-error.php</a></li>
+	<li><b>since</b> - Class available since PHP 4.0.2</li>
+	<li><b>license</b> - <a href="http://www.php.net/license/3_0.txt">PHP License 3.0</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$backtrace"></a>
+	<p></p>
+	<h4>$backtrace = <span class="value">&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 820]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$code"></a>
+	<p></p>
+	<h4>$code = <span class="value">&nbsp;-1</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 817]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$error_message_prefix"></a>
+	<p></p>
+	<h4>$error_message_prefix = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 814]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$level"></a>
+	<p></p>
+	<h4>$level = <span class="value">&nbsp;E_USER_NOTICE</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 816]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$message"></a>
+	<p></p>
+	<h4>$message = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 818]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$mode"></a>
+	<p></p>
+	<h4>$mode = <span class="value">&nbsp;PEAR_ERROR_RETURN</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 815]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$userinfo"></a>
+	<p></p>
+	<h4>$userinfo = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 819]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="methodPEAR_Error"></a>
+	<p></p>
+	<h3>PEAR_Error</h3>
+	<div class="indent">
+		<p>
+		<code>PEAR_Error PEAR_Error(
+[string
+$message = 'unknown error'], [int
+$code = null], [int
+$mode = null], [mixed
+$options = null], [string
+$userinfo = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 845]</p>
+		<p align="center"><strong>PEAR_Error constructor
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$message</b> 
+		- 
+		message</li>
+			<li>
+		<span class="type">int</span>
+		<b>$code</b> 
+		- 
+		(optional) error code</li>
+			<li>
+		<span class="type">int</span>
+		<b>$mode</b> 
+		- 
+		(optional) error mode, one of: PEAR_ERROR_RETURN,  PEAR_ERROR_PRINT, PEAR_ERROR_DIE, PEAR_ERROR_TRIGGER,  PEAR_ERROR_CALLBACK or PEAR_ERROR_EXCEPTION</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$options</b> 
+		- 
+		(optional) error level, _OR_ in the case of  PEAR_ERROR_CALLBACK, the callback function or object/method  tuple.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$userinfo</b> 
+		- 
+		(optional) additional user/debug info</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodaddUserInfo"></a>
+	<p></p>
+	<h3>addUserInfo</h3>
+	<div class="indent">
+		<p>
+		<code>void addUserInfo(
+
+$info)</code>
+		</p>
+	
+		<p class="linenumber">[line 1027]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$info</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetBacktrace"></a>
+	<p></p>
+	<h3>getBacktrace</h3>
+	<div class="indent">
+		<p>
+		<code>array getBacktrace(
+[int
+$frame = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 1013]</p>
+		<p align="center"><strong>Get the call backtrace from where the error was generated.
+</strong></p>
+<p>Supported with PHP 4.3.0 or newer.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Backtrace, or NULL if not available.</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$frame</b> 
+		- 
+		(optional) what frame to fetch</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetCallback"></a>
+	<p></p>
+	<h3>getCallback</h3>
+	<div class="indent">
+		<p>
+		<code>mixed getCallback(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 926]</p>
+		<p align="center"><strong>Get the callback function/method from an error object.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - callback function or object/method array</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetCode"></a>
+	<p></p>
+	<h3>getCode</h3>
+	<div class="indent">
+		<p>
+		<code>int getCode(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 955]</p>
+		<p align="center"><strong>Get error code from an error object
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - error code</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetDebugInfo"></a>
+	<p></p>
+	<h3>getDebugInfo</h3>
+	<div class="indent">
+		<p>
+		<code>string getDebugInfo(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 997]</p>
+		<p align="center"><strong>Get additional debug information supplied by the application.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - debug information</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetMessage"></a>
+	<p></p>
+	<h3>getMessage</h3>
+	<div class="indent">
+		<p>
+		<code>string getMessage(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 940]</p>
+		<p align="center"><strong>Get the error message from an error object.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - full error message</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetMode"></a>
+	<p></p>
+	<h3>getMode</h3>
+	<div class="indent">
+		<p>
+		<code>int getMode(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 913]</p>
+		<p align="center"><strong>Get the error mode from an error object.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - error mode</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetType"></a>
+	<p></p>
+	<h3>getType</h3>
+	<div class="indent">
+		<p>
+		<code>string getType(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 969]</p>
+		<p align="center"><strong>Get the name of this error/exception.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - error/exception name (type)</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetUserInfo"></a>
+	<p></p>
+	<h3>getUserInfo</h3>
+	<div class="indent">
+		<p>
+		<code>string getUserInfo(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 983]</p>
+		<p align="center"><strong>Get additional user-supplied information.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - user-supplied information</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodtoString"></a>
+	<p></p>
+	<h3>toString</h3>
+	<div class="indent">
+		<p>
+		<code>string toString(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1045]</p>
+		<p align="center"><strong>Make a string representation of this object.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - a string with an object summary</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:10 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

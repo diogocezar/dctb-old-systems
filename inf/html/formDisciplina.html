@@ -1,0 +1,104 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/cssInfo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN blk_form_disciplina -->
+<form name="{form_disciplina}" method="post" action="{action}">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <td width="382" height="19"></td>
+      <td colspan="3" align="center" valign="middle" class="textoPretoTitulo">{titulo}</td>
+      <td width="391"></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td width="141"></td>
+      <td width="9"></td>
+      <td width="328"></td>
+      <td></td>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{nome} : </td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="200" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{periodo} : </td>
+      <td></td>
+      <td align="left" valign="middle"><span class="letra_padrao">
+        <input name="{campoPeriodo}" type="text" class="formulario" id="{campoPeriodo}" value="{valorPeriodo}" size="50" maxlength="100" />
+        </span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{cargaHoraria} : </td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoCargaHoraria}" type="text" class="formulario" id="{campoCargaHoraria}" value="{valorCargaHoraria}" size="5" maxlength="5" onkeypress="isNum(this, event)"/></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <tr>
+      <td height="1"></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" align="left" valign="middle"><textarea name="{campoObjetivos}" cols="49" rows="5" class="formulario" id="{campoObjetivos}">{valorObjetivos}</textarea></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="22"></td>
+      <td align="right" valign="middle" class="textoPreto">{objetivos} : </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td align="left" valign="middle"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="22"></td>
+      <td align="right" valign="middle"><span class="textoPreto">{ementas} : </span></td>
+      <td></td>
+      <td align="left" valign="middle"><textarea name="{campoEmentas}" cols="49" rows="5" class="formulario" id="{campoEmentas}">{valorEmentas}</textarea></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td align="left" valign="middle"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="63"></td>
+      <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+        <br />
+        <br />
+        <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+      <td></td>
+    </tr>
+  </table>
+  <!-- END blk_form_disciplina -->
+</form>

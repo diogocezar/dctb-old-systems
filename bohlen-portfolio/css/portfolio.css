@@ -1,0 +1,255 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-image:url(../images/portfolio.jpg);
+	background-position:center top;
+}
+
+a:link {
+	color: #6b6c5a;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #6b6c5a;
+}
+a:hover {
+	text-decoration: underline;
+	color: #6b6c5a;
+}
+a:active {
+	text-decoration: none;
+	color: #6b6c5a;
+}
+
+#container{
+	position:absolute;
+	left:50%;
+	margin-left:-750px;
+}
+
+#inside-content{
+	margin-top:50px;
+	margin-left:400px;
+	position:relative;
+	float:left;
+	height:296px;
+}
+
+#menu{
+	position:relative;
+	float:left;
+	margin-left:865px;
+	margin-top:45px;
+	clear:both;
+	border-right:2px solid #FFF;
+	height:87px;
+	padding-right:5px;
+}
+
+#about{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/about.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	background-color:transparent;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#about:hover{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/about-hover.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	background-color:transparent;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#contact{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/contact.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#contact:hover{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/contact-hover.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#work{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/work.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#work:hover{
+	position:relative;
+	float:left;
+	height:16px;
+	width:97px;
+	background-image:url(../images/work-hover.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	clear:both;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+
+#seta-esquerda{
+	position:relative;
+	float:left;
+	margin-left:390px;
+	background-image:url(../images/seta-esquerda.jpg);
+	width:31px;
+	height:282px;
+	cursor:pointer;
+	clear:both;
+	margin-top:-80px;
+}
+
+#centro{
+	position:relative;
+	float:left;
+	width:656px;
+	height:282px;
+	background-color:#f4f4f3;
+	margin-top:47px;
+}
+
+#infos{
+	text-shadow:0 1px 1px #d4d5c5;
+	position:relative;
+	float:left;
+	width:656px;
+	height:250px;
+	padding:10px;
+}
+
+#infos h1{
+	text-shadow:0 1px 1px #d4d5c5;
+	position:relative;
+	float:left;
+	color:#847a71;
+	font-size:14px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	margin-top:0px;
+}
+
+#detalhes{
+	position:relative;
+	float:left;
+	margin-top:20px;
+	width:634px;
+	height:75px;
+	text-align:left;
+}
+
+#veja{
+	position:relative;
+	float:left;
+	margin-top:57px;
+	background-image:url(../images/ver-trabalho.png);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#seta-direita{
+	position:relative;
+	float:left;
+	background-image:url(../images/seta-direita.jpg);
+	width:31px;
+	height:282px;
+	cursor:pointer;
+	margin-top:-80px;
+}
+
+#status{
+	text-shadow:0 1px 1px #d4d5c5;
+	margin-top:4px;
+	margin-left:993px;
+	position:relative;
+	float:left;
+	clear:both;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#857b72;
+	position:relative;
+	width:90px;
+}
+
+#categorias{
+	margin-top:60px;
+	margin-left:620px;
+	position:relative;
+	float:left;
+	clear:both;
+}
+
+#categorias ul{
+	text-shadow:0 1px 1px #d4d5c5;
+	color:#6b6c5a;
+	line-height:20px;
+	list-style-type:none;
+	margin:1px;
+	padding:0px;
+	text-decoration:none;
+	text-indent:5px;
+	vertical-align:middle;
+}
+
+#categorias li{
+	float:left;
+	margin:2px;
+	margin-left:5px;
+	text-align:center;
+	width:auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+
+#copyright{
+	position:relative;
+	float:left;
+	clear:both;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	margin-left:620px;
+	margin-top:90px;
+	text-shadow:0 1px 1px #000;
+}

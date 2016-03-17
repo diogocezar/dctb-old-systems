@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE table_mapping PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<table_mapping lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <consumption>
+    <idConsumption>
+      <name>idConsumption</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idConsumption>
+    <dateTime>
+      <name>dateTime</name>
+      <type>datetime</type>
+      <len>19</len>
+      <flags>binary</flags>
+    </dateTime>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <value>
+      <name>value</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </value>
+    <phaseId>
+      <name>phaseId</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phaseId>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </consumption>
+  <current>
+    <idcurrent>
+      <name>idcurrent</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idcurrent>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <value>
+      <name>value</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </value>
+    <phaseId>
+      <name>phaseId</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phaseId>
+    <dateTime>
+      <name>dateTime</name>
+      <type>datetime</type>
+      <len>19</len>
+      <flags>binary</flags>
+    </dateTime>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </current>
+  <devices>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </iddevices>
+    <name>
+      <name>name</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </name>
+    <activePower>
+      <name>activePower</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </activePower>
+    <apparentPower>
+      <name>apparentPower</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </apparentPower>
+    <model>
+      <name>model</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </model>
+    <manufacturer>
+      <name>manufacturer</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </manufacturer>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <phasesNumber>
+      <name>phasesNumber</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phasesNumber>
+    <description>
+      <name>description</name>
+      <type>string</type>
+      <len>100</len>
+      <flags />
+    </description>
+    <iduser>
+      <name>iduser</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iduser>
+  </devices>
+  <loginfomessages>
+    <idlogInfoMessages>
+      <name>idlogInfoMessages</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idlogInfoMessages>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <payload>
+      <name>payload</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </payload>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </loginfomessages>
+  <potential>
+    <idpotential>
+      <name>idpotential</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idpotential>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <value>
+      <name>value</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </value>
+    <phaseId>
+      <name>phaseId</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phaseId>
+    <dateTime>
+      <name>dateTime</name>
+      <type>datetime</type>
+      <len>19</len>
+      <flags>binary</flags>
+    </dateTime>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </potential>
+  <powerfactor>
+    <idpowerFactor>
+      <name>idpowerFactor</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idpowerFactor>
+    <value>
+      <name>value</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </value>
+    <phaseId>
+      <name>phaseId</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phaseId>
+    <dateTime>
+      <name>dateTime</name>
+      <type>datetime</type>
+      <len>19</len>
+      <flags>binary</flags>
+    </dateTime>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </powerfactor>
+  <user>
+    <iduser>
+      <name>iduser</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </iduser>
+    <name>
+      <name>name</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </name>
+    <login>
+      <name>login</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </login>
+    <password>
+      <name>password</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </password>
+  </user>
+  <userdata>
+    <iduserData>
+      <name>iduserData</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </iduserData>
+    <address>
+      <name>address</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </address>
+    <zipcode>
+      <name>zipcode</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </zipcode>
+    <state>
+      <name>state</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </state>
+    <city>
+      <name>city</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </city>
+    <country>
+      <name>country</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </country>
+    <phone>
+      <name>phone</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </phone>
+    <mobile>
+      <name>mobile</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </mobile>
+    <email>
+      <name>email</name>
+      <type>string</type>
+      <len>45</len>
+      <flags />
+    </email>
+    <iduser>
+      <name>iduser</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iduser>
+  </userdata>
+  <vardata>
+    <idvarData>
+      <name>idvarData</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>not_null primary_key auto_increment</flags>
+    </idvarData>
+    <type>
+      <name>type</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </type>
+    <value>
+      <name>value</name>
+      <type>real</type>
+      <len>12</len>
+      <flags />
+    </value>
+    <phaseId>
+      <name>phaseId</name>
+      <type>int</type>
+      <len>11</len>
+      <flags />
+    </phaseId>
+    <dateTime>
+      <name>dateTime</name>
+      <type>datetime</type>
+      <len>19</len>
+      <flags>binary</flags>
+    </dateTime>
+    <iddevices>
+      <name>iddevices</name>
+      <type>int</type>
+      <len>11</len>
+      <flags>multiple_key</flags>
+    </iddevices>
+  </vardata>
+</table_mapping>

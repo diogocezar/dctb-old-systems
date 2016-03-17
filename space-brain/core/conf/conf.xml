@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE system_configurations PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<system_configurations lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <data_base>
+    <base_type>pgsql</base_type>
+    <base>sitrans</base>
+    <host>localhost</host>
+    <user>postgres</user>
+    <pass>panaca</pass>
+    <path />
+  </data_base>
+  <template>
+    <template_html_dir>../view/html/</template_html_dir>
+  </template>
+  <cookies>
+    <expire>3600</expire>
+    <path_cookie>/</path_cookie>
+    <domain>http://www.essesite.com.br</domain>
+    <secure>0</secure>
+  </cookies>
+  <upload_files>
+    <limit_exts>true</limit_exts>
+    <allowed_extensions>
+      <XML_Serializer_Tag>.doc</XML_Serializer_Tag>
+      <XML_Serializer_Tag>.pdf</XML_Serializer_Tag>
+      <XML_Serializer_Tag>.xls</XML_Serializer_Tag>
+      <XML_Serializer_Tag>.docx</XML_Serializer_Tag>
+      <XML_Serializer_Tag>.xlsx</XML_Serializer_Tag>
+    </allowed_extensions>
+    <mime_ext>
+      <gif>image/gif</gif>
+      <jpg>image/pjpeg</jpg>
+      <png>image/x-png</png>
+      <swf>application/x-shockwave-flash</swf>
+      <zip>application/x-zip-compressed</zip>
+      <rar>application/x-rar-compressed</rar>
+    </mime_ext>
+    <limit_size>true</limit_size>
+    <max_size>50000000</max_size>
+    <change_quality>true</change_quality>
+    <quality_reduce>90</quality_reduce>
+  </upload_files>
+  <photo_generation>
+    <height_mini>90</height_mini>
+    <width_mini>70</width_mini>
+    <height>400</height>
+    <width>380</width>
+  </photo_generation>
+  <freight>
+    <root_freight>86300000</root_freight>
+    <time_limit>500</time_limit>
+  </freight>
+</system_configurations>

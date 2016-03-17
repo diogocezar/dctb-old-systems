@@ -1,0 +1,94 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSidap.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formCliente}" action="{actionCliente}" method="post" class="checkForm">
+		<div id="linha">
+			<div id="formTitulo">Grupo</div>
+			<select id="frm_opt_{campoGrupo}" name="{campoGrupo}" class="formDrop">
+				{campoOpcoesGrupo}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNome}" name="{campoNome}" type="text" class="form" value="{valorNome}" maxlength="100" />
+		</div>		
+		<div id="linha">
+			<div id="formTitulo">Data de Nascimento</div>
+			
+			<input id="frm_opt_{campoDatanascimento}" name="{campoDatanascimento}" onkeypress="formatDate(this, event)" type="text" class="form" value="{valorDatanascimento}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Bairro</div>
+			<input id="frm_opt_{campoBairro}" name="{campoBairro}" type="text" class="form"  value="{valorBairro}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Cidade</div>
+			<input id="frm_opt_{campoCidade}" name="{campoCidade}" type="text" class="form"  value="{valorCidade}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Endereço</div>
+			<input id="frm_opt_{campoEndereco}" name="{campoEndereco}" type="text" class="form" value="{valorEndereco}" maxlength="200" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Cep</div>
+			<input id="frm_opt_{campoCep}" name="{campoCep}" type="text" class="form"  value="{valorCep}"  onkeypress="formatCep(this,event)" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Estado</div>
+			<select id="frm_opt_{campoEstado}" name="{campoEstado}" class="formDrop">
+				{campoOpcoesEstado}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Telefone 1</div>
+			<input id="frm_opt_{campoTelefone1}" name="{campoTelefone1}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorTelefone1}" maxlength="14" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Telefone 2</div>
+			<input id="frm_opt_{campoTelefone2}" name="{campoTelefone2}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorTelefone2}" maxlength="14" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Celular</div>
+			<input id="frm_opt_{campoCelular}" name="{campoCelular}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorCelular}" maxlength="14" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Número do Benefício</div>
+			<input id="frm_opt_{campoNumbeneficio}" name="{campoNumbeneficio}" type="text" onkeypress="formatNB(this, event)" class="form" value="{valorNumbeneficio}" maxlength="13" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">NIT</div>
+			<input id="frm_opt_{campoNit}" name="{campoNit}" type="text" class="form" value="{valorNit}" maxlength="12" />
+		</div>	
+		
+  	    <div id="linhaQuebraTxtArea">
+			<div id="formTitulo">Observação</div>
+		  <textarea name="{campoObservacao}" rows="3" class="formTxtArea" id="frm_opt_{campoObservacao}">{valorObservacao}</textarea>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	    <div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+		<!-- BEGIN bloco_formulario_imprimir -->
+		<input id="imprimir" name="imprimir" type="button" value="Imprimir" onclick="{onClickImprimir}" class="botao"/>
+		<!-- END bloco_formulario_imprimir -->
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

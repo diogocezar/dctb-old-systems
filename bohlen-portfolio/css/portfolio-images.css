@@ -1,0 +1,15 @@
+#imagem_1{
+	position:relative;
+	float:left;
+	width:634px;
+	height:175px;
+	background-image:url(../works/images/work1.png);
+}
+
+#imagem_2{
+	position:relative;
+	float:left;
+	width:634px;
+	height:175px;
+	background-image:url(../works/images/work2.png);
+}

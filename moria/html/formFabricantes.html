@@ -1,0 +1,44 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<!-- BEGIN bloco_fabricantes -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formFabricante}" name="{formFabricante}" method="post" action="{actionFabricante}">
+  <tr>
+	<td><table width="90%" height="220" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+	  <!--DWLayoutTable-->
+	  <tr>
+		<td height="50" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/topAdminFabricantes.gif" width="535" height="50" />&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td width="59" rowspan="4" valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><!--DWLayoutEmptyCell-->&nbsp;</td>
+		<td height="20" colspan="2" valign="middle" bgcolor="#ECECEC"><span class="tahoma11"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /></span> <span class="tahoma10">{tituloFabricante}</span></span></td>
+		</tr>
+	  <tr>
+	    <td width="109" height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Nome: </td>
+		<td width="365" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+		  <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" maxlength="20" /></td>
+	  </tr>
+	  <tr>
+	    <td height="20" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Telefone: </td>
+		<td valign="middle" bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+		  <input name="{campoTelefone}" type="text" class="form" id="{campoTelefone}" onkeypress="formatFone(this, event)" value="{valorTelefone}" size="15" maxlength="12" /> 
+		  <span class="tahoma10">(xx-xxxx-xxxx) </span></td>
+	  </tr>
+	  <tr>
+	    <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Website: </td>
+		<td valign="middle" bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+		  <input name="{campoWebSite}" type="text" class="form" id="{campoWebSite}" value="{valorWebSite}" size="45" onkeypress="formataUrl(this)" /></td>
+	  </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><label>
+          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+        </label></td>
+        </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" /></td>
+      </tr>
+	</table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_fabricantes -->

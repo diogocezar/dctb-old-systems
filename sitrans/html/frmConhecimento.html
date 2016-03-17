@@ -1,0 +1,217 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<link href="../css/cssConhecimento.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_dataemissao").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<script>
+/* Configurando inputs que irão receber dados do cep */
+Cep.id_input_rua = '#frm_obg_rua_remetente';
+Cep.id_input_bairro = '#frm_obg_bairro_remetente';
+Cep.id_input_cidade = '#frm_obg_cidade_remetente';
+Cep.id_input_estado = '#frm_obg_estado_remetente';
+
+Cep.id_input_rua_alt = '#frm_obg_rua_destinatario';
+Cep.id_input_bairro_alt = '#frm_obg_bairro_destinatario';
+Cep.id_input_cidade_alt = '#frm_obg_cidade_destinatario';
+Cep.id_input_estado_alt = '#frm_obg_estado_destinatario';
+</script>
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formConhecimento}" action="{actionConhecimento}" method="post" class="checkForm">
+	<fieldset id="fdocumento">
+ 	<legend>Documento</legend>
+        <div id="linha">
+        <div id="formTituloOBG">Manifesto</div>
+        <select id="frm_obg_{comboManifesto}" name="{comboManifesto}" class="form">
+            {comboManifestoOpcoes}
+        </select>
+        </div>
+        <div id="linha">
+        <div id="formTituloOBG">Número CTRC</div>
+        <input id="frm_obg_{campoNumero}" name="{campoNumero}" type="text" value="{valorNumero}" class="form" />
+        </div>
+        <div id="linha">
+        <div id="formTituloOBG">Data emissão</div>
+        <input id="frm_obg_{campoDataEmissao}" name="{campoDataEmissao}" type="text" value="{valorDataEmissao}" class="date-pick"  onkeypress="formatDate(this, event)" />
+        </div>
+        
+        <div id="linha">
+        <div id="formTituloOBG">Status Conhecimento</div>
+        <select id="frm_obg_{comboStatusconhecimento}" name="{comboStatusconhecimento}" class="formDrop" disabled="disabled">
+            {campoOpcoesStatusConhecimento}
+        </select>
+        </div>
+	</fieldset>
+
+	<fieldset>
+ 	<legend>Remetente</legend>
+    <div id="div_remetente">
+		<div id="linha">
+			<div id="formTituloOBG">CNPJ / CPF</div>
+			<input id="frm_obg_{campoCnpjcpfClienteRemetente}" name="{campoCnpjcpfClienteRemetente}" type="text" class="form" value="{valorCnpjcpfClienteRemetente}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Inscrição Estadual / RG</div>
+			<input id="frm_obg_{campoInscestadualrgClienteRemetente}" name="{campoInscestadualrgClienteRemetente}" type="text" class="form" value="{valorInscestadualrgClienteRemetente}" maxlength="15" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNomeClienteRemetente}" name="{campoNomeClienteRemetente}" type="text" class="form" value="{valorNomeClienteRemetente}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Cep</div>
+			<input id="get_cep" name="{campoCepRemetente}" type="text" class="form"  value="{valorCepRemetente}"  onkeypress="formatCep(this,event)" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Rua</div>
+			<input id="frm_obg_{campoRuaRemetente}" name="{campoRuaRemetente}" type="text" class="form" value="{valorRuaRemetente}" maxlength="200" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Número</div>
+			<input id="frm_obg_{campoNumeroRemetente}" name="{campoNumeroRemetente}" type="text" onkeypress="isNum(this,event)" class="form" value="{valorNumeroRemetente}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Complemento</div>
+			<input id="frm_opt_{campoComplementoRemetente}" name="{campoComplementoRemetente}" type="text" class="form"  value="{valorComplementoRemetente}"/>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Bairro</div>
+			<input id="frm_obg_{campoBairroRemetente}" name="{campoBairroRemetente}" type="text" class="form"  value="{valorBairroRemetente}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Cidade</div>
+			<input id="frm_obg_{campoCidadeRemetente}" name="{campoCidadeRemetente}" type="text" class="form"  value="{valorCidadeRemetente}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Estado</div>
+			<select id="frm_obg_{campoEstadoRemetente}" name="{campoEstadoRemetente}" class="formDrop">
+				{campoOpcoesEstadoRemetente}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Telefone</div>
+			<input id="frm_opt_{campoTelefoneRemetente}" name="{campoTelefoneRemetente}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorTelefoneRemetente}" maxlength="12" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Fax</div>
+			<input id="frm_opt_{campoFaxRemetente}" name="{campoFaxRemetente}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorFaxRemetente}" maxlength="12"/>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">E-mail</div>
+			<input id="frm_ema_{campoEmailRemetente}" name="{campoEmailRemetente}" type="text" value="{valorEmailRemetente}" class="form" />
+		</div>
+    </div>
+    <div id="loading_remetente" style="display:none">Buscando em nossa base de dados, aguarde...</div>
+	</fieldset>
+    
+	<fieldset>
+ 	<legend>Destinatário</legend>
+    <div id="div_destinatario">
+		<div id="linha">
+			<div id="formTituloOBG">CNPJ / CPF</div>
+			<input id="frm_obg_{campoCnpjcpfClienteDestinatario}" name="{campoCnpjcpfClienteDestinatario}" type="text" class="form" value="{valorCnpjcpfClienteDestinatario}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Inscrição Estadual / RG</div>
+			<input id="frm_obg_{campoInscestadualrgClienteDestinatario}" name="{campoInscestadualrgClienteDestinatario}" type="text" class="form" value="{valorInscestadualrgClienteDestinatario}" maxlength="15" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNomeClienteDestinatario}" name="{campoNomeClienteDestinatario}" type="text" class="form" value="{valorNomeClienteDestinatario}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Cep</div>
+			<input id="get_cep_alt" name="{campoCepDestinatario}" type="text" class="form"  value="{valorCepDestinatario}"  onkeypress="formatCep(this,event)" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Rua</div>
+			<input id="frm_obg_{campoRuaDestinatario}" name="{campoRuaDestinatario}" type="text" class="form" value="{valorRuaDestinatario}" maxlength="200" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Número</div>
+			<input id="frm_obg_{campoNumeroDestinatario}" name="{campoNumeroDestinatario}" type="text" onkeypress="isNum(this,event)" class="form" value="{valorNumeroDestinatario}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Complemento</div>
+			<input id="frm_opt_{campoComplementoDestinatario}" name="{campoComplementoDestinatario}" type="text" class="form"  value="{valorComplementoDestinatario}"/>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Bairro</div>
+			<input id="frm_obg_{campoBairroDestinatario}" name="{campoBairroDestinatario}" type="text" class="form"  value="{valorBairroDestinatario}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Cidade</div>
+			<input id="frm_obg_{campoCidadeDestinatario}" name="{campoCidadeDestinatario}" type="text" class="form"  value="{valorCidadeDestinatario}" maxlength="100"/>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Estado</div>
+			<select id="frm_obg_{campoEstadoDestinatario}" name="{campoEstadoDestinatario}" class="formDrop">
+				{campoOpcoesEstadoDestinatario}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Telefone</div>
+			<input id="frm_opt_{campoTelefoneDestinatario}" name="{campoTelefoneDestinatario}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorTelefoneDestinatario}" maxlength="12" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Fax</div>
+			<input id="frm_opt_{campoFaxDestinatario}" name="{campoFaxDestinatario}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorFaxDestinatario}" maxlength="12"/>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">E-mail</div>
+			<input id="frm_ema_{campoEmailDestinatario}" name="{campoEmailDestinatario}" type="text" value="{valorEmailDestinatario}" class="form" />
+		</div>
+    </div>
+    <div id="loading_destinatario" style="display:none">Buscando em nossa base de dados, aguarde...</div>
+	</fieldset>
+    
+	<fieldset id="fdados">
+ 	<legend>Dados da Carga</legend>
+        <div id="linha">
+            <div id="formTituloOBG">Peso</div>
+            <input id="frm_obg_{campoPeso}" name="{campoPeso}" type="text" value="{valorPeso}" class="form" />
+        </div>
+        <div id="linha">
+            <div id="formTituloOBG">Volumes</div>
+            <input id="frm_obg_{campoVolumes}" name="{campoVolumes}" onkeypress="isNum(this, event)" type="text" value="{valorVolumes}" class="form" />
+        </div>
+        <div id="linha">
+            <div id="formTituloOBG">Valor Nota Fiscal</div>
+            <input id="frm_obg_{campoValorNotaFiscal}" name="{campoValorNotaFiscal}" onkeypress="reais(this, event)" type="text" value="{valorValorNotaFiscal}" class="form" />
+        </div>
+        <div id="linha">
+            <div id="formTituloOBG">Valor Frete</div>
+            <input id="frm_obg_{campoValorFrete}" name="{campoValorFrete}" onkeypress="reais(this, event)" type="text" value="{valorValorFrete}" class="form" />
+        </div>
+        <div id="linha">
+            <div id="formTitulo">Situação</div>
+            <input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+        </div>
+        <!-- BEGIN bloco_formulario_data_cadastro -->
+        <div id="linha">
+            <div id="formTitulo">Data do cadastro</div>
+            <input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+        </div>
+        <!-- END bloco_formulario_data_cadastro -->
+        <!-- BEGIN bloco_formulario_data_baixa -->
+        <div id="linha">
+            <div id="formTitulo">Data da baixa</div>
+            <input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+        </div>
+        <!-- END bloco_formulario_data_baixa -->
+    </fieldset>
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

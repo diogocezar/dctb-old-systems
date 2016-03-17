@@ -1,0 +1,53 @@
+CREATE TABLE locacoes (
+       id_locacao           INTEGER NOT NULL,
+       id_usuario           INTEGER NOT NULL,
+       data_locacao         DATE NULL,
+       data_devolucao       DATE NULL,
+       status               VARCHAR(100) NULL,
+       data_cadastro        TIMESTAMP NULL,
+       data_baixa           TIMESTAMP NULL,
+       situacao             BOOLEAN NULL,
+       PRIMARY KEY (id_locacao), 
+       FOREIGN KEY (id_usuario)
+                             REFERENCES usuarios(id_usuario)
+);
+
+
+CREATE TABLE tipo_acervo (
+       id_tipo_acervo       INTEGER NOT NULL,
+       nome                 VARCHAR(50) NOT NULL,
+       data_cadastro        TIMESTAMP NOT NULL,
+       data_baixa           TIMESTAMP NOT NULL,
+       situacao             TIMESTAMP NOT NULL,
+       PRIMARY KEY (id_tipo_acervo)
+);
+
+
+CREATE TABLE acervo (
+       id_acervo            INTEGER NOT NULL,
+       id_volume            INTEGER NOT NULL,
+       id_tipo_acervo       INTEGER NULL,
+       titulo               VARCHAR(150) NOT NULL,
+       autor                VARCHAR(150) NOT NULL,
+       editora              VARCHAR(100) NOT NULL,
+       qtd_volumes          INTEGER NOT NULL,
+       status               VARCHAR(50) NULL,
+       data_cadastro        TIMESTAMP NOT NULL,
+       data_baixa           TIMESTAMP NOT NULL,
+       situacao             BOOLEAN NOT NULL,
+       PRIMARY KEY (id_acervo, id_volume), 
+       FOREIGN KEY (id_tipo_acervo)
+                             REFERENCES tipo_acervo(id_tipo_acervo)
+);
+
+
+CREATE TABLE livros_locacoes (
+       id_acervo            INTEGER NOT NULL,
+       id_volume            INTEGER NOT NULL,
+       id_locacao           INTEGER NOT NULL,
+       PRIMARY KEY (id_acervo, id_volume, id_locacao), 
+       FOREIGN KEY (id_locacao)
+                             REFERENCES locacoes(id_locacao), 
+       FOREIGN KEY (id_acervo, id_volume)
+                             REFERENCES acervo(id_acervo, id_volume)
+);

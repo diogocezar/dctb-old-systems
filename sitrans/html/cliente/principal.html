@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8895-1" />
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/dataPicker/ui.datepicker.css" rel="stylesheet" type="text/css" />
+<link href="../css/cssCliente.css" rel="stylesheet" type="text/css" />
+<link href="../icone/icone.ico"rel="shortcut icon" >
+<script language="JavaScript" src="../jscripts/scriptaculous/prototype.js"></script>
+<script language="JavaScript" src="../jscripts/scriptaculous/scriptaculous.js"></script> 
+<script language="JavaScript" src="../jscripts/jquery/jquery.js"></script>
+<script language="JavaScript" src="../jscripts/thickbox/thickbox.js"></script>
+<script language="JavaScript" src="../jscripts/constants/constants.js"></script>
+<script language="JavaScript" src="../jscripts/effects/effects.js"></script>
+<script language="JavaScript" src="../jscripts/codify/codify.js"></script>
+<script language="JavaScript" src="../jscripts/forms/forms.js"></script>
+<script language="JavaScript" src="../jscripts/validate/validate.js"></script>
+<script language="JavaScript" src="../jscripts/masks/masks.js"></script>
+<script language="JavaScript" src="../jscripts/manage/manage.js"></script>
+<script language="JavaScript" src="../jscripts/dataPicker/ui.datepicker-pt-BR.js"></script>
+<script language="JavaScript" src="../jscripts/dataPicker/jquery-ui-personalized-1.6b.js"></script>
+<script>jQuery.noConflict();</script>
+<script>{js_sajax}</script>
+</head>
+<body {on_load_js}>
+<div id="container">
+	<div id="header">
+    	<div class="logo"></div>
+        <div class="logo_transp"></div>
+        <div class="faixa"></div>
+    </div>
+    
+    <!-- BEGIN bloco_menu -->
+    <div id="spacer">
+    	<div class="spacerTop">
+        </div>
+    </div>
+    <div id="menu">
+        <div class="spacerLeft"></div>
+        <ul>
+        	<a href="../php/frmColeta.php?tcliente=sim&acao=adicionar"><ol class="cadastrar">Cadastrar Coletas</ol></a>
+            <a href="../php/gerenciarColetaCliente.php?tabela=coleta&campos=2,13,14"><ol class="consultar">Consultar Coletas</ol></a>
+            <a href="javascript:;"><ol class="contato">Contato</ol></a>
+            <a href="../php/sair.php?tcliente=sim"><ol class="logout">Logout</ol></a>
+        </ul>
+        <div class="spacerRight"></div>
+    </div>
+    <div id="spacer">
+        <div class="spacerBottom">
+            <div class="line1">{linha1}</div>
+            <div class="line2">{linha2}</div>
+        </div>
+    </div>
+    <!-- END bloco_menu -->
+    
+    <!-- BEGIN bloco_login -->
+    <div id="login">
+        <div id="spacer">
+            <div class="spacerTopLogin">
+            </div>
+        </div>
+        <div class="spacerLeftLogin"></div>
+        <div class="cadastrarLogin"></div>
+        <div class="consultarLogin"></div>
+        <div class="contatoLogin"></div>
+        <div class="logoutLogin"></div>
+        <div class="spacerRightLogin"></div>
+        <div id="spacer">
+            <div class="spacerBottomLogin">
+            	<div class="instrucoesLogin">{instrucoesLogin}</div>
+            </div>
+        </div>
+    </div>
+    <!-- END bloco_login -->
+    
+    <!-- BEGIN bloco_conteudo -->
+    <div id="content">
+    	<div class="spacerLeftContent"></div>
+    	<div class="contentCenter">{conteudo}</div>
+    </div>
+    <!-- END bloco_conteudo -->
+
+    <div id="footer">
+        <div class="footerCenter">{creditos}</div>
+    </div>
+   
+</div>
+</body>
+</html>

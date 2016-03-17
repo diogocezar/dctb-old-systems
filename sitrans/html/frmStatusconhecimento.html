@@ -1,0 +1,33 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formStatusconhecimento}" action="{actionStatusconhecimento}" method="post" class="checkForm">
+	<div id="linha">
+		<div id="formTituloOBG">Descrição</div>
+		<input id="frm_obg_{campoDescricao}" name="{campoDescricao}" type="text" value="{valorDescricao}" class="form" />
+	</div>
+	<div id="linha">
+		<div id="formTitulo">Situação</div>
+		<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+	</div>
+	<!-- BEGIN bloco_formulario_data_cadastro -->
+	<div id="linha">
+		<div id="formTitulo">Data do cadastro</div>
+		<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+	</div>
+	<!-- END bloco_formulario_data_cadastro -->
+	<!-- BEGIN bloco_formulario_data_baixa -->
+	<div id="linha">
+		<div id="formTitulo">Data da baixa</div>
+		<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+	</div>
+	<!-- END bloco_formulario_data_baixa -->
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

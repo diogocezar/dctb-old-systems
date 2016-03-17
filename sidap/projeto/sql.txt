@@ -1,0 +1,75 @@
+/*
+
+CREATE TABLE nivel (
+       idNivel              INTEGER NULL,
+       descricao            VARCHAR(100) NOT NULL,
+       dataCadastro         TIMESTAMP NOT NULL,
+       dataBaixa            TIMESTAMP NULL,
+       situacao             BOOLEAN NOT NULL,
+       PRIMARY KEY (idNivel)
+) TYPE=INNODB;
+
+
+CREATE TABLE usuario (
+       idUsuario            INTEGER NOT NULL,
+       idNivel              INTEGER NOT NULL,
+       nome                 VARCHAR(100) NOT NULL,
+       login                VARCHAR(50) NOT NULL,
+       senha                VARCHAR(50) NOT NULL,
+       dataCadastro         TIMESTAMP NOT NULL,
+       dataBaixa            TIMESTAMP NULL,
+       situacao             BOOLEAN NOT NULL,
+       PRIMARY KEY (idUsuario),
+       FOREIGN KEY (idNivel)
+                             REFERENCES nivel(idNivel)
+) TYPE=INNODB;
+
+
+CREATE TABLE tipo (
+       idTipo               INTEGER NOT NULL,
+       descricao            VARCHAR(100) NOT NULL,
+       dataCadastro         TIMESTAMP NOT NULL,
+       dataBaixa            TIMESTAMP NULL,
+       situacao             BOOLEAN NOT NULL,
+       PRIMARY KEY (idTipo)
+) TYPE=INNODB;
+
+
+CREATE TABLE grupo (
+       idGrupo              INTEGER NOT NULL,
+       descricao            VARCHAR(100) NOT NULL,
+       dataCadastro         TIMESTAMP NOT NULL,
+       dataBaixa            TIMESTAMP NULL,
+       situacao             BOOLEAN NOT NULL,
+       PRIMARY KEY (idGrupo)
+) TYPE=INNODB;
+
+
+CREATE TABLE cliente (
+       idCliente            INTEGER NOT NULL,
+       idGrupo              INTEGER NULL,
+       idUsuario            INTEGER NULL,
+       nome                 VARCHAR(200) NOT NULL,
+       dataNascimento       DATE NOT NULL,
+       bairro               VARCHAR(50) NULL,
+       cidade               VARCHAR(50) NULL,
+       endereco             VARCHAR(100) NULL,
+       cep                  CHAR(10) NULL,
+       estado               CHAR(2) NULL,
+       telefone1            CHAR(14) NULL,
+       telefone2            CHAR(14) NULL,
+       celular              CHAR(14) NULL,
+       numBeneficio         CHAR(15) NULL,
+       nit                  CHAR(20) NULL,
+       observacao           LONGTEXT NULL,
+       dataCadastro         TIMESTAMP NOT NULL,
+       dataBaixa            TIMESTAMP NULL,
+       situacao             BOOLEAN NULL,
+       PRIMARY KEY (idCliente),
+       FOREIGN KEY (idUsuario)
+                             REFERENCES usuario (idUsuario),
+       FOREIGN KEY (idGrupo)
+                             REFERENCES grupo (idGrupo)
+) TYPE=INNODB;
+
+*/

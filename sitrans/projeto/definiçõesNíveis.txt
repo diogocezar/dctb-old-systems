@@ -1,0 +1,9 @@
+Para o funcionamento das restrições os níveis devem respeitar a seguinte respectiva ID, CARGO:
+
+1 -> ADMINISTRADOR
+
+2 -> GERENTE
+
+3 -> GATEWAY
+
+4 -> ATENDENTE

@@ -1,0 +1,11 @@
+Os status do conhecimento devem ser definidos de acordo com a respectiva ligação ID e Descrição.
+
+1 -> EM ESPERA
+
+2 -> EM TRANSITO
+
+3 -> CANCELADO
+
+4 -> BAIXADO
+
+5 -> DEVOLVIDO

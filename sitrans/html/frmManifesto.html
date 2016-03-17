@@ -1,0 +1,81 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formManifesto}" action="{actionManifesto}" method="post" class="checkForm">
+		<div id="loading"></div>
+		<div id="msg"></div>
+		<!-- BEGIN bloco_formulario_codigo -->
+		<div id="linha">
+			<div id="formTitulo">Codigo</div>
+			<input id="frm_opt_{campoCodigo}" name="{campoCodigo}" type="text" value="{valorCodigo}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_codigo -->		
+		<div id="linha">
+			<div id="formTituloOBG">Fornecedor</div>
+			<select id="frm_obg_{campoFornecedor}" name="{campoFornecedor}" class="formDrop">
+				{campoOpcoesFornecedor}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Status Manifesto</div>
+			<select id="frm_obg_{campoStatusmanifesto}" name="{campoStatusmanifesto}" class="formDrop">
+				{campoOpcoesStatusManifesto}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Cidade de Origem</div>
+			<input id="frm_obg_{campoCidade}" name="{campoCidade}" type="text" class="form" value="{valorCidade}" maxlength="50" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Número</div>
+			<input id="frm_obg_{campoNumero}" name="{campoNumero}" type="text" class="form" onkeypress="isNum(this, event)" value="{valorNumero}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Hora chegada</div>
+			<input id="frm_obg_{campoHoraChegada}" name="{campoHoraChegada}" type="text" onkeypress="formatHora(this,event)" class="form"  value="{valorHoraChegada}" maxlength="5"/>
+		</div>
+        <div id="linha">
+			<div id="formTituloOBG">Total CTRC</div>
+			<input id="frm_obg_{campoTotalCTRC}" name="{campoTotalCTRC}" type="text" onkeypress="isNum(this, event)"  class="form"  value="{valorTotalCTRC}"/>
+		</div>
+        <div id="linha">
+			<div id="formTituloOBG">Total Volumes</div>
+			<input id="frm_obg_{campoTotalVolumes}" name="{campoTotalVolumes}" type="text" onkeypress="isNum(this, event)"  class="form"  value="{valorTotalVolumes}"/>
+		</div>
+        <div id="linha">
+			<div id="formTituloOBG">Total Peso</div>
+			<input id="frm_obg_{campoTotalPeso}" name="{campoTotalPeso}" type="text" class="form" value="{valorTotalPeso}"/>
+		</div>
+        <div id="linha">
+			<div id="formTituloOBG">Valor Total N.F</div>
+			<input id="frm_obg_{campoValorTotalNF}" name="{campoValorTotalNF}" onkeypress="reais(this, event)" type="text" class="form"  value="{valorValorTotalNF}"/>
+		</div>
+        <div id="linha">
+			<div id="formTituloOBG">Valor Total Frete</div>
+			<input id="frm_obg_{campoValorTotalFrete}" name="{campoValorTotalFrete}" onkeypress="reais(this, event)" type="text" class="form"  value="{valorValorTotalFrete}"/>
+		</div>
+        <div id="linha">
+            <div id="formTitulo">Situação</div>
+            <input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+        </div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

@@ -1,0 +1,159 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_data").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA4t9pVdhtT3Bq6rx_UpckmhRO4jytm8-7ckonrc04BpXC7lXyUBT6EKL8hdUD4pi13MN0Om9ifS37kQ" type="text/javascript"></script>
+<script language="JavaScript" src="../jscripts/gmap/gmap.js"></script>
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formColeta}" action="{actionColeta}" method="post" class="checkForm">
+		<!-- BEGIN bloco_formulario_codigo -->
+		<div id="linha">
+			<div id="formTitulo">Codigo</div>
+			<input id="frm_opt_{campoCodigo}" name="{campoCodigo}" type="text" value="{valorCodigo}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_codigo -->		
+		<div id="linha">
+			<div id="formTituloOBG">Cliente</div>
+			<select id="frm_obg_{campoCliente}" name="{campoCliente}" class="formDrop">
+				{campoOpcoesCliente}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Contato</div>
+		    <div id="contatosFiltrados">
+			<select id="frm_obg_contato" name="contato" class="formDrop">
+				<option value=""></option>
+			</select>
+			</div>
+		</div>
+		<!-- BEGIN bloco_formulario_veiculo -->
+		<div id="linha">
+			<div id="formTitulo">Véiculo</div>
+			<select id="frm_opt_veiculo" name="{campoVeiculo}" class="formDrop">
+				{campoOpcoesVeiculo}
+			</select>
+		</div>
+		<!-- END bloco_formulario_veiculo -->
+		<div id="linha">
+			<div id="formTituloOBG">Fornecedor</div>
+			<select id="frm_obg_{campoFornecedor}" name="{campoFornecedor}" class="formDrop">
+				{campoOpcoesFornecedor}
+			</select>
+		</div>
+		<!-- BEGIN bloco_formulario_status -->
+		<div id="linha">
+			<div id="formTituloOBG">Status</div>
+			<select id="frm_obg_{campoStatus}" name="{campoStatus}" class="formDrop">
+				{campoOpcoesStatus}
+			</select>
+		</div>
+		<!-- END bloco_formulario_status -->
+		<div id="linha">
+			<div id="formTitulo">Embalagem</div>
+			<select id="frm_opt_{campoEmbalagem}" name="{campoEmbalagem}" class="formDrop">
+				{campoOpcoesEmbalagem}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Restrição</div>
+			<select id="frm_opt_{campoRestricao}" name="{campoRestricao}" class="formDrop">
+				{campoOpcoesRestricao}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Quantidade Nota Fiscal</div>
+			<input id="frm_opt_{campoQtdadeNotaFiscal}" name="{campoQtdadeNotaFiscal}" type="text" class="form" onkeypress="isNum(this, event)" value="{valorQtdadeNotaFisca}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Quantidade Volumes</div>
+			<input id="frm_opt_{campoQtdadeVolumes}" name="{campoQtdadeVolumes}" type="text" class="form" value="{valorQtdadeVolumes}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Data</div>
+			<input id="frm_obg_{campoData}" name="{campoData}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" value="{valorData}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Hora</div>
+			<input id="frm_obg_{campoHora}" name="{campoHora}" type="text" onkeypress="formatHora(this,event)" class="form"  value="{valorHora}" maxlength="5"/>
+		</div>		<div id="linha">
+			<div id="formTituloOBG">Peso</div>
+			<input id="frm_obg_{campoPeso}" name="{campoPeso}" type="text" class="form"  value="{valorPeso}"/>
+		</div>
+  	    <div id="linhaQuebraTxtArea">
+			<div id="formTitulo">Observação</div>
+		  <textarea name="{campoObservacao}" rows="3" class="formTxtArea" id="frm_opt_{campoObservacao}">{valorObservacao}</textarea>
+		</div>
+		<!-- BEGIN bloco_formulario_versao -->
+		<div id="linhaQuebra">
+			<div id="formTitulo">Versão Coleta</div>
+			<input id="frm_opt_{campoVersao}" name="{campoVersao}" type="text" value="{valorVersao}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_versao -->
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+		<!-- BEGIN bloco_formulario_usuario -->
+		<div id="linha">
+			<div id="formTitulo">Atendente</div>
+			<input id="frm_opt_{campoAtendente}" name="{campoAtendente}" type="text" value="{valorAtendente}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_usuario -->
+		<!-- BEGIN bloco_infos_adicionais -->
+		<div id="tituloInformacoesColeta">Informações Adicionais do Cliente:</div>
+		<div id="linhaSeparadora"></div>
+		<div id="informacoesColeta">			
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">CNPJ/CPF:</div>
+				<div id="linhaColeta">{cnpf}</div>
+			</div>	
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">Nome:</div>
+				<div id="linhaColeta">{nome}</div>
+			</div>
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">Endereço:</div>
+				<div id="linhaColeta">{endereco}</div>
+			</div>
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">Bairro:</div>
+				<div id="linhaColeta">{bairro}</div>
+			</div>
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">Cidade:</div>
+				<div id="linhaColeta">{cidade}</div>
+			</div>
+			<div id="linhaInfoColeta">
+				<div id="formTituloOBG">Contato (Fone):</div>
+				<div id="linhaColeta">{fone}</div>
+			</div>
+		</div>
+		<!-- END bloco_infos_adicionais -->		
+		<!-- BEGIN bloco_mapa -->
+			<div id="{idmapa}"></div>
+		<!-- END bloco_mapa -->
+	<!-- END bloco_formulario_pessoa -->
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

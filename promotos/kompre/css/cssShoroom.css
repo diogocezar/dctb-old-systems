@@ -1,0 +1,87 @@
+.tahoma10 {
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	color: #666666;
+}
+.tahoma11 {
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	color: #333333;
+}
+.verdana9 {
+	font-family: verdana;
+	font-size: 9px;
+	font-style: normal;
+	color: #666666;
+}
+.tahoma12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: bold;
+	color: #FFFFFF;
+}
+.tahoma10B {
+
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	color: #999999;
+}
+.form {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #4f5864;
+}
+.form2 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #ffffff;
+	background-color: #4f5864;
+	border: 1px solid #4f5864;
+}.tahoma14 {
+
+	font-family: verdana;
+	font-size: 14px;
+	font-style: normal;
+	color: #666666;
+}
+.tahoma14Red {
+
+
+	font-family: verdana;
+	font-size: 14px;
+	font-style: normal;
+	color: #FF6666;
+}
+.link_claro{
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	color: #666666;
+}
+.link_claro:hover {
+	text-decoration: underline;
+}
+.link_menu{
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 11px;
+	font-style: normal;
+	color: #333333;
+}
+.link_menu:hover {
+	text-decoration: underline;
+}
+.resultadoFrete {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF6666;
+	background-color: #FFFFFF;
+	border: thin solid #D6D7D9;
+}

@@ -1,0 +1,181 @@
+<!-- BEGIN bloco_formulario -->
+<script>
+/* Configurando inputs que irão receber dados do cep */
+Cep.id_input_rua = '#frm_obg_rua';
+Cep.id_input_bairro = '#frm_obg_bairro';
+Cep.id_input_cidade = '#frm_obg_cidade';
+Cep.id_input_estado = '#frm_obg_estado';
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formPessoa}" action="{actionPessoa}" method="post" class="checkForm">
+	
+	<!-- BEGIN bloco_formulario_fornecedor -->
+	<div id="pessoaEspefico">
+		<div id="tituloPessoaEspecifico" class="tituloPessoa">{tituloPessoaEspecifico}</div>
+		<div id="linha">
+			<div id="formTituloOBG">Inscrição Estadual</div>
+			<input id="frm_obg_{campoInscEstadualFornecedor}" name="{campoInscEstadualFornecedor}" type="text" class="form" onkeypress="formatIE(this,event)" value="{valorInscEstadualFornecedor}" maxlength="15" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">CNPJ</div>
+			<input id="frm_obg_{campoCnpjFornecedor}" name="{campoCnpjFornecedor}" type="text" class="form" onkeypress="formatCNPJ(this,event)" value="{valorCnpjFornecedor}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome Fantasia</div>
+			<input id="frm_obg_{campoNomeFantasiaFornecedor}" name="{campoNomeFantasiaFornecedor}" type="text" class="form" value="{valorNomeFantasiaFornecedor}" maxlength="200" />
+		</div>	
+		<div id="linha">
+			<div id="formTituloOBG">Razão Social</div>
+			<input id="frm_obg_{campoRazaoSocialFornecedor}" name="{campoRazaoSocialFornecedor}" type="text" class="form" value="{valorRazaoSocialFornecedor}" maxlength="200" />
+		</div>	
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacaoFornecedor}" name="{campoSituacaoFornecedor}" type="text" value="{valorSituacaoFornecedor}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do Cadastro</div>
+			<input id="frm_opt_{campoDataCadastroFornecedor}" name="{campoDataCadastroFornecedor}" type="text" value="{valorDataCadastroFornecedor}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da Baixa</div>
+			<input id="frm_opt_{campoDataBaixaFornecedor}" name="{campoDataBaixaFornecedor}" type="text" value="{valorDataBaixaFornecedor}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	</div>
+	<!-- END bloco_formulario_fornecedor -->
+	
+	
+	<!-- BEGIN bloco_formulario_cliente -->
+	<div id="pessoaEspefico">
+		<div id="tituloPessoaEspecifico" class="tituloPessoa">{tituloPessoaEspecifico}</div>
+		<div id="linha">
+			<div id="formTitulo">Frequëncia de Coleta</div>
+			<select id="frm_opt_{campoFrequenciaColetaCliente}" name="{campoFrequenciaColetaCliente}" class="formDrop">
+				{campoOpcoesFrequenciaColetaCliente}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNomeCliente}" name="{campoNomeCliente}" type="text" class="form" value="{valorNomeCliente}" maxlength="100" />
+		</div>		
+		<div id="linha">
+			<div id="formTituloOBG">CNPJ / CPF</div>
+			<input id="frm_obg_{campoCnpjcpfCliente}" name="{campoCnpjcpfCliente}" type="text" class="form" value="{valorCnpjcpfCliente}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Inscrição Estadual / RG</div>
+			<input id="frm_obg_{campoInscestadualrgCliente}" name="{campoInscestadualrgCliente}" type="text" class="form" value="{valorInscestadualrgCliente}" maxlength="15" />
+		</div>	
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacaoCliente}" name="{campoSituacaoCliente}" type="text" value="{valorSituacaoCliente}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastroCliente}" name="{campoDataCadastroCliente}" type="text" value="{valorDataCadastroCliente}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixaCliente}" name="{campoDataBaixaCliente}" type="text" value="{valorDataBaixaCliente}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	</div>
+	<!-- END bloco_formulario_cliente -->
+	
+	<!-- BEGIN bloco_formulario_agregado -->
+	<div id="pessoaEspefico">
+		<div id="tituloPessoaEspecifico" class="tituloPessoa">{tituloPessoaEspecifico}</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNomeAgregado}" name="{campoNomeAgregado}" type="text" class="form" value="{valorNomeAgregado}" maxlength="100" />
+		</div>		
+		<div id="linha">
+			<div id="formTituloOBG">CNPJ / CPF</div>
+			<input id="frm_obg_{campoCnpjcpfAgregado}" name="{campoCnpjcpfAgregado}" type="text" class="form" value="{valorCnpjcpfAgregado}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Inscrição Estadual / RG</div>
+			<input id="frm_obg_{campoInscestadualrgAgregado}" name="{campoInscestadualrgAgregado}" type="text" class="form" value="{valorInscestadualrgAgregado}" maxlength="15" />
+		</div>	
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacaoAgregado}" name="{campoSituacaoAgregado}" type="text" value="{valorSituacaoAgregado}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastroAgregado}" name="{campoDataCadastroAgregado}" type="text" value="{valorDataCadastroAgregado}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixaAgregado}" name="{campoDataBaixaAgregado}" type="text" value="{valorDataBaixaAgregado}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	</div>
+	<!-- END bloco_formulario_agregado -->
+
+	<!-- BEGIN bloco_formulario_pessoa -->
+	<div id="pessoaGenerico">
+		<div id="tituloPessoaGenerico" class="tituloPessoa">{tituloPessoaGenerico}</div>
+		<div id="linha">
+			<div id="formTitulo">Cep</div>
+			<input id="get_cep" name="{campoCep}" type="text" class="form"  value="{valorCep}"  onkeypress="formatCep(this,event)" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Rua</div>
+			<input id="frm_obg_{campoRua}" name="{campoRua}" type="text" class="form" value="{valorRua}" maxlength="200" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Número</div>
+			<input id="frm_obg_{campoNumero}" name="{campoNumero}" type="text" onkeypress="isNum(this,event)" class="form" value="{valorNumero}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Complemento</div>
+			<input id="frm_opt_{campoComplemento}" name="{campoComplemento}" type="text" class="form"  value="{valorComplemento}"/>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Bairro</div>
+			<input id="frm_obg_{campoBairro}" name="{campoBairro}" type="text" class="form"  value="{valorBairro}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Cidade</div>
+			<input id="frm_obg_{campoCidade}" name="{campoCidade}" type="text" class="form"  value="{valorCidade}" maxlength="100" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Estado</div>
+			<select id="frm_obg_{campoEstado}" name="{campoEstado}" class="formDrop">
+				{campoOpcoesEstado}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Telefone</div>
+			<input id="frm_opt_{campoTelefone}" name="{campoTelefone}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorTelefone}" maxlength="12" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Fax</div>
+			<input id="frm_opt_{campoFax}" name="{campoFax}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorFax}" maxlength="12"/>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">E-mail</div>
+			<input id="frm_ema_{campoEmail}" name="{campoEmail}" type="text" value="{valorEmail}" class="form" />
+		</div>
+	  </div>
+	<div id="separadorEnviar"></div>
+	<!-- END bloco_formulario_pessoa -->
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

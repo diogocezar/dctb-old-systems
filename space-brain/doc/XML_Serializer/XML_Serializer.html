@@ -1,0 +1,553 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class XML_Serializer</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                                            
+                                                	        [ <a href="../classtrees_XML_Serializer.html">Class Tree: XML_Serializer</a> ]
+            [ <a href="../elementindex_XML_Serializer.html">Index: XML_Serializer</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Serializer</div>
+		<div id="packageTitle">XML_Serializer</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html">		Serializer.php
+		</a><br>
+			<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Unserializer.php.html">		Unserializer.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Serializer/XML_Serializer.html">		XML_Serializer
+		</a><br>
+			<a href="../XML_Serializer/XML_Unserializer.html">		XML_Unserializer
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: XML_Serializer</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Serializer/Serializer.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 428]</span></h3>
+	<div id="classTree"><pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --XML_Serializer</pre>
+</div>
+	<div class="small">
+	<p>Creates XML documents from PHP data structures like arrays, objects or scalars.</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+																																				</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>Release: 0.20.0</li>
+																															</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		<li>2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+																										</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Serializer/XML_Serializer.html#var$options">$options</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodXML_Serializer">XML_Serializer</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodapiVersion">apiVersion</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodgetSerializedData">getSerializedData</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodresetOptions">resetOptions</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodserialize">serialize</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodsetOption">setOption</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#methodsetOptions">setOptions</a></li>
+				<li><a href="../XML_Serializer/XML_Serializer.html#method_getDefaultTagname">_getDefaultTagname</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../PEAR/PEAR.html">PEAR</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a>
+			</dt>
+			<dd>
+				Constructor.  Registers this object in  $_PEAR_destructor_object_list for destructor emulation if a  destructor object exists.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a>
+			</dt>
+			<dd>
+				This method deletes all occurences of the specified element from  the expected error codes stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a>
+			</dt>
+			<dd>
+				This method is used to tell which errors you expect to get.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a>
+			</dt>
+			<dd>
+				If you have a class that's mostly/entirely static, and you need static
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a>
+			</dt>
+			<dd>
+				Tell whether a value is a PEAR error.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a>
+			</dt>
+			<dd>
+				OS independant PHP extension load. Remember to take care  on the correct extension name for case sensitive OSes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a>
+			</dt>
+			<dd>
+				Pop the last error handler used
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a>
+			</dt>
+			<dd>
+				This method pops one element off the expected error codes  stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a>
+			</dt>
+			<dd>
+				Push a new error handler on top of the error handler options stack. With this  you can easily override the actual error handler for some code and restore  it later with popErrorHandling.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a>
+			</dt>
+			<dd>
+				This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a>
+			</dt>
+			<dd>
+				Use this function to register a shutdown method for static  classes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a>
+			</dt>
+			<dd>
+				Sets how errors generated by this object should be handled.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a>
+			</dt>
+			<dd>
+				Simpler form of raiseError with fewer options.  In most cases  message, code and userinfo are enough.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a>
+			</dt>
+			<dd>
+				Destructor (the emulated type of...).  Does nothing right now,  but is included for forward compatibility, so subclass  destructors should always call it.
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Creates XML documents from PHP data structures like arrays, objects or scalars.
+</strong></p>
+<p>This class can be used in two modes:</p><p><ol><li>Create an XML document from an array or object that is processed by other
+    applications. That means you can create an RDF document from an array in the
+    following format:
+    <ol><li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$data&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'channel'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'title'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Example&nbsp;RDF&nbsp;channel'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'link'&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'http://www.php-tools.de'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'image'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'title'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Example&nbsp;image'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'url'&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'http://www.php-tools.de/image.gif'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'link'&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'http://www.php-tools.de'</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'title'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Example&nbsp;item'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'link'&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'http://example.com'</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'title'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Another&nbsp;Example&nbsp;item'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'link'&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'http://example.org'</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></li></ol>     To create an RDF document from this array, do the following:</p><p><ol><li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-inc">require_once&nbsp;</span><span class="src-str">'XML/Serializer.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$options&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html#defineXML_SERIALIZER_OPTION_INDENT">XML_SERIALIZER_OPTION_INDENT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;\t&quot;</span><span class="src-sym">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-comm">//&nbsp;indent&nbsp;with&nbsp;tabs</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html#defineXML_SERIALIZER_OPTION_LINEBREAKS">XML_SERIALIZER_OPTION_LINEBREAKS</a>&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;\n&quot;</span><span class="src-sym">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-comm">//&nbsp;use&nbsp;UNIX&nbsp;line&nbsp;breaks</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html#defineXML_SERIALIZER_OPTION_ROOT_NAME">XML_SERIALIZER_OPTION_ROOT_NAME</a>&nbsp;&nbsp;&nbsp;</span>=&gt;&nbsp;<span class="src-str">'rdf:RDF'</span><span class="src-sym">,</span><span class="src-comm">//&nbsp;root&nbsp;tag</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html#defineXML_SERIALIZER_OPTION_DEFAULT_TAG">XML_SERIALIZER_OPTION_DEFAULT_TAG</a>&nbsp;</span>=&gt;&nbsp;<span class="src-str">'item'&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-comm">//&nbsp;tag&nbsp;for&nbsp;values</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;with&nbsp;numeric&nbsp;keys</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$serializer&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../XML_Serializer/XML_Serializer.html#methodXML_Serializer">XML_Serializer</a><span class="src-sym">(</span><span class="src-var">$options</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$rdf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>=&nbsp;<span class="src-var">$serializer</span><span class="src-sym">-&gt;</span><a href="../XML_Serializer/XML_Serializer.html#methodserialize">serialize</a><span class="src-sym">(</span><span class="src-var">$data</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><p>You will get a complete XML document that can be processed like any RDF document.</p><p>2. This class can be used to serialize any data structure in a way that it can     later be unserialized again.  XML_Serializer will store the type of the value     and additional meta information in attributes of the surrounding tag. This     meta information can later be used to restore the original data structure     in PHP. If you want XML_Serializer to add meta information to the tags, add     <ol><li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-id"><a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html#defineXML_SERIALIZER_OPTION_TYPEHINTS">XML_SERIALIZER_OPTION_TYPEHINTS</a>&nbsp;</span>=&gt;&nbsp;<span class="src-id">true</span></div></li>
+</ol>     to the options array in the constructor.</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>version</b> - Release: 0.20.0</li>
+	<li><b>copyright</b> - 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+	<li><b>see</b> - <a href="../XML_Serializer/XML_Unserializer.html">XML_Unserializer</a></li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Serializer">http://pear.php.net/package/XML_Serializer</a></li>
+	<li><b>todo</b> - replace extending PEAR class with instead using a PEAR_Error object</li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$options"></a>
+	<p></p>
+	<h4>$options = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 576]</p>
+		<p align="center"><strong>Options for the serialization
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodapiVersion"></a>
+	<p></p>
+	<h3>static apiVersion</h3>
+	<div class="indent">
+		<p>
+		<code>static string apiVersion(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 618]</p>
+		<p align="center"><strong>Return the package version number
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - the version number of XML_Serializer</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<a name="methodXML_Serializer"></a>
+	<p></p>
+	<h3>XML_Serializer</h3>
+	<div class="indent">
+		<p>
+		<code>XML_Serializer XML_Serializer(
+[mixed
+$options = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 601]</p>
+		<p align="center"><strong>Constructor
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$options</b> 
+		- 
+		array containing options for the serialization</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetSerializedData"></a>
+	<p></p>
+	<h3>getSerializedData</h3>
+	<div class="indent">
+		<p>
+		<code>string getSerializedData(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 795]</p>
+		<p align="center"><strong>get the result of the serialization
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - serialized XML</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodresetOptions"></a>
+	<p></p>
+	<h3>resetOptions</h3>
+	<div class="indent">
+		<p>
+		<code>void resetOptions(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 629]</p>
+		<p align="center"><strong>Reset all options to default options
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodserialize"></a>
+	<p></p>
+	<h3>serialize</h3>
+	<div class="indent">
+		<p>
+		<code>boolean serialize(
+mixed
+$data, [array
+$options = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 679]</p>
+		<p align="center"><strong>serialize data
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, pear error on failure</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../XML_Util/XML_Util.html#methodgetXMLDeclaration">XML_Util::getXMLDeclaration()</a></li>
+	<li><b>uses</b> - XML_Util::getDoctypeDeclaration()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$data</b> 
+		- 
+		data to serialize</li>
+			<li>
+		<span class="type">array</span>
+		<b>$options</b> 
+		- 
+		options array</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOption"></a>
+	<p></p>
+	<h3>setOption</h3>
+	<div class="indent">
+		<p>
+		<code>void setOption(
+string
+$name, mixed
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 646]</p>
+		<p align="center"><strong>Set an option
+</strong></p>
+<p>You can use this method if you do not want  to set all options in the constructor.</p><h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		option name</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$value</b> 
+		- 
+		option value</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOptions"></a>
+	<p></p>
+	<h3>setOptions</h3>
+	<div class="indent">
+		<p>
+		<code>void setOptions(
+array
+$options)</code>
+		</p>
+	
+		<p class="linenumber">[line 662]</p>
+		<p align="center"><strong>Sets several options at once
+</strong></p>
+<p>You can use this method if you do not want  to set all options in the constructor.</p><h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$options</b> 
+		- 
+		options array</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_getDefaultTagname"></a>
+	<p></p>
+	<h3>_getDefaultTagname</h3>
+	<div class="indent">
+		<p>
+		<code>string _getDefaultTagname(
+string
+$parent)</code>
+		</p>
+	
+		<p class="linenumber">[line 1082]</p>
+		<p align="center"><strong>get the name of the default tag.
+</strong></p>
+<p>The name of the parent tag needs to be passed as the  default name can depend on the context.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - default tag name</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$parent</b> 
+		- 
+		name of the parent tag</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:12 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

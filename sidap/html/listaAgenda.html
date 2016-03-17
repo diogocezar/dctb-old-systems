@@ -1,0 +1,33 @@
+<link href="../css/cssSidap.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#data").datepicker({
+		firstDay: 1,
+		changeFirstDay: false,
+		showOn: "both",
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true
+	});
+  });
+</script>
+<center>
+<div id="agenda">
+	<div id="linhaAgendaTitulo">
+		Selecione a data:
+	</div>
+	<div id="linhaAgendaData">
+		<input id="data" type="text" value="{valorDia}" class="date-picktiny" onchange="{onChange}"  maxlength="10" style="width:60px;" disabled/>
+	</div>
+</div>
+<div id="agendaGeral" style="height:100%;">
+<!-- BEGIN bloco_agenda -->
+<div id="agenda">
+	<div id="itemAgenda">{data}</div>
+	<div id="itemAgenda">{hora}</div>
+	<div id="itemAgendaDescricao">{descricao}</div>
+	<div id="itemAgenda">{link}</div>
+</div>
+<!-- END bloco_agenda -->
+</div>
+</center>

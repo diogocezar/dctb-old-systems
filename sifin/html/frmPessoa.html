@@ -1,0 +1,79 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSifin.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formPessoa}" action="{actionPessoa}" method="post">
+	<!-- BEGIN bloco_formulario_pf -->
+	<div id="pessoaEspefico">
+		<div id="tituloPessoaEspecifico">{tituloPessoaEspecifico}</div>
+		<div id="formTitulo">CPF</div>
+		<input name="{campoCpf}" type="text" class="form" onkeypress="formatCPF(this,event)" value="{valorCpf}" maxlength="14" />
+		<div id="formTitulo">RG</div>
+		<input name="{campoRg}" type="text" class="form" onkeypress="formatRG(this,event)" value="{valorRg}" maxlength="15" />
+		<div id="formTitulo">Nome</div>
+		<input name="{campoNome}" type="text" class="form" value="{valorNome}" maxlength="200" />
+		<div id="formTitulo">Sobrenome</div>
+		<input name="{campoSobrenome}" type="text" class="form" value="{valorSobrenome}" maxlength="200" />
+	</div>
+	<!-- END bloco_formulario_pf -->
+	
+	<!-- BEGIN bloco_formulario_pj -->
+	<div id="pessoaEspefico">
+		<div id="tituloPessoaEspecifico">{tituloPessoaEspecifico}</div>
+		<div id="formTitulo">CNPJ</div>
+		<input name="{campoCnpj}" type="text" class="form" onkeypress="formatCNPJ(this,event)" value="{valorCnpj}" maxlength="18" />
+		<div id="formTitulo">Inscrição estadual</div>
+		<input name="{campoInscEstadual}" type="text" class="form" onkeypress="formatIE(this,event)" value="{valorInscEstadual}" maxlength="15" />
+		<div id="formTitulo">Inscrição municipal</div>
+		<input name="{campoInscMunicipal}" type="text" class="form" onkeypress="formatIM(this,event)" value="{valorInscMunicipal}" maxlength="15" />
+		<div id="formTitulo">Razão social</div>
+		<input name="{campoRazaoSocial}" type="text" class="form" value="{valorRazaoSocial}" maxlength="200" />
+		<div id="formTitulo">Nome fantasia</div>
+		<input name="{campoNomeFantasia}" type="text" class="form" value="{valorNomeFantasia}" maxlength="200" />
+	</div>
+	<!-- END bloco_formulario_pj -->
+		
+	<!-- BEGIN bloco_formulario_p -->
+	<div id="separadorEnviar"></div>
+	<div id="pessoaGenerico">
+		<div id="tituloPessoaGenerico">{tituloPessoaGenerico}</div>
+		<div id="formTitulo">Endereço</div>
+		<input name="{campoEndereco}" type="text" class="form" value="{valorEndereco}" maxlength="200" />
+		<div id="formTitulo">Bairro</div>
+		<input name="{campoBairro}" type="text" class="form" value="{valorBairro}" maxlength="200" />
+		<div id="formTitulo">Cidade</div>
+		<input name="{campoCidade}" type="text" class="form" value="{valorCidade}" maxlength="100" />
+		<div id="formTitulo">Estado</div>
+		<select name="{campoUf}" class="form">
+			{campoOpcoesUf}
+		</select>
+		<div id="formTitulo">CEP</div>
+		<input name="{campoCep}" type="text" class="form" onkeypress="formatCep(this,event)" value="{valorCep}" maxlength="10" />
+		<div id="formTitulo">Telefone</div>
+		<input name="{campoFone}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorFone}" maxlength="12" />
+		<div id="formTitulo">Fax</div>
+		<input name="{campoFax}" type="text" class="form" onkeypress="formatFone(this,event)" value="{valorFax}" maxlength="12" />
+		<div id="formTitulo">Site</div>
+		<input name="{campoSite}" type="text" value="{valorSite}" class="form" />
+		<div id="formTitulo">Observação</div>
+		<textarea name="{campoObservacao}" rows="3" class="form">{valorObservacao}</textarea>
+		<!-- BEGIN bloco_formulario_compra_minima -->
+		<div id="formTitulo">Compra mínima</div>
+		<input name="{campoCompramin}" type="text" class="form"  onkeypress="reais(this,event)" value="{valorCompramin}" maxlength="15" />
+		<!-- END bloco_formulario_compra_minima -->
+		<div id="formTitulo">Situação</div>
+		<input name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+		<!-- BEGIN bloco_formulario_baixa -->
+		<div id="formTitulo">Data da baixa</div>
+		<input name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		<!-- END bloco_formulario_baixa -->
+	  </div>
+	<div id="separadorEnviar"></div>
+	<!-- END bloco_formulario_p -->
+	<div id="formCampo" align="center">
+		<input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" />
+		<input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" />
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

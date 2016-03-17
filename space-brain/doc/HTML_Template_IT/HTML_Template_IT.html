@@ -1,0 +1,1290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class HTML_Template_IT</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                            
+                                                                                                                                                                                                                	        [ <a href="../classtrees_HTML_Template_IT.html">Class Tree: HTML_Template_IT</a> ]
+            [ <a href="../elementindex_HTML_Template_IT.html">Index: HTML_Template_IT</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">HTML_Template_IT</div>
+		<div id="packageTitle">HTML_Template_IT</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../HTML_Template_IT/_space-brain---core---components---HTML_Template_IT---IT.php.html">		IT.php
+		</a><br>
+			<a href="../HTML_Template_IT/_space-brain---core---components---HTML_Template_IT---ITX.php.html">		ITX.php
+		</a><br>
+			<a href="../HTML_Template_IT/_space-brain---core---components---HTML_Template_IT---IT_Error.php.html">		IT_Error.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../HTML_Template_IT/HTML_Template_IT.html">		HTML_Template_IT
+		</a><br>
+			<a href="../HTML_Template_IT/HTML_Template_ITX.html">		HTML_Template_ITX
+		</a><br>
+			<a href="../HTML_Template_IT/IT_Error.html">		IT_Error
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: HTML_Template_IT</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/HTML_Template_IT/IT.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 124]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Integrated Template - IT</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Ulf Wendel &lt;<a href="mailto:uw@netuse.de">uw@netuse.de</a>&gt;</li>
+																</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>$Id: IT.php,v 1.20 2006/08/17 15:47:22 dsp Exp $</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blockdata">$blockdata</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blockinner">$blockinner</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocklist">$blocklist</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocknameRegExp">$blocknameRegExp</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blockRegExp">$blockRegExp</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$blockvariables">$blockvariables</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$clearCache">$clearCache</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$clearCacheOnParse">$clearCacheOnParse</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$closingDelimiter">$closingDelimiter</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$currentBlock">$currentBlock</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$err">$err</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$fileRoot">$fileRoot</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$flagBlocktrouble">$flagBlocktrouble</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$flagCacheTemplatefile">$flagCacheTemplatefile</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$flagGlobalParsed">$flagGlobalParsed</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$lastTemplatefile">$lastTemplatefile</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$openingDelimiter">$openingDelimiter</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">$removeEmptyBlocks</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeUnknownVariables">$removeUnknownVariables</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeVariablesRegExp">$removeVariablesRegExp</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$template">$template</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$touchedBlocks">$touchedBlocks</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$variableCache">$variableCache</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$variablenameRegExp">$variablenameRegExp</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$variablesRegExp">$variablesRegExp</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$_hiddenBlocks">$_hiddenBlocks</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#var$_options">$_options</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodHTML_Template_IT">HTML_Template_IT</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodbuildBlockvariablelist">buildBlockvariablelist</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methoderrorMessage">errorMessage</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodfindBlocks">findBlocks</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodfree">free</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodget">get</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodgetFile">getFile</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodgetGlobalvariables">getGlobalvariables</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodinit">init</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodloadTemplatefile">loadTemplatefile</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparse">parse</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">parseCurrentBlock</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetCurrentBlock">setCurrentBlock</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetOption">setOption</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetOptions">setOptions</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetRoot">setRoot</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetTemplate">setTemplate</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodshow">show</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#methodtouchBlock">touchBlock</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#method_addPregDelimiters">_addPregDelimiters</a></li>
+				<li><a href="../HTML_Template_IT/HTML_Template_IT.html#method_preserveOpeningDelimiter">_preserveOpeningDelimiter</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	<h2>Child classes:</h2>
+		<dl>
+	<dt><a href="../HTML_Template_IT/HTML_Template_ITX.html">HTML_Template_ITX</a></dt>
+		<dd>Integrated Template Extension - ITX</dd>
+	</dl>
+	</p>
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Integrated Template - IT
+</strong></p>
+<p>Well there's not much to say about it. I needed a template class that  supports a single template file with multiple (nested) blocks inside and  a simple block API.</p><p>The Isotemplate API is somewhat tricky for a beginner although it is the best  one you can build. template::parse() [phplib template = Isotemplate] requests  you to name a source and a target where the current block gets parsed into.  Source and target can be block names or even handler names. This API gives you  a maximum of fexibility but you always have to know what you do which is  quite unusual for php skripter like me.</p><p>I noticed that I do not any control on which block gets parsed into which one.  If all blocks are within one file, the script knows how they are nested and in  which way you have to parse them. IT knows that inner1 is a child of block2, there's  no need to tell him about this.</p><p>&lt;table border&gt;    &lt;tr&gt;      &lt;td colspan=2&gt;        __global__        &lt;p&gt;
+       (hidden and automatically added)      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td&gt;block1&lt;/td&gt;      &lt;td&gt;        &lt;table border&gt;          &lt;tr&gt;            &lt;td colspan=2&gt;block2&lt;/td&gt;          &lt;/tr&gt;          &lt;tr&gt;            &lt;td&gt;inner1&lt;/td&gt;            &lt;td&gt;inner2&lt;/td&gt;          &lt;/tr&gt;        &lt;/table&gt;      &lt;/td&gt;    &lt;/tr&gt;  &lt;/table&gt;</p><p>To add content to block1 you simply type:  <ol><li><div class="src-line"><span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetCurrentBlock">setCurrentBlock</a><span class="src-sym">(</span><span class="src-str">&quot;block1&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol>  and repeat this as often as needed:  <ol><li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(</span>...<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">parseCurrentBlock</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><p>To add content to block2 you would type something like:  <ol><li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetCurrentBlock">setCurrentBlock</a><span class="src-sym">(</span><span class="src-str">&quot;inner1&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(</span>...<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">parseCurrentBlock</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(</span>...<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">parseCurrentBlock</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparse">parse</a><span class="src-sym">(</span><span class="src-str">&quot;block1&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><p>This will result in one repition of block1 which contains two repitions  of inner1. inner2 will be removed if $removeEmptyBlock is set to true which is the default.</p><p>Usage:  <ol><li><div class="src-line">&nbsp;<span class="src-var">$tpl&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodHTML_Template_IT">HTML_Template_IT</a><span class="src-sym">(&nbsp;</span><span class="src-sym">[</span><span class="src-id">string&nbsp;filerootdir</span><span class="src-sym">]&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;load&nbsp;a&nbsp;template&nbsp;or&nbsp;set&nbsp;it&nbsp;with&nbsp;setTemplate()</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodloadTemplatefile">loadTemplatefile</a><span class="src-sym">(&nbsp;</span><span class="src-id">string&nbsp;filename&nbsp;</span><span class="src-sym">[</span><span class="src-sym">,&nbsp;</span><span class="src-id">boolean&nbsp;<a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeUnknownVariables">removeUnknownVariables</a></span><span class="src-sym">,&nbsp;</span><span class="src-id">boolean&nbsp;<a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">removeEmptyBlocks</a></span><span class="src-sym">]&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;set&nbsp;&quot;global&quot;&nbsp;Variables&nbsp;meaning&nbsp;variables&nbsp;not&nbsp;beeing&nbsp;within&nbsp;a&nbsp;(inner)&nbsp;block</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(&nbsp;</span><span class="src-id">string&nbsp;variablename</span><span class="src-sym">,&nbsp;</span><span class="src-id">mixed&nbsp;value&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;like&nbsp;with&nbsp;the&nbsp;Isotemplates&nbsp;there's&nbsp;a&nbsp;second&nbsp;way&nbsp;to&nbsp;use&nbsp;setVariable()</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(&nbsp;</span><span class="src-key">array&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-id">string&nbsp;varname&nbsp;</span>=&gt;&nbsp;<span class="src-id">mixed&nbsp;value&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Let's&nbsp;use&nbsp;any&nbsp;block,&nbsp;even&nbsp;a&nbsp;deeply&nbsp;nested&nbsp;one</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetCurrentBlock">setCurrentBlock</a><span class="src-sym">(&nbsp;</span><span class="src-id">string&nbsp;blockname&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;repeat&nbsp;this&nbsp;as&nbsp;often&nbsp;as&nbsp;you&nbsp;need&nbsp;it.</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">setVariable</a><span class="src-sym">(&nbsp;</span><span class="src-key">array&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-id">string&nbsp;varname&nbsp;</span>=&gt;&nbsp;<span class="src-id">mixed&nbsp;value&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">parseCurrentBlock</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;get&nbsp;the&nbsp;parsed&nbsp;template&nbsp;or&nbsp;print&nbsp;it:&nbsp;$tpl-&gt;show()</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tpl</span><span class="src-sym">-&gt;</span><a href="../HTML_Template_IT/HTML_Template_IT.html#methodget">get</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Ulf Wendel &lt;<a href="mailto:uw@netuse.de">uw@netuse.de</a>&gt;</li>
+	<li><b>version</b> - $Id: IT.php,v 1.20 2006/08/17 15:47:22 dsp Exp $</li>
+	<li><b>access</b> - public</li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$blockdata"></a>
+	<p></p>
+	<h4>$blockdata = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 236]</p>
+		<p align="center"><strong>Array with the parsed content of a block.
+</strong></p>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$blockinner"></a>
+	<p></p>
+	<h4>$blockinner = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 248]</p>
+		<p align="center"><strong>Array of inner blocks of a block.
+</strong></p>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$blocklist"></a>
+	<p></p>
+	<h4>$blocklist = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 229]</p>
+		<p align="center"><strong>Array of all blocks and their content.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodfindBlocks">HTML_Template_IT::findBlocks()</a></li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$blocknameRegExp"></a>
+	<p></p>
+	<h4>$blocknameRegExp = <span class="value">&nbsp;'[\.0-9A-Za-z_-]+'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 164]</p>
+		<p align="center"><strong>RegExp matching a block in the template.
+</strong></p>
+<p>Per default &quot;sm&quot; is used as the regexp modifier, &quot;i&quot; is missing.  That means a case sensitive search is done.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$variablenameRegExp">HTML_Template_IT::$variablenameRegExp</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$openingDelimiter">HTML_Template_IT::$openingDelimiter</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$closingDelimiter">HTML_Template_IT::$closingDelimiter</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$blockRegExp"></a>
+	<p></p>
+	<h4>$blockRegExp = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 209]</p>
+		<p align="center"><strong>RegExp used to find blocks an their content, filled by the constructor.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - IntegratedTemplate()</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$blockvariables"></a>
+	<p></p>
+	<h4>$blockvariables = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 242]</p>
+		<p align="center"><strong>Array of variables in a block.
+</strong></p>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$clearCache"></a>
+	<p></p>
+	<h4>$clearCache = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 138]</p>
+		<p align="center"><strong>Clear cache on get()?
+</strong></p>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$clearCacheOnParse"></a>
+	<p></p>
+	<h4>$clearCacheOnParse = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 305]</p>
+		<p align="center"><strong>Clear the variable cache on parse?
+</strong></p>
+<p>If you're not an expert just leave the default false.  True reduces memory consumption somewhat if you tend to  add lots of values for unknown placeholder.</p>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$closingDelimiter"></a>
+	<p></p>
+	<h4>$closingDelimiter = <span class="value">&nbsp;'}'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 154]</p>
+		<p align="center"><strong>Last character of a variable placeholder ( {VARIABLE_}_ ).
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$openingDelimiter">HTML_Template_IT::$openingDelimiter</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocknameRegExp">HTML_Template_IT::$blocknameRegExp</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$variablenameRegExp">HTML_Template_IT::$variablenameRegExp</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$currentBlock"></a>
+	<p></p>
+	<h4>$currentBlock = <span class="value">&nbsp;'__global__'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 215]</p>
+		<p align="center"><strong>Name of the current block.
+</strong></p>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$err"></a>
+	<p></p>
+	<h4>$err = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 132]</p>
+		<p align="center"><strong>Contains the error objects
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - halt(), $printError, $haltOnError</li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$fileRoot"></a>
+	<p></p>
+	<h4>$fileRoot = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 313]</p>
+		<p align="center"><strong>Root directory for all file operations.
+</strong></p>
+<p>The string gets prefixed to all filenames given.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodHTML_Template_IT">HTML_Template_IT::HTML_Template_IT()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetRoot">HTML_Template_IT::setRoot()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$flagBlocktrouble"></a>
+	<p></p>
+	<h4>$flagBlocktrouble = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 319]</p>
+		<p align="center"><strong>Internal flag indicating that a blockname was used multiple times.
+</strong></p>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$flagCacheTemplatefile"></a>
+	<p></p>
+	<h4>$flagCacheTemplatefile = <span class="value">&nbsp;true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 339]</p>
+		<p align="center"><strong>EXPERIMENTAL! FIXME!  Flag indication that a template gets cached.
+</strong></p>
+<p>Complex templates require some times to be preparsed  before the replacement can take place. Often I use  one template file over and over again but I don't know  before that I will use the same template file again.  Now IT could notice this and skip the preparse.</p>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$flagGlobalParsed"></a>
+	<p></p>
+	<h4>$flagGlobalParsed = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 325]</p>
+		<p align="center"><strong>Flag indicating that the global block was parsed.
+</strong></p>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$lastTemplatefile"></a>
+	<p></p>
+	<h4>$lastTemplatefile = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 344]</p>
+		<p align="center"><strong>EXPERIMENTAL! FIXME!
+</strong></p>
+		<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$openingDelimiter"></a>
+	<p></p>
+	<h4>$openingDelimiter = <span class="value">&nbsp;'{'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 146]</p>
+		<p align="center"><strong>First character of a variable placeholder ( _{_VARIABLE} ).
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$closingDelimiter">HTML_Template_IT::$closingDelimiter</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocknameRegExp">HTML_Template_IT::$blocknameRegExp</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$variablenameRegExp">HTML_Template_IT::$variablenameRegExp</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$removeEmptyBlocks"></a>
+	<p></p>
+	<h4>$removeEmptyBlocks = <span class="value">&nbsp;true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 202]</p>
+		<p align="center"><strong>Controls the handling of empty blocks, default is remove.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$removeUnknownVariables"></a>
+	<p></p>
+	<h4>$removeUnknownVariables = <span class="value">&nbsp;true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 195]</p>
+		<p align="center"><strong>Controls the handling of unknown variables, default is remove.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$removeVariablesRegExp"></a>
+	<p></p>
+	<h4>$removeVariablesRegExp = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 188]</p>
+		<p align="center"><strong>RegExp used to strip unused variable placeholder.
+</strong></p>
+		<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$template"></a>
+	<p></p>
+	<h4>$template = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 221]</p>
+		<p align="center"><strong>Content of the template.
+</strong></p>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$touchedBlocks"></a>
+	<p></p>
+	<h4>$touchedBlocks = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 275]</p>
+		<p align="center"><strong>List of blocks to preverse even if they are &quot;empty&quot;.
+</strong></p>
+<p>This is something special. Sometimes you have blocks that  should be preserved although they are empty (no placeholder replaced).  Think of a shopping basket. If it's empty you have to drop a message to  the user. If it's filled you have to show the contents of  the shopping baseket. Now where do you place the message that the basket  is empty? It's no good idea to place it in you applications as customers  tend to like unecessary minor text changes. Having another template file  for an empty basket means that it's very likely that one fine day  the filled and empty basket templates have different layout. I decided  to introduce blocks that to not contain any placeholder but only  text such as the message &quot;Your shopping basked is empty&quot;.</p><p>Now if there is no replacement done in such a block the block will  be recognized as &quot;empty&quot; and by default ($removeEmptyBlocks = true) be  stripped off. To avoid thisyou can now call touchBlock() to avoid this.</p><p>The array $touchedBlocks stores a list of touched block which must not  be removed even if they are empty.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodtouchBlock">HTML_Template_IT::touchBlock()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">HTML_Template_IT::$removeEmptyBlocks</a></li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$variableCache"></a>
+	<p></p>
+	<h4>$variableCache = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 294]</p>
+		<p align="center"><strong>Variable cache.
+</strong></p>
+<p>Variables get cached before any replacement is done.  Advantage: empty blocks can be removed automatically.  Disadvantage: might take some more memory</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetVariable">HTML_Template_IT::setVariable()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$clearCacheOnParse">HTML_Template_IT::$clearCacheOnParse</a></li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$variablenameRegExp"></a>
+	<p></p>
+	<h4>$variablenameRegExp = <span class="value">&nbsp;'[\.0-9A-Za-z_-]+'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 174]</p>
+		<p align="center"><strong>RegExp matching a variable placeholder in the template.
+</strong></p>
+<p>Per default &quot;sm&quot; is used as the regexp modifier, &quot;i&quot; is missing.  That means a case sensitive search is done.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocknameRegExp">HTML_Template_IT::$blocknameRegExp</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$openingDelimiter">HTML_Template_IT::$openingDelimiter</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$closingDelimiter">HTML_Template_IT::$closingDelimiter</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$variablesRegExp"></a>
+	<p></p>
+	<h4>$variablesRegExp = <span class="value">&nbsp;''</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 182]</p>
+		<p align="center"><strong>RegExp used to find variable placeholder, filled by the constructor.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - Looks somewhat like @(delimiter varname delimiter)@</li>
+	<li><b>see</b> - IntegratedTemplate()</li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_hiddenBlocks"></a>
+	<p></p>
+	<h4>$_hiddenBlocks = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 282]</p>
+		<p align="center"><strong>List of blocks which should not be shown even if not &quot;empty&quot;
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - hideBlock(), <a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">HTML_Template_IT::$removeEmptyBlocks</a></li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_options"></a>
+	<p></p>
+	<h4>$_options = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'preserve_data'&nbsp;=&gt;&nbsp;false,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'use_preg'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;true<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 354]</p>
+		<p align="center"><strong>$_options['preserve_data'] Whether to substitute variables and remove  empty placeholders in data passed through setVariable  (see also bugs #20199, #21951).
+</strong></p>
+<p>$_options['use_preg'] Whether to use preg_replace instead of  str_replace in parse()  (this is a backwards compatibility feature, see also bugs #21951, #20392)</p>		<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="methodHTML_Template_IT"></a>
+	<p></p>
+	<h3>HTML_Template_IT</h3>
+	<div class="indent">
+		<p>
+		<code>HTML_Template_IT HTML_Template_IT(
+[string
+$root = ''], [
+$options = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 370]</p>
+		<p align="center"><strong>Builds some complex regular expressions and optinally sets the  file root directory.
+</strong></p>
+<p>Make sure that you call this constructor if you derive your template  class from this one.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetRoot">HTML_Template_IT::setRoot()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$root</b> 
+		- 
+		File root directory, prefix for all filenames                      given to the object.</li>
+			<li>
+		<span class="type"></span>
+		<b>$options</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodbuildBlockvariablelist"></a>
+	<p></p>
+	<h3>buildBlockvariablelist</h3>
+	<div class="indent">
+		<p>
+		<code>void buildBlockvariablelist(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 813]</p>
+		<p align="center"><strong>Build a list of all variables within of a block
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methoderrorMessage"></a>
+	<p></p>
+	<h3>errorMessage</h3>
+	<div class="indent">
+		<p>
+		<code>string errorMessage(
+integer
+$value, [
+$blockname = ''])</code>
+		</p>
+	
+		<p class="linenumber">[line 975]</p>
+		<p align="center"><strong>Return a textual error message for a IT error code
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - error message, or false if the error code was  not recognized</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">integer</span>
+		<b>$value</b> 
+		- 
+		error code</li>
+			<li>
+		<span class="type"></span>
+		<b>$blockname</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfindBlocks"></a>
+	<p></p>
+	<h3>findBlocks</h3>
+	<div class="indent">
+		<p>
+		<code>void findBlocks(
+string
+$string)</code>
+		</p>
+	
+		<p class="linenumber">[line 854]</p>
+		<p align="center"><strong>Recusively builds a list of all blocks within the template.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$blocklist">HTML_Template_IT::$blocklist</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$string</b> 
+		- 
+		string that gets scanned</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfree"></a>
+	<p></p>
+	<h3>free</h3>
+	<div class="indent">
+		<p>
+		<code>void free(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 710]</p>
+		<p align="center"><strong>Clears all datafields of the object.
+</strong></p>
+<p>Don't use this function unless you know what you're doing.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodinit">HTML_Template_IT::init()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget"></a>
+	<p></p>
+	<h3>get</h3>
+	<div class="indent">
+		<p>
+		<code>string get(
+[string
+$block = '__global__'])</code>
+		</p>
+	
+		<p class="linenumber">[line 454]</p>
+		<p align="center"><strong>Returns a block with all replacements done.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodshow">HTML_Template_IT::show()</a></li>
+	<li><b>throws</b> - PEAR_Error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$block</b> 
+		- 
+		name of the block</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetFile"></a>
+	<p></p>
+	<h3>getFile</h3>
+	<div class="indent">
+		<p>
+		<code>string getFile(
+string
+$filename)</code>
+		</p>
+	
+		<p class="linenumber">[line 906]</p>
+		<p align="center"><strong>Reads a file from disk and returns its content.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Filecontent</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$filename</b> 
+		- 
+		Filename</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetGlobalvariables"></a>
+	<p></p>
+	<h3>getGlobalvariables</h3>
+	<div class="indent">
+		<p>
+		<code>void getGlobalvariables(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 831]</p>
+		<p align="center"><strong>Returns a list of all global variables
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodinit"></a>
+	<p></p>
+	<h3>init</h3>
+	<div class="indent">
+		<p>
+		<code>void init(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 693]</p>
+		<p align="center"><strong>Clears all datafields of the object and rebuild the internal blocklist
+</strong></p>
+<p>LoadTemplatefile() and setTemplate() automatically call this function  when a new template is given. Don't use this function  unless you know what you're doing.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodfree">HTML_Template_IT::free()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../HTML_Template_IT/HTML_Template_ITX.html#methodinit">HTML_Template_ITX::init()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodloadTemplatefile"></a>
+	<p></p>
+	<h3>loadTemplatefile</h3>
+	<div class="indent">
+		<p>
+		<code>boolean loadTemplatefile(
+string
+$filename, [bool
+$removeUnknownVariables = true], [bool
+$removeEmptyBlocks = true])</code>
+		</p>
+	
+		<p class="linenumber">[line 772]</p>
+		<p align="center"><strong>Reads a template file from the disk.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - false on failure, otherwise true</li>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$template">HTML_Template_IT::$template</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetTemplate">HTML_Template_IT::setTemplate()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeUnknownVariables">HTML_Template_IT::$removeUnknownVariables</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">HTML_Template_IT::$removeEmptyBlocks</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$filename</b> 
+		- 
+		name of the template file</li>
+			<li>
+		<span class="type">bool</span>
+		<b>$removeUnknownVariables</b> 
+		- 
+		how to handle unknown variables.</li>
+			<li>
+		<span class="type">bool</span>
+		<b>$removeEmptyBlocks</b> 
+		- 
+		how to handle empty blocks.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparse"></a>
+	<p></p>
+	<h3>parse</h3>
+	<div class="indent">
+		<p>
+		<code>void parse(
+[string
+$block = '__global__'], [
+$flag_recursion = false])</code>
+		</p>
+	
+		<p class="linenumber">[line 496]</p>
+		<p align="center"><strong>Parses the given block.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodparseCurrentBlock">HTML_Template_IT::parseCurrentBlock()</a></li>
+	<li><b>throws</b> - PEAR_Error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$block</b> 
+		- 
+		name of the block to be parsed</li>
+			<li>
+		<span class="type"></span>
+		<b>$flag_recursion</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparseCurrentBlock"></a>
+	<p></p>
+	<h3>parseCurrentBlock</h3>
+	<div class="indent">
+		<p>
+		<code>void parseCurrentBlock(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 607]</p>
+		<p align="center"><strong>Parses the current block
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodparse">HTML_Template_IT::parse()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#methodsetCurrentBlock">HTML_Template_IT::setCurrentBlock()</a>, <a href="../HTML_Template_IT/HTML_Template_IT.html#var$currentBlock">HTML_Template_IT::$currentBlock</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetCurrentBlock"></a>
+	<p></p>
+	<h3>setCurrentBlock</h3>
+	<div class="indent">
+		<p>
+		<code>boolean setCurrentBlock(
+[string
+$block = '__global__'])</code>
+		</p>
+	
+		<p class="linenumber">[line 646]</p>
+		<p align="center"><strong>Sets the name of the current block that is the block where variables  are added.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - false on failure, otherwise true</li>
+	<li><b>throws</b> - PEAR_Error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$block</b> 
+		- 
+		name of the block</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOption"></a>
+	<p></p>
+	<h3>setOption</h3>
+	<div class="indent">
+		<p>
+		<code>mixed setOption(
+string
+$option, mixed
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 397]</p>
+		<p align="center"><strong>Sets the option for the template class
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - IT_OK on success, error object on failure</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$option</b> 
+		- 
+		option name</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$value</b> 
+		- 
+		option value</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOptions"></a>
+	<p></p>
+	<h3>setOptions</h3>
+	<div class="indent">
+		<p>
+		<code>mixed setOptions(
+string
+$options, mixed
+1)</code>
+		</p>
+	
+		<p class="linenumber">[line 422]</p>
+		<p align="center"><strong>Sets the options for the template class
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - IT_OK on success, error object on failure</li>
+	<li><b>see</b> - $options</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>1</b> 
+		- 
+		option value</li>
+			<li>
+		<span class="type">string</span>
+		<b>$options</b> 
+		- 
+		options array of options                  default value:                    'preserve_data' =&gt; false,                    'use_preg'      =&gt; true</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetRoot"></a>
+	<p></p>
+	<h3>setRoot</h3>
+	<div class="indent">
+		<p>
+		<code>void setRoot(
+string
+$root)</code>
+		</p>
+	
+		<p class="linenumber">[line 801]</p>
+		<p align="center"><strong>Sets the file root. The file root gets prefixed to all filenames passed  to the object.
+</strong></p>
+<p>Make sure that you override this function when using the class  on windows.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#methodHTML_Template_IT">HTML_Template_IT::HTML_Template_IT()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$root</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetTemplate"></a>
+	<p></p>
+	<h3>setTemplate</h3>
+	<div class="indent">
+		<p>
+		<code>boolean setTemplate(
+string
+$template, [boolean
+$removeUnknownVariables = true], [boolean
+$removeEmptyBlocks = true])</code>
+		</p>
+	
+		<p class="linenumber">[line 737]</p>
+		<p align="center"><strong>Sets the template.
+</strong></p>
+<p>You can eighter load a template file from disk with  LoadTemplatefile() or set the template manually using this function.</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - LoadTemplatefile(), <a href="../HTML_Template_IT/HTML_Template_IT.html#var$template">HTML_Template_IT::$template</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$template</b> 
+		- 
+		template content</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$removeUnknownVariables</b> 
+		- 
+		remove unknown/unused variables?</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$removeEmptyBlocks</b> 
+		- 
+		remove empty blocks?</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetVariable"></a>
+	<p></p>
+	<h3>setVariable</h3>
+	<div class="indent">
+		<p>
+		<code>void setVariable(
+mixed
+$variable, [string
+$value = ''], string
+2)</code>
+		</p>
+	
+		<p class="linenumber">[line 626]</p>
+		<p align="center"><strong>Sets a variable value.
+</strong></p>
+<p>The function can be used eighter like setVariable( &quot;varname&quot;, &quot;value&quot;)  or with one array $variables[&quot;varname&quot;] = &quot;value&quot;  given setVariable($variables) quite like phplib templates set_var().</p><h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>2</b> 
+		- 
+		prefix for variable names</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$variable</b> 
+		- 
+		string with the variable name or an array                      %variables[&quot;varname&quot;] = &quot;value&quot;</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		value of the variable or empty if $variable                      is an array.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodshow"></a>
+	<p></p>
+	<h3>show</h3>
+	<div class="indent">
+		<p>
+		<code>void show(
+[
+$block = '__global__'])</code>
+		</p>
+	
+		<p class="linenumber">[line 440]</p>
+		<p align="center"><strong>Print a certain block with all replacements done.
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$block</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodtouchBlock"></a>
+	<p></p>
+	<h3>touchBlock</h3>
+	<div class="indent">
+		<p>
+		<code>boolean touchBlock(
+string
+$block)</code>
+		</p>
+	
+		<p class="linenumber">[line 670]</p>
+		<p align="center"><strong>Preserves an empty block even if removeEmptyBlocks is true.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - false on false, otherwise true</li>
+	<li><b>see</b> - <a href="../HTML_Template_IT/HTML_Template_IT.html#var$removeEmptyBlocks">HTML_Template_IT::$removeEmptyBlocks</a></li>
+	<li><b>throws</b> - PEAR_Error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$block</b> 
+		- 
+		name of the block</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_addPregDelimiters"></a>
+	<p></p>
+	<h3>_addPregDelimiters</h3>
+	<div class="indent">
+		<p>
+		<code>string _addPregDelimiters(
+string
+$str)</code>
+		</p>
+	
+		<p class="linenumber">[line 944]</p>
+		<p align="center"><strong>Adds delimiters to a string, so it can be used as a pattern  in preg_* functions
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$str</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_preserveOpeningDelimiter"></a>
+	<p></p>
+	<h3>_preserveOpeningDelimiter</h3>
+	<div class="indent">
+		<p>
+		<code>string _preserveOpeningDelimiter(
+string
+$str)</code>
+		</p>
+	
+		<p class="linenumber">[line 955]</p>
+		<p align="center"><strong>Replaces an opening delimiter by a special string
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$str</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:02 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

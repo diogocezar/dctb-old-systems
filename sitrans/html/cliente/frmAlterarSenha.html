@@ -1,0 +1,25 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssCliente.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formAlterarSenha}" action="{actionAlterarSenha}" method="post">
+	<div id="linhaQuebra">
+		<div id="formTituloOBG">Senha atual</div>
+		<input id="frm_obg_{campoSenhaAtual}" name="{campoSenhaAtual}" type="password" value="{valorSenhaAtual}" class="form" />
+	</div>
+	<div id="linhaQuebra">
+		<div id="formTituloOBG">Nova Senha</div>
+		<input id="frm_obg_{campoNovaSenha}" name="{campoNovaSenha}" type="password" value="{valorNovaSenha}" class="form" />
+	</div>
+	<div id="linhaQuebra">
+		<div id="formTituloOBG">Confime a nova senha</div>
+		<input id="frm_obg_{campoConfirmaSenha}" name="{campoConfirmaSenha}" type="password" value="{valorConfirmaSenha}" class="form" />
+	</div>
+    </center>
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao" onclick="{onClick}"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

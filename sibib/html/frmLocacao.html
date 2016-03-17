@@ -1,0 +1,79 @@
+<!-- BEGIN bloco_formulario -->
+<script type="text/javascript" charset="iso-8859-1">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_data_locacao, #frm_obg_data_devolucao").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSibib.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formLocacao}" action="{actionLocacao}" method="post" class="checkForm">
+		<div id="linha">
+			<div id="formTituloOBG">Usuário</div>
+			<select id="frm_obg_{campoUsuaio}" name="{campoUsuaio}" class="formDrop">
+				{campoOpcoesUsuario}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Acervos</div>
+			<select id="frm_opt_{campoAcervos}" name="{campoAcervos}" class="formDropAcervo">
+				{campoOpcoesAcervo}
+			</select>
+            <img src="../images/add.png" id="add_acervo" class="imagAdd" />
+		</div>
+   		<div id="linha">
+			<div id="formTituloOBG">Data Locação</div>
+			<input id="frm_obg_{campoDataLocacao}" name="{campoDataLocacao}" type="text" onkeypress="formatDate(this, event)" class="date-pick" value="{valorDataLocacao}" maxlength="18" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Data Devolução</div>
+			<input id="frm_obg_{campoDataDevolucao}" name="{campoDataDevolucao}" type="text" onkeypress="formatDate(this, event)" class="date-pick" value="{valorDataDevolucao}" maxlength="18" />
+		</div>
+		<div id="linhaQuebraLista">
+			<div id="formTituloOBG">Lista de Acervos</div>
+           	<select id="frm_lst_{campoListaAcervos}" name="{campoListaAcervos}[]" multiple="multiple" size="5" class="formLista">
+              {campoOpcoesListaAcervo}
+            </select>
+            <img src="../images/delete.png" id="del_acervo" class="imagAdd" />
+       	</div>	
+   	    <div id="linha">
+			<div id="formTituloOBG">Status</div>
+			<select id="frm_obg_{campoStatus}" name="{campoStatus}" class="formDrop">
+				<option {selAberto}>EM ABERTO</option>
+				<option {selFechado}>FECHADO</option>
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_devolvido -->
+		<div id="linha">
+			<div id="formTitulo">Data em que foi devolvido</div>
+			<input id="frm_opt_{campoDataDevolvido}" name="{campoDataDevolvido}" type="text" value="{valorDataDevolvido}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_devolvido -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	    <div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

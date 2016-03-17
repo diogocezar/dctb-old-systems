@@ -1,0 +1,15 @@
+Os status devem ser definidos de acordo com a respectiva ligação ID e Descrição.
+
+1 -> CADASTRADO
+
+2 -> BAIXADO
+
+3 -> CANCELADO
+
+4 -> REAGENDADO
+
+5 -> REMANEJADO
+
+6 -> PENDENTE
+
+7 -> EM ANDAMENTO

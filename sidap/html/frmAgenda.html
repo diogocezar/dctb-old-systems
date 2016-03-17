@@ -1,0 +1,66 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSidap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_datasolicitacao, #frm_opt_dataagendada").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formAgenda}" action="{actionAgenda}" method="post" class="checkForm">
+		<div id="linha">
+			<div id="formTituloOBG">Tipo</div>
+			<select id="frm_obg_{campoTipo}" name="{campoTipo}" class="formDrop">
+				{campoOpcoesTipo}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Cliente</div>
+			<select id="frm_opt_{campoCliente}" name="{campoCliente}" class="formDrop">
+				{campoOpcoesCliente}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Data Solicitação</div>
+			<input id="frm_obg_{campoDatasolicitacao}" name="{campoDatasolicitacao}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" value="{valorDatasolicitacao}" maxlength="10" />
+		</div>		
+		<div id="linha">
+			<div id="formTitulo">Data Agendada</div>
+			<input id="frm_opt_{campoDataagendada}" name="{campoDataagendada}" type="text" onkeypress="formatDate(this, event)" class="date-pick" value="{valorDataagenda}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Hora Agendada</div>
+			<input id="frm_opt_{campoHoraagendada}" name="{campoHoraagendada}" type="text" class="form" onkeypress="formatHora(this,event)" value="{valorHoraagenda}" maxlength="5" />
+		</div>
+  	    <div id="linhaQuebraTxtArea">
+			<div id="formTitulo">Descrição</div>
+		  <textarea name="{campoDescricao}" rows="3" class="formTxtArea" id="frm_opt_{campoDescricao}">{valorDescricao}</textarea>
+		</div>
+		<div id="linha">
+			<div id="formTitulo">Situação</div>
+			<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+		</div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+	    <div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

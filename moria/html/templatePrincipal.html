@@ -1,0 +1,261 @@
+<html>
+<head>
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/library.js"></script>
+</head>
+<!-- BEGIN bloco_principal -->
+<body bgcolor="#fcf9ea" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="tempoDecorrido();{onLoad}">
+<table width="761" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="279" height="116" id="back_logo">&nbsp;</td>
+    <td width="466" align="left" valign="bottom" background="../images/bgBanner.gif">
+	<!-- BEGIN bloco_menu -->
+	<table width="100%" height="76" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="466" height="17" align="center" valign="top" class="tahoma11">{menu}</td>
+      </tr>
+      <tr>
+        <td height="26">&nbsp;</td>
+        </tr>
+      <tr>
+        <td height="25" align="left" valign="middle" class="tahoma10"><div id="hora">&nbsp;  &nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle"> Corn&eacute;lio Proc&oacute;pio, {data} -</div></td>
+      </tr>
+    </table>
+	<!-- END bloco_menu -->
+	</td>
+    <td width="16" background="../images/bgBanner.gif" id="back_lateral">&nbsp;</td>
+  </tr>
+</table>
+<table width="761" height="310" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="261" align="left" valign="top">
+	<!-- BEGIN bloco_busca -->
+	<form name="{formBusca}" method="get" action="{actionBusca}">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="back_busca">
+      <tr>
+        <td width="28">&nbsp;</td>
+        <td width="196"><p>&nbsp;</p>
+          <p>&nbsp;</p></td>
+        <td width="37">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="70" height="19" align="right" valign="middle" class="tahoma10">Nome :&nbsp; </td>
+            <td width="124" valign="top">
+              <input name="{campoNome}" type="text" class="tahoma10" id="{campoNome}" size="19" style="width:115px;">          </td>
+            <td width="2"></td>
+          </tr>
+          <tr>
+            <td height="3"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td height="19" align="right" valign="middle"><span class="tahoma10">Categoria :&nbsp; </span></td>
+            <td valign="top"><select name="{comboCategoria}" class="tahoma10" id="{comboCategoria}" style="width:115px;">
+				{comboCategoriaOpcoes}
+            </select></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td height="4"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td height="20" valign="middle" class="tahoma10">Fabricante :&nbsp;</td>
+            <td valign="top"><select name="{comboFabricante}" class="tahoma10" id="{comboFabricante}" style="width:115px;">
+				{comboFabricanteOpcoes}
+            </select></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td height="2"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td height="26" colspan="3" align="center" valign="middle" class="tahoma10"><a href="{linkBusca}"><img src="../images/botBuscar.jpg" alt="{altBusca}" width="85" height="25" border="0" onClick="{onClickBusca}"></a></td>
+            </tr>
+        </table>        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="19">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+	<!-- END bloco_busca -->
+	</form>
+	<!-- BEGIN bloco_categorias -->
+	<table width="261" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="../images/topCategoria.gif" width="261" height="36" /></td>
+        </tr>
+        <tr>
+          <td width="261" align="center" valign="top" background="../images/bgCategoria.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="11%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td width="195" align="left">
+					<!-- BEGIN bloco_categorias_itens -->
+					<span class="tahoma10"><img src="../images/ponto.gif" width="3" height="3" align="absmiddle"/> {categoria}<br></span>
+					<!-- END bloco_categorias_itens -->
+				</td>
+                <td width="14%">&nbsp;</td>
+              </tr>
+            </table>            </td>
+        </tr>
+        <tr>
+          <td><img src="../images/downCategoria.gif" width="261" height="15" /></td>
+        </tr>
+      </table>
+	  <!-- END bloco_categorias -->
+	  <!-- BEGIN bloco_fabricantes -->
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><table width="261" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="../images/topCategoria.gif" width="261" height="36" /></td>
+            </tr>
+            <tr>
+              <td width="261" align="center" valign="top" background="../images/bgCategoria.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="11%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td width="195" align="left">
+					    <!-- BEGIN bloco_fabricantes_itens -->
+                        <span class="tahoma10"><img src="../images/ponto.gif" width="3" height="3" align="absmiddle"/> {fabricantes}<br></span>
+                        <!-- END bloco_fabricantes_itens -->
+                    </td>
+                    <td width="14%">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td><img src="../images/downCategoria.gif" width="261" height="15" /></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+	  <!-- END bloco_fabricantes -->
+	<!-- BEGIN bloco_banners -->
+      <table width="261" height="136" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="261" height="136" align="center" valign="middle" class="tahoma10">{banners}</td>
+        </tr>
+      </table>
+	<!-- END bloco_banners -->
+    </td>
+    <td width="533" align="center" valign="top">
+	<table width="100%" height="18" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="50%" height="18" align="center" valign="middle"class="tahoma10">&nbsp;</td>
+        <td width="50%" align="center" valign="middle" class="tahoma10">&nbsp;</td>
+      </tr>
+    </table>
+	<!-- BEGIN bloco_tops -->
+	<table width="100%" height="53" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="50%" height="53" align="center" valign="middle"class="tahoma10">{top1}</td>
+        <td width="50%" align="center" valign="middle" class="tahoma10">{top2}</td>
+      </tr>
+    </table>
+	<!-- END bloco_tops -->
+      <table width="100%" height="177" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="250" align="left" valign="top"><table width="248" border="0" cellspacing="0" cellpadding="0">
+		  <!-- BEGIN bloco_produtos_1 -->
+            <tr>
+              <td width="248" height="145" valign="top" background="../images/bgProduto.gif">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="43%" height="145" align="center" valign="middle" class="tahoma10">{img1}</td>
+                  <td width="57%" align="center" valign="top"><table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="33" align="left" valign="middle" class="tahoma10" style="padding-left:5px;">{titulo1}</td>
+                    </tr>
+                  </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" align="left"><span class="tahoma10" style="padding-left:5px;">{subTitulo1}</span></td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <!--DWLayoutTable-->
+                      <tr>
+                        <td width="135" height="12" align="left" valign="top" class="tahoma10"><div align="justify" style="padding-right:5px;">{descricao1}</div></td>
+                      <td width="7"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="29" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="127" height="29" valign="top"><a href="{linkInfo1}"><img src="../images/botInformacoes.gif" alt="{altInfo1}" width="127" height="29" border="0" /></a></td>
+              <td width="121" align="right" valign="middle" background="../images/bgValor.gif"><span class="tahoma12"><strong>R$ {valor1} </strong>&nbsp;</span>&nbsp;&nbsp;  </td>
+            </tr>
+              </table>              
+			  </td>
+              </tr>
+			  <!-- END bloco_produtos_1 -->
+          </table>
+		  </td>
+          <td align="right" valign="top">
+		  <table width="248" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+			<!-- BEGIN bloco_produtos_2 -->
+              <td width="248" height="145" valign="top" background="../images/bgProduto.gif">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="43%" height="145" align="center" valign="middle" class="tahoma10">{img2}</td>
+                    <td width="57%" align="center" valign="top"><table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td height="33" align="left" valign="middle" class="tahoma10" style="padding-left:5px;">{titulo2}</td>
+                        </tr>
+                      </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td height="20" align="left"><span class="tahoma10" style="padding-left:5px;">{subTitulo2}</span></td>
+                          </tr>
+                        </table>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <!--DWLayoutTable-->
+                          <tr>
+                            <td width="135" height="12" align="left" valign="top" class="tahoma10"><div align="justify" style="padding-right:5px;">{descricao2}</div></td>
+                          <td width="7"></td>
+                          </tr>
+                      </table></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="29" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="127" height="29" valign="top"><a href="{linkInfo2}"><img src="../images/botInformacoes.gif" alt="{altInfo2}" width="127" height="29" border="0" /></a></td>
+                    <td width="121" align="right" valign="middle" background="../images/bgValor.gif"><span class="tahoma12"><strong>R$ {valor2} </strong></span>&nbsp; </td>
+                  </tr>
+              </table>
+			  </td>
+              </tr>
+			  <!-- END bloco_produtos_2 -->
+          </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="761" height="50" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="{linkCreditos}"><img src="../images/copyrigth.gif" alt="{altCreditos}" width="761" height="50" border="0" /></a></td>
+  </tr>
+</table>
+</body>
+<!-- END bloco_principal -->
+</html>

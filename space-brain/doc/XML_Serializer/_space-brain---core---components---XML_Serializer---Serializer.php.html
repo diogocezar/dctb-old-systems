@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs for page Serializer.php</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                                            
+                                                	        [ <a href="../classtrees_XML_Serializer.html">Class Tree: XML_Serializer</a> ]
+            [ <a href="../elementindex_XML_Serializer.html">Index: XML_Serializer</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Serializer</div>
+		<div id="packageTitle">XML_Serializer</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html">		Serializer.php
+		</a><br>
+			<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Unserializer.php.html">		Unserializer.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Serializer/XML_Serializer.html">		XML_Serializer
+		</a><br>
+			<a href="../XML_Serializer/XML_Unserializer.html">		XML_Unserializer
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Procedural File: Serializer.php</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Serializer/Serializer.php</p>
+	
+<br>
+<br>
+
+<div class="contents">
+<h2>Classes:</h2>
+<dl>
+<dt><a href="../XML_Serializer/XML_Serializer.html">XML_Serializer</a></dt>
+	<dd>Creates XML documents from PHP data structures like arrays, objects or scalars.</dd>
+</dl>
+</div>
+
+<h2>Page Details:</h2>
+<p align="center"><strong>XML_Serializer
+</strong></p>
+<p>Creates XML documents from PHP data structures like arrays, objects or scalars.</p><p>PHP versions 4 and 5</p><p>LICENSE:</p><p>Copyright (c) 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;  All rights reserved.</p><p>Redistribution and use in source and binary forms, with or without  modification, are permitted provided that the following conditions  are met:</p><p>* Redistributions of source code must retain the above copyright       notice, this list of conditions and the following disclaimer.     * Redistributions in binary form must reproduce the above copyright       notice, this list of conditions and the following disclaimer in the       documentation and/or other materials provided with the distribution.     * The name of the author may not be used to endorse or promote products       derived from this software without specific prior written permission.</p><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS  IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>version</b> - CVS: $Id: Serializer.php,v 1.61 2009/06/12 02:11:44 ashnazg Exp $</li>
+	<li><b>copyright</b> - 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+	<li><b>see</b> - <a href="../XML_Serializer/XML_Unserializer.html">XML_Unserializer</a></li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Serializer">http://pear.php.net/package/XML_Serializer</a></li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+<hr>
+<hr>
+<div id="global">
+</div><hr>
+<div id="define">
+	<a name="defineXML_SERIALIZER_ENTITIES_HTML"></a>
+	<h3>XML_SERIALIZER_ENTITIES_HTML</h3>
+	<div class="indent">
+	<p class="linenumber">[line 359]</p>
+	<p><code>XML_SERIALIZER_ENTITIES_HTML = XML_UTIL_ENTITIES_HTML</code></p>
+	<p align="center"><strong>replace HTML entitites
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>link</b> - <a href="http://www.php.net/htmlentities">http://www.php.net/htmlentities</a></li>
+</ul>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_ENTITIES_NONE"></a>
+	<h3>XML_SERIALIZER_ENTITIES_NONE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 341]</p>
+	<p><code>XML_SERIALIZER_ENTITIES_NONE = XML_UTIL_ENTITIES_NONE</code></p>
+	<p align="center"><strong>do not replace entitites
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_ENTITIES_XML"></a>
+	<h3>XML_SERIALIZER_ENTITIES_XML</h3>
+	<div class="indent">
+	<p class="linenumber">[line 347]</p>
+	<p><code>XML_SERIALIZER_ENTITIES_XML = XML_UTIL_ENTITIES_XML</code></p>
+	<p align="center"><strong>replace all XML entitites
+</strong></p>
+<p>This setting will replace &lt;, &gt;, &quot;, ' and &amp;</p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_ENTITIES_XML_REQUIRED"></a>
+	<h3>XML_SERIALIZER_ENTITIES_XML_REQUIRED</h3>
+	<div class="indent">
+	<p class="linenumber">[line 353]</p>
+	<p><code>XML_SERIALIZER_ENTITIES_XML_REQUIRED = XML_UTIL_ENTITIES_XML_REQUIRED</code></p>
+	<p align="center"><strong>replace only required XML entitites
+</strong></p>
+<p>This setting will replace &lt;, &quot; and &amp;</p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_ERROR_NO_SERIALIZATION"></a>
+	<h3>XML_SERIALIZER_ERROR_NO_SERIALIZATION</h3>
+	<div class="indent">
+	<p class="linenumber">[line 336]</p>
+	<p><code>XML_SERIALIZER_ERROR_NO_SERIALIZATION = 51</code></p>
+	<p align="center"><strong>error code for no serialization done
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_MODE_DEFAULT"></a>
+	<h3>XML_SERIALIZER_MODE_DEFAULT</h3>
+	<div class="indent">
+	<p class="linenumber">[line 324]</p>
+	<p><code>XML_SERIALIZER_MODE_DEFAULT = 'default'</code></p>
+	<p align="center"><strong>default mode
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_MODE_SIMPLEXML"></a>
+	<h3>XML_SERIALIZER_MODE_SIMPLEXML</h3>
+	<div class="indent">
+	<p class="linenumber">[line 331]</p>
+	<p><code>XML_SERIALIZER_MODE_SIMPLEXML = 'simplexml'</code></p>
+	<p align="center"><strong>SimpleXML mode
+</strong></p>
+<p>When serializing indexed arrays, the key of the parent value is used as a tagname.</p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ATTRIBUTES_KEY"></a>
+	<h3>XML_SERIALIZER_OPTION_ATTRIBUTES_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 225]</p>
+	<p><code>XML_SERIALIZER_OPTION_ATTRIBUTES_KEY = 'attributesArray'</code></p>
+	<p align="center"><strong>option: all values in this key will be treated as attributes
+</strong></p>
+<p>Possible values: <ul><li>string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ATTRIBUTE_CLASS"></a>
+	<h3>XML_SERIALIZER_OPTION_ATTRIBUTE_CLASS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 142]</p>
+	<p><code>XML_SERIALIZER_OPTION_ATTRIBUTE_CLASS = 'classAttribute'</code></p>
+	<p align="center"><strong>option: attribute for class (only if typeHints =&gt; true)
+</strong></p>
+<p>Possible values: <ul><li>any string (default is _class)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ATTRIBUTE_KEY"></a>
+	<h3>XML_SERIALIZER_OPTION_ATTRIBUTE_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 126]</p>
+	<p><code>XML_SERIALIZER_OPTION_ATTRIBUTE_KEY = 'keyAttribute'</code></p>
+	<p align="center"><strong>option: attribute where original key is stored
+</strong></p>
+<p>Possible values: <ul><li>any string (default is _originalKey)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ATTRIBUTE_TYPE"></a>
+	<h3>XML_SERIALIZER_OPTION_ATTRIBUTE_TYPE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 134]</p>
+	<p><code>XML_SERIALIZER_OPTION_ATTRIBUTE_TYPE = 'typeAttribute'</code></p>
+	<p align="center"><strong>option: attribute for type (only if typeHints =&gt; true)
+</strong></p>
+<p>Possible values: <ul><li>any string (default is _type)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_CDATA_SECTIONS"></a>
+	<h3>XML_SERIALIZER_OPTION_CDATA_SECTIONS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 308]</p>
+	<p><code>XML_SERIALIZER_OPTION_CDATA_SECTIONS = 'cdata'</code></p>
+	<p align="center"><strong>option: whether to use cdata sections for character data
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_CLASSNAME_AS_TAGNAME"></a>
+	<h3>XML_SERIALIZER_OPTION_CLASSNAME_AS_TAGNAME</h3>
+	<div class="indent">
+	<p class="linenumber">[line 118]</p>
+	<p><code>XML_SERIALIZER_OPTION_CLASSNAME_AS_TAGNAME = 'classAsTagName'</code></p>
+	<p align="center"><strong>option: use classname for objects in indexed arrays
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_COMMENT_KEY"></a>
+	<h3>XML_SERIALIZER_OPTION_COMMENT_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 245]</p>
+	<p><code>XML_SERIALIZER_OPTION_COMMENT_KEY = 'commentName'</code></p>
+	<p align="center"><strong>option: this value will be used in a comment, instead of creating a new tag
+</strong></p>
+<p>Possible values: <ul><li>string</li><li>null (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_CONTENT_KEY"></a>
+	<h3>XML_SERIALIZER_OPTION_CONTENT_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 236]</p>
+	<p><code>XML_SERIALIZER_OPTION_CONTENT_KEY = 'contentName'</code></p>
+	<p align="center"><strong>option: this value will be used directly as content,  instead of creating a new tag, may only be used  in conjuction with attributesArray
+</strong></p>
+<p>Possible values: <ul><li>string</li><li>null (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_DEFAULT_TAG"></a>
+	<h3>XML_SERIALIZER_OPTION_DEFAULT_TAG</h3>
+	<div class="indent">
+	<p class="linenumber">[line 109]</p>
+	<p><code>XML_SERIALIZER_OPTION_DEFAULT_TAG = 'defaultTagName'</code></p>
+	<p align="center"><strong>option: default name for tags
+</strong></p>
+<p>Possible values: <ul><li>any string (XML_Serializer_Tag is default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_DOCTYPE"></a>
+	<h3>XML_SERIALIZER_OPTION_DOCTYPE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 200]</p>
+	<p><code>XML_SERIALIZER_OPTION_DOCTYPE = 'doctype'</code></p>
+	<p align="center"><strong>option: supply a string or an array with id and uri  ({@see XML_Util::getDoctypeDeclaration()}
+</strong></p>
+<p>Possible values: <ul><li>string</li><li>array</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_DOCTYPE_ENABLED"></a>
+	<h3>XML_SERIALIZER_OPTION_DOCTYPE_ENABLED</h3>
+	<div class="indent">
+	<p class="linenumber">[line 190]</p>
+	<p><code>XML_SERIALIZER_OPTION_DOCTYPE_ENABLED = 'addDoctype'</code></p>
+	<p align="center"><strong>option: add a doctype declaration
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ENCODE_FUNC"></a>
+	<h3>XML_SERIALIZER_OPTION_ENCODE_FUNC</h3>
+	<div class="indent">
+	<p class="linenumber">[line 261]</p>
+	<p><code>XML_SERIALIZER_OPTION_ENCODE_FUNC = 'encodeFunction'</code></p>
+	<p align="center"><strong>option: function that will be applied before serializing
+</strong></p>
+<p>Possible values: <ul><li>any valid PHP callback</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ENTITIES"></a>
+	<h3>XML_SERIALIZER_OPTION_ENTITIES</h3>
+	<div class="indent">
+	<p class="linenumber">[line 281]</p>
+	<p><code>XML_SERIALIZER_OPTION_ENTITIES = 'replaceEntities'</code></p>
+	<p align="center"><strong>option: type of entities to replace
+</strong></p>
+<p>Possible values: <ul><li>XML_SERIALIZER_ENTITIES_NONE</li><li>XML_SERIALIZER_ENTITIES_XML (default)</li><li>XML_SERIALIZER_ENTITIES_XML_REQUIRED</li><li>XML_SERIALIZER_ENTITIES_HTML</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_FALSE_AS_STRING"></a>
+	<h3>XML_SERIALIZER_OPTION_FALSE_AS_STRING</h3>
+	<div class="indent">
+	<p class="linenumber">[line 319]</p>
+	<p><code>XML_SERIALIZER_OPTION_FALSE_AS_STRING = 'falseAsString'</code></p>
+	<p align="center"><strong>option: whether a boolean FALSE value should become a string
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.20.0</li>
+</ul>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_IGNORE_NULL"></a>
+	<h3>XML_SERIALIZER_OPTION_IGNORE_NULL</h3>
+	<div class="indent">
+	<p class="linenumber">[line 299]</p>
+	<p><code>XML_SERIALIZER_OPTION_IGNORE_NULL = 'ignoreNull'</code></p>
+	<p align="center"><strong>option: whether to ignore properties that are set to null
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_INDENT"></a>
+	<h3>XML_SERIALIZER_OPTION_INDENT</h3>
+	<div class="indent">
+	<p class="linenumber">[line 66]</p>
+	<p><code>XML_SERIALIZER_OPTION_INDENT = 'indent'</code></p>
+	<p align="center"><strong>option: string used for indentation
+</strong></p>
+<p>Possible values: <ul><li>any string (default is any string)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_INDENT_ATTRIBUTES"></a>
+	<h3>XML_SERIALIZER_OPTION_INDENT_ATTRIBUTES</h3>
+	<div class="indent">
+	<p class="linenumber">[line 171]</p>
+	<p><code>XML_SERIALIZER_OPTION_INDENT_ATTRIBUTES = 'indentAttributes'</code></p>
+	<p align="center"><strong>option: indent the attributes, if set to '_auto',  it will indent attributes so they all start at the same column
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li><li>'_auto'</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_LINEBREAKS"></a>
+	<h3>XML_SERIALIZER_OPTION_LINEBREAKS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 74]</p>
+	<p><code>XML_SERIALIZER_OPTION_LINEBREAKS = 'linebreak'</code></p>
+	<p align="center"><strong>option: string used for linebreaks
+</strong></p>
+<p>Possible values: <ul><li>any string (default is \n)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_MODE"></a>
+	<h3>XML_SERIALIZER_OPTION_MODE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 181]</p>
+	<p><code>XML_SERIALIZER_OPTION_MODE = 'mode'</code></p>
+	<p align="center"><strong>option: use 'simplexml' to use parent name as tagname  if transforming an indexed array
+</strong></p>
+<p>Possible values: <ul><li>XML_SERIALIZER_MODE_DEFAULT (default)</li><li>XML_SERIALIZER_MODE_SIMPLEXML</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_NAMESPACE"></a>
+	<h3>XML_SERIALIZER_OPTION_NAMESPACE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 270]</p>
+	<p><code>XML_SERIALIZER_OPTION_NAMESPACE = 'namespace'</code></p>
+	<p align="center"><strong>option: namespace to use for the document
+</strong></p>
+<p>Possible values: <ul><li>string</li><li>null (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_PREPEND_ATTRIBUTES"></a>
+	<h3>XML_SERIALIZER_OPTION_PREPEND_ATTRIBUTES</h3>
+	<div class="indent">
+	<p class="linenumber">[line 160]</p>
+	<p><code>XML_SERIALIZER_OPTION_PREPEND_ATTRIBUTES = 'prependAttributes'</code></p>
+	<p align="center"><strong>option: prepend string for attributes
+</strong></p>
+<p>Possible values: <ul><li>any string (default is any string)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_RETURN_RESULT"></a>
+	<h3>XML_SERIALIZER_OPTION_RETURN_RESULT</h3>
+	<div class="indent">
+	<p class="linenumber">[line 290]</p>
+	<p><code>XML_SERIALIZER_OPTION_RETURN_RESULT = 'returnResult'</code></p>
+	<p align="center"><strong>option: whether to return the result of the serialization from serialize()
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ROOT_ATTRIBS"></a>
+	<h3>XML_SERIALIZER_OPTION_ROOT_ATTRIBS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 217]</p>
+	<p><code>XML_SERIALIZER_OPTION_ROOT_ATTRIBS = 'rootAttributes'</code></p>
+	<p align="center"><strong>option: attributes of the root tag
+</strong></p>
+<p>Possible values: <ul><li>array</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_ROOT_NAME"></a>
+	<h3>XML_SERIALIZER_OPTION_ROOT_NAME</h3>
+	<div class="indent">
+	<p class="linenumber">[line 209]</p>
+	<p><code>XML_SERIALIZER_OPTION_ROOT_NAME = 'rootName'</code></p>
+	<p align="center"><strong>option: name of the root tag
+</strong></p>
+<p>Possible values: <ul><li>string</li><li>null (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_SCALAR_AS_ATTRIBUTES"></a>
+	<h3>XML_SERIALIZER_OPTION_SCALAR_AS_ATTRIBUTES</h3>
+	<div class="indent">
+	<p class="linenumber">[line 152]</p>
+	<p><code>XML_SERIALIZER_OPTION_SCALAR_AS_ATTRIBUTES = 'scalarAsAttributes'</code></p>
+	<p align="center"><strong>option: scalar values (strings, ints,..) will be serialized as attribute
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li><li>array which sets this option on a per-tag basis</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_TAGMAP"></a>
+	<h3>XML_SERIALIZER_OPTION_TAGMAP</h3>
+	<div class="indent">
+	<p class="linenumber">[line 253]</p>
+	<p><code>XML_SERIALIZER_OPTION_TAGMAP = 'tagMap'</code></p>
+	<p align="center"><strong>option: tag names that will be changed
+</strong></p>
+<p>Possible values: <ul><li>array</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_TYPEHINTS"></a>
+	<h3>XML_SERIALIZER_OPTION_TYPEHINTS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 83]</p>
+	<p><code>XML_SERIALIZER_OPTION_TYPEHINTS = 'typeHints'</code></p>
+	<p align="center"><strong>option: enable type hints
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_XML_DECL_ENABLED"></a>
+	<h3>XML_SERIALIZER_OPTION_XML_DECL_ENABLED</h3>
+	<div class="indent">
+	<p class="linenumber">[line 92]</p>
+	<p><code>XML_SERIALIZER_OPTION_XML_DECL_ENABLED = 'addDecl'</code></p>
+	<p align="center"><strong>option: add an XML declaration
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_SERIALIZER_OPTION_XML_ENCODING"></a>
+	<h3>XML_SERIALIZER_OPTION_XML_ENCODING</h3>
+	<div class="indent">
+	<p class="linenumber">[line 101]</p>
+	<p><code>XML_SERIALIZER_OPTION_XML_ENCODING = 'encoding'</code></p>
+	<p align="center"><strong>option: encoding of the document
+</strong></p>
+<p>Possible values: <ul><li>any valid encoding</li><li>null (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div><hr>
+<div id="function">
+</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:12 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

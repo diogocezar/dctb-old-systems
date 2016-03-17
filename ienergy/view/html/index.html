@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8895-1" />
+<!-- BEGIN title_block -->
+<title>{title}</title>
+<!-- END title_block -->
+<link href="../view/css/ienergy.css" rel="stylesheet" type="text/css" />
+<link href="../view/css/menu.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../view/jscripts/jquery/jquery.js"></script>
+<script language="JavaScript" src="../view/jscripts/codify/codify.js"></script>
+<script language="JavaScript" src="../view/jscripts/menu/menu.js"></script>
+<script language="JavaScript" src="../view/jscripts/menu/menu_items.js"></script>
+<script language="JavaScript" src="../view/jscripts/menu/menu_tpl.js"></script>
+<script language="JavaScript" src="../view/jscripts/validate/validate.js"></script>
+<script>jQuery.noConflict();</script>
+<script>{js_sajax}</script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo"></div>
+	</div>
+	<div id="range">
+		<!-- BEGIN top_block -->
+		<div id="welcome">
+			{login}
+		</div>
+		<div id="exit">
+			{exit}
+		</div>
+		<!-- END top_block -->
+	</div>
+	<!-- BEGIN menu_block -->
+	<div id="menu">
+		<script language="JavaScript">new menu ({menu}, MENU_TPL);</script>
+	</div>
+	<!-- END menu_block -->
+	<!-- BEGIN login_block -->
+	<div id="login">
+    	<div id="login-in">
+            {login}
+        </div>
+	</div>
+	<!-- END login_block -->
+	<!-- BEGIN content_block -->
+	<div id="title">
+	{title}
+	</div>
+	<div id="container">
+    	<div id="container-in">
+			{content}
+        </div>
+	</div>
+	<div id="spacerSend"></div>
+	<!-- END content_block -->
+	<!-- BEGIN footer_block -->
+	<div id="footer">
+		<div id="textFooter">{credits}</div>
+	</div>
+	<!-- END footer_block -->
+</body>
+</html>

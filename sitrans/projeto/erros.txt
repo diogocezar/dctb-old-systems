@@ -1,0 +1,28 @@
+1 - Quando o usuário deixa de preencher alguns campos o alert do js avisa campo a campo, por favor concatene a mensagem e mostre uma vez só; [ok]
+
+2 - Ao cadastrar um fornecedor que já existe o js fala que a PESSOA já está cadastrada, por favor mude o termo e caso o mesmo seja de uso genérico coloque por exemplo ITEM já cadastrado; [ok]
+   
+3 - Retire o botão VOLTAR dos itens Gerenciar pois em determinados casos o mesmo não funciona; [ok]
+
+4 - No item atualizar do fornecedor XBRAIN o item FAX esta retornando com o campo sujo (em branco) -----> value="     " o item inscricao estadual do nome fantasia ALTERNATIVA tambem ocorre value="2    "; [ok]
+
+5 - O item freqüencia de coleta não está cadastrando a que está aparecendo (SEMANAL) cadastrei direto na base; [ok]
+
+6 - O atualizar freqüencia de coleta esta com problema também; [ok]
+
+7 - Caso eu inative um agregado os contatos do mesmo também devem ser inativados, isso serve para clientes fornecedores, etc; [ok]
+
+8 - Caso eu tente cadastrar um item (agregado, cliente, contato, etc) que ja exista no banco  e o mesmo estiver com a situação inativa, retorne o item para ativo; [?]
+
+9 - Não sei o que eu fiz consegui cadastrar uma coleta mas na segunda o AJAX não está buscando o contato ai não consegui cadastrar mais. [ok]
+
+
+
+Thiago diz:
+se for o primeiro vinculo de veiculo = em andamento.... se for mais que um vinculo de veiculo = remanejada
+Diogo Cezar diz:
+bom até ai beleza
+Diogo Cezar diz:
+e o resto
+Thiago diz:
+se esta coleda mudar a data.... ela é reagendada

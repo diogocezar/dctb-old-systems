@@ -1,0 +1,115 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_busca --><table width="48" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="495" height="100%" align="center" valign="top"><table width="495" height="20" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="495" height="19" valign="middle">&nbsp;&nbsp;<img src="../images/seta.gif" width="13" height="13"  align="absmiddle" />&nbsp;<span class="tahoma10">{tituloBusca}</span></td>
+        </tr>
+      <tr>
+        <td height="1"></td>
+        </tr>
+    </table>
+	  <!-- BEGIN bloco_busca_interno -->
+      <table width="490" height="60" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="69" rowspan="2" valign="top" background="../images/bgListagemFoto.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="6" height="4"></td>
+              <td width="58"></td>
+              <td width="5"></td>
+            </tr>
+            <tr>
+              <td height="50"></td>
+              <td align="center" valign="middle" class="tahoma10">{img}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td height="9"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          </td>
+          <td width="283" rowspan="2" valign="top" background="../images/bgListagemProduto.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="13" height="11"></td>
+              <td width="259"></td>
+              <td width="11"></td>
+            </tr>
+            <tr>
+              <td height="37"></td>
+              <td valign="top" class="tahoma10"><strong>{produto}</strong><br />
+                {descricao}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td height="15"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>          </td>
+          <td width="138" height="30"><a href="{linkInfo}"><img src="../images/botListagemInfo.gif" alt="{altInf}" width="138" height="28" border="0"></a></td>
+        </tr>
+        <tr>
+          <td height="30" valign="top" background="../images/bgListagemValor.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="138" height="25" align="center" valign="middle"><strong class="tahoma12">R$ {valor}</strong></td>
+              </tr>
+            <tr>
+              <td height="8"></td>
+            </tr>
+          </table>
+         </td>
+        </tr>
+    </table>
+	<!-- END bloco_busca_interno -->
+   </td>
+  </tr>
+</table>
+<!-- BEGIN bloco_busca_erro -->
+<table width="495" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="tahoma10">{erro}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_busca_erro -->
+<!-- BEGIN bloco_busca_paginacao -->
+<!-- BEGIN bloco_busca_paginacao_controle -->
+<br>
+<table width="495" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center"> <span class="tahoma10">{paginacao}          
+          <label></label>
+        </span></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_busca_paginacao_controle -->
+<table width="495" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="tahoma10">{infos}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_busca_paginacao -->
+<table width="495" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" />
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_busca -->

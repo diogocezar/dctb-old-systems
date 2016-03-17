@@ -1,0 +1,227 @@
+<?php
+/**
+* Mapeamento das tabelas do sistema
+*/
+
+/**
+* Usuário
+******************************************************************/
+
+$tabelaMap['usuario'] = 'usuario';
+
+$camposMap['usuario'] = array('id_usuario',
+							  'nome',
+						      'telefone',
+							  'data_cadastro',
+							  'data_baixa',
+							  'situacao'					  						   
+						      );
+						   
+$aliasMap['usuario'] = array('identificação',
+						     'nome',
+					         'telefone',
+							 'data cadastro',
+							 'data baixa',
+							 'situação'
+						     );
+							 
+$hideMap['usuario'] = array(0,3,4,5); 
+						  
+$nomeTab['usuario'] = "Usuário";
+
+/**
+* Tipo do Ítem no Acervo
+******************************************************************/
+
+$tabelaMap['tipoacervo'] = 'tipo_acervo';
+
+$camposMap['tipoacervo'] = array('id_tipo_acervo',
+						         'nome',
+							     'data_cadastro',
+							     'data_baixa',
+							     'situacao'	
+							     );
+								  
+$aliasMap['tipoacervo'] = array('identificação',
+						        'nome',
+						        'data cadastro',
+						        'data baixa',
+						        'situação'
+						        );
+						   
+$hideMap['tipoacervo'] = array(0,2,3,4); 
+								 
+$nomeTab['tipoacervo'] = "Tipo do Ítem no Acervo";
+
+/**
+* Locação
+******************************************************************/
+
+$tabelaMap['locacao'] = 'locacao';
+
+$camposMap['locacao'] = array('id_locacao',
+							  'id_usuario',
+							  'id_administrador',
+						      'data_locacao',
+						      'data_devolucao',
+							  'data_devolvido',
+							  'status',
+							  'data_cadastro',
+							  'data_baixa',
+							  'situacao'	
+						      );
+						   
+$aliasMap['locacao'] = array('identificação',
+                             'identificação do usuário',
+							 'identificação do administrador',
+							 'data da locação',
+						     'data da devolucao',
+							 'data em que foi devolvido',
+							 'status da locação',
+						     'data cadastro',
+						     'data baixa',
+						     'situação'
+						     );
+							 
+$hideMap['locacao'] = array(0,1,2,7,8,9); 
+						  
+$nomeTab['locacao'] = "Locação";
+
+/**
+* Administrador
+******************************************************************/
+
+$tabelaMap['administrador'] = 'administrador';
+
+$camposMap['administrador'] = array('id_administrador',
+						    	    'nome',
+									'login',
+									'senha',
+							        'data_cadastro',
+							        'data_baixa',
+							        'situacao'	
+						            );
+								  
+$aliasMap['administrador'] = array('identificação',
+						           'nome',
+						           'login',
+						           'senha',
+						           'data cadastro',
+						           'data baixa',
+						           'situação'
+						           );
+						   
+$hideMap['administrador'] = array(0,3,4,5,6); 
+								 
+$nomeTab['administrador'] = "Administrador";
+
+/**
+* Acervo_Locação N - N
+******************************************************************/
+
+$tabelaMap['acervolocacao'] = 'NPN_acervo_locacao';
+
+$camposMap['acervolocacao'] = array('id_locacao',
+						            'id_acervo',
+							        'data_cadastro',
+							        'data_baixa',
+							        'situacao'	
+						            );
+								  
+$aliasMap['acervolocacao'] = array('identificação do acervo',
+						           'identificação da locação',
+						           'data cadastro',
+						           'data baixa',
+						           'situação'
+						           );
+						   
+$hideMap['acervolocacao'] = array(0,1,2,3,4,5); 
+								 
+$nomeTab['acervolocacao'] = "Acervo_Locação";
+
+/**
+* Acervo
+******************************************************************/
+
+$tabelaMap['acervo'] = 'acervo';
+
+$camposMap['acervo'] = array('id_acervo',
+							 'id_tipo_acervo',
+							 'id_autor',
+							 'id_editora',
+							 'numero',
+							 'volume',
+						     'titulo',
+							 'qtd_volumes',
+							 'status',
+							 'data_cadastro',
+							 'data_baixa',
+							 'situacao'	
+						     );
+						   
+$aliasMap['acervo'] = array('identificação do acervo',
+                            'identificação do tipo de acervo',
+							'identificação do autor',
+							'identificação da editora',
+							'numero',
+							'volume',
+							'título',
+							'qtd. volumes',
+							'status',
+						    'data cadastro',
+						    'data baixa',
+						    'situação'
+						    );
+							 
+$hideMap['acervo'] = array(0,1,2,3,9,10,11); 
+						  
+$nomeTab['acervo'] = "Acervo";
+
+/**
+* Autor
+******************************************************************/
+
+$tabelaMap['autor'] = 'autor';
+
+$camposMap['autor'] = array('id_autor',
+							'nome',
+							'data_cadastro',
+							'data_baixa',
+							'situacao'	
+						    );
+						   
+$aliasMap['autor'] = array('identificação',
+						   'nome',
+						   'data cadastro',
+						   'data baixa',
+						   'situação'
+						   );
+							 
+$hideMap['autor'] = array(0,2,3,4); 
+						  
+$nomeTab['autor'] = "Autor";
+
+/**
+* Editora
+******************************************************************/
+
+$tabelaMap['editora'] = 'editora';
+
+$camposMap['editora'] = array('id_editora',
+							  'nome',
+							  'data_cadastro',
+							  'data_baixa',
+							  'situacao'	
+						      );
+						   
+$aliasMap['editora'] = array('identificação',
+						     'nome',
+						     'data cadastro',
+						     'data baixa',
+						     'situação'
+						     );
+							 
+$hideMap['editora'] = array(0,2,3,4); 
+						  
+$nomeTab['editora'] = "Editora";
+?>

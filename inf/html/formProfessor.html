@@ -1,0 +1,133 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/cssInfo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN blk_form_professor -->
+<form name="{form_professor}" method="post" action="{action}" enctype="multipart/form-data">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <td width="382" height="19"></td>
+      <td colspan="3" align="center" valign="middle" class="textoPretoTitulo">{titulo}</td>
+      <td width="391"></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td width="141"></td>
+      <td width="9"></td>
+      <td width="328"></td>
+      <td></td>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{nome} : </td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="50" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{nick} : </td>
+      <td></td>
+      <td align="left" valign="middle"><span class="letra_padrao">
+        <input name="{campoNick}" type="text" class="formulario" id="{campoNick}" value="{valorNick}" size="15" maxlength="15" />
+        </span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{foto} : </td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoFoto}" type="file" class="formulario" id="{campoFoto}" value="{valorFoto}" size="50" maxlength="50" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	<!-- BEGIN blk_foto_cadastrada -->
+    <tr>
+      <td height="23"></td>	  
+      <td colspan="3" align="center" valign="middle" class="textoPreto"><img src="../images/attach.jpg" width="16" height="16" align="absmiddle" />&nbsp;{fotoCadastrada}</td>	  
+      <td></td>
+    </tr>
+	<!-- END blk_foto_cadastrada -->
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="1"></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" align="left" valign="middle"><input name="{campoSite}" type="text" class="formulario" id="{campoSite}" value="{valorSite}" size="50" maxlength="50" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="22"></td>
+      <td align="right" valign="middle" class="textoPreto">{site} : </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td align="left" valign="middle"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="22"></td>
+      <td align="right" valign="middle"><span class="textoPreto">{descricao} : </span></td>
+      <td></td>
+      <td align="left" valign="middle"><textarea name="{campoDescricao}" cols="49" rows="5" class="formulario" id="{campoDescricao}">{valorDescricao}</textarea></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td align="left" valign="middle"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="22"></td>
+      <td align="right" valign="middle"><span class="textoPreto">{email} : </span></td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoEmail}" type="text" class="formulario" id="{campoEmail}" value="{valorEmail}" size="50" maxlength="50" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td align="left" valign="middle"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="63"></td>
+      <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+        <br />
+        <br />
+        <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+      <td></td>
+    </tr>
+  </table>
+  <!-- END blk_form_professor -->
+</form>

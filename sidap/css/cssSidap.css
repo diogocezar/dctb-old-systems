@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+/* Construção do Layout */
+
+#header{
+	position:relative;
+	clear:both;
+	height:79px;
+	width:100%;
+	background-image:url(../images/header.gif);
+}
+
+#logo{
+	background-image:url(../images/logo.gif);
+	height:79px;
+	width:110px;
+}
+
+#faixa{
+	position:relative;
+	clear:both;
+	height:22px;
+	width:100%;
+	background-image:url(../images/faixa.gif);
+	color:#FFFFFF;
+}
+
+#welcome{
+	position:relative;
+	float:left;
+	height:18px;
+	width:300px;
+	padding-top:4px;
+	padding-left:5px;
+}
+
+#exit{
+	position:relative;
+	float:right;
+	height:18px;
+	text-align:right;
+	padding-top:4px;
+	padding-right:5px;
+}
+
+#menu{
+	position:relative;
+	float:left;
+	clear:both;
+	height:40px;
+	width:100%;
+}
+
+#login{
+	top:10px;
+	position:relative;
+	clear:both;
+	width: 700px;
+	height:100%;
+	text-align:left;
+	padding:12px;
+	border: 1px solid #CCCCCC;
+}
+
+
+#separador{
+	height:60px;
+}
+
+#separadorEnviar{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#separadorParcelas{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#titulo{
+	position:relative;
+	width:300px;
+	clear:both;
+	text-align:center;
+	margin:0 auto;
+	height:17px;
+	padding-top:3px;
+	background-color: #f1f1f1;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+
+#container{
+	position:relative;
+	width:700px;
+	text-align:justify;
+	margin:0 auto;
+	padding:12px;
+	background-color: #FCFCFC;
+	border: 1px solid #CCCCCC;
+	height:100%;
+	float:left;
+	
+	
+    top: 0px;
+    left: 50%;
+    margin-left:-350px;
+}
+
+#footer{
+	top:20px;
+	position:relative;
+	clear:both;
+	height:20px;
+	width:100%;
+	background-image:url(../images/footer.gif);
+	color:#FFFFFF;
+	text-align:center;
+}
+
+#textFooter{
+	position:relative;
+	float:none;
+	height:18px;
+	padding-top:3px;
+	padding-left:5px;
+	text-align:center;
+}
+
+/* formularios */
+
+#linha{
+	float:left;
+	height:50px;
+	clear:none;
+}
+
+#linhaQuebra{
+	float:left;
+	height:50px;
+	clear:both;
+}
+
+#linhaQuebraTxtArea{
+	float:left;
+	height:100px;
+	width:690px;
+	clear:both;
+}
+
+#padraoFormAdmin{
+	position:relative;
+	float:none;
+	text-align:center;
+}
+
+#formTitulo{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#acc999;
+}
+
+#linhaAgendaTitulo{
+	height:15px;
+	float:left;
+	text-align:left;
+	position:relative;
+	font-family:Tahoma;
+	color:#003300;
+	padding-right:5px;
+}
+
+#linhaAgendaData{
+	float:left;
+	position:relative;
+}
+
+#agenda{
+	position:relative;
+	float:left;
+	clear:both;
+	border: 1px solid #9edd62;
+	width:100%;
+	padding-top:5px;
+	margin-left:-3px;
+	padding-left:5px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	background-color:#dcffbb;
+	height:15px;
+}
+
+#itemAgenda{
+	padding-right:5px;
+	position:relative;
+	float:left;
+}
+
+#itemAgendaDescricao{
+	width:562px;
+	padding-right:5px;
+	position:relative;
+	float:left;
+	text-align:left;
+}
+
+
+#formTituloOBG{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#4f8c26;
+}
+
+#formTituloLogin{
+	width:175px;
+	height:15px;
+	padding-top:5px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+}
+
+#formCampo{
+	position:relative;
+	float:none;
+	clear:both;
+}
+
+.tituloPessoa{
+	position:relative;
+	float:none;
+	clear:both;
+	border: 1px solid #CCCCCC;
+	padding:5px;
+	margin-bottom:10px;
+	background:#F7F7F7;
+}
+
+/* Parcelas */
+
+#id_parcelas{
+	position:relative;
+	width:255px;
+	height:25px;
+}
+
+#id_conta{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_data{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_valor{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_pagar{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+
+.cursorLink{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;	
+}
+
+.form{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:165px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.date-pick{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:145px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.date-picktiny{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formTxtArea{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100%;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formLogin{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+}
+
+
+.formDrop{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+
+.formPequeno{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-transform:uppercase;
+}
+
+.botao{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.botaoPagar{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:50px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.linkBranco{
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+.linkBranco:hover{
+		text-decoration: none;
+		color: #FFFFFF;
+}

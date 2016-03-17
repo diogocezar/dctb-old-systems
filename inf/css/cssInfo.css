@@ -1,0 +1,186 @@
+small{
+	font-size:10px;	
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #746e6e;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+/* Links */
+
+.linkMenu{
+	text-decoration: none;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.linkMenu:hover{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFCC00;
+}
+
+.linkPreto{
+	font-weight:bold;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.linkPreto:hover{
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.linkBranco{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+.linkBranco:hover{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFCC00;
+}
+
+.linkMenuInf{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.linkMenuInf:hover{
+	text-decoration: underline;
+}
+
+.linkDisciplina{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.linkDisciplina:hover{
+	text-decoration: underline;
+}
+
+.linkPaginacao{
+	color: #000000;
+	text-decoration: none;
+}
+
+.linkPaginacao:hover{
+	text-decoration: underline;
+}
+
+/* Classes */
+
+
+.textoBranco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.textoPreto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.textoPretoTitulo {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000000;
+}
+.botoes {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.menu {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		color: #FFFFFF;
+}
+.tituloInterno {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #FFFFFF;
+		font-weight:bold;
+}
+.botoesBranco {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #FFFFFF;
+}
+.formulario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	background-color: #f0f0ee;
+	border: 1px solid #cccccc;
+}
+.botao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #f0f0ee;
+	border: 1px solid #cccccc;
+}
+.bordaTabelas {
+	background-color:#f0eeee;
+	border: 2px solid #dedddd;
+}
+
+.ygrp-subj{
+	font-weight:bold;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.ygrp-subj:hover{
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.ygrp-msgsum{
+	text-align:justify;
+}
+
+#tituloNoticia{
+	font-weight:bold;
+	text-align:left;
+	background-image:url(../images/setaPreta.gif);
+	background-repeat:no-repeat;
+	background-position:left center; 
+	padding-left:6px;
+	margin-bottom: 2px;
+}
+
+#conteudoNoticia{
+	text-align:justify;
+	padding-left:6px;
+	margin-bottom:3px;
+}
+
+#vejaMais{
+	text-align:right;
+}

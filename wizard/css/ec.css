@@ -1,0 +1,246 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+}
+
+ol{
+	list-style-position:inside;
+}
+
+li{
+	list-style-type:decimal;
+}
+
+#boxWord{
+	position:relative;
+	float:left;
+	margin:5px;
+	padding:5px;
+	width:95%;
+	border: 1px solid #333333;
+	clear:both;
+}
+
+#titleAll{
+	width:95%;
+	margin:5px;
+	padding:5px;
+	position:relative;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	clear:both;
+	text-transform:uppercase;
+}
+
+
+#titleSectionVerbs{
+	width:95%;
+	margin:5px;
+	padding:5px;
+	position:relative;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	border: 1px solid #333333;
+	clear:both;
+	text-transform:uppercase;
+}
+
+#titleSectionVocabulary{
+	width:95%;
+	margin:5px;
+	padding:5px;
+	position:relative;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	border: 1px solid #333333;
+	clear:both;
+	text-transform:uppercase;
+}
+
+#titleSectionExpressions{
+	width:95%;
+	margin:5px;
+	padding:5px;
+	position:relative;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	border: 1px solid #333333;
+	clear:both;
+	text-transform:uppercase;
+}
+
+#title{
+	position:relative;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	clear:none;
+}
+
+#titleWord{
+	position:relative;
+	float:left;
+	clear:both;
+}
+
+#translateTitle{
+	padding-left:5px;
+	margin-top:1.5px;
+	position:relative;
+	float:left;
+	font-size:12px;
+	text-transform:lowercase;
+	font-style:italic;
+	clear:none;
+}
+
+#exampleTitle{
+	position:relative;
+	float:left;
+	font-size:12px;
+	clear:none;
+}
+
+#definitions{
+	position:relative;
+	float:left;
+	clear:both;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-top: 1px solid #333333;
+	height:100%;
+	width:100%;
+}
+
+#definitionWord{
+	border-top: 1px solid #333333;
+	padding-bottom:5px;
+}
+
+#example{
+	position:relative;
+	float:left;
+	clear:both;
+	font-size:12px;
+	font-style:italic;
+}
+
+/* */
+
+#padraoFormAdmin{
+	position:relative;
+	float:left;
+	margin:5px;
+	padding:5px;
+	border: 1px solid #333333;
+	clear:both;
+	width:405px;
+}
+
+#linha{
+	float:left;
+	height:50px;
+	clear:none;
+}
+
+#formTitulo{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#999999;
+}
+
+
+#formTituloOBG{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	color:#1b497f;
+}
+
+.form{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100%;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formDrop{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+}
+
+.botao{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+#separadorEnviar{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#formCampo{
+	position:relative;
+	float:none;
+	clear:both;
+}
+
+.formTxtArea{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100%;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+}
+
+#linhaQuebra{
+	float:left;
+	width:400px;
+	clear:both;
+	padding-right:5px;
+}
+
+#linhaQuebraTxtArea{
+	float:left;
+	height:100px;
+	width:400px;
+	clear:both;
+	padding-right:5px;
+}

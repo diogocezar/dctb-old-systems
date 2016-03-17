@@ -1,0 +1,179 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-image:url(../images/portfolio.jpg);
+	background-position:center top;
+}
+
+a:link {
+	color: #6b6c5a;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #6b6c5a;
+}
+a:hover {
+	text-decoration: underline;
+	color: #6b6c5a;
+}
+a:active {
+	text-decoration: none;
+	color: #6b6c5a;
+}
+
+#container{
+	position:absolute;
+	left:50%;
+	margin-left:-750px;
+}
+
+#seta-esquerda{
+	position:relative;
+	float:left;
+	margin-left:390px;
+	margin-top:51px;
+	background-image:url(../images/seta-esquerda.jpg);
+	width:31px;
+	height:282px;
+	cursor:pointer;
+}
+
+#centro{
+	position:relative;
+	float:left;
+	margin-top:178px;
+	width:656px;
+	height:282px;
+	background-image:url(../images/centro.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+#infos{
+	position:relative;
+	float:left;
+	width:656px;
+	height:250px;
+	padding:10px;
+}
+
+#infos h1{
+	text-shadow:0 1px 1px #d4d5c5;
+	position:relative;
+	float:left;
+	color:#847a71;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-top:0px;
+}
+
+#detalhes{
+	text-shadow:0 1px 1px #d4d5c5;
+	position:relative;
+	float:left;
+	margin-top:10px;
+	width:634px;
+	height:75px;
+	text-align:right;
+}
+
+#veja{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/ver-trabalho.png);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#site{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/ir-site.png);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#seta-direita{
+	position:relative;
+	float:left;
+	background-image:url(../images/seta-direita.jpg);
+	width:31px;
+	margin-top:51px;
+	height:282px;
+	cursor:pointer;
+}
+
+#tecnologias{
+	position:relative;
+	float:left;
+	margin-top:35px;
+	width:656px;
+}
+
+#label-tecnologia{
+	text-shadow:0 1px 1px #d4d5c5;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#594e46;
+}
+
+#status{
+	text-shadow:0 1px 1px #d4d5c5;
+	margin-top:4px;
+	margin-left:993px;
+	position:relative;
+	float:left;
+	clear:both;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	color:#857b72;
+	position:relative;
+	width:90px;
+}
+
+#menu{
+	margin-top:78px;
+	margin-left:645px;
+	position:relative;
+	float:left;
+}
+
+#menu ul{
+	color:#6b6c5a;
+	line-height:20px;
+	list-style-type:none;
+	margin:1px;
+	padding:0px;
+	text-decoration:none;
+	text-indent:5px;
+	vertical-align:middle;
+}
+
+#menu li{
+	text-shadow:0 1px 1px #d4d5c5;
+	float:left;
+	margin:2px;
+	margin-left:5px;
+	text-align:center;
+	width:auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+
+#counts{
+	margin-top:81px;
+	line-height:20px;
+	position:relative;
+	margin-left:180px;
+	float:left;
+	font-size:11px;
+	color:#999;
+	font-family:Tahoma, Geneva, sans-serif;
+}

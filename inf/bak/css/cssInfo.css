@@ -1,0 +1,123 @@
+/* Configs */
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #746e6e;
+}
+
+/* Links */
+
+.linkMenu{
+	text-decoration: none;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.linkMenu:hover{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFCC00;
+}
+
+.linkPreto{
+	font-weight:bold;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.linkPreto:hover{
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.linkBranco{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+.linkBranco:hover{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFCC00;
+}
+
+.linkMenuInf{
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.linkMenuInf:hover{
+	text-decoration: underline;
+}
+
+.linkDisciplina{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.linkDisciplina:hover{
+	text-decoration: underline;
+}
+
+/* Classes */
+
+
+.textoBranco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.textoPreto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.textoPretoTitulo {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000000;
+}
+.botoes {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.menu {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		color: #FFFFFF;
+}
+.tituloInterno {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #FFFFFF;
+		font-weight:bold;
+}
+.botoesBranco {	
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #FFFFFF;
+}
+.formulario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	background-color: #f2f4f5;
+	border: 1px solid #4d5054;
+}

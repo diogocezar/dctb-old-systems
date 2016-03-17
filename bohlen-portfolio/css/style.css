@@ -1,0 +1,59 @@
+#intro{
+	
+}
+
+#slider{
+	width:656px;
+	height:375px;
+	overflow:hidden;
+}
+
+.scroll {
+	height:375px;
+}
+
+.scrollContainer {
+	position:relative;
+}
+
+.scrollContainer div.panel {
+	width:656px;
+	height:282px;
+}
+
+
+.inside{
+	position:relative;
+	float:left;
+	height:100%;
+	width:100%;
+}
+
+.inside img {
+}
+
+.inside h2 {
+}
+
+.inside p {
+	margin:0px;
+	font-size:11px;
+	color:#333;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 127px;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+}
+
+.scrollButtons.right {
+}
+
+.hide {
+    display: none;
+}

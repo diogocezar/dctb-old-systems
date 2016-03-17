@@ -1,0 +1,73 @@
+<link href="../css/relatorios.css" rel="stylesheet" type="text/css"/>
+<link href="../css/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
+<script src="../jscripts/tooltips/tooltips.js"></script>
+<!-- <div id="logoRelatorio"></div>
+
+    <div id="separadorRelatorio"></div>
+    
+	<div id="resumoRelatorio">{resumoRelatorio}</div>
+    
+	<div id="separadorRelatorio"></div>
+    
+    <div id="debugRelatorio">{dbugSql}</div> -->    
+
+<!-- BEGIN bloco_relatorio -->    
+    <div id="separadorRelatorio"></div>
+
+    <!-- BEGIN bloco_relatorio_totais -->
+    <div id="headerContainerRelatorio">
+    	<div id="headerRelatorio" class="descricao">{headerDescricaoTotais}</div><div id="headerRelatorio" class="totalizador">{headerTotalizadorTotais}</div>
+    </div>
+        <!-- BEGIN bloco_relatorio_content_totais -->
+        <div id="contentContainerRelatorio">
+        	<div id="contentRelatorio" class="descricao" >{contentDescricaoTotais}</div><div id="contentRelatorio" class="totalizador">{contentTotalizadorTotais}</div>
+        </div>
+        <!-- END bloco_relatorio_content_totais -->
+    <!-- END bloco_relatorio_totais -->
+    
+    <div id="separadorRelatorio"></div>
+    
+    <!-- BEGIN bloco_relatorio_coletas -->
+    <div id="headerContainerRelatorio">
+    	<div id="headerRelatorio" class="descricao">{headerDescricaoColetas}</div><div id="headerRelatorio" class="totalizador">{headerTotalizadorColetas}</div>
+    </div>
+        <!-- BEGIN bloco_relatorio_content_coletas -->
+        <div id="contentContainerRelatorio">
+        	<div id="contentRelatorio" class="descricao">{contentDescricaoColetas}</div><div id="contentRelatorio" class="totalizador">{contentTotalizadorColetas}</div>
+        </div>
+        <!-- END bloco_relatorio_content_coletas -->
+    <!-- END bloco_relatorio_coletas -->
+    
+    <div id="separadorRelatorio"></div>
+    
+     <!-- <div id="footerSintetico">{footerSintetico}</div> -->
+    
+<!-- END bloco_relatorio -->
+
+
+<!-- BEGIN bloco_relatorio_detalhes_coletas -->
+	<div id="separadorRelatorio"></div>
+    <div id="headerContainerRelatorio">
+    	<div id="headerRelatorio" class="cadastro">{headerCadastroDetalhesColetas}</div>
+        <div id="headerRelatorio" class="codigo">{headerCodigoDetalhesColetas}</div>
+        <div id="headerRelatorio" class="cliente">{headerClienteDetalhesColetas}</div>
+        <div id="headerRelatorio" class="fornecedor">{headerFornecedorDetalhesColetas}</div>
+        <div id="headerRelatorio" class="notas">{headerNotasDetalhesColetas}</div>
+        <div id="headerRelatorio" class="volumes">{headerVolumesDetalhesColetas}</div>
+        <div id="headerRelatorio" class="peso">{headerPesoDetalhesColetas}</div>
+        <div id="headerRelatorio" class="baixa">{headerBaixaDetalhesColetas}</div>
+    </div>
+        <!-- BEGIN bloco_relatorio_content_detalhes_coletas -->
+        <div id="contentContainerRelatorio">
+            <div id="contentRelatorio" class="cadastro">{contentCadastroDetalhesColetas}</div>
+            <div id="contentRelatorio" class="codigo">{contentCodigoDetalhesColetas}</div>
+            <div id="contentRelatorio" class="cliente fontePequena" title="{titleCliente}">{contentClienteDetalhesColetas}</div>
+            <div id="contentRelatorio" class="fornecedor fontePequena">{contentFornecedorDetalhesColetas}</div>
+            <div id="contentRelatorio" class="notas">{contentNotasDetalhesColetas}</div>
+            <div id="contentRelatorio" class="volumes">{contentVolumesDetalhesColetas}</div>
+            <div id="contentRelatorio" class="peso">{contentPesoDetalhesColetas}</div>
+            <div id="contentRelatorio" class="baixa">{contentBaixaDetalhesColetas}</div>
+        </div>
+        <!-- END bloco_relatorio_content_detalhes_coletas -->
+
+<!-- END bloco_relatorio_detalhes_coletas -->

@@ -1,0 +1,77 @@
+<link href="../css/promotos.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<!-- BEGIN bloco_lojas -->
+<table width="690" height="242" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="242" align="center" valign="top"><table width="100%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="../images/topPainel.gif" width="690" height="30"></td>
+      </tr>
+    </table>
+      <table width="600" height="309" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" valign="top"><br />
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" valign="bottom" background="../images/topGaleria.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="fonteTituloRed"><strong>{tituloLojas}</strong></span></td>
+              </tr>
+            <tr>
+              <td align="center" background="../images/bgGaleria.gif"><br />
+                <table width="92%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+				  <form id="{formLoja}" name="{formLoja}" method="post" action="{actionLoja}" enctype="multipart/form-data">
+                      <table width="100%" height="24" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="14%" align="right" class="fonteTexto">Titulo:&nbsp;</td>
+                          <td width="475"><label>
+                            <input name="{campoTitulo}" type="text" class="form" id="{campoTitulo}" value="{valorTitulo}" size="45" />
+                          </label></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" class="fonteTexto">Endere&ccedil;o:&nbsp;</td>
+                          <td><textarea name="{campoEndereco}" cols="44" rows="5" class="form" id="{campoEndereco}">{valorEndereco}</textarea></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" class="fonteTexto">Telefone(s):&nbsp;</td>
+                          <td><textarea name="{campoTelefone}" cols="44" rows="5" class="form" id="{campoTelefone}">{valorTelefone}</textarea></td>
+                        </tr>
+                        <tr>
+                          <td align="right" class="fonteTexto">E-mail:&nbsp;</td>
+                          <td><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{valorEmail}" size="45" /></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" class="fonteTexto">Contato(s):&nbsp;</td>
+                          <td><textarea name="{campoContatos}" cols="44" rows="5" class="form" id="{campoContatos}">{valorContatos}</textarea>
+                            <span class="fonteTexto">Pessoa &agrave; quem o cliente deve se dirigir. </span></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" class="fonteTexto">Descri&ccedil;&atilde;o:&nbsp;</td>
+                          <td><textarea name="{campoDescricao}" cols="44" rows="5" class="form" id="{campoDescricao}">{valorDescricao}</textarea></td>
+                        </tr>
+                        <tr>
+                          <td height="19" align="right" valign="top" class="fonteTexto">Foto:&nbsp;</td>
+                          <td valign="top"><input name="{campoArquivo}" type="file" class="form" id="{campoArquivo}" size="45"/>
+                            <br />
+                            <span class="fonteTexto">{arquivoAnexo}</span></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td><label>
+                          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+                          <input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" />
+</label></td>
+                        </tr>
+                      </table>
+                    </form></td>
+                </tr>
+              </table></td>
+              </tr>
+            <tr>
+              <td height="30"><img src="../images/bottomGaleria.gif" width="600" height="30" /></td>
+              </tr>
+          </table></td></tr>
+      </table></td>
+  </tr>
+</table>
+<!-- END bloco_lojas -->

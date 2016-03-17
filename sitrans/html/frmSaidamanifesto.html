@@ -1,0 +1,112 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<script src="../jscripts/check/check.js"></script>
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_data").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formSaidamanifesto}" action="{actionSaidamanifesto}" method="post" class="checkForm">
+		<div id="linha">
+			<div id="formTituloOBG">Véiculo</div>
+			<select id="frm_obg_veiculo" name="{campoVeiculo}" class="formDrop">
+				{campoOpcoesVeiculo}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Data</div>
+			<input id="frm_obg_{campoData}" name="{campoData}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" value="{valorData}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Hora</div>
+			<input id="frm_obg_{campoHora}" name="{campoHora}" type="text" onkeypress="formatHora(this,event)" class="form"  value="{valorHoraChegada}" maxlength="5"/>
+		</div>
+        <div id="linha">
+            <div id="formTitulo">Situação</div>
+            <input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+        </div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+        
+		<!-- BEGIN bloco_selecionar_conhecimentos -->
+		<div id="tituloConhecimentosSaida">Selecione os conhecimentos para essa Saída de Manifesto de Entrega:</div>
+        
+		<div id="headerConhecimentos">
+			<div id="linhaInfoSaida" style="width:25px;">
+				<div id="linhaSaida"><input id="checkAllConhecimentos"  type="checkbox"/></div>
+		  </div>	
+			<div id="linhaInfoSaida" style="width:40px;" class="classBordaRight">
+				<div id="linhaSaida">Num.</div>
+		  </div>	
+			<div id="linhaInfoSaida" style="width:190px;" class="classBordaRight">
+				<div id="linhaSaida">Destinatário</div>
+		  </div>
+			<div id="linhaInfoSaida" style="width:190px;" class="classBordaRight">
+				<div id="linhaSaida">Endereço</div>
+		  </div>
+			<div id="linhaInfoSaida" style="width:190px;" class="classBordaRight">
+				<div id="linhaSaida">Cidade</div>
+			</div>
+		</div>
+        
+        <div id="scrollConhecimento">
+        
+		<!-- BEGIN bloco_selecionar_conhecimentos_items -->
+        
+            <div id="itemConhecimento">
+                    <div id="linhaInfoSaida" style="width:25px;">
+                        <div id="linhaSaida"><input name="conhecimentos[]" type="checkbox" value="{valorConhecimento}" "{ativo}"/></div>
+                    </div>	
+                <div id="conhecimentoClick" onclick="jQuery('#detalhesConhecimento{i}').toggle();">
+                    <div id="linhaInfoSaida" style="width:40px;" class="classBordaRight">
+                        <div id="linhaSaida">{numConhecimento}</div>
+                    </div>	
+                    <div id="linhaInfoSaida" style="width:190px;" class="classBordaRight">
+                        <div id="linhaSaida">{destinatario}</div>
+                    </div>
+                    <div id="linhaInfoSaida" style="width:190px;" class="classBordaRight">
+                        <div id="linhaSaida">{endereco}</div>
+                    </div>
+                    <div id="linhaInfoSaida"style="width:190px;" class="classBordaRight">
+                        <div id="linhaSaida">{cidade}</div>
+                    </div>
+                </div>
+                
+                <div id="detalhesConhecimento{i}" style="display:none" class="detalhesConhecimento">
+                	<ul>
+                    	<li>FORNECEDOR: <strong>{fornecedor}</strong></li>
+                        <li>BAIRRO: <strong>{bairro}</strong></li>
+                        <li>QTDADE VOLUMES: <strong>{volumes}</strong></li>
+                        <li>QTDADE PESO: <strong>{peso}</strong></li>
+                        <li>VALOR N.F: <strong>{nf}</strong></li>
+                        <li>VALOR FRETE: <strong>{frete}</strong></li>
+                    </ul>
+                </div>
+            </div>
+		<!-- END bloco_selecionar_conhecimentos_items -->
+        </div>
+        <!-- END bloco_selecionar_conhecimentos -->		
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

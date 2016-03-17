@@ -1,0 +1,87 @@
+#photoshop{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/photoshop.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#php{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/php.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#jquery{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/jquery.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#mysql{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/mysql.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#postgresql{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/postgresql.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#xhtml-css{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/xhtml-css.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#java-script{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/java-script.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}
+
+#delphi{
+	position:relative;
+	float:left;
+	margin-top:17px;
+	background-image:url(../images/delphi.jpg);
+	width:109px;
+	height:20px;
+	cursor:pointer;
+	margin-left:5px;
+}

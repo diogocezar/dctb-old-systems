@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs for page Unserializer.php</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                                            
+                                                	        [ <a href="../classtrees_XML_Serializer.html">Class Tree: XML_Serializer</a> ]
+            [ <a href="../elementindex_XML_Serializer.html">Index: XML_Serializer</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Serializer</div>
+		<div id="packageTitle">XML_Serializer</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html">		Serializer.php
+		</a><br>
+			<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Unserializer.php.html">		Unserializer.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Serializer/XML_Serializer.html">		XML_Serializer
+		</a><br>
+			<a href="../XML_Serializer/XML_Unserializer.html">		XML_Unserializer
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Procedural File: Unserializer.php</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Serializer/Unserializer.php</p>
+	
+<br>
+<br>
+
+<div class="contents">
+<h2>Classes:</h2>
+<dl>
+<dt><a href="../XML_Serializer/XML_Unserializer.html">XML_Unserializer</a></dt>
+	<dd>XML_Unserializer</dd>
+</dl>
+</div>
+
+<h2>Page Details:</h2>
+<p align="center"><strong>XML_Unserializer
+</strong></p>
+<p>Parses any XML document into PHP data structures.</p><p>PHP versions 4 and 5</p><p>LICENSE:</p><p>Copyright (c) 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;  All rights reserved.</p><p>Redistribution and use in source and binary forms, with or without  modification, are permitted provided that the following conditions  are met:</p><p>* Redistributions of source code must retain the above copyright       notice, this list of conditions and the following disclaimer.     * Redistributions in binary form must reproduce the above copyright       notice, this list of conditions and the following disclaimer in the       documentation and/or other materials provided with the distribution.     * The name of the author may not be used to endorse or promote products       derived from this software without specific prior written permission.</p><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS  IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>version</b> - CVS: $Id: Unserializer.php,v 1.42 2009/02/09 14:49:52 ashnazg Exp $</li>
+	<li><b>copyright</b> - 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+	<li><b>see</b> - <a href="../XML_Serializer/XML_Unserializer.html">XML_Unserializer</a></li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Serializer">http://pear.php.net/package/XML_Serializer</a></li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+<hr>
+<hr>
+<div id="global">
+</div><hr>
+<div id="define">
+	<a name="defineXML_UNSERIALIZER_ERROR_NO_UNSERIALIZATION"></a>
+	<h3>XML_UNSERIALIZER_ERROR_NO_UNSERIALIZATION</h3>
+	<div class="indent">
+	<p class="linenumber">[line 243]</p>
+	<p><code>XML_UNSERIALIZER_ERROR_NO_UNSERIALIZATION = 151</code></p>
+	<p align="center"><strong>error code for no serialization done
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTES_ARRAYKEY"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTES_ARRAYKEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 125]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTES_ARRAYKEY = 'attributesArray'</code></p>
+	<p align="center"><strong>option: Key of the array to store attributes (if any)
+</strong></p>
+<p>Possible values: <ul><li>any string</li><li>false (disabled)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTES_PARSE"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTES_PARSE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 116]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTES_PARSE = 'parseAttributes'</code></p>
+	<p align="center"><strong>option: Whether to parse attributes
+</strong></p>
+<p>Possible values: <ul><li>true or false</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTES_PREPEND"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTES_PREPEND</h3>
+	<div class="indent">
+	<p class="linenumber">[line 134]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTES_PREPEND = 'prependAttributes'</code></p>
+	<p align="center"><strong>option: string to prepend attribute name (if any)
+</strong></p>
+<p>Possible values: <ul><li>any string</li><li>false (disabled)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTE_CLASS"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTE_CLASS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 92]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTE_CLASS = 'classAttribute'</code></p>
+	<p align="center"><strong>option: Name of the attribute that stores the class name
+</strong></p>
+<p>Possible values: <ul><li>any string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTE_KEY"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTE_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 76]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTE_KEY = 'keyAttribute'</code></p>
+	<p align="center"><strong>option: Name of the attribute that stores the original key
+</strong></p>
+<p>Possible values: <ul><li>any string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ATTRIBUTE_TYPE"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ATTRIBUTE_TYPE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 84]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ATTRIBUTE_TYPE = 'typeAttribute'</code></p>
+	<p align="center"><strong>option: Name of the attribute that stores the type
+</strong></p>
+<p>Possible values: <ul><li>any string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_COMPLEXTYPE"></a>
+	<h3>XML_UNSERIALIZER_OPTION_COMPLEXTYPE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 68]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_COMPLEXTYPE = 'complexType'</code></p>
+	<p align="center"><strong>option: Convert nested tags to array or object
+</strong></p>
+<p>Possible values: <ul><li>array</li><li>object</li><li>associative array to define this option per tag name</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_CONTENT_KEY"></a>
+	<h3>XML_UNSERIALIZER_OPTION_CONTENT_KEY</h3>
+	<div class="indent">
+	<p class="linenumber">[line 143]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_CONTENT_KEY = 'contentName'</code></p>
+	<p align="center"><strong>option: key to store the content,  if XML_UNSERIALIZER_OPTION_ATTRIBUTES_PARSE is used
+</strong></p>
+<p>Possible values: <ul><li>any string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_DECODE_FUNC"></a>
+	<h3>XML_UNSERIALIZER_OPTION_DECODE_FUNC</h3>
+	<div class="indent">
+	<p class="linenumber">[line 185]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_DECODE_FUNC = 'decodeFunction'</code></p>
+	<p align="center"><strong>option: Callback that will be applied to textual data
+</strong></p>
+<p>Possible values: <ul><li>any valid PHP callback</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_DEFAULT_CLASS"></a>
+	<h3>XML_UNSERIALIZER_OPTION_DEFAULT_CLASS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 108]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_DEFAULT_CLASS = 'defaultClass'</code></p>
+	<p align="center"><strong>option: Name of the default class
+</strong></p>
+<p>Possible values: <ul><li>any string</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ENCODING_SOURCE"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ENCODING_SOURCE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 168]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ENCODING_SOURCE = 'encoding'</code></p>
+	<p align="center"><strong>option: Encoding of the XML document
+</strong></p>
+<p>Possible values: <ul><li>UTF-8</li><li>ISO-8859-1</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_ENCODING_TARGET"></a>
+	<h3>XML_UNSERIALIZER_OPTION_ENCODING_TARGET</h3>
+	<div class="indent">
+	<p class="linenumber">[line 177]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_ENCODING_TARGET = 'targetEncoding'</code></p>
+	<p align="center"><strong>option: Desired target encoding of the data
+</strong></p>
+<p>Possible values: <ul><li>UTF-8</li><li>ISO-8859-1</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_FORCE_ENUM"></a>
+	<h3>XML_UNSERIALIZER_OPTION_FORCE_ENUM</h3>
+	<div class="indent">
+	<p class="linenumber">[line 159]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_FORCE_ENUM = 'forceEnum'</code></p>
+	<p align="center"><strong>option: list of tags that will always be enumerated
+</strong></p>
+<p>Possible values: <ul><li>indexed array</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_GUESS_TYPES"></a>
+	<h3>XML_UNSERIALIZER_OPTION_GUESS_TYPES</h3>
+	<div class="indent">
+	<p class="linenumber">[line 238]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_GUESS_TYPES = 'guessTypes'</code></p>
+	<p align="center"><strong>option: whether to use type guessing for scalar values
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_IGNORE_KEYS"></a>
+	<h3>XML_UNSERIALIZER_OPTION_IGNORE_KEYS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 233]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_IGNORE_KEYS = 'ignoreKeys'</code></p>
+	<p align="center"><strong>option: list of tags, that will not be used as keys
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_OVERRIDE_OPTIONS"></a>
+	<h3>XML_UNSERIALIZER_OPTION_OVERRIDE_OPTIONS</h3>
+	<div class="indent">
+	<p class="linenumber">[line 228]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_OVERRIDE_OPTIONS = 'overrideOptions'</code></p>
+	<p align="center"><strong>option: whether to ovverride all options that have been set before
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_RETURN_RESULT"></a>
+	<h3>XML_UNSERIALIZER_OPTION_RETURN_RESULT</h3>
+	<div class="indent">
+	<p class="linenumber">[line 194]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_RETURN_RESULT = 'returnResult'</code></p>
+	<p align="center"><strong>option: whether to return the result of the unserialization from unserialize()
+</strong></p>
+<p>Possible values: <ul><li>true</li><li>false (default)</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_TAG_AS_CLASSNAME"></a>
+	<h3>XML_UNSERIALIZER_OPTION_TAG_AS_CLASSNAME</h3>
+	<div class="indent">
+	<p class="linenumber">[line 100]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_TAG_AS_CLASSNAME = 'tagAsClass'</code></p>
+	<p align="center"><strong>option: Whether to use the tag name as a class name
+</strong></p>
+<p>Possible values: <ul><li>true or false</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_TAG_MAP"></a>
+	<h3>XML_UNSERIALIZER_OPTION_TAG_MAP</h3>
+	<div class="indent">
+	<p class="linenumber">[line 151]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_TAG_MAP = 'tagMap'</code></p>
+	<p align="center"><strong>option: map tag names
+</strong></p>
+<p>Possible values: <ul><li>associative array</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_OPTION_WHITESPACE"></a>
+	<h3>XML_UNSERIALIZER_OPTION_WHITESPACE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 204]</p>
+	<p><code>XML_UNSERIALIZER_OPTION_WHITESPACE = 'whitespace'</code></p>
+	<p align="center"><strong>option: set the whitespace behaviour
+</strong></p>
+<p>Possible values: <ul><li>XML_UNSERIALIZER_WHITESPACE_KEEP</li><li>XML_UNSERIALIZER_WHITESPACE_TRIM</li><li>XML_UNSERIALIZER_WHITESPACE_NORMALIZE</li></ul></p>		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_WHITESPACE_KEEP"></a>
+	<h3>XML_UNSERIALIZER_WHITESPACE_KEEP</h3>
+	<div class="indent">
+	<p class="linenumber">[line 209]</p>
+	<p><code>XML_UNSERIALIZER_WHITESPACE_KEEP = 'keep'</code></p>
+	<p align="center"><strong>Keep all whitespace
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_WHITESPACE_NORMALIZE"></a>
+	<h3>XML_UNSERIALIZER_WHITESPACE_NORMALIZE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 219]</p>
+	<p><code>XML_UNSERIALIZER_WHITESPACE_NORMALIZE = 'normalize'</code></p>
+	<p align="center"><strong>normalize whitespace
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_UNSERIALIZER_WHITESPACE_TRIM"></a>
+	<h3>XML_UNSERIALIZER_WHITESPACE_TRIM</h3>
+	<div class="indent">
+	<p class="linenumber">[line 214]</p>
+	<p><code>XML_UNSERIALIZER_WHITESPACE_TRIM = 'trim'</code></p>
+	<p align="center"><strong>remove whitespace from start and end of the data
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div><hr>
+<div id="function">
+</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:16 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

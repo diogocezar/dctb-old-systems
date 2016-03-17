@@ -1,0 +1,57 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSitrans.css" rel="stylesheet" type="text/css">
+<script src="../jscripts/check/check.js"></script>
+<script type="text/javascript" charset="utf-8">
+  jQuery(document).ready(function(){
+	jQuery("#frm_obg_data").datepicker({
+		showOn: "both", 
+		buttonImage: "../images/calendar.png",
+		buttonImageOnly: true 
+	});
+  });
+</script>
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formBaixaconhecimento}" action="{actionBaixaconhecimento}" method="post" class="checkForm">
+		<div id="linha">
+			<div id="formTituloOBG">Conhecimento</div>
+			<select id="frm_obg_conhecimento" name="{campoConhecimento}" class="formDrop">
+				{campoOpcoesConhecimento}
+			</select>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Nome</div>
+			<input id="frm_obg_{campoNome}" name="{campoNome}" type="text" class="form"  value="{valorNome}" maxlength="50"/>
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Data</div>
+			<input id="frm_obg_{campoData}" name="{campoData}" type="text" class="date-pick"  onkeypress="formatDate(this, event)" value="{valorData}" maxlength="10" />
+		</div>
+		<div id="linha">
+			<div id="formTituloOBG">Hora</div>
+			<input id="frm_obg_{campoHora}" name="{campoHora}" type="text" onkeypress="formatHora(this,event)" class="form"  value="{valorHora}" maxlength="5"/>
+		</div>
+        <div id="linha">
+            <div id="formTitulo">Situação</div>
+            <input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+        </div>
+		<!-- BEGIN bloco_formulario_data_cadastro -->
+		<div id="linha">
+			<div id="formTitulo">Data do cadastro</div>
+			<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_cadastro -->
+		<!-- BEGIN bloco_formulario_data_baixa -->
+		<div id="linha">
+			<div id="formTitulo">Data da baixa</div>
+			<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+		</div>
+		<!-- END bloco_formulario_data_baixa -->
+   	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input id="enviar" name="enviar" type="button" value="Enviar" class="botao"/>
+		<input id="voltar" name="voltar" type="button" value="Voltar" class="botao"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

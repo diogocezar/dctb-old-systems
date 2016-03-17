@@ -1,0 +1,352 @@
+
+
+<iframe name="status_atualiza" src="status_atualiza.asp" style="width:1px; height:1px"  frameborder="0"></iframe>
+<html>
+<head>
+<title>Totalecommerce - Sua loja online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="copyright" content="SuperAsp">
+<meta name="keywords" content="loja3, ecom, ecommerce, superasp">
+<meta name="robots" content="ALL">
+<style>
+.texto{
+font-family: Arial;
+font-size: 12px;
+color: #60707F;
+}
+a{
+font-family: Arial;
+font-size: 12px;
+color: #60707F;
+text-decoration: none;
+}
+a:hover{
+color: crimson;
+text-decoration: underline;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+function abre_janela(width, height, nome, scrollbar) {
+var top; var left;
+top = ( (screen.height/2) - (height/2) )
+left = ( (screen.width/2) - (width/2) )
+window.open('',nome,'width='+width+',height='+height+',scrollbars='+scrollbar+',toolbar=no,location=no,status=no,menubar=no,resizable=no,left='+left+',top='+top);
+}
+//-->
+</script>
+<script language="JavaScript">
+function tempo_decorrido(){
+now = new Date();
+the_timer = new Date(now.getTime());
+hora = the_timer.getHours();
+minutos = the_timer.getMinutes();
+segundos = the_timer.getSeconds();
+if ( minutos <= 9 ) minutos = "0" + minutos;
+if ( segundos <= 9 ) segundos = "0" + segundos;
+display_timer = hora + ":" + minutos + ":" + segundos;
+document.all.tempo.value = display_timer;
+var temp = setTimeout( "tempo_decorrido()", 1000);
+}
+//-->
+</script>
+</head>
+<BODY class=texto bgcolor="whitesmoke" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onLoad="javascript: tempo_decorrido()">
+<table width="700" height="100%" border="0" cellspacing="0" cellpadding="10" class="texto" align="center" style="border-left: 1px solid gainsboro;border-right: 1px solid gainsboro" bgcolor="#FFFFFF">
+  <tr>
+    <td valign="top">
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="texto">
+      <tr> 
+        <td width="1%" align="center" valign="middle"><a href="index.asp"><img src="../imagens/logo_admin.gif" border="0"></a></td>
+        <td width="60%" valign="top"><font color="#666666"> <b> </b></font> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="10" class="texto">
+            <tr> 
+              <td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="whitesmoke" class="texto">
+                  <tr> 
+                    <td><font color="#60707F"><b><font color="#CF0800"> Sistema 
+                      de Administra&ccedil;&atilde;o da loja</font></b></font> 
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="texto">
+                        <tr>
+                          <td width="10%"><font color="#666666"><b><font color="#006699"><font color="#CC0000"><img src="IMAGENS/key.gif"></font></font></b></font></td>
+                          <td><font color="#666666"><b>demo</b> 
+                            , demo<br>
+                            Entrada: 3/6/2006 1:52:24 PM <br>
+                            IP de acesso: 200.138.147.119</font> </td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table>
+        </td>
+        <td width="20%" valign="top" nowrap>&nbsp;</td>
+      </tr>
+      <tr> 
+        <td colspan="3" valign="top">&nbsp;</td>
+      </tr>
+      <tr> 
+        <td colspan="3" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0" class="texto">
+            <tr> 
+              <td><strong>Total Ecommerce </strong> - 
+                Segunda-feira, 6 de Março de 2006
+                <font color="#666666"><img src="imagens/hora.gif" width="12" height="12" align="absmiddle"> 
+                <input type="text" name=tempo class="texto" style="border:none;width:60;background-color:#FFFFFF;color:#60707F;" readonly value="">
+                </font> </td>
+            </tr>
+          </table>
+          &nbsp; </td>
+      </tr>
+    </table>
+
+<script language="JavaScript">
+<!--
+function tabselect(n){
+  for(x=1;x<=11;x++){
+    panel=eval('document.all.panel' + x + '.style;');
+    if(x==n){
+      panel.display='';
+    }
+    else {
+      panel.display='none';
+    }
+  }
+}
+//-->
+</script>
+
+  <table width="484" border="0" cellpadding="0" cellspacing="0">
+        
+        <tr> 
+          <td width="484" style="cursor:hand" onClick="javascript:tabselect(1);"><img src="imagens/menu_pedidos.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel1" style="display='none'"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="pedidos_aguardando_pagamento.asp"><strong>Novos pedidos, 
+                  aguardando confirma&ccedil;&atilde;o de pagamento</strong></a><br> 
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="pedidos_aguardando_envio.asp">Pedidos 
+                  confirmados, aguardando envio dos produtos</a><br> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="pedidos_aguardando_entrega.asp">Pedidos enviados, aguardando 
+                  confirma&ccedil;&atilde;o de entrega</a><br> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="pedidos_finalizados.asp">Pedidos finalizados</a><br>
+                  <img src="imagens/barra_entrelinhas.gif"><br> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="pedidos_nao_concluidos.asp">Pedidos n&atilde;o conclu&iacute;dos 
+                  pelos clientes, forma de pagamento n&atilde;o informada</a><br> 
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="pedidos_cancelados.asp">Pedidos 
+                  cancelados</a><br>
+                  &nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(2);"><img src="imagens/menu_produtos.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel2" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="produtos_consultar.asp">Consultar ou alterar dados 
+                  dos produtos</a><br> 
+                  
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="especificacoes_consultar.asp">Especifica&ccedil;&otilde;es 
+                  de produtos</a><br> <img src="imagens/barra_entrelinhas.gif"><br>
+                  
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="fabricantes_consultar.asp">Consultar 
+                  ou alterar dados dos fabricantes</a><br> <img src="imagens/barra_entrelinhas.gif"><br> 
+                  
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="fornecedores_consultar.asp">Consultar 
+                  ou alterar dados dos fornecedores</a><br> &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+        
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(7);"><img src="imagens/menu_secoes.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel7" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="secoes_consultar.asp">Consultar ou alterar se&ccedil;oes</a><br> 
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="categorias_consultar.asp">Consultar 
+                  ou alterar categorias</a><br> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="subcategorias_consultar.asp">Consultar ou alterar subcategorias</a><br>
+                  
+                  &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+        
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(3);"><img src="imagens/menu_clientes.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel3" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="clientes_consultar.asp">Consultar dados dos clientes</a><br> 
+                  &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+        
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(4);"><img src="imagens/menu_estoque.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel4" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><p><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                    <a href="estoque_emfalta.asp"><strong>Verificar produtos em 
+                    falta</strong></a><br>
+                    <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="estoque_consultar.asp">Consultar 
+                    estoque dos produtos</a><br>
+                    &nbsp; </p></td>
+              </tr>
+            </table></td>
+        </tr>
+        
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(5);"><img src="imagens/menu_pagamento.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel5" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="pagamentos_alterar.asp">Consultar ou alterar formas 
+                  de pagamento</a><br> &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(6);"><img src="imagens/menu_entrega.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel6" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"> <img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="fretes_consultar.asp">Consultar ou a alterar formas 
+                  de entrega</a><br> 
+                  
+                  &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+
+
+
+
+
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(11);"><img src="imagens/menu_newsletter.gif"></td>
+        </tr>
+
+        <tr> 
+          <td id="panel11" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%">
+
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="newsletter_consultar.asp">Consultar 
+                  newsletter</a><br> 
+                  
+                  &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+
+
+
+
+
+
+
+
+
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(8);"><img src="imagens/menu_configuracoes.gif" ></td>
+        </tr>
+        
+        <tr> 
+          <td id="panel8" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="configuracoes_alterar.asp">Consultar ou alterar configura&ccedil;&otilde;es 
+                  do site</a><br>
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="configuracoes_loja_alterar.asp">Consultar 
+                  ou alterar configura&ccedil;&otilde;es da loja</a><br> &nbsp; </td>
+              </tr>
+            </table></td>
+        </tr>
+          <td id="panel9" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"><img src="imagens/seta_menus.gif" align="absmiddle"> 
+                  <a href="../banners/home.asp">Banners publicit&aacute;rios</a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td style="cursor:hand" onClick="javascript:tabselect(10);"><img src="imagens/menu_acesso.gif" ></td>
+        </tr>
+        <tr> 
+          <td id="panel10" style="display='none'"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="5%">&nbsp;</td>
+                <td width="95%"> 
+                  
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="administrador_alterar_login.asp">Alterar 
+                  dados de acesso</a> 
+                  
+                  <br>
+                  
+                  <img src="imagens/seta_menus.gif" align="absmiddle"> <a href="relatorio_acessos.asp" onclick="abre_janela(400, 450, 'popup', 'no')" target='popup'>Relat&oacute;rio 
+                  de acessos</a> 
+                  
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+  </td>
+  </tr>
+  <tr>
+  <td><p align="center">&nbsp;&nbsp;<br>
+      TotalEcommerce:&nbsp;<strong><a href="../banners/index.asp" target="_blank"><img src="IMAGENS/icone_banners.gif" border="0" align="absmiddle">Sistema 
+      de banners</a> | <a href="../sos/index.asp" target="_blank"><img src="IMAGENS/icone_suporte.gif" border="0" align="absmiddle">Suporte 
+      Online</a></strong></p>
+    <br>
+<table width="50%" border="0" class="texto" align="right" cellpadding="0" cellspacing="0">
+  <tr>
+        <td width="1%" valign="top"><img src="../IMAGENS/logo_te.gif"></td>
+    <td nowrap><font face="Verdana, Arial" size="1" color="#666666">
+	<a href="http://www.superasp.com.br/ecommerce" target="_blank"><font face="Verdana, Arial" size="1">Total Ecommerce</font></a> - Sistema de comércio eletrônico<br>
+          Copyright &copy; - Todos os direitos reservados</font></td>
+  </tr>
+</table>
+
+  </td>
+  </tr>
+</table>
+<iframe name="iframe_refresh" src="admin_refresh.asp" style="width:1px; height:1px" frameborder="0"></iframe>
+</body>
+</html>

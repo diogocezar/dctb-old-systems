@@ -1,0 +1,197 @@
+<?php
+/**
+* Mapeamento das tabelas do sistema
+*/
+
+/**
+* Usuário
+******************************************************************/
+
+$tabelaMap['usuario'] = 'usuario';
+
+$camposMap['usuario'] = array('idusuario',
+							  'idnivel',
+						      'nome',
+						      'login',
+						      'senha',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao'							  						   
+						      );
+						   
+$aliasMap['usuario'] = array('identificação',
+                             'identificação do nível',
+						     'nome',
+					         'login',
+							 'senha',
+							 'data cadastro',
+							 'data baixa',
+							 'situação do usuário'
+						     );
+							 
+$hideMap['usuario'] = array(0,1,4,5,6,7); 
+						  
+$nomeTab['usuario'] = "Usuário";
+
+/**
+* Nível
+******************************************************************/
+
+$tabelaMap['nivel'] = 'nivel';
+
+$camposMap['nivel'] = array('idnivel',
+						    'descricao',
+							'datacadastro',
+							'databaixa',
+							'situacao'													   
+						    );
+								  
+$aliasMap['nivel'] = array('identificação',
+						   'descrição',
+						   'data cadastro',
+						   'data baixa',
+						   'situação do nível'
+						   );
+						   
+$hideMap['nivel'] = array(0,2,3,4); 
+								 
+$nomeTab['nivel'] = "Nível";
+
+/**
+* Cliente
+******************************************************************/
+
+$tabelaMap['cliente'] = 'cliente';
+
+$camposMap['cliente'] = array('idcliente',
+							  'idgrupo',
+						      'idusuario',
+						      'nome',
+							  'datanascimento',
+							  'bairro',
+							  'cidade',
+							  'endereco',
+							  'cep',
+							  'estado',
+							  'telefone1',
+							  'telefone2',
+							  'celular',
+							  'numbeneficio',
+							  'nit',
+							  'observacao',
+							  'datacadastro',
+							  'databaixa',
+							  'situacao'						  						   
+						      );
+						   
+$aliasMap['cliente'] = array('identificação',
+                             'identificação do grupo',
+							 'identificação do usuário',
+						     'nome',
+							 'data de nascimento',
+							 'bairro',
+							 'cidade',
+							 'endereço',
+							 'cep',
+							 'estado',
+							 'telefone1',
+							 'telefone2',
+							 'celular',
+							 'número de beneficio',
+							 'nit',
+							 'observação',
+						     'data cadastro',
+						     'data baixa',
+						     'situação do cliente'
+						     );
+							 
+$hideMap['cliente'] = array(0,1,2,16,17,18); 
+						  
+$nomeTab['cliente'] = "Cliente";
+
+/**
+* Grupo
+******************************************************************/
+
+$tabelaMap['grupo'] = 'grupo';
+
+$camposMap['grupo'] = array('idgrupo',
+						    'descricao',
+							'datacadastro',
+							'databaixa',
+							'situacao'													   
+						    );
+								  
+$aliasMap['grupo'] = array('identificação',
+						   'descrição',
+						   'data cadastro',
+						   'data baixa',
+						   'situação do grupo'
+						   );
+						   
+$hideMap['grupo'] = array(0,2,3,4); 
+								 
+$nomeTab['grupo'] = "Grupo";
+
+/**
+* Tipo
+******************************************************************/
+
+$tabelaMap['tipo'] = 'tipo';
+
+$camposMap['tipo'] = array('idtipo',
+						   'descricao',
+						   'datacadastro',
+						   'databaixa',
+						   'situacao'													   
+						   );
+								  
+$aliasMap['tipo'] = array('identificação',
+						  'descrição',
+						  'data cadastro',
+						  'data baixa',
+						  'situação do tipo'
+						  );
+						   
+$hideMap['tipo'] = array(0,2,3,4); 
+								 
+$nomeTab['tipo'] = "Tipo";
+
+/**
+* Agenda
+******************************************************************/
+
+$tabelaMap['agenda'] = 'agenda';
+
+$camposMap['agenda'] = array('idagenda',
+							 'idtipo',
+							 'idcliente',
+						     'idusuario',
+						     'datasolicitacao',
+							 'dataagenda',
+							 'horaagenda',
+							 'descricao',
+							 'datacadastro',
+							 'databaixa',
+							 'situacao'						  						   
+						     );
+						   
+$aliasMap['agenda'] = array('identificação',
+							'identificação do tipo',
+                            'identificação do cliente',
+							'identificação do usuário',
+						    'data da solicitação',
+							'data agendada',
+							'hora agendada',
+							'descrição',
+						    'data cadastro',
+						    'data baixa',
+						    'situação da agenda'
+						    );
+							 
+$hideMap['agenda'] = array(0,1,2,3,8,9,10); 
+						  
+$nomeTab['agenda'] = "Agenda";
+
+
+?>

@@ -1,0 +1,102 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name="{formInscricao}" action="{actionInscricao}" method="post" class="checkForm">
+    
+    <fieldset id="curso">
+    <legend>Curso</legend>    
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Selecione o curso desejado:</div>
+            <select id="frm_obg_{campoCurso}" name="{campoCurso}" class="formDropLong">
+                {campoOpcoesCurso}
+            </select>
+        </div>
+    </fieldset>
+    
+    <fieldset id="pessoal">
+    <legend>Pessoal</legend>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Nome</div>
+            <input id="frm_obg_{campoNome}" name="{campoNome}" type="text" value="{valorNome}" class="form" maxlength="150" />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Data de Nascimento</div>
+            <input id="frm_obg_{campoDataNascimento}" name="{campoDataNascimento}" type="text" value="{valorDataNascimento}" class="form" maxlength="10" onkeypress="formatDate(this, event)" />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Profissão</div>
+            <input id="frm_obg_{campoProfissao}" name="{campoProfissao}" type="text" value="{valorProfissao}" class="form" maxlength="50" />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Cidade</div>
+            <input id="frm_obg_{campoCidade}" name="{campoCidade}" type="text" value="{valorCidade}" class="form" maxlength="50" />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Estado</div>
+			<select id="frm_obg_{campoEstado}" name="{campoEstado}" class="formDrop">
+				{campoOpcoesEstado}
+			</select>
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>E-mail</div>
+			<input id="frm_ema_{campoEmail}" name="{campoEmail}" type="text" value="{valorEmail}" class="form" maxlength="50" />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Telefone <span style="color:gray;font-size:9px">(00)0000-0000</span></div>
+			<input id="frm_obg_{campoTelefone}" name="{campoTelefone}" type="text" value="{valorTelefone}" class="form" maxlength="12" onkeypress="formatFone(this,event)"  />
+        </div>        
+        <div id="line">
+            <div id="formTitleReq">Celular <span style="color:gray;font-size:9px">(00)0000-0000</span></div>
+			<input id="frm_{campoCelular}" name="{campoCelular}" type="text" value="{valorCelular}" class="form" maxlength="12" onkeypress="formatFone(this,event)" />
+        </div>
+    </fieldset>
+    
+    <fieldset id="historico">
+    <legend>Histórico</legend>    
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Curso de Graduação</div>
+            <input id="frm_obg_{campoCursoGrad}" name="{campoCursoGrad}" type="text" value="{valorCursoGrad}" class="form" maxlength="50"  />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Instituição de Graduação</div>
+            <input id="frm_obg_{campoInstituicao}" name="{campoInstituicao}" type="text" value="{valorInstituicao}" class="form" maxlength="50"  />
+        </div>
+        <div id="line">
+            <div id="formTitleReq"><div id="req">*</div>Ano de Conclusão</div>
+            <input id="frm_obg_{campoAno}" name="{campoAno}" type="text" value="{valorAno}" class="form" maxlength="4" onkeypress="isNum(this, event)" />
+        </div>     
+    </fieldset>
+    
+    <div id="infos">Os campos marcados com <span style="color:#F00;">*</span> são obrigatórios.</div>
+   
+    <!-- BEGIN bloco_formulario_adicionais -->
+    <fieldset id="adicionais">
+    <legend>Informações Adicionais</legend>   
+	<div id="line">
+		<div id="formTitle">Situação</div>
+		<input id="frm_opt_{campoSituacao}" name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+	</div>
+	<!-- BEGIN bloco_formulario_data_baixa -->
+	<div id="line">
+		<div id="formTitle">Data da baixa</div>
+		<input id="frm_opt_{campoDataBaixa}" name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+	</div>
+	<!-- END bloco_formulario_data_baixa -->
+	<!-- BEGIN bloco_formulario_data_cadastro -->
+	<div id="line">
+		<div id="formTitle">Data da cadastro</div>
+		<input id="frm_opt_{campoDataCadastro}" name="{campoDataCadastro}" type="text" value="{valorDataCadastro}" class="form" disabled="disabled"/>
+	</div>
+	<!-- END bloco_formulario_data_cadastro -->
+    </fieldset>
+    <!-- END bloco_formulario_adicionais -->
+    
+	<div id="spacerSend"></div>
+	<div id="formField" align="center">
+		<input id="send_button" name="send_button" type="button" value="Enviar" class="button"/>
+		<input id="back_button" name="back_button" type="button" value="Voltar" class="button"/>
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

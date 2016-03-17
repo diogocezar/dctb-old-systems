@@ -1,0 +1,62 @@
+fieldset{
+	padding:10px;
+	margin-bottom:10px;
+}
+
+.form {
+	background-color:#F4F4F4;
+	border:1px solid #666666;
+	float:left;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+	width:150px;
+}
+
+#formTitulo {
+	clear:both;
+	color:#999999;
+	float:none;
+	font-family:Tahoma;
+	height:15px;
+	position:relative;
+	text-align:left;
+	width:160px;
+}
+
+#formTituloOBG {
+	clear:both;
+	color:#1B497F;
+	float:none;
+	font-family:Tahoma;
+	height:15px;
+	position:relative;
+	text-align:left;
+	width:160px;
+}
+
+.formDrop {
+	background-color:#F4F4F4;
+	border:1px solid #666666;
+	float:left;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+	width:155px;
+}
+
+.date-pick {
+	background-color:#F4F4F4;
+	border:1px solid #666666;
+	float:left;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+	width:130px;
+}

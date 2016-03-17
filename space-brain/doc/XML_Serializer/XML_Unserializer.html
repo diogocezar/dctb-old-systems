@@ -1,0 +1,518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class XML_Unserializer</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                                            
+                                                	        [ <a href="../classtrees_XML_Serializer.html">Class Tree: XML_Serializer</a> ]
+            [ <a href="../elementindex_XML_Serializer.html">Index: XML_Serializer</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Serializer</div>
+		<div id="packageTitle">XML_Serializer</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Serializer.php.html">		Serializer.php
+		</a><br>
+			<a href="../XML_Serializer/_space-brain---core---components---XML_Serializer---Unserializer.php.html">		Unserializer.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Serializer/XML_Serializer.html">		XML_Serializer
+		</a><br>
+			<a href="../XML_Serializer/XML_Unserializer.html">		XML_Unserializer
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: XML_Unserializer</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Serializer/Unserializer.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 276]</span></h3>
+	<div id="classTree"><pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --XML_Unserializer</pre>
+</div>
+	<div class="small">
+	<p>XML_Unserializer</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+																															</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>Release: 0.20.0</li>
+																										</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		<li>2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+																					</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Serializer/XML_Unserializer.html#var$options">$options</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodXML_Unserializer">XML_Unserializer</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodapiVersion">apiVersion</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodgetRootName">getRootName</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodgetUnserializedData">getUnserializedData</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodresetOptions">resetOptions</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodsetOption">setOption</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodsetOptions">setOptions</a></li>
+				<li><a href="../XML_Serializer/XML_Unserializer.html#methodunserialize">unserialize</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../PEAR/PEAR.html">PEAR</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a>
+			</dt>
+			<dd>
+				Constructor.  Registers this object in  $_PEAR_destructor_object_list for destructor emulation if a  destructor object exists.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a>
+			</dt>
+			<dd>
+				This method deletes all occurences of the specified element from  the expected error codes stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a>
+			</dt>
+			<dd>
+				This method is used to tell which errors you expect to get.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a>
+			</dt>
+			<dd>
+				If you have a class that's mostly/entirely static, and you need static
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a>
+			</dt>
+			<dd>
+				Tell whether a value is a PEAR error.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a>
+			</dt>
+			<dd>
+				OS independant PHP extension load. Remember to take care  on the correct extension name for case sensitive OSes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a>
+			</dt>
+			<dd>
+				Pop the last error handler used
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a>
+			</dt>
+			<dd>
+				This method pops one element off the expected error codes  stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a>
+			</dt>
+			<dd>
+				Push a new error handler on top of the error handler options stack. With this  you can easily override the actual error handler for some code and restore  it later with popErrorHandling.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a>
+			</dt>
+			<dd>
+				This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a>
+			</dt>
+			<dd>
+				Use this function to register a shutdown method for static  classes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a>
+			</dt>
+			<dd>
+				Sets how errors generated by this object should be handled.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a>
+			</dt>
+			<dd>
+				Simpler form of raiseError with fewer options.  In most cases  message, code and userinfo are enough.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a>
+			</dt>
+			<dd>
+				Destructor (the emulated type of...).  Does nothing right now,  but is included for forward compatibility, so subclass  destructors should always call it.
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>XML_Unserializer
+</strong></p>
+<p>class to unserialize XML documents that have been created with  XML_Serializer. To unserialize an XML document you have to add  type hints to the XML_Serializer options.</p><p>If no type hints are available, XML_Unserializer will guess how  the tags should be treated, that means complex structures will be  arrays and tags with only CData in them will be strings.</p><p></p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>version</b> - Release: 0.20.0</li>
+	<li><b>copyright</b> - 2003-2008 Stephan Schmidt &lt;schst@php.net&gt;</li>
+	<li><b>see</b> - <a href="../XML_Serializer/XML_Serializer.html">XML_Serializer</a></li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Serializer">http://pear.php.net/package/XML_Serializer</a></li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$options"></a>
+	<p></p>
+	<h4>$options = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 378]</p>
+		<p align="center"><strong>current options for the serialization
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodapiVersion"></a>
+	<p></p>
+	<h3>static apiVersion</h3>
+	<div class="indent">
+		<p>
+		<code>static string apiVersion(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 451]</p>
+		<p align="center"><strong>return API version
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - API version</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<a name="methodXML_Unserializer"></a>
+	<p></p>
+	<h3>XML_Unserializer</h3>
+	<div class="indent">
+		<p>
+		<code>XML_Unserializer XML_Unserializer(
+[mixed
+$options = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 435]</p>
+		<p align="center"><strong>constructor
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$options</b> 
+		- 
+		array containing options for the unserialization</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetRootName"></a>
+	<p></p>
+	<h3>getRootName</h3>
+	<div class="indent">
+		<p>
+		<code>string getRootName(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 594]</p>
+		<p align="center"><strong>get the name of the root tag
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetUnserializedData"></a>
+	<p></p>
+	<h3>getUnserializedData</h3>
+	<div class="indent">
+		<p>
+		<code>string getUnserializedData(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 578]</p>
+		<p align="center"><strong>get the result of the serialization
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodresetOptions"></a>
+	<p></p>
+	<h3>resetOptions</h3>
+	<div class="indent">
+		<p>
+		<code>void resetOptions(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 463]</p>
+		<p align="center"><strong>reset all options to default options
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../XML_Serializer/XML_Unserializer.html#methodsetOption">XML_Unserializer::setOption()</a>, <a href="../XML_Serializer/XML_Unserializer.html#methodXML_Unserializer">XML_Unserializer::XML_Unserializer()</a>, <a href="../XML_Serializer/XML_Unserializer.html#methodsetOptions">XML_Unserializer::setOptions()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOption"></a>
+	<p></p>
+	<h3>setOption</h3>
+	<div class="indent">
+		<p>
+		<code>void setOption(
+string
+$name, mixed
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 481]</p>
+		<p align="center"><strong>set an option
+</strong></p>
+<p>You can use this method if you do not want  to set all options in the constructor</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - resetOption(), <a href="../XML_Serializer/XML_Unserializer.html#methodXML_Unserializer">XML_Unserializer::XML_Unserializer()</a>, <a href="../XML_Serializer/XML_Unserializer.html#methodsetOptions">XML_Unserializer::setOptions()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		name of option</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$value</b> 
+		- 
+		value of option</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetOptions"></a>
+	<p></p>
+	<h3>setOptions</h3>
+	<div class="indent">
+		<p>
+		<code>void setOptions(
+array
+$options)</code>
+		</p>
+	
+		<p class="linenumber">[line 498]</p>
+		<p align="center"><strong>sets several options at once
+</strong></p>
+<p>You can use this method if you do not want  to set all options in the constructor</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - resetOption(), <a href="../XML_Serializer/XML_Unserializer.html#methodXML_Unserializer">XML_Unserializer::XML_Unserializer()</a>, <a href="../XML_Serializer/XML_Unserializer.html#methodsetOption">XML_Unserializer::setOption()</a></li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$options</b> 
+		- 
+		options array</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodunserialize"></a>
+	<p></p>
+	<h3>unserialize</h3>
+	<div class="indent">
+		<p>
+		<code>boolean unserialize(
+mixed
+$data, [boolean
+$isFile = false], [array
+$options = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 514]</p>
+		<p align="center"><strong>unserialize data
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$data</b> 
+		- 
+		data to unserialize (string, filename or resource)</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$isFile</b> 
+		- 
+		data should be treated as a file</li>
+			<li>
+		<span class="type">array</span>
+		<b>$options</b> 
+		- 
+		options that will override                          the global options for this call</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:16 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

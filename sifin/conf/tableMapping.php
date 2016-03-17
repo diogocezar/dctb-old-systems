@@ -1,0 +1,331 @@
+<?php
+/**
+* Mapeamento das tabelas do sistema
+*/
+
+/**
+* Contato
+******************************************************************/
+
+$tabelaMap['contato'] = 'contato';
+
+$camposMap['contato'] = array('idcontato',
+						      'idpessoa',
+							  'nome',
+							  'email',
+							  'msn',
+							  'skype',
+							  'fone',
+							  'fax',
+							  'celular',
+							  'ramal',
+							  'departamento',
+							  'situacao',
+							  'databaixa'
+						      );
+							  
+$aliasMap['contato'] = array('identificação',
+                             'identificação da pessoa',
+							 'nome',
+							 'email',
+							 'msn',
+							 'skype',
+							 'fone',
+							 'fax',
+							 'celular',
+							 'ramal',
+							 'departamento',
+							 'situacao do contato',
+							 'data da baixa no sistema'                          
+						     );
+							 
+$hideMap['contato'] = array(0,1,11,12); 
+							 
+$nomeTab['contato'] = "Contato";
+
+/**
+* Parcela
+******************************************************************/
+
+$tabelaMap['parcela'] = 'parcela';
+
+$camposMap['parcela'] = array('idparcela',
+						      'idconta',
+						      'valor',
+						      'datavencimento',
+							  'datapagamento',
+							  'situacao',
+							  'databaixa'
+						      );
+								  
+$aliasMap['parcela'] = array('identificação',
+                             'identificação da conta',
+							 'valor da parcela',
+							 'data do vencimento da parcela',
+						     'data do pagamento',
+						     'situação da parcela',
+							 'data da baixa da parcela'
+						     );
+							 
+$hideMap['parcela'] = array(0,1,5,6); 
+								 
+$nomeTab['parcela'] = "Parcelas das contas";
+
+/**
+* Conta
+******************************************************************/
+
+$tabelaMap['conta'] = 'conta';
+
+$camposMap['conta'] = array('idconta',
+						    'idusuario',
+						    'idusuariobaixa',
+						    'idtipodocumento',
+							'idperiodicidade',
+							'idbanco',
+							'idpessoa',
+							'documento',
+							'datacadastro',
+							'descricao',
+							'numparcelas',
+							'valortotal',
+							'tipoconta',
+							'situacao',
+							'databaixa'
+						     );
+							 
+$aliasMap['conta'] = array('identificação',
+						   'identificação do usuário',
+						   'identificação do usuário que baixou a conta',
+					       'identificação do tipo de documento',
+						   'identificação da periodicidade',
+						   'identificação do banco',
+						   'identificação da pessoa',
+						   'documento',
+						   'data do cadastro',
+						   'descricao',
+						   'número de parcelas',
+						   'valor total',
+						   'tipo da conta',
+						   'situação da conta',
+						   'data da baixa da conta'
+						   );
+						   
+$hideMap['conta'] = array(0,1,2,3,4,5,6,13,14); 
+							
+$nomeTab['conta'] = "Conta";
+
+/**
+* Usuário
+******************************************************************/
+
+$tabelaMap['usuario'] = 'usuario';
+
+$camposMap['usuario'] = array('idusuario',
+							  'idnivel',
+						      'nome',
+						      'login',
+						      'senha',
+							  'situacao',
+							  'databaixa'						   
+						      );
+						   
+$aliasMap['usuario'] = array('identificação',
+                             'identificação do nível',
+						     'nome',
+					         'login',
+							 'senha',
+							 'situação do usuário',
+							 'data da baixa do usuário'
+						     );
+							 
+$hideMap['usuario'] = array(0,1,4,5,6); 
+						  
+$nomeTab['usuario'] = "Usuário";
+
+/**
+* Nível
+******************************************************************/
+
+$tabelaMap['nivel'] = 'nivel';
+
+$camposMap['nivel'] = array('idnivel',
+						    'descricao',
+							'situacao',
+							'databaixa'						   
+						    );
+								  
+$aliasMap['nivel'] = array('identificação',
+						   'descricao',
+						   'situação do nível',
+						   'data da baixa do nível'
+						   );
+						   
+$hideMap['nivel'] = array(0,2,3); 
+								 
+$nomeTab['nivel'] = "Nível";
+
+/**
+* Tipo de documento
+******************************************************************/
+
+$tabelaMap['tipodocumento'] = 'tipodocumento';
+
+$camposMap['tipodocumento'] = array('idtipodocumento',
+							        'descricao',
+								    'situacao',
+							        'databaixa'						   
+						            );
+								  
+$aliasMap['tipodocumento'] = array('identificação',
+							       'descrição',
+								   'situação do tipo de documento',
+								   'data da baixa do tipo de documento'
+						           );
+								   
+$hideMap['tipodocumento'] = array(0,2,3); 
+								 
+$nomeTab['tipodocumento'] = "Tipo de documento";
+
+/**
+* Periodicidade
+******************************************************************/
+
+$tabelaMap['periodicidade'] = 'periodicidade';
+
+$camposMap['periodicidade'] = array('idperiodicidade',
+							        'descricao',
+									'qtdnumerico',
+									'tipoperiodo',
+								    'situacao',
+							        'databaixa'						   									
+						            );
+								  
+$aliasMap['periodicidade'] = array('identificação',
+							       'descrição',
+								   'quantidade numérica',
+								   'tipo do período',
+								   'situação da periodicidade',
+								   'data da baixa da periodicidade'
+						           );
+								  
+$hideMap['periodicidade'] = array(0,4,5); 
+								 
+$nomeTab['periodicidade'] = "Periodicidade";
+
+/**
+* Banco
+******************************************************************/
+
+$tabelaMap['banco'] = 'banco';
+
+$camposMap['banco'] = array('idbanco',
+							'descricao',
+						    'situacao',
+							'databaixa'						   									
+						    );
+								  
+$aliasMap['banco'] = array('identificação',
+						   'descrição',
+						   'situação do banco',
+						   'data da baixa do banco'
+						   );
+						   
+$hideMap['banco'] = array(0,2,3);
+								 
+$nomeTab['banco'] = "Banco";
+
+/**
+* Pessoa
+******************************************************************/
+
+$tabelaMap['pessoa'] = 'pessoa';
+
+$camposMap['pessoa'] = array('idpessoa',
+						     'idpessoajuridica',
+							 'idpessoafisica',
+							 'endereco',
+							 'bairro',
+							 'cidade',
+							 'uf',
+							 'cep',
+							 'fone',
+							 'fax',
+							 'site',
+							 'obs',
+							 'compraminima',
+							 'situacao',
+							 'databaixa'
+						     );
+								  
+$aliasMap['pessoa'] = array('identificação',
+						    'identificação pessoa jurídica',
+							'identificação pessoa física',
+							'endereco',
+							'bairro',
+							'cidade',
+							'uf',
+							'cep',
+							'fone',
+							'fax',
+							'site',
+							'obs',
+							'compra mínima',
+							'situacao da pessoa',
+							'data da baixa da pessoa'
+						    );
+							
+$hideMap['pessoa'] = array(0,1,2,13,14);
+								 
+$nomeTab['pessoa'] = "Pessoa";
+
+/**
+* Pessoa jurídica
+******************************************************************/
+
+$tabelaMap['pessoajuridica'] = 'pessoajuridica';
+
+$camposMap['pessoajuridica'] = array('idpessoajuridica',
+						             'cnpj',
+							         'inscricaoestadual',
+							         'inscricaomunicipal',
+									 'razaosocial',
+									 'nomefantasia'
+						             );
+								  
+$aliasMap['pessoajuridica'] = array('identificação',
+                                    'cnpj',
+						            'inscrição estadual',
+							        'inscrição municipal',
+									'razão social',
+									'nome fantasia'
+						            );
+									
+$hideMap['pessoajuridica'] = array(0);
+								 
+$nomeTab['pessoajuridica'] = "Pessoa jurídica";
+
+/**
+* Pessoa física
+******************************************************************/
+
+$tabelaMap['pessoafisica'] = 'pessoafisica';
+
+$camposMap['pessoafisica'] = array('idpessoafisica',
+						           'cpf',
+							       'rg',
+							       'nome',
+								   'sobrenome'
+						           );
+								  
+$aliasMap['pessoafisica'] = array('identificação',
+						          'cpf',
+							      'rg',
+							      'nome',
+								  'sobrenome'
+						           );
+								   
+$hideMap['pessoafisica'] = array(0);
+								 
+$nomeTab['pessoafisica'] = "Pessoa física";
+?>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- BEGIN blk_titulo -->
+<title>{titulo}</title>
+<!-- END blk_titulo -->
+<link href="../css/cssInfo.css" rel="stylesheet" type="text/css" />
+<link href="../css/cssTlInfo.css" rel="stylesheet" type="text/css" />
+<!--
+  jQuery library
+-->
+<script type="text/javascript" src="../jscripts/jcarousel/lib/jquery-1.2.3.pack.js"></script>
+
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="../jscripts/jcarousel/lib/jquery.jcarousel.pack.js"></script>
+
+<!--
+  jCarousel core stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="../jscripts/jcarousel/lib/jquery.jcarousel.css" />
+
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="../jscripts/jcarousel/skins/ie7/skin.css" />
+
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 3,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback,
+		scroll: 1,
+		visible: 1,
+		animation: 'slow'
+    });
+});
+</script>
+</head>
+<body>
+	<div id="container">
+    	<div id="header"></div>
+        <!-- BEGIN blk_top -->
+        <div id="top">
+        	<div id="foto"></div>
+            <div id="menu">
+            	<div id="menuInterno">
+                <div id="titulo" class="tituloInterno">Menu</div>
+            	<ul>
+                	<li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu1}" class="linkMenu">{menu1}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu2}" class="linkMenu">{menu2}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu3}" class="linkMenu">{menu3}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu4}" class="linkMenu">{menu4}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu5}" class="linkMenu">{menu5}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu6}" class="linkMenu">{menu6}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu7}" class="linkMenu">{menu7}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu8}" class="linkMenu">{menu8}</a></li>
+                </ul>
+                </div>
+                <div id="destaque">
+                  <ul id="mycarousel" class="jcarousel-skin-tango">
+                    <li><img src="../images/carrosel/DSC05220.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05219.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05218.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05217.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05216.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05215.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05213.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05212.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05211.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05210.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05209.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05208.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05207.JPG" width="120" height="120" alt="" /></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END blk_top -->
+        <div id="meio">
+            <!-- BEGIN blk_links -->
+        	<div id="quadro1">
+                <div id="grupo-links">
+                        <!-- BEGIN blk_link_item -->
+                        <div id="tituloLink"><img src="../images/setaPreta.gif" width="3" height="5" align="absmiddle"/> <a href="{linkLink}" class="linkPreto">{tituloLink}</a></div>
+                        <!-- END blk_link_item -->
+                        <div id="veja-mais"><strong><img src="../images/setaPreta.gif" width="3" height="5" align="absmiddle"/>&nbsp;<a href="{linkVejaTodosLinks}" class="linkPreto">{vejaTodosLinks}</a></strong></div>
+                 </div>
+             </div>
+            <!-- END blk_links -->
+            <!-- BEGIN blk_noticias -->
+            <div id="quadro2">
+            	<div id="grupo-noticias">
+                    <!-- BEGIN blk_noticias_item -->
+                    <div id="tituloNoticia"><a href="{linkNoticia}" class="linkPreto">{tituloNoticia}</a></div>
+                    <div id="conteudoNoticia"><small>{descricaoNoticia}</small></div>
+                    <!-- END blk_noticias_item -->
+                    <div id="veja-mais"><strong><img src="../images/setaPreta.gif" width="3" height="5" align="absmiddle"/>&nbsp;<a href="{linkVejaTodasNoticias}" class="linkPreto">{vejaTodasNoticias}</a></strong></div>
+                </div>
+            </div>
+        </div>
+        <!-- END blk_noticias -->
+        <div id="baixo">
+        	<!-- BEGIN blk_professor1 -->
+        	<div id="quadro-baixo1">
+            	<div id="quadro-baixo1-foto"><a href="{linkProfessor1}" class="textoPreto" >{FP1}</a></div>
+            	<div id="quadro-baixo1-nick"><a href="{linkProfessor1}" class="linkPaginacao">{nickP1}</a></div>
+            	<div id="quadro-baixo1-desc">{descricaoP1}</div>
+            </div>
+            <!-- END blk_professor1 -->
+            <!-- BEGIN blk_professor2 -->
+            <div id="quadro-baixo2">
+            	<div id="quadro-baixo2-foto"><a href="{linkProfessor2}" class="textoPreto" >{FP2}</a></div>
+            	<div id="quadro-baixo2-nick"><a href="{linkProfessor2}" class="linkPaginacao">{nickP2}</a></div>
+            	<div id="quadro-baixo2-desc">{descricaoP2}</div>
+                <div id="veja-mais-prof"><img height="5" align="absmiddle" width="3" src="../images/setaPreta.gif"/> <a class="linkPreto" href="{linkVejaTodosProfessores}">{vejaTodosProfessores}</a></div>
+            </div>
+            <!-- END blk_professor2 -->
+            <!-- BEGIN blk_disciplinas -->
+            <div id="quadro-baixo3">
+            	<div id="disc-1">
+                	<div id="disc-1-titulo"><a href="{linkDisciplina1}" class="linkPaginacao">{disciplina1}</a></div>
+                	<div id="disc-1-desc">{descricaoD1}</div>
+                </div>
+            	<div id="disc-2">
+                	<div id="disc-2-titulo"><a href="{linkDisciplina2}" class="linkPaginacao">{disciplina2}</a></div>
+                	<div id="disc-2-desc">{descricaoD2}</div>
+                </div>
+                <div id="veja-mais-disc"><img src="../images/setaPreta.gif" width="3" height="5" align="absmiddle"/>&nbsp;<a href="{linkVejaTodasDisciplinas}" class="linkPreto">{vejaTodasDisciplinas}</a></div>
+            </div>
+            <!-- END blk_disciplinas -->
+        	<div id="footer"></div>
+        </div>
+    </div>
+</body>
+</html>

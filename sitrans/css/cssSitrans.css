@@ -1,0 +1,588 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+ol{
+	list-style-position:inside;
+	list-style-type:decimal;
+}
+
+/* Construção do Layout */
+
+#header{
+	position:relative;
+	clear:both;
+	height:79px;
+	width:100%;
+	background-image:url(../images/header.gif);
+}
+
+#logo{
+	background-image:url(../images/logo.gif);
+	height:79px;
+	width:110px;
+}
+
+#faixa{
+	position:relative;
+	clear:both;
+	height:22px;
+	width:100%;
+	background-image:url(../images/faixa.gif);
+	color:#FFFFFF;
+}
+
+#welcome{
+	position:relative;
+	float:left;
+	height:18px;
+	width:350px;
+	padding-top:4px;
+	padding-left:5px;
+}
+
+#exit{
+	position:relative;
+	float:right;
+	height:18px;
+	text-align:right;
+	padding-top:4px;
+	padding-right:5px;
+}
+
+#menu{
+	position:relative;
+	float:left;
+	clear:both;
+	height:40px;
+	width:100%;
+}
+
+#login{
+	top:10px;
+	position:relative;
+	clear:both;
+	width: 700px;
+	height:100%;
+	text-align:left;
+	padding:12px;
+	border: 1px solid #CCCCCC;
+}
+
+
+#separador{
+	height:60px;
+}
+
+#separadorEnviar{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#separadorParcelas{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#titulo{
+	position:relative;
+	width:300px;
+	clear:both;
+	text-align:center;
+	margin:0 auto;
+	height:17px;
+	padding-top:3px;
+	background-color: #f1f1f1;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+
+#container{
+	position:relative;
+	width:700px;
+	text-align:justify;
+	margin:0 auto;
+	padding:12px;
+	height:100%;
+	background-color: #FCFCFC;
+	border: 1px solid #CCCCCC;
+}
+
+#footer{
+	top:20px;
+	position:relative;
+	clear:both;
+	height:20px;
+	width:100%;
+	background-image:url(../images/footer.gif);
+	color:#FFFFFF;
+	text-align:center;
+}
+
+#textFooter{
+	position:relative;
+	float:none;
+	height:18px;
+	padding-top:3px;
+	padding-left:5px;
+	text-align:center;
+}
+
+/* formularios */
+
+#linha{
+	float:left;
+	height:50px;
+	clear:none;
+}
+
+#linhaQuebra{
+	float:left;
+	height:50px;
+	clear:both;
+}
+
+#linhaQuebraTxtArea{
+	float:left;
+	height:100px;
+	width:690px;
+	clear:both;
+}
+
+#padraoFormAdmin{
+	position:relative;
+	float:none;
+	text-align:center;
+}
+
+#formTitulo{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#999999;
+}
+
+#formTituloOBG{
+	width:175px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#1b497f;
+}
+
+#formTituloLogin{
+	width:175px;
+	height:15px;
+	padding-top:5px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+}
+
+#formCampo{
+	position:relative;
+	float:none;
+	clear:both;
+}
+
+.tituloPessoa{
+	position:relative;
+	float:none;
+	clear:both;
+	border: 1px solid #CCCCCC;
+	padding:5px;
+	margin-bottom:10px;
+	background:#F7F7F7;
+}
+
+/* Saida Manifesto */
+
+#tituloConhecimentosSaida{
+	position:relative;
+	float:left;
+	height:15px;
+	clear:both;
+	border-bottom: 1px solid #CCCCCC;
+	width:100%;
+	text-align:left;
+	margin-bottom:5px;
+}
+
+#headerConhecimentos{
+	position:relative;
+	float:left;
+	text-transform:uppercase;
+	background-color:#E6E6E6;
+	width:100%;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	border-bottom: 1px solid #333;
+}
+
+#linhaInfoSaida{
+	float:left;
+	clear:none;
+	width:100px;
+	margin-left:5px;
+}
+
+#informacoesSaida{
+	float:left;
+	clear:both;
+	font-size:9px;
+}
+
+#itemConhecimento{
+	float:left;
+	clear:both;
+	font-size:9px;
+	border-bottom:#EAEAEA 1px solid;
+	margin-bottom:3px;
+	margin-top:3px;
+	text-transform:uppercase;
+}
+
+#itemConhecimento:hover{
+	background-color:#E6E6E6;	
+}
+
+#conhecimentoClick{
+	position:relative;
+	float:left;
+	cursor:pointer;
+}
+
+#scrollConhecimento{
+	overflow-x: hidden; 
+	overflow-y: auto;
+	position:relative;
+	float:left;
+	height:300px;
+	width:100%;
+}
+
+.classBordaRight{
+	padding-right:5px;
+}
+
+.detalhesConhecimento{
+	position:relative;
+	float:left;
+	margin-top:4px;
+	padding-top:3px;
+	text-transform:uppercase;
+	border-top:1px dotted #999;
+	width:100%;
+	margin-left:35px;
+}
+
+.detalhesConhecimento ul{
+	font-size:9px;
+	list-style-type:none;
+	text-transform:uppercase;
+}
+
+.detalhesConhecimento li{
+	text-align:left;
+	width:auto;
+	margin-bottom:3px;
+}
+
+/* Info Coleta */
+
+#tituloInformacoesColeta{
+	position:relative;
+	float:left;
+	height:15px;
+	clear:both;
+}
+
+#linhaInfoColeta{
+	float:left;
+	height:35px;
+	clear:none;
+	width:232px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+#informacoesColeta{
+	float:left;
+	clear:both;
+}
+
+#linhaColeta{
+	float:left;
+	height:50px;
+	clear:none;
+}
+
+#linhaSaida{
+	position:relative;
+	float:left;
+	clear:none;
+}
+
+#linhaSeparadora{
+	position:relative;
+	float:left;
+	width:100%;
+	clear:both;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#conteudoRelatorio{
+	position:relative;
+	left:50%;
+	width:696px;
+	margin-left:-215px;
+}
+
+/* Mapa */
+
+#tituloMapa{
+	position:relative;
+	float:left;
+	height:15px;
+	clear:both;
+}
+
+#mapag{
+	position:relative;
+	float:left;
+	width: 696px;
+	height: 300px
+}
+
+/* Parcelas */
+
+#id_parcelas{
+	position:relative;
+	width:255px;
+	height:25px;
+}
+
+#id_conta{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_data{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_valor{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_pagar{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+/* MSG */
+
+#loading{
+	text-align:center;
+	margin:0 auto;
+	margin-bottom:10px;
+	display:none;
+}
+
+#msg{
+	text-align:center;
+	margin:0 auto;
+	padding:3px;
+	background-color: #f1f1f1;
+	border: 1px solid #999999;
+	margin-bottom:10px;
+	display:none;
+}
+
+.cursorLink{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;	
+}
+
+.date-pick{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:145px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.form{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:165px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formTxtArea{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100%;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formLogin{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+}
+
+
+.formDrop{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+
+.formPequeno{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+	text-transform:uppercase;
+}
+
+.botao{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.botaoPagar{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:50px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.linkBranco{
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+.linkBranco:hover{
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+/* CORES DAS COLETAS */
+
+.coleta_em_andamento{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#4a951c;
+}
+
+.coleta_cancelado{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#9c1a20;
+}
+
+.coleta_remanejado{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#a19c0a;
+}
+
+.coleta_pendente{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#db76cc;
+}
+
+.coleta_reagendado{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#4b4b4b;
+}
+
+.coleta_baixado{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#432f16;
+}
+
+.coleta_cadastrado{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;
+	color:#1b497f;
+}

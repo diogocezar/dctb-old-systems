@@ -1,0 +1,58 @@
+<link href="../css/promotos.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<!-- BEGIN bloco_login --><table width="690" height="242" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="242" align="center" valign="top"><table width="100%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="../images/topPainel.gif" width="690" height="30"></td>
+      </tr>
+    </table>
+      <table width="600" height="309" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" valign="top"><br />
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" valign="bottom" background="../images/topGaleria.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="fonteTituloRed"><strong>{tituloLogin}</strong></span></td>
+              </tr>
+            <tr>
+              <td align="center" valign="top" background="../images/bgGaleria.gif">
+			  <form action="{actionLogin}" name="{formLogin}" id="{formLogin}" method="post">
+			  <br />
+			  <table width="50%" height="100" border="0" cellpadding="0" cellspacing="0" class="table">
+                <tr>
+                  <td height="25" colspan="2" align="center" valign="middle" bgcolor="#0E1010" class="fonteTexto"><strong class="fonteTextoRed">&nbsp;Autentica&ccedil;&atilde;o</strong></td>
+                </tr>
+                <tr>
+                  <td width="37%" height="25" align="right" class="fonteTexto">Login:&nbsp;&nbsp;&nbsp; </td>
+                  <td width="63%" class="fonteTexto">
+                    <label>
+                    <input name="{campoLogin}" type="text" class="form" id="{campoLogin}" onkeypress="{onKpLogin}" />
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" align="right" class="fonteTexto">Senha:&nbsp;&nbsp;&nbsp; </td>
+                  <td height="25" class="fonteTexto">
+                    <input name="{campoSenha}" type="password" class="form" id="{campoSenha}" onkeypress="{onKpSenha}" />
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" colspan="2" align="center" bgcolor="#0E1010" class="fonteTexto">
+                    <label>
+                    <input name="{btnEntrar}" type="button" class="form" id="{btnEnviar}" value="Enviar" onclick="{onClickEnviar}" />
+                    </label>
+                  </td>
+                </tr>
+              </table>
+			  </form>
+                <span class="fonteTexto">Essa &aacute;rea &eacute; restrita para propriet&aacute;rios e gerentes, para   acessar a &aacute;rea restrita<br />                
+                digite acima seu login e sua senha.</span></td>
+            </tr>
+            <tr>
+              <td height="30"><img src="../images/bottomGaleria.gif" width="600" height="30" /></td>
+              </tr>
+          </table></td></tr>
+      </table></td>
+  </tr>
+</table>
+<!-- END bloco_login -->

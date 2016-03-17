@@ -1,0 +1,6 @@
+CREATE OR REPLACE FUNCTION sem_acentos(character varying)
+  RETURNS character varying AS
+$BODY$
+	SELECT TRANSLATE($1, 'ביםףתאטלעשדץגךמפפהכןצüחֱֹֽ׃ÚְָּׂÙֳױֲÊ־װÛִֻֿײÜַ', 'aeiouaeiouaoaeiooaeioucAEIOUAEIOUAOAEIOOAEIOUC')
+$BODY$
+  LANGUAGE 'sql' VOLATILE;

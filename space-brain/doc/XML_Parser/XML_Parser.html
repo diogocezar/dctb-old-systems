@@ -1,0 +1,909 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class XML_Parser</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                        
+                                                                    	        [ <a href="../classtrees_XML_Parser.html">Class Tree: XML_Parser</a> ]
+            [ <a href="../elementindex_XML_Parser.html">Index: XML_Parser</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Parser</div>
+		<div id="packageTitle">XML_Parser</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Parser/_space-brain---core---components---XML_Parser---Parser.php.html">		Parser.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Parser/XML_Parser.html">		XML_Parser
+		</a><br>
+			<a href="../XML_Parser/XML_Parser_Error.html">		XML_Parser_Error
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: XML_Parser</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Parser/Parser.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 116]</span></h3>
+	<div id="classTree"><pre><a href="../PEAR/PEAR.html">PEAR</a>
+   |
+   --XML_Parser</pre>
+</div>
+	<div class="small">
+	<p>XML Parser class.</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Stig Bakken &lt;<a href="mailto:ssb@fast.no">ssb@fast.no</a>&gt;</li>
+											<li>Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+											<li>Tomas V.V.Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+																																									</ul>
+	<h4>Version:</h4>
+	<ul>
+																							<li>Release: @package_version@</li>
+																																				</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																												<li>2002-2008 The PHP Group</li>
+																															</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Parser/XML_Parser.html#var$folding">$folding</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$fp">$fp</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$handler">$handler</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$mode">$mode</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$parser">$parser</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$srcenc">$srcenc</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$tgtenc">$tgtenc</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$_handlerObj">$_handlerObj</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#var$_validEncodings">$_validEncodings</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../XML_Parser/XML_Parser.html#method__construct">__construct</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodXML_Parser">XML_Parser</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodendHandler">endHandler</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodfree">free</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodfuncEndHandler">funcEndHandler</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodfuncStartHandler">funcStartHandler</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodparse">parse</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodparseString">parseString</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodraiseError">raiseError</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodreset">reset</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodsetHandlerObj">setHandlerObj</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodsetInput">setInput</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodsetInputFile">setInputFile</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodsetInputString">setInputString</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodsetMode">setMode</a></li>
+				<li><a href="../XML_Parser/XML_Parser.html#methodstartHandler">startHandler</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../PEAR/PEAR.html">PEAR</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../PEAR/PEAR.html#methodPEAR">PEAR::PEAR()</a>
+			</dt>
+			<dd>
+				Constructor.  Registers this object in  $_PEAR_destructor_object_list for destructor emulation if a  destructor object exists.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methoddelExpect">PEAR::delExpect()</a>
+			</dt>
+			<dd>
+				This method deletes all occurences of the specified element from  the expected error codes stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodexpectError">PEAR::expectError()</a>
+			</dt>
+			<dd>
+				This method is used to tell which errors you expect to get.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a>
+			</dt>
+			<dd>
+				If you have a class that's mostly/entirely static, and you need static
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodisError">PEAR::isError()</a>
+			</dt>
+			<dd>
+				Tell whether a value is a PEAR error.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodloadExtension">PEAR::loadExtension()</a>
+			</dt>
+			<dd>
+				OS independant PHP extension load. Remember to take care  on the correct extension name for case sensitive OSes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a>
+			</dt>
+			<dd>
+				Pop the last error handler used
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpopExpect">PEAR::popExpect()</a>
+			</dt>
+			<dd>
+				This method pops one element off the expected error codes  stack.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a>
+			</dt>
+			<dd>
+				Push a new error handler on top of the error handler options stack. With this  you can easily override the actual error handler for some code and restore  it later with popErrorHandling.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a>
+			</dt>
+			<dd>
+				This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a>
+			</dt>
+			<dd>
+				Use this function to register a shutdown method for static  classes.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a>
+			</dt>
+			<dd>
+				Sets how errors generated by this object should be handled.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPopErrorHandling">PEAR::staticPopErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodstaticPushErrorHandling">PEAR::staticPushErrorHandling()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#methodthrowError">PEAR::throwError()</a>
+			</dt>
+			<dd>
+				Simpler form of raiseError with fewer options.  In most cases  message, code and userinfo are enough.
+			</dd>
+					<dt>
+				<a href="../PEAR/PEAR.html#method_PEAR">PEAR::_PEAR()</a>
+			</dt>
+			<dd>
+				Destructor (the emulated type of...).  Does nothing right now,  but is included for forward compatibility, so subclass  destructors should always call it.
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>XML Parser class.
+</strong></p>
+<p>This is an XML parser based on PHP's &quot;xml&quot; extension,  based on the bundled expat library.</p><p>Notes: <ul><li>It requires PHP 4.0.4pl1 or greater</li></ul><ul><li>different parsing modes</li></ul></p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stig Bakken &lt;<a href="mailto:ssb@fast.no">ssb@fast.no</a>&gt;</li>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>author</b> - Tomas V.V.Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+	<li><b>version</b> - Release: @package_version@</li>
+	<li><b>copyright</b> - 2002-2008 The PHP Group</li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Parser">http://pear.php.net/package/XML_Parser</a></li>
+	<li><b>todo</b> - create XML_Parser_Pull</li>
+	<li><b>todo</b> - Tests that need to be made: <ul><li>mixing character encodings</li><li>a test using all expat handlers</li><li>options (folding, output charset)</li></ul></li>
+	<li><b>todo</b> - create XML_Parser_Namespace to parse documents with namespaces</li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$folding"></a>
+	<p></p>
+	<h4>$folding = <span class="value">&nbsp;true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 143]</p>
+		<p align="center"><strong>Whether to do case folding
+</strong></p>
+<p>If set to true, all tag and attribute names will  be converted to UPPER CASE.</p>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$fp"></a>
+	<p></p>
+	<h4>$fp</h4>
+	<div class="indent">
+		<p class="linenumber">[line 133]</p>
+		<p align="center"><strong>File handle if parsing from a file
+</strong></p>
+		<p><b>Type:</b> resource</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$handler"></a>
+	<p></p>
+	<h4>$handler = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'character_data_handler'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'cdataHandler',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'default_handler'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'defaultHandler',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'processing_instruction_handler'&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'piHandler',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'unparsed_entity_decl_handler'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'unparsedHandler',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'notation_decl_handler'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'notationHandler',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'external_entity_ref_handler'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'entityrefHandler'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 157]</p>
+		<p align="center"><strong>Mapping from expat handler function to class method.
+</strong></p>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$mode"></a>
+	<p></p>
+	<h4>$mode</h4>
+	<div class="indent">
+		<p class="linenumber">[line 150]</p>
+		<p align="center"><strong>Mode of operation, one of &quot;event&quot; or &quot;func&quot;
+</strong></p>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$parser"></a>
+	<p></p>
+	<h4>$parser</h4>
+	<div class="indent">
+		<p class="linenumber">[line 126]</p>
+		<p align="center"><strong>XML parser handle
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="http://www.php.net/xml_parser_create">xml_parser_create()</a></li>
+</ul>
+		<p><b>Type:</b> resource</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$srcenc"></a>
+	<p></p>
+	<h4>$srcenc</h4>
+	<div class="indent">
+		<p class="linenumber">[line 171]</p>
+		<p align="center"><strong>source encoding
+</strong></p>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$tgtenc"></a>
+	<p></p>
+	<h4>$tgtenc</h4>
+	<div class="indent">
+		<p class="linenumber">[line 178]</p>
+		<p align="center"><strong>target encoding
+</strong></p>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_handlerObj"></a>
+	<p></p>
+	<h4>$_handlerObj</h4>
+	<div class="indent">
+		<p class="linenumber">[line 185]</p>
+		<p align="center"><strong>handler object
+</strong></p>
+		<p><b>Type:</b> object</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_validEncodings"></a>
+	<p></p>
+	<h4>$_validEncodings = <span class="value">array('ISO-8859-1',&nbsp;'UTF-8',&nbsp;'US-ASCII')</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 192]</p>
+		<p align="center"><strong>valid encodings
+</strong></p>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="method__construct"></a>
+	<p></p>
+	<h3>__construct</h3>
+	<div class="indent">
+		<p>
+		<code>XML_Parser __construct(
+[string
+$srcenc = null], [string
+$mode = 'event'], [string
+$tgtenc = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 227]</p>
+		<p align="center"><strong>PHP5 constructor
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$srcenc</b> 
+		- 
+		source charset encoding, use NULL (default) to use                        whatever the document specifies</li>
+			<li>
+		<span class="type">string</span>
+		<b>$mode</b> 
+		- 
+		how this parser object should work, &quot;event&quot; for                        startelement/endelement-type events, &quot;func&quot;                        to have it call functions named after elements</li>
+			<li>
+		<span class="type">string</span>
+		<b>$tgtenc</b> 
+		- 
+		a valid target encoding</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodXML_Parser"></a>
+	<p></p>
+	<h3>XML_Parser</h3>
+	<div class="indent">
+		<p>
+		<code>XML_Parser XML_Parser(
+[string
+$srcenc = null], [string
+$mode = 'event'], [string
+$tgtenc = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 210]</p>
+		<p align="center"><strong>Creates an XML parser.
+</strong></p>
+<p>This is needed for PHP4 compatibility, it will  call the constructor, when a new instance is created.</p>		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$srcenc</b> 
+		- 
+		source charset encoding, use NULL (default) to use                        whatever the document specifies</li>
+			<li>
+		<span class="type">string</span>
+		<b>$mode</b> 
+		- 
+		how this parser object should work, &quot;event&quot; for                        startelement/endelement-type events, &quot;func&quot;                        to have it call functions named after elements</li>
+			<li>
+		<span class="type">string</span>
+		<b>$tgtenc</b> 
+		- 
+		a valid target encoding</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodendHandler"></a>
+	<p></p>
+	<h3>endHandler</h3>
+	<div class="indent">
+		<p>
+		<code>null endHandler(
+mixed
+$xp, mixed
+$elem)</code>
+		</p>
+	
+		<p class="linenumber">[line 696]</p>
+		<p align="center"><strong>abstract method signature for End Handler
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>abstract</b> - </li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$xp</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$elem</b> 
+		- 
+		??</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfree"></a>
+	<p></p>
+	<h3>free</h3>
+	<div class="indent">
+		<p>
+		<code>null free(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 590]</p>
+		<p align="center"><strong>XML_Parser::free()
+</strong></p>
+<p>Free the internal resources associated with the parser</p>		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfuncEndHandler"></a>
+	<p></p>
+	<h3>funcEndHandler</h3>
+	<div class="indent">
+		<p>
+		<code>void funcEndHandler(
+mixed
+$xp, mixed
+$elem)</code>
+		</p>
+	
+		<p class="linenumber">[line 655]</p>
+		<p align="center"><strong>derives and calls the End Handler function
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$xp</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$elem</b> 
+		- 
+		??</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfuncStartHandler"></a>
+	<p></p>
+	<h3>funcStartHandler</h3>
+	<div class="indent">
+		<p>
+		<code>void funcStartHandler(
+mixed
+$xp, mixed
+$elem, mixed
+$attribs)</code>
+		</p>
+	
+		<p class="linenumber">[line 632]</p>
+		<p align="center"><strong>derives and calls the Start Handler function
+</strong></p>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$xp</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$elem</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$attribs</b> 
+		- 
+		??</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparse"></a>
+	<p></p>
+	<h3>parse</h3>
+	<div class="indent">
+		<p>
+		<code>bool|<a href="../PEAR/PEAR_Error.html">PEAR_Error</a> parse(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 502]</p>
+		<p align="center"><strong>Central parsing function.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - returns true on success, or a PEAR_Error otherwise</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparseString"></a>
+	<p></p>
+	<h3>parseString</h3>
+	<div class="indent">
+		<p>
+		<code>bool|<a href="../PEAR/PEAR_Error.html">PEAR_Error</a> parseString(
+string
+$data, [boolean
+$eof = false])</code>
+		</p>
+	
+		<p class="linenumber">[line 565]</p>
+		<p align="center"><strong>XML_Parser::parseString()
+</strong></p>
+<p>Parses a string.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success or a PEAR Error</li>
+	<li><b>see</b> - _parseString()</li>
+	<li><b>throws</b> - XML_Parser_Error</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$data</b> 
+		- 
+		XML data</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$eof</b> 
+		- 
+		If set and TRUE, data is the last piece                       of data sent in this parser</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodraiseError"></a>
+	<p></p>
+	<h3>raiseError</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../XML_Parser/XML_Parser_Error.html">XML_Parser_Error</a> &amp;raiseError(
+[string
+$msg = null], [integer
+$ecode = 0])</code>
+		</p>
+	
+		<p class="linenumber">[line 613]</p>
+		<p align="center"><strong>XML_Parser::raiseError()
+</strong></p>
+<p>Throws a XML_Parser_Error</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - reference to the error object</li>
+</ul>
+		
+<p>Overrides <a href="../PEAR/PEAR.html#methodraiseError">PEAR::raiseError()</a> (This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.)</p>	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$msg</b> 
+		- 
+		the error message</li>
+			<li>
+		<span class="type">integer</span>
+		<b>$ecode</b> 
+		- 
+		the error message code</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodreset"></a>
+	<p></p>
+	<h3>reset</h3>
+	<div class="indent">
+		<p>
+		<code>boolean|object reset(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 393]</p>
+		<p align="center"><strong>Reset the parser.
+</strong></p>
+<p>This allows you to use one parser instance  to parse multiple XML documents.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, PEAR_Error otherwise</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetHandlerObj"></a>
+	<p></p>
+	<h3>setHandlerObj</h3>
+	<div class="indent">
+		<p>
+		<code>boolean setHandlerObj(
+object
+&$obj)</code>
+		</p>
+	
+		<p class="linenumber">[line 282]</p>
+		<p align="center"><strong>Sets the object, that will handle the XML events
+</strong></p>
+<p>This allows you to create a handler object independent of the  parser object that you are using and easily switch the underlying  parser.</p><p>If no object will be set, XML_Parser assumes that you  extend this class and handle the events in $this.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - will always return true</li>
+	<li><b>since</b> - v1.2.0beta3</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">object</span>
+		<b>&$obj</b> 
+		- 
+		object to handle the events</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetInput"></a>
+	<p></p>
+	<h3>setInput</h3>
+	<div class="indent">
+		<p>
+		<code>mixed setInput(
+mixed
+$fp)</code>
+		</p>
+	
+		<p class="linenumber">[line 472]</p>
+		<p align="center"><strong>Sets the file handle to use with parse().
+</strong></p>
+<p>You should use setInputFile() or setInputString() if you  pass a string</p><h4>Tags:</h4>
+<ul>
+	<li><b>see</b> - <a href="../XML_Parser/XML_Parser.html#methodparse">XML_Parser::parse()</a></li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../XML_Parser/XML_Parser.html#methodsetInputString">XML_Parser::setInputString()</a>, <a href="../system-class/.html"></a> - setInputFile()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$fp</b> 
+		- 
+		Can be either a resource returned from fopen(),                   a URL, a local filename or a string.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetInputFile"></a>
+	<p></p>
+	<h3>setInputFile</h3>
+	<div class="indent">
+		<p>
+		<code>resource setInputFile(
+string
+$file)</code>
+		</p>
+	
+		<p class="linenumber">[line 415]</p>
+		<p align="center"><strong>Sets the input xml file to be parsed
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - fopen handle of the given file</li>
+	<li><b>see</b> - <a href="../XML_Parser/XML_Parser.html#methodsetInput">XML_Parser::setInput()</a>, <a href="../XML_Parser/XML_Parser.html#methodsetInputString">XML_Parser::setInputString()</a>, <a href="../XML_Parser/XML_Parser.html#methodparse">XML_Parser::parse()</a></li>
+	<li><b>throws</b> - XML_Parser_Error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$file</b> 
+		- 
+		Filename (full path)</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetInputString"></a>
+	<p></p>
+	<h3>setInputString</h3>
+	<div class="indent">
+		<p>
+		<code>null setInputString(
+string
+$data)</code>
+		</p>
+	
+		<p class="linenumber">[line 449]</p>
+		<p align="center"><strong>XML_Parser::setInputString()
+</strong></p>
+<p>Sets the xml input from a string</p>		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$data</b> 
+		- 
+		a string containing the XML document</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsetMode"></a>
+	<p></p>
+	<h3>setMode</h3>
+	<div class="indent">
+		<p>
+		<code>boolean|object setMode(
+string
+$mode)</code>
+		</p>
+	
+		<p class="linenumber">[line 255]</p>
+		<p align="center"><strong>Sets the mode of the parser.
+</strong></p>
+<p>Possible modes are: <ul><li>func</li><li>event</li></ul>  You can set the mode using the second parameter  in the constructor.</p><p>This method is only needed, when switching to a new  mode at a later point.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, PEAR_Error otherwise</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$mode</b> 
+		- 
+		mode, either 'func' or 'event'</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodstartHandler"></a>
+	<p></p>
+	<h3>startHandler</h3>
+	<div class="indent">
+		<p>
+		<code>null startHandler(
+mixed
+$xp, mixed
+$elem, mixed
+&$attribs)</code>
+		</p>
+	
+		<p class="linenumber">[line 679]</p>
+		<p align="center"><strong>abstract method signature for Start Handler
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>abstract</b> - </li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$xp</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$elem</b> 
+		- 
+		??</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>&$attribs</b> 
+		- 
+		??</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:09 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

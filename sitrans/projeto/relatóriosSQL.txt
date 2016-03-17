@@ -1,0 +1,4 @@
+SELECT COUNT(*), SUM(qtdadenotafiscal), SUM(PESO), SUM(qtdadevolumes) FROM coleta WHERE data BETWEEN '2008-09-17' AND '2008-09-17';
+
+SELECT s.descricao, SUM(c.idstatus) FROM status s LEFT JOIN coleta c ON c.idstatus = s.idstatus AND c.data BETWEEN '2008-09-17' AND '2008-09-17' GROUP BY s.descricao, c.idstatus
+

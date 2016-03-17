@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs for page Parser.php</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                                                                                                                                                                                                                                                                        
+                                                                    	        [ <a href="../classtrees_XML_Parser.html">Class Tree: XML_Parser</a> ]
+            [ <a href="../elementindex_XML_Parser.html">Index: XML_Parser</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XML_Parser</div>
+		<div id="packageTitle">XML_Parser</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_body.html">body</a></p>
+					<p><a href="../li_brain.html">brain</a></p>
+					<p><a href="../li_class-exports.html">class-exports</a></p>
+					<p><a href="../li_dao-generic.html">dao-generic</a></p>
+					<p><a href="../li_DB.html">DB</a></p>
+					<p><a href="../li_HTML_Template_IT.html">HTML_Template_IT</a></p>
+					<p><a href="../li_neuron.html">neuron</a></p>
+					<p><a href="../li_PEAR.html">PEAR</a></p>
+					<p><a href="../li_system-class.html">system-class</a></p>
+					<p><a href="../li_system-export.html">system-export</a></p>
+					<p><a href="../li_xml-exports.html">xml-exports</a></p>
+					<p><a href="../li_xml-imports.html">xml-imports</a></p>
+					<p><a href="../li_XML_Parser.html">XML_Parser</a></p>
+					<p><a href="../li_XML_Serializer.html">XML_Serializer</a></p>
+					<p><a href="../li_XML_Util.html">XML_Util</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XML_Parser/_space-brain---core---components---XML_Parser---Parser.php.html">		Parser.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XML_Parser/XML_Parser.html">		XML_Parser
+		</a><br>
+			<a href="../XML_Parser/XML_Parser_Error.html">		XML_Parser_Error
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Procedural File: Parser.php</h1>
+	<p style="margin: 0px;">Source Location: /space-brain/core/components/XML_Parser/Parser.php</p>
+	
+<br>
+<br>
+
+<div class="contents">
+<h2>Classes:</h2>
+<dl>
+<dt><a href="../XML_Parser/XML_Parser.html">XML_Parser</a></dt>
+	<dd>XML Parser class.</dd>
+<dt><a href="../XML_Parser/XML_Parser_Error.html">XML_Parser_Error</a></dt>
+	<dd>error class, replaces PEAR_Error</dd>
+</dl>
+</div>
+
+<h2>Page Details:</h2>
+<p align="center"><strong>XML_Parser
+</strong></p>
+<p>XML Parser package</p><p>PHP versions 4 and 5</p><p>LICENSE:</p><p>Copyright (c) 2002-2008 The PHP Group  All rights reserved.</p><p>Redistribution and use in source and binary forms, with or without  modification, are permitted provided that the following conditions  are met:</p><p>* Redistributions of source code must retain the above copyright       notice, this list of conditions and the following disclaimer.     * Redistributions in binary form must reproduce the above copyright       notice, this list of conditions and the following disclaimer in the       documentation and/or other materials provided with the distribution.     * The name of the author may not be used to endorse or promote products       derived from this software without specific prior written permission.</p><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS  IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stephan Schmidt &lt;<a href="mailto:schst@php.net">schst@php.net</a>&gt;</li>
+	<li><b>author</b> - Stig Bakken &lt;<a href="mailto:ssb@fast.no">ssb@fast.no</a>&gt;</li>
+	<li><b>author</b> - Tomas V.V.Cox &lt;<a href="mailto:cox@idecnet.com">cox@idecnet.com</a>&gt;</li>
+	<li><b>version</b> - CVS: $Id: Parser.php,v 1.30 2008/09/16 16:06:22 ashnazg Exp $</li>
+	<li><b>copyright</b> - 2002-2008 The PHP Group</li>
+	<li><b>link</b> - <a href="http://pear.php.net/package/XML_Parser">http://pear.php.net/package/XML_Parser</a></li>
+	<li><b>license</b> - <a href="http://opensource.org/licenses/bsd-license">New BSD License</a></li>
+</ul>
+<hr>
+<hr>
+<div id="global">
+</div><hr>
+<div id="define">
+	<a name="defineXML_PARSER_ERROR_FILE_NOT_READABLE"></a>
+	<h3>XML_PARSER_ERROR_FILE_NOT_READABLE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 75]</p>
+	<p><code>XML_PARSER_ERROR_FILE_NOT_READABLE = 203</code></p>
+	<p align="center"><strong>specified file could not be read
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_PARSER_ERROR_INVALID_ENCODING"></a>
+	<h3>XML_PARSER_ERROR_INVALID_ENCODING</h3>
+	<div class="indent">
+	<p class="linenumber">[line 70]</p>
+	<p><code>XML_PARSER_ERROR_INVALID_ENCODING = 202</code></p>
+	<p align="center"><strong>invalid encoding was given
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_PARSER_ERROR_INVALID_INPUT"></a>
+	<h3>XML_PARSER_ERROR_INVALID_INPUT</h3>
+	<div class="indent">
+	<p class="linenumber">[line 80]</p>
+	<p><code>XML_PARSER_ERROR_INVALID_INPUT = 204</code></p>
+	<p align="center"><strong>invalid input
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_PARSER_ERROR_NO_RESOURCE"></a>
+	<h3>XML_PARSER_ERROR_NO_RESOURCE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 60]</p>
+	<p><code>XML_PARSER_ERROR_NO_RESOURCE = 200</code></p>
+	<p align="center"><strong>resource could not be created
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_PARSER_ERROR_REMOTE"></a>
+	<h3>XML_PARSER_ERROR_REMOTE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 85]</p>
+	<p><code>XML_PARSER_ERROR_REMOTE = 205</code></p>
+	<p align="center"><strong>remote file cannot be retrieved in safe mode
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="defineXML_PARSER_ERROR_UNSUPPORTED_MODE"></a>
+	<h3>XML_PARSER_ERROR_UNSUPPORTED_MODE</h3>
+	<div class="indent">
+	<p class="linenumber">[line 65]</p>
+	<p><code>XML_PARSER_ERROR_UNSUPPORTED_MODE = 201</code></p>
+	<p align="center"><strong>unsupported mode
+</strong></p>
+		</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div><hr>
+<div id="function">
+</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 26 Jul 2009 15:56:09 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>

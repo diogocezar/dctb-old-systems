@@ -1,0 +1,72 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/cssInfo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN blk_form_link -->
+<form name="{form_link}" method="post" action="{action}">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <!--DWLayoutTable-->
+    <tr>
+      <td width="382" height="19"></td>
+      <td colspan="3" align="center" valign="middle" class="textoPretoTitulo">{titulo}</td>
+      <td width="391"></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td width="141"></td>
+      <td width="9"></td>
+      <td width="328"></td>
+      <td></td>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{nome} : </td>
+      <td></td>
+      <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="200" /></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{url} : </td>
+      <td></td>
+      <td align="left" valign="middle"><span class="letra_padrao">
+        <input name="{campoUrl}" type="text" class="formulario" id="{campoUrl}" value="{valorUrl}" size="50" maxlength="100" />
+        </span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>    
+    <tr>
+      <td height="23"></td>
+      <td align="right" valign="middle" class="textoPreto">{descricao} : </td>
+      <td></td>
+      <td align="left" valign="middle"><textarea name="{campoDescricao}" cols="49" rows="3" class="formulario" id="{campoDescricao}">{valorDescricao}</textarea></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="5"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>    
+    <tr>
+      <td height="63"></td>
+      <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+        <br />
+        <br />
+        <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+      <td></td>
+    </tr>
+  </table>
+  <!-- END blk_form_link -->
+</form>

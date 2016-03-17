@@ -1,0 +1,1 @@
+C:\Arquivos de programas\PostgreSQL\8.1\bin>pg_dump sifin -U postgres > c:\sifinBase

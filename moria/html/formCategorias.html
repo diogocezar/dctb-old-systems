@@ -1,0 +1,39 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<script type="text/javascript" src="../jscripts/bbcode.js"></script>
+<!-- BEGIN bloco_categorias -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formCategoria}" name="{formCategoria}" method="post" action="{actionCategoria}">
+  <tr>
+    <td><table width="90%" height="223" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+      <!--DWLayoutTable-->
+      <tr>
+        <td height="50" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/topAdminCategorias.gif" width="535" height="50" />&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="59" rowspan="3" valign="top" bgcolor="#ECECEC"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td height="20" colspan="2" align="left" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma11"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /></span> <span class="tahoma10">{tituloCategoria}</span></td>
+      </tr>
+      <tr>
+        <td width="109" height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Nome: </td>
+        <td width="365" bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" maxlength="20" /></td>
+      </tr>
+      <tr>
+        <td height="65" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Descri&ccedil;&atilde;o: </td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec"><label> <a href="#"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito}" /></a><a href="#"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico}" /></a><a href="#"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado}" /></a><br />
+        <textarea name="{campoDescricao}" cols="45" rows="5" class="form" id="{campoDescricao}">{valorDescricao}</textarea>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><label>
+          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+        </label></td>
+        </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_categorias -->

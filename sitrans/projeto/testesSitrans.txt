@@ -1,0 +1,18 @@
+Mascaras para quais campos? Ex: telefone: ##-####-####
+
+Quais campos obrigatórios? Que sempre devem estar preenchidos.
+
+___
+
+Tentar inserir um cliente, fornecedor, agregado com o mesmo nome. O sistema deve bloquear.
+
+Tentar atualizar um cliente, fornecedor, agregado alterando o nome para um nome já existente. O sistema deve bloquear.
+
+___
+
+Utilizar a busca dos gerenciadores (grerenciar) para procurar um registro inserido.
+
+___
+
+
+

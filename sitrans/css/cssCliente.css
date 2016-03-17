@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	vertical-align:middle;
+}
+
+body{
+	background-image: url(../images/cliente/back.gif);
+	background-repeat:repeat-x;
+	background-color: #FFFFFF;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3e3722;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+	text-indent:-99999999px;
+}
+
+ol{
+	margin:0px;
+	padding:0px;
+}
+
+#container{
+	position:absolute;
+	left:50%;
+	margin-left:-383px;
+}
+
+#header{
+	position:relative;
+	float:left;
+	width:766px;
+}
+
+	.logo{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/logo.gif);
+		background-repeat:no-repeat;
+		height:135px;
+		width:514px;
+	}
+	
+	.logo_transp{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/logo_transp.gif);
+		background-repeat:no-repeat;
+		height:135px;
+		width:252px;
+	}
+	
+	.faixa{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/faixa.gif);
+		background-repeat:no-repeat;
+		height:151px;
+		width:766px;
+	}
+	
+#spacer{
+	position:relative;
+	float:left;
+	width:766px;
+}
+
+	.spacerTop{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerTop.gif);
+		background-repeat:no-repeat;
+		height:12px;
+		width:766px;
+	}
+	
+	.spacerTopLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerTopLogin.gif);
+		background-repeat:no-repeat;
+		height:12px;
+		width:766px;
+	}
+	
+	.spacerLeft{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerLeft.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:190px;
+	}
+	
+	.spacerLeftLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerLeftLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:190px;
+	}
+	
+	.spacerRight{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerRight.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:190px;
+	}
+	
+	.spacerRightLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerRightLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:190px;
+	}
+	
+	.spacerBottom{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerBottom.gif);
+		background-repeat:no-repeat;
+		height:42px;
+		width:766px;
+	}
+	
+	.spacerBottomLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/spacerBottomLogin.gif);
+		background-repeat:no-repeat;
+		height:42px;
+		width:766px;
+	}
+	
+	.line1{
+		top:10px;
+		position:relative;
+		float:left;
+		margin-left:92px;
+		clear:both;
+		font-size:10px;
+	}
+	
+	.line2{
+		top:10px;
+		position:relative;
+		float:left;
+		margin-left:92px;
+		clear:both;
+		font-size:10px;
+	}
+	
+	.instrucoesLogin{
+		top:10px;
+		position:relative;
+		float:left;
+		margin-left:92px;
+		clear:both;
+		font-size:10px;
+	}
+	
+#menu{
+	position:relative;
+	float:left;
+	width:766px;
+}
+
+	.cadastrar{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/cadastrar.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:123px;
+		clear:none;
+	}
+	
+	.consultar{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/consultar.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:132px;
+	}
+	
+	.contato{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/contato.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:69px;
+	}	
+	
+	.logout{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/logout.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:62px;
+	}
+	
+#login{
+	position:relative;
+	float:left;
+	width:766px;
+}
+
+	.cadastrarLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/cadastrarLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:123px;
+		clear:none;
+	}
+	
+	.consultarLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/consultarLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:132px;
+	}
+	
+	.contatoLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/contatoLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:69px;
+	}	
+	
+	.logoutLogin{
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/logoutLogin.gif);
+		background-repeat:no-repeat;
+		height:28px;
+		width:62px;
+	}
+	
+#content{
+	position:relative;
+	float:left;
+	width:766px;
+	height:100%;
+	text-align:center;
+}
+
+	.spacerLeftContent{
+		position:relative;
+		float:left;
+		width:92px;
+		height:10px;
+	}
+
+
+	.contentCenter{
+		position:relative;
+		float:left;
+		width:560px;
+		height:100%;
+		clear:none;
+		border: 1px solid #a2c1e7;
+		padding-top:20px;
+		padding-bottom:20px;
+		padding-left:20px;
+		text-align:left;
+	}
+	
+#footer{
+	position:relative;
+	float:left;
+	width:766px;
+}
+
+	.footerCenter{
+		top:10px;
+		position:relative;
+		float:left;
+		background-image: url(../images/cliente/footer.png);
+		background-repeat:no-repeat;
+		height:49px;
+		width:766px;
+		clear:none;
+		font-size:10px;
+		text-align:center;
+		padding-top:15px;
+	}
+	
+/* formularios */
+
+#linha{
+	float:left;
+	height:40px;
+	clear:none;
+}
+
+#linhaQuebra{
+	float:left;
+	height:40px;
+	clear:both;
+}
+
+#linhaQuebraTxtArea{
+	float:left;
+	height:100px;
+	width:490px;
+	clear:both;
+	text-align:left;
+}
+
+#padraoFormAdmin{
+	position:relative;
+	float:none;
+}
+
+#formTitulo{
+	width:186px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#1b497f;
+}
+
+#formTituloOBG{
+	width:186px;
+	height:15px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+	color:#1b497f;
+	font-weight:bold;
+}
+
+#formTituloLogin{
+	width:175px;
+	height:15px;
+	padding-top:5px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	font-family:Tahoma;
+}
+
+#separadorEnviar{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#formCampo{
+	position:relative;
+	float:none;
+	clear:both;
+}
+
+.date-pick{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:145px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.form{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:165px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+.formTxtArea{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:537px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-align:left;
+	text-transform:uppercase;
+}
+
+.formLogin{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-align:left;
+	text-transform:uppercase;
+}
+
+
+.formDrop{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:170px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-align:left;
+	float:left;
+	text-transform:uppercase;
+}
+
+
+.formPequeno{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background-color:#e2effd;
+	padding-left:3px;
+	text-transform:uppercase;
+}
+
+.botao{
+	border: 1px solid #464b73;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background:#e2effd;
+	padding:1px;
+}

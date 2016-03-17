@@ -1,0 +1,131 @@
+/**
+* Css relatorios
+*/
+
+.linkRelatorio:link {
+	color: #0070d5;
+	text-decoration: underline;
+	font-weight:bold;
+}
+.linkRelatorio:visited {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+.linkRelatorio:hover {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+.linkRelatorio:active {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+
+.linkCancelado:link {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+.linkCancelado:visited {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+.linkCancelado:hover {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+.linkCancelado:active {
+	text-decoration: underline;
+	color: #0070d5;
+	font-weight:bold;
+}
+
+#logoRelatorio{
+	position:relative;
+	float:left;
+	background-image: url(../images/relatorios.jpg);
+	background-repeat:no-repeat;
+	height:79px;
+	width:348px;
+}
+
+#headerContainerRelatorio{
+	position:relative;
+	float:left;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+
+#headerRelatorio{
+	position:relative;
+	float:left;
+	border-right:1px solid #000000;
+	background-color:#c1d4ec;
+	font-weight:bold;
+	padding:5px;
+}
+
+#separadorRelatorio{
+	position:relative;
+	float:left;
+	clear:both;
+	height:30px;
+	width:100%;
+}
+
+#contentContainerRelatorio{
+	position:relative;
+	float:left;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	clear:both;
+}
+
+#debugRelatorio{
+	position:relative;
+	float:left;
+	font-size: 11px;
+    color: #FF4F4F;
+	background-color:#FFEAEA;
+	border: 1px solid #FF4F4F;
+	padding:3px;
+}
+
+#contentRelatorio{
+	position:relative;
+	float:left;
+	border-right:1px solid #000000;
+	background-color:#FFFFFF;
+	font-weight:bold;
+	padding:5px;
+}
+
+#resumoRelatorio{
+	position:relative;
+	float:left;
+	font-weight:bold;
+}
+
+#footerSintetico{
+	position:relative;
+	float:left;
+	font-weight:bold;
+}
+
+.descricao{	width:300px;text-align:left; }
+.totalizador{ width:100px;text-align:center; }
+
+.cadastro{ width:70px;text-align:center; }
+.codigo{ width:50px;text-align:center; }
+.cliente{ width:350px;text-align:left;}
+.fornecedor{ width:150px;text-align:left; }
+.notas{ width:40px;text-align:center; }
+.volumes{ width:40px;text-align:center; }
+.peso{ width:40px;text-align:center; }
+.baixa{width:70px;text-align:center; }
+.fontePequena{  font-size:10px; }

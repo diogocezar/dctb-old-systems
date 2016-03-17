@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE system_errors PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<system_errors lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <CONNECT_TO_DATA>Não foi possível conectar no banco de dados</CONNECT_TO_DATA>
+  <QUERY_GERA_ERRO>A sentença escrita parece está com erro</QUERY_GERA_ERRO>
+  <NENHUM_BANCO_SE>Nenhum &quot;tipo&quot; de banco de dados foi selecionado</NENHUM_BANCO_SE>
+  <PARMS_INSUFICIE>Parâmetros insuficientes para conectar ao banco de dados</PARMS_INSUFICIE>
+  <ERRO_NA_CONEXÃO>Não foi possível estabelecer uma conexão com o banco de dados</ERRO_NA_CONEXÃO>
+  <ERRO_NA_SELECÃO>Não foi possível selecionar o banco de dados indicado</ERRO_NA_SELECÃO>
+  <INSERT_ERRO_CAM>Houve um erro inserir um novo registro no banco de dados</INSERT_ERRO_CAM>
+  <DELETE_ERRO_CAM>Houve um erro excluir dados da tabela</DELETE_ERRO_CAM>
+  <DELETE_UPDA_CAM>Houve um erro atualizar dados da tabela</DELETE_UPDA_CAM>
+  <QUERY_ERRO_CAMP>Houve um erro ao se executar uma instrução sql</QUERY_ERRO_CAMP>
+  <CRIPT_STR_CRIPT>A string já está criptografada</CRIPT_STR_CRIPT>
+  <CRIPT_STR_VAZIA>A string está vazia</CRIPT_STR_VAZIA>
+  <CRIPT_STR_DESCR>A string já está descriptografada</CRIPT_STR_DESCR>
+  <TEMPL_PARMS_VAZ>Parâmtros necessários estão em branco</TEMPL_PARMS_VAZ>
+  <TEMPL_TAG_REPLA>Número de tags e replaces incompativel</TEMPL_TAG_REPLA>
+  <E-MAIL_NOT_SEND>Erro ao enviar o e-mail</E-MAIL_NOT_SEND>
+  <TEMPLATE_NAO_EN>O arquivo de template não foi encontrado</TEMPLATE_NAO_EN>
+  <SESSION_NOT_ARR>A sessão passada como parâmetro não é um array</SESSION_NOT_ARR>
+  <INDI_OR_VALUE_E>O índice ou valor da session está em branco</INDI_OR_VALUE_E>
+  <SESSION_NOT_EXI>Não é possivel retornar o valor indexado pelo índice passo como parâmetro</SESSION_NOT_EXI>
+  <SE_INDICE_EMPTY>O índice passado como parâmetro está vazio</SE_INDICE_EMPTY>
+  <INDI_OR_VALUE_C>O índice ou valor da cookie está em branco</INDI_OR_VALUE_C>
+  <COOKIE_NOT_ARRA>A cookie passada como parâmetro não é um array</COOKIE_NOT_ARRA>
+  <DIRETORIO_INVAL>O diretório passado não é válido</DIRETORIO_INVAL>
+  <ARQUI_INCOMPLET>O arquivo não está completo, não foi possível obter todas suas informações</ARQUI_INCOMPLET>
+  <EXT_ARQUIV_INVA>A extensão do arquivo enviado não é válida</EXT_ARQUIV_INVA>
+  <TAMANHO_MAIOR_P>O arquivo ultrapassou o tamanho limite para envio</TAMANHO_MAIOR_P>
+  <LOCALIZA_INVALI>A localização enviada para montar a imagem não é válida</LOCALIZA_INVALI>
+  <ALTU_LARG_VAZIA>A largura e/ou altura da imagem está(ão) vazia(s)</ALTU_LARG_VAZIA>
+  <LIB_TO_GIF_INVA>A biblioteca para tratamento de imagens no formato GIF não foi encontrada</LIB_TO_GIF_INVA>
+  <LIB_TO_JPG_INVA>A biblioteca para tratamento de imagens no formato JPG não foi encontrada</LIB_TO_JPG_INVA>
+  <LIB_TO_PNG_INVA>A biblioteca para tratamento de imagens no formato PNG não foi encontrada</LIB_TO_PNG_INVA>
+  <INI_FILE_NOT_FI>Não foi possível recuperar as informações do arquivo ini</INI_FILE_NOT_FI>
+  <CAMINHO_NOT_DEF>O caminho para gerar o arquivo RSS não está definido</CAMINHO_NOT_DEF>
+  <CANAL_INSE_VAZI>O canal inserido está vazio</CANAL_INSE_VAZI>
+  <CANAL_JAH_INSER>Um canal já foi inserido</CANAL_JAH_INSER>
+  <IMAGEM_ES_VAZIA>A imagem inserida está vazia</IMAGEM_ES_VAZIA>
+  <IMAGEM_JAH_INSE>Uma imagem já fopi inserida</IMAGEM_JAH_INSE>
+  <ITEM_CAMPOS_VAZ>O ítem inserido está com seus campos vazios</ITEM_CAMPOS_VAZ>
+  <ERRO_COUNT_REGS>Houve um erro ao contar os registros de uma tabela</ERRO_COUNT_REGS>
+  <ERRO_G_MAX_REGS>Houve um erro ao gerar o registro máximo de uma tabela</ERRO_G_MAX_REGS>
+  <ERRO_GETIN_ROWS>Houve um erro recuperar os dados de uma tabela</ERRO_GETIN_ROWS>
+  <SALVANDO_XML_FI>Houve um erro salvar um arquivo xml</SALVANDO_XML_FI>
+  <EXTRAINDO_XML_F>Houve um erro recuperar um arquivo xml</EXTRAINDO_XML_F>
+  <ERRO_AO_CARREGA>Erro ao carregar imagem</ERRO_AO_CARREGA>
+  <GENERATING_TABL>Houve um erro ao gerar dinâmicamente as tabelas do sistema</GENERATING_TABL>
+</system_errors>

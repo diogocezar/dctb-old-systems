@@ -1,0 +1,50 @@
+.fonteTexto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #adadae;
+}
+.fonteTextoRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #a80707;
+}
+.fonteTituloRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #a80707;
+}
+.form {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #0E1010;
+	background-color: #adadae;
+	border: 1px solid #0E1010;
+}
+.table {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #0E1010;
+	background-color: #333333;
+	border: 1px solid #333333;
+}
+.link_vermelho{
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 9px;
+	font-style: normal;
+	color: #a80707;
+}
+.link_vermelho:hover {
+	text-decoration: underline;
+}
+.link_cinza{
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 9px;
+	font-style: normal;
+	color: #adadae;
+}
+.link_cinza:hover {
+	text-decoration: underline;
+}

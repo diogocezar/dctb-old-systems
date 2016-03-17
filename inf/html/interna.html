@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- BEGIN blk_titulo -->
+<title>{titulo}</title>
+<!-- END blk_titulo -->
+<link href="../css/cssInfo.css" rel="stylesheet" type="text/css" />
+<link href="../css/cssTlInfo.css" rel="stylesheet" type="text/css" />
+
+<script src="../jscripts/ajax/ajax.js"> </script>
+
+<!--
+  jQuery library
+-->
+<script type="text/javascript" src="../jscripts/jcarousel/lib/jquery-1.2.3.pack.js"></script>
+
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="../jscripts/jcarousel/lib/jquery.jcarousel.pack.js"></script>
+
+<!--
+  jCarousel core stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="../jscripts/jcarousel/lib/jquery.jcarousel.css" />
+
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="../jscripts/jcarousel/skins/ie7/skin.css" />
+
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 3,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback,
+		scroll: 1,
+		visible: 1,
+		animation: 'slow'
+    });
+});
+</script>
+
+</head>
+<body>
+<div id="container">
+    	<div id="header"></div>
+        <!-- BEGIN blk_top -->
+        <div id="top">
+        	<div id="foto"></div>
+            <div id="menu">
+            	<div id="menuInterno">
+                <div id="titulo" class="tituloInterno">Menu</div>
+            	<ul>
+                	<li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu1}" class="linkMenu">{menu1}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu2}" class="linkMenu">{menu2}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu3}" class="linkMenu">{menu3}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu4}" class="linkMenu">{menu4}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu5}" class="linkMenu">{menu5}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu6}" class="linkMenu">{menu6}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu7}" class="linkMenu">{menu7}</a></li>
+                    <li><img src="../images/icoMenu.gif" width="5" height="5" /> <a href="{linkMenu8}" class="linkMenu">{menu8}</a></li>
+                </ul>
+                </div>
+                <div id="destaque">
+                  <ul id="mycarousel" class="jcarousel-skin-tango">
+                    <li><img src="../images/carrosel/DSC05220.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05219.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05218.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05217.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05216.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05215.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05213.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05212.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05211.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05210.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05209.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05208.JPG" width="120" height="120" alt="" /></li>
+                    <li><img src="../images/carrosel/DSC05207.JPG" width="120" height="120" alt="" /></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END blk_top -->
+        <div id="interna">
+        <!-- BEGIN blk_tituloInterna -->
+        <table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="51" valign="top" background="../images/topInterna.gif"><table width="92%" height="29" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="47" height="10"></td>
+                  <td width="658"></td>
+                </tr>
+                <tr>
+                  <td height="18"></td>
+                  <td valign="middle" class="tituloInterno">{tituloInterna}</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <!-- END blk_tituloInterna -->
+        <table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="766" height="260" valign="top" background="../images/bgInterna.gif">
+            <!-- BEGIN blk_conteudo -->
+              <table width="91%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="11" height="260">&nbsp;</td>
+                  <td width="675" valign="top" class="textoPreto">{conteudo}</td>
+                  <td width="11">&nbsp;</td>
+                </tr>
+              </table>
+              <!-- END blk_conteudo -->
+            </td>
+          </tr>
+        </table>
+        <table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <!-- BEGIN blk_menu_inferior -->
+            <td height="60" align="center" valign="middle" background="../images/menuInferior.jpg" class="textoPreto"><a href="{linkMenu1}" class="linkMenuInf">{menu1}</a> | <a href="{linkMenu2}" class="linkMenuInf">{menu2}</a> | <a href="{linkMenu3}" class="linkMenuInf">{menu3}</a> | <a href="{linkMenu4}" class="linkMenuInf">{menu4}</a> | <a href="{linkMenu5}" class="linkMenuInf">{menu5}</a> | <a href="{linkMenu6}" class="linkMenuInf">{menu6}</a> | <a href="{linkMenu7}" class="linkMenuInf">{menu7}</a> | <a href="{linkMenu8}" class="linkMenuInf">{menu8}</a></td>
+            <!-- END blk_menu_inferior -->
+          </tr>
+        </table>
+        <table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><img src="../images/bgCopyright.jpg" alt="Kreea! - Web Solution" width="766" height="53" border="0" usemap="#footer" /></td>
+          </tr>
+        </table>
+        </div>
+     </div>
+</body>
+</html>
