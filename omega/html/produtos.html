@@ -1,0 +1,75 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_gerenciar -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+	  <form name="{formProdutos}" method="post" id="{formProdutos}">
+      <tr>
+        <td height="21" align="center" bgcolor="#525B68"><span class="texto5">Qntd</span></td>
+        <td height="21" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;Produto</span></td>
+        <td height="21" align="left" bgcolor="#525B68"><span class="texto5">&nbsp;Valor</span></td>
+        <td height="21" bgcolor="#525B68">&nbsp;</td>
+      </tr>
+	  <!-- BEGIN bloco_gerenciar_interno -->
+      <tr>
+        <td width="9%" align="center" bgcolor="#EDEDED">
+		<input name="{qtdProdutos}" type="text" class="form" id="{qtdProdutos}" value="{valorQtd}" size="3" maxlength="3" />
+		<input name="{qtdEstoque}" type="hidden" class="form" id="{qtdEstoque}" value="{valorQtdEstoque}" size="3" maxlength="3" />
+		</td>
+        <td width="51%" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;{produto}</span></td>
+        <td width="18%" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;R$ {valor}</span></td>
+        <td width="22%" align="left" bgcolor="#EDEDED"><a href="#"><img src="../images/bot_comprar.jpg" alt="Comprar !" width="85" height="25" border="0" onclick="{onClickComprar}" /></a></td>
+      </tr>
+	  <!-- END bloco_gerenciar_interno -->
+	  </form>
+    </table>
+	</td>
+  </tr>
+</table>
+<!-- BEGIN bloco_gerenciar_erro -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{erro}</td>
+      </tr>
+    </table>
+	</td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_erro -->
+<!-- BEGIN bloco_gerenciar_paginacao -->
+<!-- BEGIN bloco_gerenciar_paginacao_controle -->
+<br>
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><span class="texto"> {paginacao}</span>          <label></label></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_paginacao_controle -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{infos}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- BEGIN bloco_gerenciar_paginacao -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><label><a href="#"><img src="../images/bot_voltar2.jpg" alt="Voltar !" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></label></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar -->

@@ -1,0 +1,29 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssSifin.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formPeriodicidade}" action="{actionPeriodicidade}" method="post">
+	<div id="formTitulo">Descrição</div>
+	<input name="{campoDescricao}" type="text" value="{valorDescricao}" class="form" />
+	<div id="formTitulo">Período</div>
+	<input name="{campoQtdnumerico}" type="text" class="formPequeno" onkeypress="isNum(this,event)" value="{valorQtdnumerico}" maxlength="5" />
+	<select name="{campoTipoperiodo}" id="{campoTipoperiodo}" class="formPequeno">
+		<option value="day">Dia</option>
+		<option value="week">Semana</option>
+		<option value="month">Mês</option>
+		<option value="year">Ano</option>
+	</select>
+	<div id="formTitulo">Situação</div>
+	<input name="{campoSituacao}" type="text" value="{valorSituacao}" class="form" disabled="disabled"/>
+	<!-- BEGIN bloco_formulario_baixa -->
+	<div id="formTitulo">Data da baixa</div>
+	<input name="{campoDataBaixa}" type="text" value="{valorDataBaixa}" class="form" disabled="disabled"/>
+	<!-- END bloco_formulario_baixa -->
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" />
+		<input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" />
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

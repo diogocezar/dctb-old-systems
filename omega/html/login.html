@@ -1,0 +1,28 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_login -->
+<table width="182" border="0" class="form" align="center">
+  <form name="{formLogin}" id="{formLogin}" method="post" action="{actionLogin}">
+  <tr>
+    <td align="center"><table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="3" align="center" bgcolor="#525B68" class="texto5">Administra&ccedil;&atilde;o</td>
+        </tr>
+      <tr>
+        <td width="31%" align="left" bgcolor="#EDEDED" class="texto"> &nbsp;&nbsp;Usu&aacute;rio</td>
+        <td width="69%" colspan="2" align="center" bgcolor="#EDEDED" class="texto"><label>
+          <input name="{campoLogin}" type="text" class="form" id="{campoLogin}" maxlength="15" onkeypress="pulaCampoNoEnter({campoSenha})" />
+        </label></td>
+        </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Senha</td>
+        <td colspan="2" align="center" bgcolor="#EDEDED" class="texto"><input name="{campoSenha}" type="password" class="form" id="{campoSenha}" maxlength="15" onkeypress="enviaFormNoEnter({formLogin})" /></td>
+        </tr>
+      <tr>
+        <td height="33" colspan="3" align="center" bgcolor="#EDEDED" class="texto"><a href="{linkEntrar}"><img src="../images/bot_entrar.jpg" alt="{altEntrar}" width="85" height="25" border="0" onclick="{onClickEntrar}"></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- BEGIN bloco_login -->

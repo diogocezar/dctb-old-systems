@@ -1,0 +1,65 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_midia -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionMidia}" method="post" enctype="multipart/form-data" name="{formMidia}" id="{formMidia}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloMidia}</span></td>
+        </tr>
+      <tr>
+        <td width="89" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;C&oacute;digo</td>
+        <td width="74%" align="left" bgcolor="#EDEDED"><input name="{campoCodigo}" type="text" class="form" id="{campoCodigo}" value="{valorCodigo}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Filme</span></td>
+        <td align="left" bgcolor="#EDEDED"><select name="{comboFilme}" size="1" class="form" id="{comboFilme}">
+		  {comboFilmeOpcoes}
+        </select>        </td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Tipo</span></td>
+        <td align="left" bgcolor="#EDEDED"><label>
+          <select name="{comboTipo}" size="1" class="form" id="{comboTipo}">
+            <option value="DVD" {selDVD}>DVD</option>
+            <option value="VHS" {selVHS}>VHS</option>
+          </select>
+        </label></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Audio</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoAudio}" type="text" class="form" id="{campoAudio}" value="{valorAudio}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Legenda</span></td>
+        <td align="left" bgcolor="#EDEDED"><label>
+        <input name="{campoLegenda}" type="text" class="form" id="{campoLegenda}" value="{valorLegenda}" size="45" />
+        </label></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Regi&atilde;o</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoRegiao}" type="text" class="form" id="{campoRegiao}" value="{valorRegiao}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Formato</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoFormato}" type="text" class="form" id="{campoFormato}" value="{valorFormato}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Locado</td>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">
+          <select name="{comboStatus}" size="1" class="form" id="{comboStatus}">
+            <option value="Sim" {selSim}>Sim</option>
+            <option value="Não" {selNao}>Não</option>
+          </select>
+        </span></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_midia -->

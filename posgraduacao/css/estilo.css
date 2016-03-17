@@ -1,0 +1,272 @@
+.data {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #DADADA;
+	font-weight: bold;
+}
+.titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.fundo_data {
+	background-image: url(../images/index_09.jpg);
+}
+.botao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #f2f4f5;
+	background-color: #4d5054;
+	border: 1px solid #f2f4f5;
+}
+
+.letra_padrao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+.fundo_data_interno {
+	background-image: url(../images/barra_cinza_sup.gif);
+}
+
+.letra_contatos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.letra_padrao_negrito {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	
+}
+.formulario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	background-color: #f2f4f5;
+	border: 1px solid #4d5054;
+}
+.letra_menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.link_claro{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.link_claro:hover {
+	text-decoration: underline;
+}
+.link_cinza{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #333333;
+}
+.link_cinza:hover {
+	text-decoration: underline;
+}
+.link_escuro{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+.link_escuro:hover {
+	text-decoration: underline;
+}
+	.curso_2 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #28791c;
+	}
+	.link_curso_2 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_2:hover {
+		text-decoration: none;
+		color: #28791c;
+	}
+	
+	.curso_3 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #e29811;
+	}
+	.link_curso_3 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_3:hover {
+		text-decoration: none;
+		color: #e29811;
+	}
+	
+	.curso_4 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #5c6286;
+	}
+	.link_curso_4 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_4:hover {
+		text-decoration: none;
+		color: #5c6286;
+	}
+	
+	.curso_5 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #715714;
+	}
+	.link_curso_5 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_5:hover {
+		text-decoration: none;
+		color: #715714;
+	}
+	
+	.curso_6 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #e3352e;
+	}
+	.link_curso_6 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_6:hover {
+		text-decoration: none;
+		color: #e3352e;
+	}
+	
+	.curso_7 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #3250c2;
+	}
+	.link_curso_7 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_7:hover {
+		text-decoration: none;
+		color: #3250c2;
+	}
+	
+	.curso_8 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #0099FF;
+	}
+	.link_curso_8 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_8:hover {
+		text-decoration: none;
+		color: #0099FF;
+	}
+	.curso_10 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #715714;
+	}
+	.link_curso_10 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_10:hover {
+		text-decoration: none;
+		color: #715714;
+	}
+	.curso_11 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #715714;
+	}
+	.link_curso_11 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_11:hover {
+		text-decoration: none;
+		color: #715714;
+	}
+	.curso_12 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #f387ce;
+	}
+	.link_curso_12 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_12:hover {
+		text-decoration: none;
+		color: #f387ce;
+	}
+	
+	
+	
+	.curso_13 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #5abe11;
+	}
+	.link_curso_13 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_13:hover {
+		text-decoration: none;
+		color: #5abe11;
+	}
+	
+	
+	
+	.curso_14 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #944644;
+	}
+	.link_curso_14 {
+		text-decoration: none;
+		font-family: Verdana;
+		color: #333333;
+	}
+	.link_curso_14:hover {
+		text-decoration: none;
+		color: #944644;
+	}	
+	
+	
+	
+.letra_noticia {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}

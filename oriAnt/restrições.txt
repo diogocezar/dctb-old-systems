@@ -1,0 +1,5 @@
+1) A página hospedeira não pode ser feita com frames.
+
+2) A página deve utilizar apenas links para navegação, links que tiverem funções javascripts serão desconsiderados.
+
+3) A página deverá estar com os cookies habilitados.

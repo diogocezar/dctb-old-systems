@@ -1,0 +1,74 @@
+Últimas notícias
+http://news.google.com/news?ned=pt-BR_br&topic=h&output=rss
+
+Mundo
+http://news.google.com/news?ned=pt-BR_br&topic=w&output=rss
+
+Brasil
+http://news.google.com/news?ned=pt-BR_br&topic=n&output=rss
+
+Negócios
+http://news.google.com/news?ned=pt-BR_br&topic=b&output=rss
+
+Ciência/tecnologia
+http://news.google.com/news?ned=pt-BR_br&topic=t&output=rss
+
+Saúde
+http://news.google.com/news?ned=pt-BR_br&topic=m&output=rss
+
+Esportes
+http://news.google.com/news?ned=pt-BR_br&topic=s&output=rss
+
+	Automobilismo
+	http://rss.terra.com.br/0,,EI1874,00.xml
+	
+	Fórmula 1
+	http://rss.terra.com.br/0,,EI6458,00.xml
+
+	Basquete
+	http://rss.terra.com.br/0,,EI1885,00.xml
+
+	Motociclismo
+	http://rss.terra.com.br/0,,EI1873,00.xml
+
+	Tênis
+	http://rss.terra.com.br/0,,EI1867,00.xml
+
+	Vôlei
+	http://rss.terra.com.br/0,,EI1891,00.xml
+
+Entretenimento
+http://news.google.com/news?ned=pt-BR_br&topic=e&output=rss
+
+Diversão
+http://rss.terra.com.br/0,,EI25,00.xml
+
+	Arte e Cultura
+	http://rss.terra.com.br/0,,EI3615,00.xml
+
+	Cinema & DVD
+	http://rss.terra.com.br/0,,EI1176,00.xml
+
+	Gente & TV
+	http://rss.terra.com.br/0,,EI1118,00.xml
+
+	Moda
+	http://rss.terra.com.br/0,,EI1119,00.xml
+
+	Música
+	http://rss.terra.com.br/0,,EI1267,00.xml
+
+Games
+http://rss.terra.com.br/0,,EI1702,00.xml
+
+	Nintendo
+	http://rss.terra.com.br/0,,EI6498,00.xml
+
+	PC
+	http://rss.terra.com.br/0,,EI6499,00.xml
+	
+	Playstation 
+	http://rss.terra.com.br/0,,EI6500,00.xml
+
+	Xbox
+	http://rss.terra.com.br/0,,EI6501,00.xml

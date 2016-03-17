@@ -1,0 +1,259 @@
+@charset "utf-8";
+body {
+	background-image: url(../images/bg.jpg);
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+h3 {
+	font-size: 16px;
+	text-transform: none;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+.breadcrump {
+	font-size: 10px;
+	color: #D2D2D2;
+}
+
+.fonteData{
+	color:#999999;
+}
+
+.depoimento{
+	font-weight:bold;
+	font-size:16px;
+}
+
+.form{
+	border: 1px solid #666666;
+	font-size:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	width:250px;
+}
+
+.botao{
+	border: 1px solid #666666;
+	font-size:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	width:100px;
+	background:#999999;
+}
+
+.formAdmin{
+	border: 1px solid #666666;
+	font-size:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	width:400px;
+}
+
+
+#menu {
+	padding-top: 18px;
+	padding-left: 23px;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #cccccc;
+	line-height: 20px;
+	font-weight: normal;
+}
+
+#bordaPrincipal{
+	border: 2px solid #555555;
+	width:542px;
+}
+
+.tabelaInterna{
+	border: 2px solid #555555;
+	background-color:#242424;
+}
+
+a:link {
+	color: #cccccc;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #cccccc;
+}
+a:hover {
+	color: #8F8F8F;
+}
+a:active {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+#boxDepoimentos{
+	position:relative;
+	left:15px;
+	bottom:15px;
+	float:left;
+	clear:both;
+	border: 1px dotted #666666;
+	width:481px;
+	padding:10px;
+}
+
+#tituloDepoimentos{
+	position:relative;
+	left:15px;
+}
+
+#listaTitulo{
+	position:relative;
+	float:left;
+	clear:both;
+	color:#999999;
+}
+
+#listaConteudo{
+	position:relative;
+	float:left;
+	clear:both;
+	text-align:justify;
+	width:100%;
+}
+
+#listaDivisao{
+	position:relative;
+	float:left;
+	clear:both;
+	height:5px;
+	width:100%;
+	border-bottom: 1px dotted #666666;	
+	bottom:5px;
+	padding-top:5px;
+}
+
+#formDepoimento{
+	position:relative;
+	float:left;
+	clear:both;
+	top:10px;
+	height:275px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border: 1px dotted #666666;
+}
+
+#formContato{
+	position:relative;
+	float:left;
+	clear:both;
+	top:10px;
+	height:305px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border: 1px dotted #666666;
+}
+
+#boxLogin{
+	position:relative;
+	float:left;
+	clear:both;
+	top:10px;
+	height:100px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border: 1px dotted #666666;
+}
+
+#painelAdmin{
+	position:relative;
+	float:left;
+	clear:both;
+	top:10px;
+	height:100%;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border: 1px dotted #666666;
+}
+
+#conteudoCenter{
+	position:relative;
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+#padraoFormAdmin{
+	position:relative;
+	float:left;
+	clear:both;
+	top:10px;
+	height:100%;
+	width:405px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	border: 1px dotted #666666;
+}
+
+#menuAdmDivisao{
+	position:relative;
+	border-bottom: 1px dotted #666666;
+	width:405px;
+	height:15px;
+}
+
+#itemAdmin{
+	position:relative;
+	top:5px;
+}
+
+#listaTituloDetalhes{
+	position:relative;
+	float:left;
+	clear:both;
+	font-size:12px;
+	color:#CCCCCC;
+	width:100%;
+}
+
+#listaDataDetalhes{
+	position:relative;
+	float:left;
+	clear:both;
+	font-size: 10px;
+	color: #cccccc;
+	width:100%;
+	height:10px;
+	font-weight: normal;
+	padding-bottom:10px;
+}
+
+#listaDescricaoDetalhes{
+	position:relative;
+	float:left;
+	clear:both;
+	text-align:justify;
+	height:100%;
+	width:100%;
+}
+
+#listaAutorDetalhes{
+	position:relative;
+	float:left;
+	clear:both;
+	height:100%;
+	width:100%;
+	text-align:right;
+	color: #cccccc;
+}
+
+#id_voltar{
+	float:left;
+	width:100%;
+	position:relative;
+	top:30px;
+	height:70px;
+}

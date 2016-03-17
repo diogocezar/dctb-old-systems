@@ -1,0 +1,315 @@
+/**
+  * Especificação para criação dos formulários do site "Locadora Omega".
+  * A seguir estão descritos como devem ser montados os formulários do site.
+  */
+
+[A primeira variavel indica o NOME do text field e deve ser colocada exatamente como escrita inclusive com
+as chaves {}. a segunda variavel é o valor desse textfield e deve ser colocada no valor também exatamente como
+escrita.
+
+O nome do formulário também eh uma variavel {formTeste}.
+
+A ação do formulário também eh uma vairavel {actionTeste}.
+
+Para melhor entendimento, vamos fazer uma convenção que já venho usando a muito tempo.
+
+NOME DAS VARIAVEIS :
+
+se a palavra for simples, ou seja tive apenas uma palavra (o que não é muito usado) deve ser escita totalmente em minúsculo
+como por Ex: {nome}
+
+Se a palavra for composta, ou seja tiver mais de uma palavra deve ser escrita com a primeira letra minúscula
+e as demias letras maiúsculas. Por Ex: {exemploDeVariavel}
+
+E é claro as variaveis devem estar escritas entre chaves {}. ]
+
+COMBOS : Nos combos como de costume se altera o nome do combo, e no lugar das <option> coloca-se apenas uma variavel,
+parece estranho, mas as opção são "geradas" então um exemplo :
+
+  <select name="select">
+    <option value="oi">oi</option>
+    <option value="oi">oi</option>
+    <option value="oi">oi</option>
+  </select>
+
+Ficaria nos templates assim
+
+  <select name="{comboSelect}">
+	{comboSelectOpcoes}
+  </select>
+
+Então os combos serão descritos
+
+Combo : {comboSelect}/{comboSelectOpcoes}
+
+# Não existe diferença entre os textfields e os textarea, use-os com coerencia, onde achar necessário
+  a existencia de um campo maior use o text área, da mema maneira subistituindo os nomes das variaveis.
+
+# Para efetuar o cadastro de itens de uma tabela de n pra n ou seja, por exemplo um produto pode estar em vários pedidos e
+  um pedido pode ter vários produtos.
+
+# Para efetuar esse tipo de cadastro usa-se um combo box contendo os "produtos" e uma listbox contendo os produtos de certo pedido.
+  O nome dessa list box deve ser escrito de forma diferente para que o php entenda a como uma lista.
+
+# Exemplo para o nome de uma list box : list_prod[],
+
+# Entretanto como esse nome DEVE ser uma variavel, pode ter o nome noemal de uma variavel {listaProdutos}
+
+# Da mesma forma que o combo suas <option> devem ser subistituidas por uma variavel.
+
+/******************************************************************/
+
+Tabela -> email
+{Essa tabela armazena os emails do newsletter, é nela que todos os emails do site são cadastrados,
+pois quem estiver nela vai receber as "novidades" via email... o formulário necessário aqui eh apenas
+aquele da página principal.}
+
+
+/******************************************************************/
+
+Tabela -> tipo_user
+{Armazena os tipos de usuário, é interessante se construir o formulário porém não essencial, pois
+não sei se é viavel cria novos tipos de usuário, esse tipo de usuário é o que define a "permissão"
+que determinado usuário tem no site, por definição estou usando 3.
+
+Cliente
+Gerencte
+Administrador
+
+A diferença básica é que o cliente apenas pode efetuar pedidos, e o gerente é restrito, ou seja não
+pode acessar todas as opções que o administrador pode. (Quais eu ainda não sei).}
+
+Form : {formTipo}/{actionTipo}
+
+Tipo : {campoTipo}/{valorTipo}
+Nivel : {campoNivel}/{valorNivel}
+
+
+/******************************************************************/
+
+Tabela -> usuario
+
+Form : {formUsuario}/{actionUsuario}
+
+Email: {campoEmail}/{valorEmail}
+Nome:  {campoNome}/{valorNome}
+Sobrenome : {campoSobre}/{valorSobre}
+Login : {campoLogin}/{campoSenha}
+
+[Combo com os tipos de usuários resgatados do banco]
+Tipo : {comboTipo}/{comboTipoOpções}
+
+
+/******************************************************************/
+
+Tabela -> enquete
+
+Form : {formEnquete}/{actionEnquete}
+
+Pergunta : {campoPergunta}/{valorPergunta}
+Resposta1 : {campoResposta1}/{valorResposta1}
+...
+Resposta4 : {campoResposta4}/{valorResposta4}
+
+[Combo contendo sim ou naum]
+Exibir : {comboExibir}/{comoExibirOpcoes}
+
+/******************************************************************/
+
+Tabela -> novidade
+
+Form : {formNovidade}/{actionNovidade}
+
+Titulo : {campoNovidade}/{valorNovidade}
+Conteúdo : {campoConteudo}/{valorConteudo}
+
+/******************************************************************/
+
+Tabela -> categoria
+
+Form : {formCategoria}/{actionCategoria}
+
+Nome : {campoNome}/{valorNome}
+Descrição : {campoDescricao}/{valorDescricao}
+Tempo de Locação (Horas) : {campoTempLoc}/{valorTempLoc}
+Preço da Categoria : {campoPreco}/{valorPreco}
+
+
+/******************************************************************/
+
+Tabela -> Genero
+
+Form : {formGenero}/{actionGenero}
+
+
+Nome : {campoNome}/{valorNome}
+Descrição : {campoDescricao}/{valorDescricao} 
+
+/******************************************************************/
+
+Tabela -> classificacao
+
+Form : {formClassificacao}/{actionClassificacao}
+
+Classificação : {campoClassificacao}/{valorClassificacao}
+Idade Recomendada : {campoIdade}/{valorIdade}
+
+/******************************************************************/
+
+Tabela -> filme
+
+Form : {formFilme}/{actionFilme}
+
+[Combo com as categorias]
+Categoria : {comboCategoria}/{comboCategoriaOpcoes}
+
+[Combo com as classificações]
+Classificação : {comboClassificacao}/{comboClassificacaoOpcoes}
+
+[Combo com os atores e uma lista para colocar os adicionados]
+Atores : {comboAtores}/{comboAtoresOpcoes}
+-----> ListBox dos Atores Selecionados : {listAtores}/{listAtoresOpcoes}
+
+[Combo com os diretores e uma lista para colocar os adicionados]
+Diretores : {comboDiretores}/{comboDiretoresOpcoes}
+-----> ListBox dos Diretores Selecionados : {listDiretores}/{listDiretoresOpcoes}
+
+[Combo com os genereos e uma lista para colocar os adicionados]
+Genereos : {comboGenereos }/{comboGenereosOpcoes}
+-----> ListBox dos Genereos Selecionados : {listGenereos }/{listGenereosOpcoes}
+
+Titulo : {campoTitulo}/{valorTitulo}
+Titulo Original : {campoTituloOri}/{valorTituloOri}
+Anor : {campoAno}/{valorAno}
+Duração (minutos) : {campoDuracao}/{valorDuracao}
+Sinopse : {campoSinopse}/{valorSinopse}
+Foto (campo do tipo file) : {campoFoto}/{valorFoto}
+
+[Combo com as opções sim ou não]
+Destaque : {comboDestaque}/{comboDestaqueOpcoes}
+
+/******************************************************************/
+
+Tabela -> midia
+
+Form : {formMidia}/{actionMidia}
+
+[Combo com os filmes]
+Filme : {comboFilme}/{comboFilmeOpcoes}
+
+Tipo : {comboTipo}/{comboTipoOpcoes} ++ Esses tipos são salvos no arquivo de configuração do site.
+Audio : {comboAudio}/{comboAudioOpcoes} ++ Esses tipos são salvos no arquivo de configuração do site.
+Legenda : {comboLegenda}/{comboLegendaOpcoes} ++ Esses tipos são salvos no arquivo de configuração do site.
+
+/******************************************************************/
+
+Tabela -> taxa_entrega
+
+Form : {formTx}/{actionTx}
+
+Localização : {campoLoc}/{valorLoc}
+Valor : {campoValor}/{valorValor}
+
+
+/******************************************************************/
+
+Esse formulário deve Cadastrar clientes é o formulário público para cadastro, e junta duas tabelas :
+
+Tabela -> cliente
+Tabela -> Usuário
+
+Nen todo usuário eh um cliente mas todos cliente é um usuário.
+
+Aqui alguns campos do cadastro de usuário se repetem.
+
+Form : {formCliente}/{actionCliente}
+
+Email: {campoEmail}/{valorEmail}
+Nome:  {campoNome}/{valorNome}
+Sobrenome : {campoSobre}/{valorSobre}
+Login : {campoLogin}/{campoSenha}
+
+Rg : {campoRg}/{valorRg}
+Rua : {campoRua}/{valorRua}
+Numero : {campoNumero}/{valorNumero}
+Bairro : {campoBairro}/{valorBairro}
+Telefone : {campoTelefone}/{valorTelefone}
+Celular : {campoCelular}/{valorCelular}
+Data de nascimento : {campoDataNasc}/{valorDataNasc}
+
+						 
+/******************************************************************/
+
+Esse formulario é o formulário que o cliente irá apenas confirmar, quando quiser alugar
+algum filme, ai clicar em locar, ele via pra esse formulario contendo combos com as informações que 
+ele deve confirmar.
+
+Tabela -> locacao
+
+Form : {formLocacao}/{actionLocacao}
+
+[Combo com as taxas de locação]
+Taxa de Entrega : {comboTx}/{comboTxOpcoes}
+
+[Lista com os produtos pedidos gerando o total]
+
+Data de entrega : {campoDataEntrega}/{valorDataEntrega}
+Hora da entrega : {campoHoraEntrega}/{valorHoraEntrega}
+
+Data de devolucao : {campoDataDevolucao}/{valorDataDevolucao}
+Hora de devolucao : {campoHoraDevolucao}/{valorHoraDevolucao}
+
+Valor da locação : {campoValor}/{valorValor}
+
+Multa : {campoMulta}/{valorMulta}
+
+[Combo com as "situações" da locação]
+Situacao : {comboSituacao}/{comboSituacaoOpcoes}
+
+
+/******************************************************************/
+
+
+Tabela -> produtos
+
+Form : {formProdutos}/{actionProdutos}
+
+Nome : {campoNome}/{valorNome}
+Quantidade : {campoQtd}/{campoQtd}
+Preço : {campoPreco}/{valorPreco}
+
+
+/******************************************************************/
+
+Tabela -> diretor
+
+Form : {formDiretor}/{actionDiretor}
+
+Nome : {campoNome}/{valorNome}
+
+
+/******************************************************************/
+
+Tabela -> ator
+
+Form : {formAtor}/{actionAtor}
+
+
+Nome : {campoNome}/{valorNome}
+
+Nome Nascimento : {campoNomeNas}/{valorNomeNas}
+
+Profissão : {campoProfissao}/{valorProfissao}
+
+Data de nascimento : {campoDataNasc}/{valorDataNasc}
+
+País Natal : {campoPais}/{valorPais}
+
+Cidade Natal : {campoCidade}/{valorCidade}
+
+Biografia : {campoBiografia}/{valorBiografia}
+
+Foto : {campoFoto}/{valorFoto}
+
+
+/******************************************************************/

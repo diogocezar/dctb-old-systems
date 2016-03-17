@@ -1,0 +1,51 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_enquete -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionEnquete}" method="post" name="{formEnquete}" id="{formEnquete}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloEnquete}</span></td>
+        </tr>
+      <tr>
+        <td width="102" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Pergunta</span></td>
+        <td width="297" align="left" bgcolor="#EDEDED"><input name="{campoPergunta}" type="text" class="form" id="{campoPergunta}" value="{valorPergunta}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Resposta 1</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoResposta1}" type="text" class="form" id="{campoResposta1}" value="{valorResposta1}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Resposta 2</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoResposta2}" type="text" class="form" id="{campoResposta2}" value="{valorResposta2}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Resposta 3 </span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoResposta3}" type="text" class="form" id="{campoResposta3}" value="{valorResposta3}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Resposta 4 </span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoResposta4}" type="text" class="form" id="{campoResposta4}" value="{valorResposta4}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Exibir</span></td>
+        <td align="left" bgcolor="#EDEDED"><label>
+        <select name="{comboExibir}" size="1" class="form" id="{comboExibir}">
+          <option value="Sim" {selSim}>Sim</option>
+          <option value="N&atilde;o" {selNao}>N&atilde;o</option>
+        </select>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="21" colspan="2" align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>Obs</strong>. ao se escolher para que essa enquete seja exibida as demais enquetes n&atilde;o ser&atilde;o mais mostradas. </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- BEGIN bloco_enquete -->

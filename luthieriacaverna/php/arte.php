@@ -1,0 +1,31 @@
+<?php
+/**
+* arquivo de configuração
+*/
+include("../conf/config.php");
+
+/**
+* cerebro do sistema
+*/
+include("../cerebro/includeCerebro.php");
+
+/**
+* biblioteca de funcoes
+*/
+include("../lib/library.php");
+include("../lib/util.php");
+
+/* definições para página interna */
+$pagina = getPaginaAtual();
+$escopo = "Arte da Luthieria";
+$caminho = "Página Inicial";
+
+/* objeto */
+$objeto = $controlador['informacoes'];
+$objeto->__toFillGeneric();
+$objeto->__get_db();
+
+$conteudo = $objeto->getArte();
+
+include('includeInterna.php');
+?>

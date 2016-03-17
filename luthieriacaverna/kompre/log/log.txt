@@ -1,0 +1,14 @@
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:30/03/2006#13:00:48;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:30/03/2006#13:50:10;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:30/03/2006#15:48:14;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:30/03/2006#22:23:39;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:31/03/2006#00:55:57;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:31/03/2006#01:09:34;
+[LOGOUT]ip:127.0.0.1;nome:Diogo Cezar;quando:06/04/2006#12:26:04;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:11/04/2006#16:56:27;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:26/04/2006#14:47:14;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:26/04/2006#14:48:17;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:28/04/2006#15:54:53;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:28/04/2006#15:57:33;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:28/04/2006#16:01:39;
+[LOGIN]ip:127.0.0.1;nome:Diogo Cezar Teixeira Batista;quando:17/07/2007#14:30:50;

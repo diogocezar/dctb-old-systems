@@ -1,0 +1,42 @@
+**ARQUIVO LEIA-ME**
+
+Arquivo alterado por: Diogo Cezar Texeira Batista
+xgordo@gmail.com
+
+**ALTERAÇÕES**
+
+1) Método utilizado alterado para POST (No script que peguei estava como GET);
+2) Adicionado tempo de delay para que o script não trave, pelo fato do ajax trabalhar de forma assincrona;
+3) Adicionado AGUARDE... enquando o script efetua o cadastro no banco;
+4) Exemplo de como o script se comporta em várias páginas;
+5) Restrição de 1 voto por página armazenado na sessão.
+
+_______
+
+Autora: Vanessa Schissato
+www.vs-solutions.com
+webmaster@vs-solutions.com
+nessa_uepa@yahoo.com.br
+
+=> Crie o banco de dados conforme o arquivo bd.sql
+
+=> Mude os dados da conexão (host, user e senha) nos arquivos inserir_avaliacao.php e computar_avaliacao.php
+
+=> Para inserir uma avaliacao em uma pagina apenas acrescente:
+
+    <div id=avaliacao>
+        <?php include "computar_avaliacao.php";?>
+
+    </div>
+
+    <div id=comunicacao></div>
+
+    *Colocando esse trecho de código em páginas diferentes o código reconhecerá como avaliações diferentes.
+    Se mais de uma avaliação será inserida em uma mesma página, deve-se mudar o parâmetro passado na funcao InserirAvaliacao(), trocando em todos os arquivos a variavel $pg pela chave desejada, que identificará a avaliação como única.
+
+=> Insira o arquivo Javascript do Ajax na página:
+
+     <script type="text/javascript" src="script/ajax.js"></script>
+
+
+

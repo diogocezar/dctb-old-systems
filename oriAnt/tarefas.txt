@@ -1,0 +1,26 @@
+SISTEMA DE NOTÍCIAS EM RSS
+
+1) Terminar a implementação dos tipos de apoio.
+
+2) Criar página de notícias para testes.
+
+3) Publicar página na web para usuários testarem.
+
+4) Coletar resultados e escreve-los.
+
+5) Escrita da monografia.
+
+
+
+
+
+
+
+
+
+~~~~~~
+
+1) Arrumar alteração dos tamanhos dos grupos (com 3 grupos)
+2) Arrumar a indicação do tempo restando para atualização do rss
+3) Remover computação de feromônio dos links gerados [ok]
+4) - Mensagem de Aviso: Não foi possível localizar a noticia na seguinte noticia: EXCLUSIVO-Bush vê setembro como "momento importante" no Iraque - Reuters Brasil

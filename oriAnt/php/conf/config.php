@@ -1,0 +1,189 @@
+<?php
+/**
+* Arquivo de configuração das classes.
+*
+* Definindo constantes de configuração
+*/
+
+/**#@+
+* Constantes
+*/
+
+/**
+* B A N C O   D E   D A D O S
+*/
+
+/**
+* Qual banco de dados ?
+* Opções :
+* 1 - dbase
+* 2 - fbsql
+* 3 - ibase
+* 4 - ifx
+* 5 - msql
+* 6 - mssql
+* 7 - mysql
+* 8 - mysqli
+* 9 - oci8
+* 10 - odbc
+* 11 - pgsql
+* 12 - sqlite
+* 13 - storage
+* 14 - sybase
+*/
+define(BASE_TYPE, 'mysql');
+ 
+/**
+* Nome do Banco de Dados.
+*/
+define(BASE, 'noticiasrss');
+
+/**
+* Servidor do Banco de Dados.
+*/
+define(HOST, 'localhost');
+
+/**
+* Usuário do Banco de Dados.
+*/
+define(USER, 'root');
+
+/**
+* Senha do Bando de Dados.
+*/
+define(PASS, '[empty]');
+
+/**
+* Localização do Banco de Dados.
+*/
+define(PATH, '');
+
+/**
+* Variavel que receberá o objeto após a conexão.
+*/	 
+$dataBase = '';
+
+/**
+* E N V I O   D E   E - M A I L 
+*/
+	 
+/**
+* Diretório padrão dos templates.
+*/
+define(TEMPLATE_HTML_DIR, '../html/');
+
+/**
+* Domínio do site.
+*/
+define(DOMAIN, 'http://'.$_SERVER['HTTP_HOST'].'/');
+
+/**
+* E N V I O   D E   A R Q U I V O S
+*/
+
+/**
+* Limitar as extensões ? (sim ou nao).
+*/
+define(LIMITAR_EXT, 'sim');
+
+/**
+* Extensões autorizadas.
+*/
+$extValidas = array(0 => '.gif',
+					1 => '.jpg',
+					2 => '.jpeg',
+					3 => '.png',
+					4 => '.swf',
+					5 => '.zip',
+					6 => '.rar');
+					
+/**
+* Array com os MIME types e suas respectivas extensões.
+*/
+
+$mimeExt = array('image/gif'   => '.gif',
+                 'image/pjpeg' => '.jpg',
+				 'image/x-png' => '.png',
+				 'application/x-shockwave-flash' => '.swf',
+				 'application/x-zip-compressed'  => '.zip',
+				 'application/x-rar-compressed'  => '.rar');
+
+/**
+* Limitar tamanho de arquivo ? (sim ou nao).
+*/
+define(LIMITAR_TAMANHO, 'sim');
+
+/**
+* Tamanho limite do arquivo em bytes.
+*/
+define(TAMANHO_BYTES, 50000000);
+
+/**
+* Alterar qualidade do arquivo no caso de foto (sim ou nao).
+*/
+define(ALTERAR_QUALIDADE, 'sim');
+
+/**
+* Qualidade da foto que será grava no servidor.
+*/
+define(QUALIDADE, 90);
+
+/**
+* G E R A Ç Ã O   D E   F O T O S 
+*/
+
+/**
+* Mensagem de erro padrão.
+*/
+define(MSG_IMG_ERRO, 'Erro ao carregar imagem.');
+
+/**
+* Altura da imagem no tamanho miniatura.
+*/
+define(ALTURA_MINIATURA, 90);
+
+/**
+* Largura da imagem no tamanho miniatura.
+*/
+define(LARGURA_MINIATURA, 70);
+
+/**
+* Altura da imagem no tamanho grande.
+*/
+define(ALTURA_GRANDE, 400);
+
+/**
+* Largura da imagem no tamanho grande.
+*/
+define(LARGURA_GRANDE, 380);
+
+/**
+* Tempo de espera após carregar a página, até subistituir os links.
+*/
+define(TIME, '1500');
+
+/**
+* Título do site
+*/
+define(TITULO, "");
+
+/**
+* Índice das sessions
+*/
+define(SESSION_PAGINAS, 'ses_paginas');
+
+/**
+* Configurações padronizadas
+*/
+define(TIPO_PADRAO, 'obj');
+define(CONTEXTO_PADRAO, 'all_pages');
+
+/**
+* Índice das sessions
+*/
+define(SESSION_PERMITIDO, 'ses_permitido');
+define(SESSION_LOGIN, 'ses_login');
+define(SESSION_ID, 'ses_id');
+define(SESSION_NOME, 'ses_nome');
+
+?>

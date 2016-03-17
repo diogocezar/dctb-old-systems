@@ -1,0 +1,1234 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage[lmargin=2.5cm,rmargin=2.5cm,tmargin=2.5cm,bmargin=3.5cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C O N F I G U R A Ç Õ E S  D O S   C Ó D I G O S %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lstset{numbers=left, stepnumber=1, firstnumber=1,
+numberstyle=\tiny, extendedchars=true, breaklines=true,frame=tb,
+basicstyle=\footnotesize, stringstyle=\tiny, showstringspaces=false}
+
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Listagens}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C O N F I G U R A Ç Õ E S   D A   P Á G I N A %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\footskip=1cm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% E S P A Ç A M E N T O   D U P L O %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\baselinestretch}{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C O M A N D O S   D E   S U B S T I T U I Ç Ã O %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\header}        [1]{\def\imprimeheader{#1}}
+\newcommand{\footer}        [1]{\def\imprimefooter{#1}}
+\newcommand{\titulo}        [1]{\def\imprimetitulo{#1}}
+\newcommand{\subtitulo}     [1]{\def\imprimesubtitulo{#1}}
+\newcommand{\autor}         [1]{\def\imprimeautor{#1}}
+\newcommand{\orientador}    [1]{\def\imprimeorientador{#1}}
+\newcommand{\local}         [1]{\def\imprimelocal{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C A B E Ç A L H O   F A N C Y   C O M   P A G I N A %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\setheader}{
+    \pagestyle{fancy}
+    \lhead{\bfseries \imprimeheader}
+    \chead{}
+    \rhead{\textcolor[rgb]{0.61,0.00,0.00}{\textbf{\thepage}}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C A B E Ç A L H O   L I M P O %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\setheaderlimpo}{
+    \thispagestyle{empty}
+    \lhead{}
+    \chead{}
+    \rhead{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% R O D A P É  C O M   C O N T E Ú D O  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\setfooter}{
+    \pagestyle{fancy}
+    \lfoot{\textcolor[rgb]{0.61,0.00,0.00}{\textbf{\imprimetitulo}}}
+    \cfoot{}
+    \rfoot{\textcolor[rgb]{0.61,0.00,0.00}{\textbf{\thepage}}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% R O D A P É  L I M P O %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\setfooterlimpo}{
+    \pagestyle{fancy}
+    \lfoot{}
+    \cfoot{}
+    \rfoot{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  S U B S T I T U I N D O   C O N S T A N T E S %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titulo{OriAnt 2007 - Artefatos} \subtitulo{PROPOSTA DE ABORDAGEM
+HIPERMÍDIA ADAPTATIVA BASEADA EM OTIMIZAÇÃO POR COLÔNIA DE FORMIGAS}
+\autor{Diogo Cezar Teixera Batista} \orientador{Ligia Flávia Antunes
+Batista} \local{Cornélio Procópio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C A B E Ç A L H O   D O   P R O J E T O %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\header{
+    \begin{minipage}{2cm}
+        \includegraphics[height=2cm]{images/logo.jpg}
+    \end{minipage}
+    \parbox{10.5cm}{\noindent
+        \textcolor[rgb]{0.61,0.00,0.00}{\textbf{\imprimetitulo}}
+        \newline
+        {\scriptsize \imprimeautor}
+        \newline
+        {\scriptsize \imprimeorientador}
+        \newline
+        {\scriptsize \today}
+    }
+    \vspace{0.1cm}
+}
+
+\setfooterlimpo
+\setheaderlimpo
+
+\begin{document}
+
+%%%%%%%%%%%
+% C A P A %
+%%%%%%%%%%%
+
+    \setfooter
+    \setheader
+
+    \begin{flushright}
+    \end{flushright}
+
+    \vspace{3cm}
+
+    \begin{center}
+    {\Huge \textbf{\textcolor[rgb]{0.61,0.00,0.00}{\imprimetitulo}}}
+
+    \vspace{2cm}
+
+    {\Large \textbf{\imprimesubtitulo}}
+
+    \vspace{1cm}
+
+    \includegraphics[height=6cm]{images/logo.jpg}
+
+    \vspace{1cm}
+
+    {\Large \imprimeautor}
+
+    \vspace{0.2cm}
+
+    {\Large \imprimeorientador}
+
+    \vspace{3.5cm}
+
+    \imprimelocal
+
+    \vspace{0.1cm}
+
+    \today
+
+    \end{center}
+
+    \newpage
+
+
+%%%%%%%%%%%%%%%%%
+% S U M Á R I O %
+%%%%%%%%%%%%%%%%%
+
+    \begin{flushright}
+    \end{flushright}
+
+    \setcounter{page}{2}
+
+    \setheader
+
+    \setfooterlimpo
+
+    \tableofcontents
+
+    \newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% D O C U M E N T O   P R I N C I P A L  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \setfooter
+
+    \section{Requisitos}
+
+Fluxo que visa a obter um conjunto de requisitos de um produto,
+aprovado pelo cliente e desenvolvedor.
+
+    \subsection{Levantamento dos requisitos funcionais e não-funcionais}
+
+        \subsubsection{Requisitos Funcionais}
+        \begin{longtable}{|p{1cm}|p{6cm}|p{6cm}|p{2cm}|}
+        \hline
+        ID & Funcionalidade & Necessidades & Prioridades \\
+        \hline
+        F01 & O sistema deve permitir a escolha de um grupo de interesse do usuário & Fornecimento do grupo escolhido & Essencial \\
+        \hline
+        F02 & O sistema deve permitir a escolha do tipo de orientação que o usuário deseja utilizar & Disponibilizar as opções para escolha & Essencial \\
+        \hline
+        F03 & O sistema deve ser acionado a cada clique do usuário na página hospedeira & Adição e subtração de feromônio a cada clique & Essencial \\
+        \hline
+        F04 & O sistema deve permitir o acesso restrito para o administrador & Fornecimento de uma identificação e senha para acesso ao sistema & Essencial \\
+        \hline
+        F05 & O sistema deve diferenciar grupos mais acessados & Contagem de usuários por grupo & Opcional \\
+        \hline
+        F06 & O sistema deve permitir a consulta de freqüência dos grupos & Contagem de usuários por grupo & Opcional \\
+        \hline
+        F07 & O sistema deve permitir a consulta de páginas cadastradas & Armazenamento das páginas acessadas & Opcional \\
+        \hline
+        F08 & O sistema deve permitir a administração dos grupos & Inserção, alteração e exclusão dos grupos & Essencial \\
+        \hline
+        F09 & O sistema deve permitir a seleção de templates disponíveis & Templates previamente cadastrados & Opcional \\
+        \hline
+        F10 & O sistema deve permitir a administração das cores dos links & Cadastro das cores & Opcional \\
+        \hline
+        F11 & O sistema deve permitir a alteração dos parâmetros administrativos & Armazenamento dos parâmetros administrativos & Essencial \\
+        \hline
+        F12 & O sistema deve permitir a consulta de índices de feromônio & Cadastro dos índices & Opcional \\
+        \hline
+        F13 & O sistema deve permitir o gerenciamento dos registros & Sistema de Gerenciamento & Essencial \\
+        \hline
+        \end{longtable}
+
+        \subsubsection{Requisitos Não-funcionais}
+
+        \begin{longtable}{|p{1cm}|p{11.5cm}|p{3cm}|}
+        \hline
+        ID & Requisitos & Categoria \\
+        \hline
+        NF01 & O sistema deverá ser manipulado através de uma interface gráfica & Usabilidade  \\
+        \hline
+        NF02 & O sistema deverá funcionar na Internet. & Espaço  \\
+        \hline
+        NF03 & O sistema deverá funcionar sobre plataforma Windows & Padronização e Entrega \\
+        \hline
+        NF04 & O sistema deverá utilizar PostgreSQL como SGBD-OR para armazenamento e manipulação dos dados & Padronização \\
+        \hline
+        NF05 & O sistema deverá possibilitar a interação dos usuários com o sistema, através de um software já utilizado pelos envolvidos (navegador de internet) & Usabilidade \\
+        \hline
+        NF06 & O sistema deverá utilizar a Linguagem de programação PHP & Padronização \\
+        \hline
+        NF07 & O sistema deverá ser parcialmente desenvolvido com base no processo de desenvolvimento UP (Unified Process) & Padronização \\
+        \hline
+        NF08 & O sistema deverá utilizar padrões da UML para a modelagem & Padronização \\
+        \hline
+        NF09 & O sistema deverá utilizar padrões de XHTML e CSS estabelecidos pela W3C & Padronização \\
+        \hline
+        \end{longtable}
+
+    \subsection{Levantamento dos atores e casos de uso}
+
+    \subsection{Atores}
+
+    \begin{center}
+        \includegraphics[width=5cm]{images/diagramas/Atores.jpg}
+    \end{center}
+
+    \subsection{Casos de uso}
+
+    \begin{center}
+        \includegraphics[width=10cm]{images/diagramas/CasosDeUso.jpg}
+    \end{center}
+
+    \subsection{Levantamento dos riscos}
+
+        \begin{longtable}{|p{0.7cm}|p{11cm}|p{1.5cm}|p{1.5cm}|}
+            \hline
+            ID & Risco & Categoria & PO \\
+            \hline
+            R1 & O sistema poderá tornar um site \textbf{dinâmico} mais lento que um padrão aceitável & Técnico & Média \\
+            \hline
+            R2 & O sistema poderá isolar certas áreas do site, criando "\textbf{áreas mortas}" & Técnico & Baixa \\
+            \hline
+            R3 & Os algoritmos genéticos podem levar mais tempo que o previsto para serem desenvolvidos  & Técnico & Baixa \\
+            \hline
+            R4 & O sistema pode não ser aceito, por ser lento ou não se enquadrar nos \emph{websites} atuais & Negócio & Baixa \\
+            \hline
+            R5 & Os algoritmos genéticos podem causar um maior custo de processamento que o esperado & Projeto & Baixa \\
+            \hline
+            R6 & Pode-se deparar com dados de backup corrompidos & Técnico & Baixa \\
+            \hline
+            R7 & O sistema pode não gerar a melhor sugestão de link para o usuário & Técnico & Média \\
+            \hline
+            R8 & O usuário prefere procurar seu objetivo que utilizar o sistema de sugestão & Técnico & Baixa \\
+            \hline
+            R9 & O sistema pode não funcionar caso o admin do \emph{website} hospedeiro não defina corretamente classes para os usuários & Técnico & Média \\
+            \hline
+            R10 & Usuários não são formigas, não há como prever seu comportamento no sistema proposto, podendo tornar o sistema completamente ineficaz & Técnico & Média \\
+            \hline
+        \end{longtable}
+
+        Em um trabalho de pesquisa científica, o resultado não pode ser
+        previsto, diferente de um sistema comercial em que o resultado deve
+        ser traçado como o objetivo da equipe. Este trabalho propõe testar uma
+        idéia e coletar seus resultados, podendo assim divulgar sua eficácia ou suas deficiências.
+
+        Os riscos citados têm como parâmetro suposições com o
+        conhecimento técnico obtido ao longo do curso, entretanto não podem
+        ser tomadas como realidade, tão pouco sua PO como real, e sim
+        apenas como uma estimativa.
+
+    \subsection{Especificação dos casos de uso}
+
+        \subsubsection{Especificação do caso de uso: AcionarLink}
+
+        \begin{center}
+            \includegraphics[width=10cm]{images/diagramas/AcionarLink.jpg}
+        \end{center}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AcionarLink\\
+        \hline
+        \textbf{Id:} UC01.1 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} O usuário deve ter escolhido um grupo.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item Usuário aciona um link do site.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O usuário é redirecionado para a página acionada.\\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} DeduçãoDeFeromônio\\
+        \hline
+        \textbf{Id:} UC01.2 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} O usuário deve ter escolhido um grupo.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O sistema executa a rotina de dedução de
+            feromônio.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O usuário é redirecionado para a página acionada.\\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AcréscimoDeFeromônio\\
+        \hline
+        \textbf{Id:} UC01.3 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} O usuário deve ter escolhido um grupo.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O sistema executa a rotina de acréscimo de
+            feromônio baseado no link acionado pelo usuário.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O usuário é redirecionado para a página acionada.\\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \subsection{Especificação do caso de uso: AdministrarGrupos}
+
+        \begin{center}
+            \includegraphics[width=10cm]{images/diagramas/AdministrarGrupos.jpg}
+        \end{center}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} InserirGrupo\\
+        \hline
+        \textbf{Id:} UC02.1 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador deverá informar o nome do novo grupo a ser inserido.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O administrador é redirecionado para página de gerenciamento, após a mensagem de registro inserido com sucesso. \\
+        \hline
+        \textbf{Fluxo alternativo:} Sistema informa que os dados não foram inseridos corretamente.\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AlterarGrupo\\
+        \hline
+        \textbf{Id:} UC02.2 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador deverá informar o novo nome do novo grupo a ser alterado.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O administrador é redirecionado para página de gerenciamento, após a mensagem de registro atualizado com sucesso. \\
+        \hline
+        \textbf{Fluxo alternativo:} Sistema informa que os dados não foram inseridos corretamente.\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} RemoverGrupo\\
+        \hline
+        \textbf{Id:} UC02.3 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador deverá escolher o grupo a ser removido.
+            \item O sistema deverá remover toda a trilha de
+            feromônio dos usuários que escolheram o grupo removido.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O administrador é redirecionado para página de gerenciamento, após a mensagem de registro removido com sucesso. \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \subsection{Especificação do caso de uso: GerenciarRegistrosDoSistema}
+
+        \begin{center}
+            \includegraphics[width=5cm]{images/diagramas/GerenciarRegistrosDoSistema.jpg}
+        \end{center}
+
+        Um sistema de gerenciamento de registros foi implementado
+        que possibilita a exibição, filtragem e exclusão de qualquer
+        tabela contida no banco de dados.
+
+        Através de parâmetros se altera quais campos serão buscados
+        e qual campo será mostrado.
+
+        Para a alteração do registro um formulário separado deverá
+        ser criado.
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} FiltrarRegistro\\
+        \hline
+        \textbf{Id:} UC03.1 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador deverá digitar as iniciais da
+            palavra que identifica o registro procurado em um \emph{inputbox}, enquanto o sistema
+            filtra os registros.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O sistema exibe apenas registros contendo partes da palavra digitada. \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AlterarRegistro\\
+        \hline
+        \textbf{Id:} UC03.2 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador escolhe o registro a ser alterado.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O administrador é redirecionado para o formulário de alteração. \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} ExcluirRegistro\\
+        \hline
+        \textbf{Id:} UC03.3 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador escolhe o registro a ser excluiro.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O administrador é redirecionado para página de gerenciamento, após a mensagem de registro removido com sucesso. \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+    \subsection{Diagrama de caso de uso}
+
+        \begin{center}
+            \includegraphics[width=14cm]{images/diagramas/Principal.jpg}
+        \end{center}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} EscolherGrupo\\
+        \hline
+        \textbf{Id:} UC0.1 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} N/A\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O usuário escolhe um dos grupos de acordo com sua
+            relevância (para o usuário).
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} O usuário é redirecionado para a tela principal do sistema. \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} EscolherTipoDeOrientação\\
+        \hline
+        \textbf{Id:} UC0.2 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} O usuário deve ter escolhido um grupo.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O usuário escolhe um dos tipos de orientação.
+            \item O sistema informa as sugestões de acordo com a
+            orientação escolhida.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} TrocarGrupo\\
+        \hline
+        \textbf{Id:} UC0.3 \\
+        \hline
+        \textbf{Ator(es):} Usuário \\
+        \hline
+        \textbf{Pré-condições:} O usuário deve ter escolhido um grupo.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O usuário escolhe a opção para troca de grupo.
+            \item A lista de grupos é exibida para que se possa
+            escolher o novo grupo.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} ConsultarFreqüenciaDosGrupos\\
+        \hline
+        \textbf{Id:} UC0.4 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador consulta quais são os grupos mais
+            freqüentados.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} ConsultarPáginasCadastradas\\
+        \hline
+        \textbf{Id:} UC0.5 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador consulta todas as páginas
+            percorridas pelos usuários e o seu nível de feromônio.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AlterarTemplate\\
+        \hline
+        \textbf{Id:} UC0.5 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador escolhe um novo skin para o
+            sistema.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} AlterarParâmetrosAdministrativos\\
+        \hline
+        \textbf{Id:} UC0.6 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} O administrador deverá estar logado no sistema.\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador altera os parâmetros
+            administrativos do sistema:
+            \begin{itemize}
+                \item login;
+                \item senha;
+                \item acréscimo de feromônio;
+                \item taxa de evaporação;
+                \item divisor da diferença da subtração: (agora) -
+                (ultimo\_acesso);
+            \end{itemize}
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo:} N/A\\
+        \hline
+        \end{longtable}
+
+        \begin{longtable}{|p{16cm}|}
+        \hline
+        \textbf{Caso de uso:} EfetuarLogin\\
+        \hline
+        \textbf{Id:} UC0.6 \\
+        \hline
+        \textbf{Ator(es):} Administrador \\
+        \hline
+        \textbf{Pré-condições:} N/A\\
+        \hline
+        \textbf{Fluxo de eventos:}
+        \begin{enumerate}
+            \item O administrador informa login e senha.
+            \item O sistema valida o acesso.
+        \end{enumerate}
+        \\
+        \hline
+        \textbf{Pós-condições:} N/A \\
+        \hline
+        \textbf{Fluxo alternativo 1:} Usuário não cadastrado\\
+                \hline
+        \textbf{Fluxo alternativo 2:} Acesso negado\\
+        \hline
+        \end{longtable}
+
+    \section{Análise}
+
+    \subsection{Diagrama de seqüencia}
+
+        \subsubsection{AcionarLink}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/AcionarLink1.jpg}
+        \end{center}
+
+        \subsubsection{AcrécimoDeFeromônio}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/AcrecimoDeFeromonio.jpg}
+        \end{center}
+
+        \subsubsection{AlterarGrupo}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/AlterarGrupo.jpg}
+        \end{center}
+
+        \subsubsection{ConsultarPaginasCadastradas}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/ConsultarPaginasCadastradas.jpg}
+        \end{center}
+
+        \subsubsection{ConsultrarFrequenciaDosGrupos}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/ConsultrarFrequenciaDosGrupos.jpg}
+        \end{center}
+
+        \subsubsection{DeducaoDeFeromonio}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/DeducaoDeFeromonio.jpg}
+        \end{center}
+
+        \subsubsection{EfetuarLogin}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/EfetuarLogin.jpg}
+        \end{center}
+
+        \subsubsection{EscolherGrupo}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/EscolherGrupo.jpg}
+        \end{center}
+
+        \subsubsection{EscolherTipoDeOrientacao}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/EscolherTipoDeOrientacao.jpg}
+        \end{center}
+
+        \subsubsection{ExcluirGrupo}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/ExcluirGrupo.jpg}
+        \end{center}
+
+        \subsubsection{InserirGrupo}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/InserirGrupo.jpg}
+        \end{center}
+
+        \subsubsection{TrocarGrupo}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/TrocarGrupo.jpg}
+        \end{center}
+
+    \section{Projeto}
+
+    \subsection{Diagrama de classe}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/DiagramaDeClasses.jpg}
+        \end{center}
+
+    \subsection{Modelo Relacional (MR)}
+
+    \subsection{Diagrama de pacotes}
+
+        \begin{center}
+            \includegraphics[width=15cm]{images/diagramas/DiagramaDePacotes.jpg}
+        \end{center}
+
+    \subsection{Manual do usuário}
+
+Para se definir o manual do usuário criou-se um sistema de FAQ:
+
+\begin{enumerate}
+    \item O que é OriAnt?
+
+    OriAnt é um sistema computacional baseado no comportamentos das
+    colônias de formigas reais. O OriAnt funciona como uma
+    hospedeiro em uma página web e basicamente coleta as
+    informações dos links acionados pelos usuários para orientar os
+    usuários na navegação.
+
+    \item Por que o nome OriAnt?
+
+    A palavra "Ant" em inglês significa formiga, a junção com o
+    prefixo "Ori" forma a palavra Oriente, que significa orientação,
+    direção.
+
+    \item Por que escolher um grupo?
+
+    O grupo selecionado pelo usuário é de suma importância pois
+    é baseado no histórico de usuários que acessaram o mesmo grupo
+    que o sistema consegue gerar os links mais relevantes.
+
+    \item Caso eu não escolha um grupo o sistema funcionará?
+
+    Não, o sistema só entrará em ação quando um grupo for
+    selecionado.
+
+    \item Eu posso escolher outro grupo durante a navegação?
+
+    Sim, você pode trocar de grupo a qualquer momento basta clicar
+    no ícone alterar grupo, que fica ao lado do grupo escolhido.
+
+    \item Ao clicar nos links da camada OriAnt, ainda continuarei no
+    site em que estou navegando?
+
+    Sim, os links da camada OriAnt só apontam para a página atual
+    que você está navegando, apenas os links de idioma e ajuda
+    apontam para uma sub-página do OriAnt.
+
+    \item Outros usuários vêm as páginas que eu acesso?
+
+    Não, o sistema não cadastra os usuários, a identidade do usuário
+    é mantida em sigilo.
+
+    \item Os tipos de orientação interferem no link clicado?
+
+    Não, os tipos de orientação apenas exibem as sugestões de forma
+    diferente, não interferem na computação dos cliques.
+
+    \item Interações com a página como: Comentários, Avaliações e
+    Contatos interferem na computação dos cliques?
+
+    Somente se a interação o redirecione para outra página esse clique
+    será computado.
+
+    \item Onde o OriAnt armazena as informações?
+
+    O OriAnt requer um banco de dados PostGreSQL 8.1 ou superior
+    parar armazenar os dados.
+
+    \item O OriAnt funciona para um site externo ao domínio, por
+    exemplo eu poderia usar o OriAnt no site da UOL?
+
+    Não, por motivos de segurança o sistema OriAnt só funciona em um
+    site de mesmo domínio.
+
+    \item O website hospedeiro poderá utilizar banco de dados?
+
+    Sim.
+
+    \item O website hospedeiro deve utilizar o banco de dados PostGreSQL?
+
+    Não, o banco de dados não precisa ser o mesmo, entretanto
+    deve-se ter suporte a esse banco de dados.
+
+    \item O website hospedeiro pode conter frames?
+
+    Infelizmente não, o sistema OriAnt é um FRAME e não suporta sub
+    frames.
+
+    \item O website poderá utilizar javascript para redirecionar um
+    link?
+
+    Não, A página deve utilizar apenas links para navegação, links que tiverem funções javascripts serão desconsiderados.
+
+    \item Deve-se ter os cookies habilitado para navegar no sistema?
+
+    Sim, as informações escolhidas pelo usuário são armazenadas em cookies e em sessões.
+
+    \item Qual a diferença entre os tipos de orientação?
+    Os tipos de orientação mostram várias formas de se atingir a
+    página mais relevante.
+        \begin{itemize}
+            \item \textbf{Disposição objetiva}:
+            Mostra qual é a página
+            alvo. Essa é a página que em média foi mais visitada pelos
+            outros elementos de um mesmo grupo.
+
+            \item \textbf{Disposição orientada}:
+            Mostra qual o caminho que se
+            deve seguir para chegar até a página alvo. Esse caminho é
+            traçado com base no histórico dos caminhos percorridos de usuários do mesmo grupo.
+
+            \item \textbf{Disposição relacionada}:
+            Mostra quais os links mais visitados pelos usuários de seu
+            grupo. Além da página alvo outras páginas também podem
+            interessar o usuário de determinado grupo, assim ao
+            selecionar a exibição por assuntos relacionados, obtém-se
+            uma lista das páginas mais relevantes para determinado
+            grupo.
+        \end{itemize}
+
+    \item Qual a diferença entre os contextos de orientação?
+
+        \begin{itemize}
+            \item \textbf{Essa Página}: Quando essa opção está
+            selecionada a disposição toma como contexto a página
+            atual, ou seja, a partir da página atual qual é a
+            proxima página mais relevante.
+
+            \item \textbf{Todas as Páginas}: Quando essa opção está
+            selecionada a disposição toma como contexto todas as páginas do sistema,
+            ou seja, dentre todas as páginas qual é a página mais
+            relevante.
+        \end{itemize}
+\end{enumerate}
+
+    \section{Implementação}
+
+    \subsection{Diagrama de implantação}
+
+        \begin{center}
+            \includegraphics[width=15cm]{images/diagramas/DiagramaDeImplantacao.jpg}
+        \end{center}
+
+    \subsection{Diagrama de componentes}
+
+        \begin{center}
+            \includegraphics[width=17cm]{images/diagramas/DiagramaDeComponentes.jpg}
+        \end{center}
+
+    \section{Testes}
+
+Para testar a principal funcionalidade do sistema, os testes foram
+divididos em duas partes:
+
+    \begin{enumerate}
+        \item Testes isolados com 3 usuários.
+
+        \item Teste em grupo com vários usuários acessando o
+        sistema.
+    \end{enumerate}
+
+    \subsection{Testes isolados com 3 usuários}
+
+Para efetuar os teste, um formulário foi criado solicitando que cada
+usuário navegasse pelo sistema e anotasse os links acionados.
+
+A navegação foi dividida em duas etapas:
+
+    \begin{itemize}
+        \item \textbf{Navegação Aleatória}: O usuário deverá navegar
+        de forma aleatória, sem objetividade entre os assuntos do
+        site.
+
+        \item \textbf{Navegação Objetiva}: O usuário deverá navegar
+        de forma objetiva, com objetividade entre os assuntos do
+        site. Se o usuário escolhe o grupo "ULTIMAS NOTÍCIAS" deverá
+        navegar pelas notícias dessa sessão.
+    \end{itemize}
+
+    \subsubsection{Resultados}
+
+    Para cada formulário respondido, procedeu-se novamente a mesma
+    trajetória anotando em cada passo as alterações nas tabelas do
+    sistema OriAnt.
+
+    Em todos os testes as tabelas foram reiniciadas para o seguinte
+    modo:
+
+    \paragraph{Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=11cm]{images/testesOriant/pagina_inicio.jpg}
+        \end{center}
+
+    \paragraph{Tabela: $<$\textbf{grupo}$>$}
+
+        \begin{center}
+            \includegraphics[width=5cm]{images/testesOriant/grupo_inicio.jpg}
+        \end{center}
+
+    \paragraph{Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=8cm]{images/testesOriant/feromonio_inicio.jpg}
+        \end{center}
+
+    \paragraph{Usuário 1}
+
+    Para o primeiro usuário, todo o trajeto percorrido no sistema
+    foi anotado, e a cada link acionado a situação da tabela foi
+    registrada.
+
+    \subparagraph{Navegação Aleatória, Link 1, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/na_feromonio_l1.jpg}
+        \end{center}
+
+        Num primeiro momento
+
+    \subparagraph{Navegação Aleatória, Link 1, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/na_pagina_l1.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 2, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/na_feromonio_l2.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 2, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/na_pagina_l2.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 3, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/na_feromonio_l3.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 3, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/na_pagina_l3.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 4, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/na_feromonio_l4.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 4, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/na_pagina_l4.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/na_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/na_pagina_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 1, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/no_feromonio_l1.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 1, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/no_pagina_l1.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 2, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/no_feromonio_l2.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 2, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/no_pagina_l2.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 3, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/no_feromonio_l3.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 3, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/no_pagina_l3.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 4, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/no_feromonio_l4.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 4, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/no_pagina_l4.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_bazan/no_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_bazan/no_pagina_l5.jpg}
+        \end{center}
+
+    \newpage
+
+    \paragraph{Usuário 2}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_mario/na_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_mario/na_pagina_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_mario/no_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_mario/no_pagina_l5.jpg}
+        \end{center}
+
+    \newpage
+
+    \paragraph{Usuário 3}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_thesko/na_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Aleatória, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_thesko/na_pagina_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{feromonio}$>$}
+
+        \begin{center}
+            \includegraphics[width=7cm]{images/testesOriant/teste_thesko/no_feromonio_l5.jpg}
+        \end{center}
+
+    \subparagraph{Navegação Objetiva, Link 5, Tabela: $<$\textbf{pagina}$>$}
+
+        \begin{center}
+            \includegraphics[width=12cm]{images/testesOriant/teste_thesko/no_pagina_l5.jpg}
+        \end{center}
+
+    \subsubsection{Análise de Resultados}
+
+    \subsection{Teste em grupo com vários usuários acessando o sistema}
+
+    \subsubsection{Resultados}
+
+    \subsubsection{Análise de Resultados}
+
+\end{document}

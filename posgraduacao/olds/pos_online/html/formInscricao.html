@@ -1,0 +1,349 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_form_inscricao -->
+<form name="{form_inscricao}" method="post" action="{action}">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="281" height="19"></td>
+    <td colspan="3" align="center" valign="middle" class="titulo">{inscricao}</td>
+    <td width="287"></td>
+  </tr>
+  <tr>
+    <td height="12"></td>
+    <td width="129"></td>
+    <td width="7"></td>
+    <td width="302"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="19"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{curso} : </span></td>
+    <td></td>
+    <td align="left" valign="middle" class="titulo"><select name="{comboCurso}" class="formulario" id="{comboCurso}">
+		{comboCursoOpcoes}
+    </select>    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="15"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td colspan="3" align="center" valign="middle"><span class="titulo">{informacoesPessoais}</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="12"></td>
+    <td></td>
+    <td></td>
+    <td align="center" valign="middle" class="titulo"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{nome} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="50"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{cpf} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCpf}" type="text" class="formulario" id="{campoCpf}" value="{valorCpf}" size="30" maxlength="14" onkeypress="formatCPF(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{rg} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoRg}" type="text" class="formulario" id="{campoRg}" value="{valorRg}" size="30" maxlength="30" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{orgaoEmissor} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoOrgaoEmissor}" type="text" class="formulario" id="{campoOrgaoEmissor}" value="{valorOrgaoEmissor}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+    <td rowspan="2" align="left" valign="middle"><input name="{campoDataNascimento}" type="text" class="formulario" id="{campoDataNascimento}" value="{valorDataNascimento}" size="15" maxlength="10" onkeypress="formatDate(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2" align="right" valign="middle" class="letra_padrao">{dataNascimento} : </td>
+    <td height="22"></td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{estadoCivil} : </span></td>
+    <td></td>
+    <td valign="top"><select name="{comboEstadoCivil}" class="formulario" id="{comboEstadoCivil}">
+		{comboEstadoCivilOpcoes}
+    </select>    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{graduacao} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoGraduacao}" type="text" class="formulario" id="{campoGraduacao}" value="{valorGraduacao}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="14"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td colspan="3" align="center" valign="middle"><span class="titulo">{endereco}</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="14"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{rua} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoRua}" type="text" class="formulario" id="{campoRua}" value="{valorRua}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{numero} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoNumero}" type="text" class="formulario" id="{campoNumero}" value="{valorNumero}" size="5" maxlength="5" onkeypress="isNum(this, event)"/> 
+      <span class="letra_padrao">Ex.: 1390 </span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{complemento} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoComplemento}" type="text" class="formulario" id="{campoComplemento}" value="{valorComplemento}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{bairro} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoBairro}" type="text" class="formulario" id="{campoBairro}" value="{valorBairro}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{cidade} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCidade}" type="text" class="formulario" id="{campoCidade}" value="{valorCidade}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{estado} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><select name="{comboEstado}" class="formulario" id="{comboEstado}">
+      
+		{comboEstadoOpcoes}
+    
+    </select>    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{cep} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCep}" type="text" class="formulario" id="{campoCep}" value="{valorCep}" size="15" maxlength="10" onkeypress="formatCep(this,event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="13"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td colspan="3" align="center" valign="middle"><span class="titulo">{contato}</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{telefone} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoTelefone}" type="text" class="formulario" id="{campoTelefone}" value="{valorTelefone}" size="15" maxlength="12" / onkeypress="formatFone(this,event)"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{celular} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCelular}" type="text" class="formulario" id="{campoCelular}" value="{valorCelular}" size="15" maxlength="12" onkeypress="formatFone(this,event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{email} : </span></td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoEmail}" type="text" class="formulario" id="{campoEmail}" value="{valorEmail}" size="50" maxlength="50" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="30"></td>
+    <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}"/>
+      <br />
+      <br />
+      <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+    <td></td>
+  </tr>
+</table>
+<!-- END bloco_form_curso -->
+</form>

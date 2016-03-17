@@ -1,0 +1,60 @@
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_pedido_finalizar -->
+<table border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table height="100%" border="0">
+      <tr>
+        <td height="21" colspan="4" align="left" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;Filmes : </td>
+      </tr>
+      <tr>
+        <td width="35" height="21" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">Qntd</td>
+        <td width="236" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Produto</td>
+        <td width="55" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Valor</td>
+        <td width="69" align="center" valign="middle" bgcolor="#DBDBDB" class="texto5"><span class="texto">&nbsp;&nbsp;Sub Total</span> </td>
+      </tr>
+	  <!-- BEGIN bloco_pedido_filme -->
+      <tr>
+        <td height="21" align="center" valign="middle" bgcolor="#EDEDED"><span class="texto">{qtd}</span></td>
+        <td valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{prod}</td>
+        <td align="center" bgcolor="#EDEDED" class="texto">R$ {valor}</td>
+        <td align="center" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;{subtotal}</span></td>
+      </tr>
+	  <!-- END bloco_pedido_filme -->
+      <tr>
+        <td height="21" colspan="4" align="left" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;Conveni&ecirc;ncia : </td>
+      </tr>
+      <tr>
+        <td width="35" height="21" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">Qntd</td>
+        <td width="236" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Produto</td>
+        <td width="55" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Valor</td>
+        <td width="69" align="center" valign="middle" bgcolor="#DBDBDB" class="texto5"><span class="texto">&nbsp;&nbsp;Sub Total</span> </td>
+      </tr>
+	  <!-- BEGIN bloco_pedido_prod -->
+      <tr>
+        <td height="21" align="center" valign="middle" bgcolor="#EDEDED"><span class="texto">{qtd}</span></td>
+        <td valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{prod}</td>
+        <td align="center" bgcolor="#EDEDED" class="texto">R$ {valor}</td>
+        <td align="center" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;{subtotal}</span></td>
+      </tr>
+	  <!-- END bloco_pedido_prod -->
+      <tr>
+        <td height="21" colspan="3" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;Taxa de Entrega  : </td>
+        <td align="center" bgcolor="#525B68"><span class="texto5">&nbsp;Valor</span></td>
+      </tr>
+	  <!-- BEGIN bloco_taxa_entrega -->
+      <tr>
+        <td height="21" colspan="3" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;{taxaEntrega}</td>
+        <td align="center" bgcolor="#DBDBDB"><span class="texto">R$ {valorEnt}</span></td>
+      </tr>
+	  <!-- END bloco_taxa_entrega -->
+      <tr>
+        <td height="27" colspan="2" valign="top" bgcolor="#EDEDED"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>Total</strong></td>
+        <td align="center" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;&nbsp;<strong>{total}</strong></span></td>
+      </tr>
+    </table>
+	</td>
+  </tr>
+</table>
+<!-- END bloco_pedido_finalizar -->

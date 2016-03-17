@@ -1,0 +1,73 @@
+<!-- BEGIN bloco_contatos -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssLuthieria.css" rel="stylesheet" type="text/css">
+<table width="400" border="1" align="left" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="233" height="312" align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" id="lateralInterna">
+      <tr>
+        <td align="center" valign="top"><table width="195" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="195" height="67" align="left" valign="top"><p>Rua Massud Amin, 199, Sala 203<br />
+                    Corn&eacute;lio Proc&oacute;pio - PR<br />
+                    <strong>(43) 35246666</strong></p></td>
+              </tr>
+            </table></td>
+      </tr>
+    </table></td>
+    <td width="300" align="left" valign="top"><table width="50%" border="0" cellspacing="0" cellpadding="0">
+      <tr >
+        <td align="left" valign="top"><table cellspacing="0" cellpadding="0" width="336" border="0">
+            <tbody>
+              <!-- BEGIN bloco_contato -->
+              <tr>
+                <td align="left" valign="top"><div align="justify">{campoContato}<br />
+                </div></td>
+              </tr>
+              <!-- END bloco_contato -->
+            </tbody>
+          </table>
+          <br />
+          <table cellspacing="0" cellpadding="0" width="336" border="0">
+              <tbody>
+                <tr>
+                  <td height="260" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="left" valign="top"><table width="49%" height="228" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <!-- BEGIN bloco_form -->
+                          <td height="205">
+                          <form id="{formContato}" name="{formContato}" method="post" action="{actionContato}">
+                              <span class="fonteTexto">Nome</span><br />
+                              <input name="{campoNome}" type="text" class="form" id="{campoNome}" size="32" />
+                              <br />
+                              <span class="fonteTexto">E-mail</span><br />
+                              <input name="{campoEmail}" type="text" class="form" id="{campoEmail}" size="32" />
+                              <br />
+                              <span class="fonteTexto">Assunto</span><br />
+                              <input name="{campoAssunto}" type="text" class="form" id="{campoAssunto}" size="32" />
+                              <br />
+                              <span class="fonteTexto">Mensagem<br />
+                              </span>
+                              <textarea name="{campoMensagem}" cols="31" rows="5" class="form" id="{campoMensagem}"></textarea>
+                              <br />
+                              <div align="center"><br />
+                                <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="Enviar" onclick="{onClickEnviar}" />
+                                <br />
+                              </div>
+                          </form>                          </td>
+                          <!-- BEGIN bloco_form -->
+                        </tr>
+                      </table></td>
+                    </tr>
+                    
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_contatos -->

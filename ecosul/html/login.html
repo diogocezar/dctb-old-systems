@@ -1,0 +1,39 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/cssEcosul.css" rel="stylesheet" type="text/css">
+<!-- BEGIN blk_login -->
+<form id="{form_login}" name="{form_login}" method="post" action="{action}">
+<table width="464" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="464"><img src="../images/topAdmin.jpg" width="464" height="20" /></td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="middle" class="textoInterna">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="middle" class="textoInterna">
+      <table width="60%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="31%" class="textoInterna">{login}:</td>
+          <td width="69%"><label>
+            <input name="{campoLogin}" type="text" class="comboMarrom" id="{campoLogin}" onkeypress="{onKpLogin}" />
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="textoInterna">{senha}:</label></td>
+          <td><input name="{campoSenha}" type="text" class="comboMarrom" id="{campoSenha}" onkeypress="{onKpSenha}" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" valign="middle"><label>
+            <input name="{enviar}" type="button" class="comboMarrom" id="{enviar}" value="Entrar" onclick="{onClickEnviar}" />
+          </label></td>
+          </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="middle" class="textoInterna">&nbsp;</td>
+  </tr>
+</table>
+</form>
+<!-- END blk_login -->

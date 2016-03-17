@@ -1,0 +1,44 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<script type="text/javascript" src="../jscripts/bb_code.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_categoria -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionCategoria}" method="post" name="{formCategoria}" id="{formCategoria}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloCategoria}</span></td>
+        </tr>
+      <tr>
+        <td width="97" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td width="75%" align="left" bgcolor="#EDEDED"><span class="texto">
+          <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" />
+        </span></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Descri&ccedil;&atilde;o</span></td>
+        <td align="left" bgcolor="#EDEDED"><a href="#"><img src="../images/bot_negrito.jpg" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito}" /></a><a href="#"><img src="../images/bot_italico.jpg" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico}" /></a><a href="#"><img src="../images/bot_sublinhado.jpg" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado}" /></a><br />
+          <textarea name="{campoDescricao}" cols="45" rows="5" class="form" id="{campoDescricao}">{valorDescricao}</textarea></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Tempo de Loca&ccedil;&atilde;o </span></td>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">
+          <input name="{campoTempLoc}" type="text" class="form" id="{campoTempLoc}" value="{valorTempLoc}" size="45" onkeypress="isNum(this, event)"/>
+          (horas)
+        </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Pre&ccedil;o da Categoria </span></td>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">
+          <input name="{campoPreco}" type="text" class="form" id="{campoPreco}" value="{valorPreco}" size="45" onkeypress="reais(this, event)"/>
+        </span></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_categoria -->

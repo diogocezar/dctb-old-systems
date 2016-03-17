@@ -1,0 +1,121 @@
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_lista_filmes -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td align="left">
+	<table width="100%" border="0">
+      <form id="{formBuscaOpcoes}" name="{formBuscaOpcoes}" method="get" action="{actionBuscaOpcoes}">
+	<input type="hidden" name="{campoGenero}" value="{valorGenero}" />
+	<input type="hidden" name="{campoPor}" value="{valorPor}" />
+	<input type="hidden" name="{campoNome}" value="{valorNome}" />
+	<input type="hidden" name="{campoClassificacao}" value="{valorClassificacao}" />
+	<input type="hidden" name="{campoCategoria}" value="{valorCategoria}" />
+      <tr>
+        <td width="403" height="21" align="right" valign="middle" bgcolor="#FFFFFF"><span class="texto"> {ordenado}</span>
+            <select name="{ordenadoPor}" class="form" id="{ordenadoPor}">
+              <option value="fil_titulo" {selTitulo}>Titulo</option>
+              <option value="fil_titulo_original" {selTituloOri}>Titulo Original</option>
+              <option value="fil_cod" {selCodigo}>Ordem de cadastro</option>
+              <option value="fil_ano" {selAno}>Ano</option>
+              <option value="fil_duracao" {selDuracao}>Dura&ccedil;&atilde;o</option>
+              <option value="fil_distribuidora" {selDistribuidora}>Distribuidora</option>
+			  <option value="cat_cod" {selCategoria}>Categoria</option>
+			  <option value="cla_cod" {selClassificacao}>Classificação</option>
+			  {ordensOpcionais}
+            </select>
+            <span class="texto"> {tipo}</span>
+            <select name="{tipoOrdem}" class="form" id="{tipoOrdem}">
+              <option value="ASC" {selAsc}>Crescente</option>
+              <option value="DESC" {selDesc}>Decrescente</option>
+            </select>
+            <a href="{linkOrdena}"><img src="../images/bot_ordenar.jpg" alt="{altOrdena}" width="27" height="25" border="0"  align="absmiddle" onclick="{onClickOrdena}"/></a></td>
+      </tr>
+	  </form>
+
+      <tr>
+        <td width="403" height="21" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloListaFilmes}</span></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="403" height="173" align="center" valign="top">
+			<!-- BEGIN bloco_lista_filmes_linha -->
+			  <table border="0">
+			    <tr>
+				  <!-- BEGIN bloco_lista_filmes_loc -->
+			      <td width="158"></td>
+                  <td height="22" align="center" valign="middle"><span class="texto">{loc}</span></td>
+                  <td width="169" height="22" align="left" valign="top">&nbsp;</td>
+				  <!-- END bloco_lista_filmes_loc -->
+                </tr>
+			    <tr>
+				  <!-- BEGIN bloco_lista_filmes_foto -->
+			      <td></td>
+                  <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{foto}</td>
+                  <td height="98" align="left" valign="top">&nbsp;</td>
+				  <!-- END bloco_lista_filmes_foto -->
+                </tr>
+			    <tr>
+				  <!-- BEGIN bloco_lista_filmes_titulo -->
+			      <td></td>
+                  <td width="64" height="40" align="center" valign="top" class="texto">{titulo}</td>
+                  <td height="40" align="center" valign="top">&nbsp;</td>
+				  <!-- END bloco_lista_filmes_titulo -->
+                </tr>
+			    </table>
+			<!-- END bloco_lista_filmes_linha -->
+			</td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- BEGIN bloco_gerenciar_erro -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{erro}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_erro -->
+<!-- BEGIN bloco_gerenciar_paginacao -->
+<!-- BEGIN bloco_gerenciar_paginacao_controle -->
+<br>
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+        <tr>
+        	<td align="center" bgcolor="#EDEDED"><span class="texto"> {paginacao}</span></td>
+        </tr>
+    </table>
+	</td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_paginacao_controle -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{infos}</td>
+      </tr>
+    </table>
+	</td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_paginacao -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><label><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></label></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_lista_filmes -->

@@ -1,0 +1,160 @@
+<html>
+<head>
+<!-- BEGIN blk_titulo -->
+<title>{titulo}</title>
+<!-- END blk_titulo -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/cssEcosul.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/permutacao.js"></script>
+<script type="text/javascript" src="../jscripts/biblioteca.js"></script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="backGround" onLoad="MM_preloadImages('../images/btInicialRelease.gif','../images/btSobreRelease.gif','../images/brEcorotasRelease.gif','../images/btOndeHospedarRelease.gif','../images/btAgendaRelease.gif','../images/btLinksRelease.gif','../images/btFaleConoscoRelease.gif','../images/saibaEcoturismoR.gif')">
+<table width="769" height="553" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td rowspan="13"><img src="../images/estEsquerda.gif" width="54" height="553" alt=""></td>
+    <td colspan="4"><img src="../images/topoSite.gif" width="686" height="96" alt=""></td>
+    <td rowspan="13"><img src="../images/estDireita.gif" width="28" height="553" alt=""></td>
+    <td><img src="../images/spacer.gif" width="1" height="96" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu1}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Página Inicial','','../images/btInicialRelease.gif',1)"><img src="../images/btInicial.gif" alt="Página Inicial" name="Página Inicial" width="226" height="21" border="0"></a></td>
+    <td rowspan="7"><img src="../images/fotoPrincipal.jpg" width="240" height="124" alt=""></td>
+    <td rowspan="11"><img src="../images/estCentro.jpg" width="10" height="426" alt=""></td>
+    <!-- BEGIN blk_ecoturismo -->
+    <td width="210" height="136" rowspan="8" align="left" background="../images/bgEcoturismo.jpg"><label> &nbsp;&nbsp;
+      <select name="{comboEcoturismo}" id="{comboEcoturismo}" class="comboVerde" onChange="{onChanceEcoturismo}">
+        
+        {comboOpcoesEcoturismo}
+      
+      </select>
+      </label></td>
+    <!-- END blk_ecoturismo -->
+    <td><img src="../images/spacer.gif" width="1" height="21" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu2}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sobre o Ecosul','','../images/btSobreRelease.gif',1)"><img src="../images/btSobre.gif" alt="Sobre o Ecosul" name="Sobre o Ecosul" width="226" height="18" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="18" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu3}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Ecorotas','','../images/brEcorotasRelease.gif',1)"><img src="../images/brEcorotas.gif" alt="Ecorotas" name="Ecorotas" width="226" height="15" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="15" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu4}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Onde Hospedar','','../images/btOndeHospedarRelease.gif',1)"><img src="../images/btOndeHospedar.gif" alt="Onde Hospedar" name="Onde Hospedar" width="226" height="17" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="17" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu5}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Agenda','','../images/btAgendaRelease.gif',1)"><img src="../images/btAgenda.gif" alt="Agenda" name="Agenda" width="226" height="17" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="17" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu6}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Links','','../images/btLinksRelease.gif',1)"><img src="../images/btLinks.gif" alt="Links" name="Links" width="226" height="16" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td><a href="{linkMenu7}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Fale Conosco','','../images/btFaleConoscoRelease.gif',1)"><img src="../images/btFaleConosco.gif" alt="Fale Conosco" name="Fale Conosco" width="226" height="20" border="0"></a></td>
+    <td><img src="../images/spacer.gif" width="1" height="20" alt=""></td>
+  </tr>
+  <tr>
+    <!-- BEGIN blk_dicas -->
+    <td height="136" colspan="2" rowspan="2" align="center" valign="top" background="../images/bgUltimasDicas.gif"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="130" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center"><table width="147" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="147" align="center" valign="middle"><table width="108" height="83" border="0" cellpadding="0" cellspacing="0" background="../images/bgFotoPrincipal.gif">
+                          <tr>
+                            <td align="left" valign="top">{foto1}</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="147" align="center" valign="middle" class="tituloFotoPrincipal">{ecoturismo1}</td>
+                    </tr>
+                  </table></td>
+                <td align="center"><table width="147" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="147" align="center" valign="middle"><table width="108" height="83" border="0" cellpadding="0" cellspacing="0" background="../images/bgFotoPrincipal.gif">
+                          <tr>
+                            <td align="left" valign="top">{foto2}</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="147" align="center" valign="middle" class="tituloFotoPrincipal">{ecoturismo2}</td>
+                    </tr>
+                  </table></td>
+                <td align="center"><table width="147" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="147" align="center" valign="middle"><table width="108" height="83" border="0" cellpadding="0" cellspacing="0" background="../images/bgFotoPrincipal.gif">
+                          <tr>
+                            <td align="left" valign="top">{foto3}</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="147" align="center" valign="middle" class="tituloFotoPrincipal">{ecoturismo3}</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <!-- END blk_dicas -->
+    <td><img src="../images/spacer.gif" width="1" height="26" alt=""></td>
+  </tr>
+  <tr>
+    <!-- BEGIN blk_aventura -->
+    <td width="210" height="136" rowspan="2" align="left" background="../images/bgAventura.jpg">&nbsp;&nbsp;
+      <select name="{comboAventura}" id="{comboAventura}" class="comboLaranja" onChange="{onChanceAventura}">
+        
+        {comboOpcoesAventura}
+      
+      </select></td>
+    <!-- END blk_aventura -->
+    <td><img src="../images/spacer.gif" width="1" height="110" alt=""></td>
+  </tr>
+  <tr>
+    <td height="166" colspan="2" rowspan="2" align="center" background="../images/bgSaibaEcoturismo.gif"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="31%"><img src="../images/fotoBicho.jpg" width="140" height="114"></td>
+          <!-- BEGIN blk_texto -->
+          <td width="69%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="../images/sejaTurista.gif" width="266" height="33"></td>
+              </tr>
+              <tr>
+                <td align="center" class="textoTurista"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="textoTurista">{textoSobreEcoturismo} </td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td align="right"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Saiba o que é Ecoturismo','','../images/saibaEcoturismoR.gif',1)"><img src="../images/saibaEcoturismo.gif" name="Saiba o que é Ecoturismo" width="202" height="23" border="0"></a></td>
+              </tr>
+            </table></td>
+          <!-- END blk_texto -->
+        </tr>
+      </table></td>
+    <td><img src="../images/spacer.gif" width="1" height="30" alt=""></td>
+  </tr>
+  <tr>
+    <!-- BEGIN blk_cidades -->
+    <td width="210" height="136" align="left" background="../images/bgCidades.jpg">&nbsp;&nbsp;
+      <select name="{comboCidades}" id="{comboCidades}" class="comboAzul" onChange="{onChanceCidades}">
+        
+        {comboOpcoesCidades}
+      
+      </select></td>
+    <!-- END blk_cidades -->
+    <td><img src="../images/spacer.gif" width="1" height="136" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="4"><img src="../images/estBotton.jpg" width="686" height="31" alt=""></td>
+    <td><img src="../images/spacer.gif" width="1" height="31" alt=""></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/**
+  * Especificação para criação dos formulários, interfaces e templates para o site "Kompre".
+  * A seguir estão descritos como devem ser montados os formulários do site.
+  */
+
+[A primeira variavel indica o NOME do text field e deve ser colocada exatamente como escrita inclusive com
+as chaves {}. a segunda variavel é o valor desse textfield e deve ser colocada no valor também exatamente como
+escrita.
+
+O nome do formulário também eh uma variavel {formTeste}.
+
+A ação do formulário também eh uma vairavel {actionTeste}.
+
+Para melhor entendimento, vamos fazer uma convenção que já venho usando a muito tempo.
+
+NOME DAS VARIAVEIS :
+
+se a palavra for simples, ou seja tive apenas uma palavra (o que não é muito usado) deve ser escita totalmente em minúsculo
+como por Ex: {nome}
+
+Se a palavra for composta, ou seja tiver mais de uma palavra deve ser escrita com a primeira letra minúscula
+e as demias letras maiúsculas. Por Ex: {exemploDeVariavel}
+
+E é claro as variaveis devem estar escritas entre chaves {}. ]
+
+COMBOS : Nos combos como de costume se altera o nome do combo, e no lugar das <option> coloca-se apenas uma variavel,
+parece estranho, mas as opção são "geradas" então um exemplo :
+
+  <select name="select">
+    <option value="oi">oi</option>
+    <option value="oi">oi</option>
+    <option value="oi">oi</option>
+  </select>
+
+Ficaria nos templates assim
+
+  <select name="{comboSelect}">
+	{comboSelectOpcoes}
+  </select>
+
+Então os combos serão descritos
+
+Combo : {comboSelect}/{comboSelectOpcoes}
+
+# Não existe diferença entre os textfields e os textarea, use-os com coerência, onde achar necessário
+  a existencia de um campo maior use o text área, da mema maneira subistituindo os nomes das variaveis.
+
+# Para efetuar o cadastro de itens de uma tabela de n pra n ou seja, por exemplo um produto pode estar em vários pedidos e um pedido pode ter vários produtos.
+
+# Para efetuar esse tipo de cadastro usa-se um combo box contendo os "produtos" e uma listbox contendo os produtos de certo pedido.
+  
+O nome dessa list box deve ser escrito de forma diferente para que o php entenda a como uma lista.
+
+# Exemplo para o nome de uma list box : list_prod[]
+
+# Entretanto como esse nome DEVE ser uma variavel, pode ter o nome normal de uma variavel {listaProdutos}
+
+# Da mesma forma que o combo suas <option> devem ser subistituidas por uma variavel.
+
+/******************************************************************/
+
+Tabela -> Administradores
+
+Form : {formAdministradores}/{actionAdministradores}
+
+
+Nome : {campoNome}/{valorNome}
+
+E-mail: {campoEmail}/{valorEmail}
+
+Login: {campoLogin}/{valorLogin}
+
+Senha : {campoSenha}/{valorSenha}
+
+
+/******************************************************************/
+
+Tabela -> Fabricantes
+
+Form : {formFabricante}/{actionFabricante}
+
+
+Nome : {campoNome}/{valorNome}
+
+Telefone : {campoTelefone}/{valorTelefone}
+
+Profissão : {campoProfissao}/{valorProfissao}
+
+Web Site : {campoWebSite}/{valorWebSite}
+
+
+/******************************************************************/
+
+
+Tabela -> Categorias
+
+Form : {formCategoria}/{actionCategoria}
+
+
+Nome : {campoNome}/{valorNome}
+
+Descrição : {campoDescricao}/{valorDescricao}
+
+
+/******************************************************************/
+
+Tabela -> Produtos
+
+Form : {formProduto}/{actionProduto}
+
+
+Nome : {campoNome}/{valorNome}
+
+Peso : {campoPeso}/{valorPeso}
+
+Preço : {campoPreco}/{valorPreco}
+
+Quantidade : {campoQtd}/{valorQtd}
+
+Disponibilidade : {comboDisponibilidade}/{comboDisponibilidadeOpcoes}
+
+Classificação : {comboClassificacao}/{comboClassificacaoOpcoes}
+
+Descrição : {campoDescricao}/{valorDescricao} [textarea]
+
+Especificação : {campoEspecificacao}/{valorEspecificacao} [textarea]
+
+Dados Técnicos : {campoDadosTecnicos}/{valorDadosTecnicos} [textarea]
+
+Ítens Inclusos : {campoItensInclusos}/{valorItensInclusos} [textarea]
+
+Garantia : {campoGarantia}/{valorGarantia} [textarea]
+
+Categoria : {comboCategoria}/{comboCategoriaOpcoes}
+
+Fabricante : {comboFabricante}/{comboFabricanteOpcoes}
+
+Foto(s) : {fotos[]}
+
+/******************************************************************/
+
+Templates :
+
+	Os templates necessários para o site são :
+
+
+	- Template principal, onde será exibido alguns produtos principais, busca rápida, menu, e categorias.
+
+	- Template interno, contendo todos os componentes do principal entretando com a parte central limpa, para a inserção de formulários para a administração e eventuais outras áreas do menu.
+
+	- Template produtos lista, onde será listado os produtos da busca, ou produtos escolhido pelas categorias. os produtos deverão conter uma miniatura não muito detalhada, e as informações do produto.
+
+	- Template produtos imagem, idem ao anterior, entretando o destaque não está nas informações e sim na figura do produto mais detalhada.
+
+* As listas serão limitadas com paginação.
+
+
+/******************************************************************/
+
+Para fazer :
+
+@ Modificar o nome de busca rápida para busca, pois ali estarão todas as possiblidades de busca.
+
+@ Nos 2 quadrados [SuperOfertas] e [NovosProdutos] o fundo do quadrado está em branco, então modificalo para a 
+cor do fundo : #f7f9fa
+
+@ Botão de "Buscar" para colocar na busca.
+
+@ Css dos formulários, eu utilizei a classe tahoma10, entretanto acho que uma classe somente para os formulários seria melhor.
+
+@ @ Nos 2 quadrados [SuperOfertas] e [NovosProdutos] inserir uma setinha para baixo indicando que os produtos abaixo são do tipo do quadrado acima.
+
+/******************************************************************/
+
+Obs :
+
+$ Os links do site será diferentes ? ou seja em cada lugar que passar o mouse ele irá iluminar de forma diferente ? ai vamos ter que crias as possibilidades e coloca-las no CSS, e em casa link colocar no <a href=""... class="classe_do_css_desse_link">
+
+$ Onde tinham os telefones das lojas eu coloquei a data e horário, acho que os telefones dicaram mal diagramados, e ainda cabe mais alguma coisinha ali. (se necessário...)
+
+$ Seria possivel dar um espaço maior nos protuso ? acho que ficaram um poco grudados demais, nem tanto os produos mas mais os quadros de cima com os produtos, creio que uma separação seria boa.
+
+$ Aquele representante oficial, será dinâmico, ou seja poderá ser alterado, ou ficará ali para sempre ?
+
+$ Estou ajeitando os templates, então, caso queira mexer me avise :D
+
+
+

@@ -1,0 +1,52 @@
+a) Quando não tiver mais hosrários disponiveis travar a opção de finalizar a locação. [ok]
+b) Verificação de login, se já existe no banco. [ok]
+c) Verificar números plausíveis de ítens por páginas (ator). [ok]
+d) Inserir uma busca no menu de administração. [ok]
+e) Alterar tópico das notícias. [ok]
+f) Alterar o voltar dos cadastros inserindo uma opção para continuar cadastrando.[ok]
+g) Linkar titulos no gerenciamento às suas páginas significativas. [ok]
+
+==========================================================================================
+
+SQL : TODOS FILMES LOCADOS PELO USUARIO
+
+SELECT DISTINCT f.fil_titulo
+FROM cliente c, locacao l, midia m, midia_locacao ml, filme f
+WHERE c.cli_cpf = '04635144917' AND l.cli_cpf = c.cli_cpf AND l.loc_cod = ml.loc_cod AND ml.mid_cod = m.mid_cod AND m.fil_cod = f.fil_cod
+
+SQL : TODOS OS FAVORITOS
+
+SELECT f.fil_titulo
+FROM favoritos fa, cliente c, filme f
+WHERE c.cli_cpf = fa.cli_cpf AND f.fil_cod = fa.fil_cod
+
+==========================================================================================
+
+Verificar em finalizar, se os filmes estão sendo considerados lançamentos mesmo não sendo. [ok]
+
+==========================================================================================
+
+a) Botão abrir, para abrir novamente a locação caso ocorra algum inprevisto o status será setado como LOCADO.
+b) Botão Bloquear, Desbloquear. Para o administrador pode alterar o status do cliente.
+c) Capinha para buscas sem resultados. [loc_n_achou.jpg]
+
+==========================================================================================
+
+a) Controle dos Filmes proibidos para menores de 18 anos.
+b) Mostrar 5 paginas anteriores e 5 proximas. em todas paginações
+c) Paginas expiradas nas buscas. [ok]
+d) MostraFilmes.php voltar com alt e link #. [ok]
+
+==========================================================================================
+
+URGENTE :
+
+paginação com problema, ao ir para ultima página. [ok]
+
+==========================================================================================
+
+Exclui mídia da cartada final.
+
+==========================================================================================
+
+End.

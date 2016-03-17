@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8895-1" />
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/cssInagro.css" rel="stylesheet" type="text/css" />
+<link href="../css/menu.css" rel="stylesheet" type="text/css" />
+<script>{js_sajax}</script>
+<script language="JavaScript" src="../jscripts/constants/constants.js"></script>
+<script language="JavaScript" src="../jscripts/effects/effects.js"></script>
+<script language="JavaScript" src="../jscripts/codify/codify.js"></script>
+<script language="JavaScript" src="../jscripts/forms/forms.js"></script>
+<script language="JavaScript" src="../jscripts/menu/menu.js"></script>
+<script language="JavaScript" src="../jscripts/menu/menu_items.js"></script>
+<script language="JavaScript" src="../jscripts/menu/menu_tpl.js"></script>
+<script language="JavaScript" src="../jscripts/validate/validate.js"></script>
+<script language="JavaScript" src="../jscripts/masks/masks.js"></script>
+</head>
+<body {on_load_js}>
+	<div id="header">
+		<div id="logo"></div>
+	</div>
+	<div id="faixa">
+		<!-- BEGIN bloco_topo -->
+		<div id="welcome">
+			{login}
+		</div>
+		<div id="exit">
+			{sair}
+		</div>
+		<!-- END bloco_topo -->
+	</div>
+	<!-- BEGIN bloco_menu -->
+	<div id="menu">
+		<script language="JavaScript">new menu ({menu}, MENU_TPL);</script>
+	</div>
+	<!-- END bloco_menu -->
+	<!-- BEGIN bloco_login -->
+	<center>
+	<div id="login">
+	{login}
+	</div>
+	</center>
+	<!-- END bloco_login -->
+	<div id="separador"></div>
+	<!-- BEGIN bloco_conteudo -->
+	<div id="titulo">
+	{titulo}
+	</div>
+	<div id="container">
+	{conteudo}
+	</div>
+	<div id="separadorEnviar"></div>
+	<!-- END bloco_conteudo -->
+	<!-- BEGIN bloco_footer -->
+	<div id="footer">
+		<div id="textFooter">{creditos}</div>
+	</div>
+	<!-- END bloco_footer -->
+</body>
+</html>

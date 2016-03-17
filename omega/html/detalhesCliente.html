@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>{titulo}</title>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#fefdfd" leftmargin="1" topmargin="1" marginwidth="0" marginheight="0">
+<link href="../css/omega.css" rel="stylesheet" type="text/css" />
+<!-- BEGIN bloco_javascript_sajax -->
+<script>
+{sajax_javascript}
+{funcoes_javascript}
+</script>
+<!-- END bloco_javascript_sajax -->
+<!-- BEGIN bloco_detalhes_cliente -->
+<table width="327" border="0" cellpadding="0" cellspacing="0">
+  <tr class="form">
+    <form action="{actionAvaliar}" method="post" name="{formAvaliar}" id="{formAvaliar}">
+      <td width="327" height="440" valign="top"><table width="100%" height="218" border="0">
+        <tr>
+          <td width="321" height="21" bgcolor="#525B68" class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;{tituloDetalhesCliente} </td>
+          </tr>
+        <tr>
+          <td height="415" align="center" valign="top" bgcolor="#EDEDED"><br />
+            <table height="376" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" class="texto">
+              <tr>
+                <td width="76" height="16" align="left" valign="middle"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+                  <td width="219" align="left" valign="middle" class="texto">&nbsp;&nbsp;{nome}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Sobrenome</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{sobre}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Email</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;
+                  <input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{email} "> <input name="{btnSalvar}" type="button" class="form" id="{btnSalvar}" value="Salvar" onClick="{onClickSalvar}"></td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Newsletter</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{news}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Cpf</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{cpf}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Rg</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{rg}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Rua</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{rua}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Numero</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{numero}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Bairro</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{bairro}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Complemento</td>
+                <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{complemento}</td>
+              </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Telefone</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{telefone}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Celular</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{celular}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Nascimento</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{nascimento}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Taxa</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{taxa}</td>
+                </tr>
+              <tr>
+                <td height="16" align="left" valign="middle">&nbsp;&nbsp;Login</td>
+                  <td align="left" valign="middle" class="texto">&nbsp;&nbsp;{login}</td>
+                </tr>
+          </table></td>
+          </tr>
+      </table></td>
+	</form>
+  </tr>
+</table>
+<!-- END bloco_detalhes_cliente -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+\select@language {brazil}
+\contentsline {section}{\numberline {1}Requisitos}{4}
+\contentsline {subsection}{\numberline {1.1}Levantamento dos requisitos funcionais e n\~ao-funcionais}{4}
+\contentsline {subsubsection}{\numberline {1.1.1}Requisitos Funcionais}{4}
+\contentsline {subsubsection}{\numberline {1.1.2}Requisitos N\~ao-funcionais}{5}
+\contentsline {subsection}{\numberline {1.2}Levantamento dos atores e casos de uso}{5}
+\contentsline {subsection}{\numberline {1.3}Atores}{5}
+\contentsline {subsection}{\numberline {1.4}Casos de uso}{6}
+\contentsline {subsection}{\numberline {1.5}Levantamento dos riscos}{6}
+\contentsline {subsection}{\numberline {1.6}Especifica\c c\~ao dos casos de uso}{7}
+\contentsline {subsubsection}{\numberline {1.6.1}Especifica\c c\~ao do caso de uso: AcionarLink}{7}
+\contentsline {subsection}{\numberline {1.7}Especifica\c c\~ao do caso de uso: AdministrarGrupos}{8}
+\contentsline {subsection}{\numberline {1.8}Especifica\c c\~ao do caso de uso: GerenciarRegistrosDoSistema}{10}
+\contentsline {subsection}{\numberline {1.9}Diagrama de caso de uso}{12}
+\contentsline {section}{\numberline {2}An\'alise}{15}
+\contentsline {subsection}{\numberline {2.1}Diagrama de seq\"uencia}{15}
+\contentsline {subsubsection}{\numberline {2.1.1}AcionarLink}{15}
+\contentsline {subsubsection}{\numberline {2.1.2}Acr\'ecimoDeFerom\^onio}{16}
+\contentsline {subsubsection}{\numberline {2.1.3}AlterarGrupo}{17}
+\contentsline {subsubsection}{\numberline {2.1.4}ConsultarPaginasCadastradas}{18}
+\contentsline {subsubsection}{\numberline {2.1.5}ConsultrarFrequenciaDosGrupos}{19}
+\contentsline {subsubsection}{\numberline {2.1.6}DeducaoDeFeromonio}{20}
+\contentsline {subsubsection}{\numberline {2.1.7}EfetuarLogin}{20}
+\contentsline {subsubsection}{\numberline {2.1.8}EscolherGrupo}{20}
+\contentsline {subsubsection}{\numberline {2.1.9}EscolherTipoDeOrientacao}{21}
+\contentsline {subsubsection}{\numberline {2.1.10}ExcluirGrupo}{21}
+\contentsline {subsubsection}{\numberline {2.1.11}InserirGrupo}{22}
+\contentsline {subsubsection}{\numberline {2.1.12}TrocarGrupo}{23}
+\contentsline {section}{\numberline {3}Projeto}{24}
+\contentsline {subsection}{\numberline {3.1}Diagrama de classe}{24}
+\contentsline {subsection}{\numberline {3.2}Modelo Relacional (MR)}{25}
+\contentsline {subsection}{\numberline {3.3}Diagrama de pacotes}{25}
+\contentsline {subsection}{\numberline {3.4}Manual do usu\'ario}{25}
+\contentsline {section}{\numberline {4}Implementa\c c\~ao}{28}
+\contentsline {subsection}{\numberline {4.1}Diagrama de implanta\c c\~ao}{28}
+\contentsline {subsection}{\numberline {4.2}Diagrama de componentes}{29}
+\contentsline {section}{\numberline {5}Testes}{29}
+\contentsline {subsection}{\numberline {5.1}Testes isolados com 3 usu\'arios}{30}
+\contentsline {subsubsection}{\numberline {5.1.1}Resultados}{30}
+\contentsline {paragraph}{Tabela: $<$\textbf {pagina}$>$}{30}
+\contentsline {paragraph}{Tabela: $<$\textbf {grupo}$>$}{30}
+\contentsline {paragraph}{Tabela: $<$\textbf {feromonio}$>$}{30}
+\contentsline {paragraph}{Usu\'ario 1}{31}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 1, Tabela: $<$\textbf {feromonio}$>$}{31}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 1, Tabela: $<$\textbf {pagina}$>$}{31}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 2, Tabela: $<$\textbf {feromonio}$>$}{32}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 2, Tabela: $<$\textbf {pagina}$>$}{32}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 3, Tabela: $<$\textbf {feromonio}$>$}{32}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 3, Tabela: $<$\textbf {pagina}$>$}{33}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 4, Tabela: $<$\textbf {feromonio}$>$}{33}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 4, Tabela: $<$\textbf {pagina}$>$}{33}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {feromonio}$>$}{34}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {pagina}$>$}{34}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 1, Tabela: $<$\textbf {feromonio}$>$}{35}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 1, Tabela: $<$\textbf {pagina}$>$}{35}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 2, Tabela: $<$\textbf {feromonio}$>$}{35}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 2, Tabela: $<$\textbf {pagina}$>$}{36}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 3, Tabela: $<$\textbf {feromonio}$>$}{36}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 3, Tabela: $<$\textbf {pagina}$>$}{37}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 4, Tabela: $<$\textbf {feromonio}$>$}{37}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 4, Tabela: $<$\textbf {pagina}$>$}{37}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {feromonio}$>$}{38}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {pagina}$>$}{38}
+\contentsline {paragraph}{Usu\'ario 2}{40}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {feromonio}$>$}{40}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {pagina}$>$}{40}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {feromonio}$>$}{40}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {pagina}$>$}{41}
+\contentsline {paragraph}{Usu\'ario 3}{42}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {feromonio}$>$}{42}
+\contentsline {subparagraph}{Navega\c c\~ao Aleat\'oria, Link 5, Tabela: $<$\textbf {pagina}$>$}{42}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {feromonio}$>$}{42}
+\contentsline {subparagraph}{Navega\c c\~ao Objetiva, Link 5, Tabela: $<$\textbf {pagina}$>$}{43}
+\contentsline {subsubsection}{\numberline {5.1.2}An\'alise de Resultados}{44}
+\contentsline {subsection}{\numberline {5.2}Teste em grupo com v\'arios usu\'arios acessando o sistema}{44}
+\contentsline {subsubsection}{\numberline {5.2.1}Resultados}{44}
+\contentsline {paragraph}{Tabela: $<$\textbf {feromonio}$>$}{44}
+\contentsline {paragraph}{Tabela: $<$\textbf {pagina}$>$}{44}
+\contentsline {paragraph}{Tabela: $<$\textbf {grupo}$>$}{45}
+\contentsline {subsubsection}{\numberline {5.2.2}An\'alise de Resultados}{45}

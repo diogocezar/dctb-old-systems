@@ -1,0 +1,17 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssLuthieria.css" rel="stylesheet" type="text/css">
+<div id="tituloPageForms">{tituloLink}</div>
+<div id="padraoFormAdmin">
+<form name= "{formLink}" action="{actionLink}" method="post">
+<div id="formTitulo">Titulo</div>
+<input name="{campoTitulo}" type="text" value="{valorTitulo}" class="formAdmin" />
+<div id="formTitulo">Link</div>
+<input name="{campoLink}" type="text" value="{valorLink}" class="formAdmin" />
+<div id="formTitulo">Descrição</div>
+<textarea name="{campoDescricao}" cols="" rows="10" class="formAdmin">{valorDescricao}</textarea>
+<br  /><br  />
+<div id="formCampo" align="center"><input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" /> <input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" /></div>
+</form>
+</div>
+<!-- END bloco_formulario -->

@@ -1,0 +1,915 @@
+This is pdfeTeX, Version 3.141592-1.30.6-2.2 (MiKTeX 2.5) (preloaded format=pdflatex 2007.4.30)  11 JUN 2007 11:12
+entering extended mode
+**C:/Web*Pages/oriAnt/projeto/artefatos/artefatos.tex
+("C:\Web Pages\oriAnt\projeto\artefatos\artefatos.tex"
+LaTeX2e <2005/12/01>
+Babel <v3.8g> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, portuguese, loaded.
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\article.cls"
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\size11.clo"
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\generic\babel\babel.sty"
+Package: babel 2005/05/21 v3.8g The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\generic\babel\portuges.ldf"
+Language: portuges 2005/03/31 v1.2p Portuguese support from the babel system
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\generic\babel\babel.def"
+File: babel.def 2005/05/21 v3.8g Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\inputenc.sty"
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\latin1.def"
+File: latin1.def 2006/05/05 v1.1b Input encoding file
+))
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2005/12/29 v1.2 MiKTeX 'graphics' configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\pdftex.def"
+File: pdftex.def 2006/08/14 v0.03t Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen106
+\WF@size=\dimen107
+\c@WF@wrappedlines=\count89
+\WF@box=\box26
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\00miktex\color.cfg"
+File: color.cfg 2005/12/29 v1.1 MiKTeX 'color' configuration
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\listings\listings.sty"
+\lst@mode=\count90
+\lst@gtempboxa=\box27
+\lst@token=\toks19
+\lst@length=\count91
+\lst@currlwidth=\dimen108
+\lst@column=\count92
+\lst@pos=\count93
+\lst@lostspace=\dimen109
+\lst@width=\dimen110
+\lst@newlines=\count94
+\lst@lineno=\count95
+\lst@maxwidth=\dimen111
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count96
+\lst@skipnumbers=\count97
+\lst@framebox=\box28
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count98
+\LTcapwidth=\dimen112
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count99
+\LT@rows=\count100
+\c@LT@tables=\count101
+\c@LT@chunks=\count102
+\LT@p@ftn=\toks20
+)
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\geometry\geometry.sty"
+Package: geometry 2002/07/08 v3.2 Page Geometry
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@dimlist=\toks21
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\geometry\geometry.cfg"))
+(artefatos.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\context\base\supp-pdf.tex"
+("C:\Arquivos de programas\MiKTeX 2.5\tex\context\base\supp-mis.tex"
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count106
+\scratchcounter=\count107
+\scratchtoks=\toks22
+\scratchdimen=\dimen117
+\scratchskip=\skip56
+\scratchmuskip=\muskip10
+\scratchbox=\box33
+\scratchread=\read1
+\scratchwrite=\write3
+\zeropoint=\dimen118
+\onepoint=\dimen119
+\onebasepoint=\dimen120
+\minusone=\count108
+\thousandpoint=\dimen121
+\onerealpoint=\dimen122
+\emptytoks=\toks23
+\nextbox=\box34
+\nextdepth=\dimen123
+\everyline=\toks24
+\!!counta=\count109
+\!!countb=\count110
+\recursecounter=\count111
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen124
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks25
+)
+\c@lstlisting=\count116
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 71.13188pt, 455.24411pt, 71.13188pt
+v-parts: 71.13188pt, 674.33032pt, 99.58464pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  455.24411pt
+\textheight 674.33032pt
+\oddsidemargin  -1.1381pt
+\evensidemargin -1.1381pt
+\topmargin  -38.1381pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   28.45274pt
+\marginparwidth 50.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+ <images/logo.jpg, id=1, 278.03876pt x 278.03876pt>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg>
+[1
+
+{psfonts.map} <images/logo.jpg>] (artefatos.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 63.83098pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2])
+\tf@toc=\write4
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [3]
+Overfull \hbox (19.54718pt too wide) in alignment at lines 203--233
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 233
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [4]
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+[]|\OT1/cmr/m/n/10.95 Padronizac~ao e
+ []
+
+
+Overfull \hbox (21.77357pt too wide) in alignment at lines 237--259
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 259
+ []
+
+<images/diagramas/Atores.jpg, id=30, 208.78pt x 111.41624pt>
+File: images/diagramas/Atores.jpg Graphic file (type jpg)
+
+<use images/diagramas/Atores.jpg>
+<images/diagramas/CasosDeUso.jpg, id=31, 548.0475pt x 246.9225pt>
+File: images/diagramas/CasosDeUso.jpg Graphic file (type jpg)
+
+<use images/diagramas/CasosDeUso.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [5 <images/diagramas/Atores.jpg>]
+Overfull \hbox (3.58469pt too wide) in paragraph at lines 279--279
+[]|\OT1/cmr/m/n/10.95 Categoria| 
+ []
+
+
+Overfull \hbox (11.01128pt too wide) in alignment at lines 277--301
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 301
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [6 <images/diagramas/CasosDeUso.jpg>]
+<images/diagramas/AcionarLink.jpg, id=41, 385.44pt x 196.735pt>
+File: images/diagramas/AcionarLink.jpg Graphic file (type jpg)
+
+<use images/diagramas/AcionarLink.jpg>
+Overfull \hbox (11.99997pt too wide) in alignment at lines 321--341
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 341
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 343--364
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 364
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [7 <images/diagramas/AcionarLink.jpg>]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 366--387
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 387
+ []
+
+<images/diagramas/AdministrarGrupos.jpg, id=46, 541.02126pt x 251.94125pt>
+File: images/diagramas/AdministrarGrupos.jpg Graphic file (type jpg)
+
+<use images/diagramas/AdministrarGrupos.jpg>
+Overfull \hbox (11.99997pt too wide) in alignment at lines 395--415
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 415
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [8 <images/diagramas/AdministrarGrupos.jpg>]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 417--437
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 437
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 439--461
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 461
+ []
+
+
+<images/diagramas/GerenciarRegistrosDoSistema.jpg, id=50, 259.97125pt x 297.11p
+t>
+File: images/diagramas/GerenciarRegistrosDoSistema.jpg Graphic file (type jpg)
+ <use images/diagramas/GerenciarRegistrosDoSistema.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [9]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 479--501
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 501
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 503--523
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 523
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [10 <images/diagramas/GerenciarRegistrosDoSistema.jpg>]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 525--545
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 545
+ []
+
+<images/diagramas/Principal.jpg, id=57, 758.835pt x 638.385pt>
+File: images/diagramas/Principal.jpg Graphic file (type jpg)
+
+<use images/diagramas/Principal.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [11]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 553--574
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 574
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 576--598
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 598
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [12 <images/diagramas/Principal.jpg>]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 600--622
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 622
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 624--645
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 645
+ []
+
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 647--668
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 668
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [13]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 670--691
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 691
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 708.
+
+("C:\Arquivos de programas\MiKTeX 2.5\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 708.
+
+Overfull \hbox (11.99997pt too wide) in alignment at lines 693--722
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 722
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [14]
+Overfull \hbox (11.99997pt too wide) in alignment at lines 724--747
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 747
+ []
+
+<images/diagramas/AcionarLink1.jpg, id=71, 940.51375pt x 499.8675pt>
+File: images/diagramas/AcionarLink1.jpg Graphic file (type jpg)
+
+<use images/diagramas/AcionarLink1.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 756--757
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [15]
+<images/diagramas/AcrecimoDeFeromonio.jpg, id=78, 1012.78375pt x 770.88pt>
+File: images/diagramas/AcrecimoDeFeromonio.jpg Graphic file (type jpg)
+
+<use images/diagramas/AcrecimoDeFeromonio.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 762--763
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [16 <images/diagramas/AcionarLink1.jpg>]
+<images/diagramas/AlterarGrupo.jpg, id=82, 720.6925pt x 540.0175pt>
+File: images/diagramas/AlterarGrupo.jpg Graphic file (type jpg)
+
+<use images/diagramas/AlterarGrupo.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 768--769
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [17 <images/diagramas/AcrecimoDeFeromonio.jpg>]
+<images/diagramas/ConsultarPaginasCadastradas.jpg, id=86, 814.04124pt x 479.792
+5pt>
+File: images/diagramas/ConsultarPaginasCadastradas.jpg Graphic file (type jpg)
+ <use images/diagramas/ConsultarPaginasCadastradas.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 774--775
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [18 <images/diagramas/AlterarGrupo.jpg>]
+<images/diagramas/ConsultrarFrequenciaDosGrupos.jpg, id=90, 822.07124pt x 499.8
+675pt>
+File: images/diagramas/ConsultrarFrequenciaDosGrupos.jpg Graphic file (type jpg
+)
+ <use images/diagramas/ConsultrarFrequenciaDosGrupos.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 780--781
+ [] 
+ []
+
+<images/diagramas/DeducaoDeFeromonio.jpg, id=91, 849.1725pt x 409.53pt>
+File: images/diagramas/DeducaoDeFeromonio.jpg Graphic file (type jpg)
+
+<use images/diagramas/DeducaoDeFeromonio.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 786--787
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [19 <images/diagramas/ConsultarPaginasCadastradas.jpg> <i
+mages/diagramas/ConsultrarFrequenciaDosGrupos.jpg>]
+<images/diagramas/EfetuarLogin.jpg, id=96, 941.5175pt x 399.4925pt>
+File: images/diagramas/EfetuarLogin.jpg Graphic file (type jpg)
+
+<use images/diagramas/EfetuarLogin.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 792--793
+ [] 
+ []
+
+<images/diagramas/EscolherGrupo.jpg, id=97, 1061.9675pt x 570.13pt>
+File: images/diagramas/EscolherGrupo.jpg Graphic file (type jpg)
+
+<use images/diagramas/EscolherGrupo.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 798--799
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [20 <images/diagramas/DeducaoDeFeromonio.jpg> <images/dia
+gramas/EfetuarLogin.jpg>]
+<images/diagramas/EscolherTipoDeOrientacao.jpg, id=101, 688.5725pt x 248.93pt>
+File: images/diagramas/EscolherTipoDeOrientacao.jpg Graphic file (type jpg)
+
+<use images/diagramas/EscolherTipoDeOrientacao.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 804--805
+ [] 
+ []
+
+<images/diagramas/ExcluirGrupo.jpg, id=102, 861.2175pt x 620.3175pt>
+File: images/diagramas/ExcluirGrupo.jpg Graphic file (type jpg)
+
+<use images/diagramas/ExcluirGrupo.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 810--811
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [21 <images/diagramas/EscolherGrupo.jpg> <images/diagrama
+s/EscolherTipoDeOrientacao.jpg>]
+<images/diagramas/InserirGrupo.jpg, id=106, 720.6925pt x 540.0175pt>
+File: images/diagramas/InserirGrupo.jpg Graphic file (type jpg)
+
+<use images/diagramas/InserirGrupo.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 816--817
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [22 <images/diagramas/ExcluirGrupo.jpg>]
+<images/diagramas/TrocarGrupo.jpg, id=110, 1270.7475pt x 529.98pt>
+File: images/diagramas/TrocarGrupo.jpg Graphic file (type jpg)
+
+<use images/diagramas/TrocarGrupo.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 822--823
+ [] 
+ []
+
+<images/diagramas/DiagramaDeClasses.jpg, id=111, 1481.535pt x 1792.6975pt>
+File: images/diagramas/DiagramaDeClasses.jpg Graphic file (type jpg)
+
+<use images/diagramas/DiagramaDeClasses.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 830--831
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [23 <images/diagramas/InserirGrupo.jpg> <images/diagramas
+/TrocarGrupo.jpg>]
+<images/diagramas/DiagramaDePacotes.jpg, id=115, 658.46pt x 417.56pt>
+File: images/diagramas/DiagramaDePacotes.jpg Graphic file (type jpg)
+
+<use images/diagramas/DiagramaDePacotes.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [24 <images/diagramas/DiagramaDeClasses.jpg>]
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [25 <images/diagramas/DiagramaDePacotes.jpg>]
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [26]
+<images/diagramas/DiagramaDeImplantacao.jpg, id=126, 638.385pt x 317.185pt>
+File: images/diagramas/DiagramaDeImplantacao.jpg Graphic file (type jpg)
+
+<use images/diagramas/DiagramaDeImplantacao.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [27]
+<images/diagramas/DiagramaDeComponentes.jpg, id=130, 1132.23pt x 1150.2975pt>
+File: images/diagramas/DiagramaDeComponentes.jpg Graphic file (type jpg)
+
+<use images/diagramas/DiagramaDeComponentes.jpg>
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 982--983
+ [] 
+ []
+
+File: images/logo.jpg Graphic file (type jpg)
+<use images/logo.jpg> [28 <images/diagramas/DiagramaDeImplantacao.jpg>]
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [29 <images/diagramas/DiagramaDeComponentes.jpg>]
+<images/testesOriant/pagina_inicio.jpg, id=137, 546.04pt x 235.88126pt>
+File: images/testesOriant/pagina_inicio.jpg Graphic file (type jpg)
+
+<use images/testesOriant/pagina_inicio.jpg>
+<images/testesOriant/grupo_inicio.jpg, id=138, 241.90375pt x 83.31125pt>
+File: images/testesOriant/grupo_inicio.jpg Graphic file (type jpg)
+
+<use images/testesOriant/grupo_inicio.jpg>
+<images/testesOriant/feromonio_inicio.jpg, id=139, 415.5525pt x 236.885pt>
+File: images/testesOriant/feromonio_inicio.jpg Graphic file (type jpg)
+
+<use images/testesOriant/feromonio_inicio.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [30 <images/testesOriant/pagina_inicio.jpg> <images/test
+esOriant/grupo_inicio.jpg>]
+<images/testesOriant/teste_bazan/na_feromonio_l1.jpg, id=146, 401.5pt x 252.945
+pt>
+File: images/testesOriant/teste_bazan/na_feromonio_l1.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/na_feromonio_l1.jpg>
+<images/testesOriant/teste_bazan/na_pagina_l1.jpg, id=147, 624.3325pt x 251.941
+25pt>
+File: images/testesOriant/teste_bazan/na_pagina_l1.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/na_pagina_l1.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [31 <images/testesOriant/feromonio_inicio.jpg> <images/te
+stesOriant/teste_bazan/na_feromonio_l1.jpg> <images/testesOriant/teste_bazan/na
+_pagina_l1.jpg>]
+<images/testesOriant/teste_bazan/na_feromonio_l2.jpg, id=152, 401.5pt x 270.008
+74pt>
+File: images/testesOriant/teste_bazan/na_feromonio_l2.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/na_feromonio_l2.jpg>
+<images/testesOriant/teste_bazan/na_pagina_l2.jpg, id=153, 624.3325pt x 251.941
+25pt>
+File: images/testesOriant/teste_bazan/na_pagina_l2.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/na_pagina_l2.jpg>
+<images/testesOriant/teste_bazan/na_feromonio_l3.jpg, id=154, 401.5pt x 287.072
+5pt>
+File: images/testesOriant/teste_bazan/na_feromonio_l3.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/na_feromonio_l3.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [32 <images/testesOriant/teste_bazan/na_feromonio_l2.jpg>
+ <images/testesOriant/teste_bazan/na_pagina_l2.jpg> <images/testesOriant/teste_
+bazan/na_feromonio_l3.jpg>]
+<images/testesOriant/teste_bazan/na_pagina_l3.jpg, id=158, 624.3325pt x 270.008
+74pt>
+File: images/testesOriant/teste_bazan/na_pagina_l3.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/na_pagina_l3.jpg>
+<images/testesOriant/teste_bazan/na_feromonio_l4.jpg, id=159, 401.5pt x 304.136
+25pt>
+File: images/testesOriant/teste_bazan/na_feromonio_l4.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/na_feromonio_l4.jpg>
+<images/testesOriant/teste_bazan/na_pagina_l4.jpg, id=160, 624.3325pt x 287.072
+5pt>
+File: images/testesOriant/teste_bazan/na_pagina_l4.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/na_pagina_l4.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [33 <images/testesOriant/teste_bazan/na_pagina_l3.jpg> <i
+mages/testesOriant/teste_bazan/na_feromonio_l4.jpg>]
+<images/testesOriant/teste_bazan/na_feromonio_l5.jpg, id=164, 401.5pt x 321.2pt
+>
+File: images/testesOriant/teste_bazan/na_feromonio_l5.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/na_feromonio_l5.jpg>
+<images/testesOriant/teste_bazan/na_pagina_l5.jpg, id=165, 624.3325pt x 304.136
+25pt>
+File: images/testesOriant/teste_bazan/na_pagina_l5.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/na_pagina_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [34 <images/testesOriant/teste_bazan/na_pagina_l4.jpg> <i
+mages/testesOriant/teste_bazan/na_feromonio_l5.jpg> <images/testesOriant/teste_
+bazan/na_pagina_l5.jpg>]
+<images/testesOriant/teste_bazan/no_feromonio_l1.jpg, id=169, 401.5pt x 320.196
+24pt>
+File: images/testesOriant/teste_bazan/no_feromonio_l1.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/no_feromonio_l1.jpg>
+<images/testesOriant/teste_bazan/no_pagina_l1.jpg, id=170, 573.14125pt x 305.14
+pt>
+File: images/testesOriant/teste_bazan/no_pagina_l1.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/no_pagina_l1.jpg>
+<images/testesOriant/teste_bazan/no_feromonio_l2.jpg, id=171, 401.5pt x 337.26p
+t>
+File: images/testesOriant/teste_bazan/no_feromonio_l2.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/no_feromonio_l2.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [35 <images/testesOriant/teste_bazan/no_feromonio_l1.jpg>
+ <images/testesOriant/teste_bazan/no_pagina_l1.jpg>]
+<images/testesOriant/teste_bazan/no_pagina_l2.jpg, id=175, 573.14125pt x 321.2p
+t>
+File: images/testesOriant/teste_bazan/no_pagina_l2.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/no_pagina_l2.jpg>
+<images/testesOriant/teste_bazan/no_feromonio_l3.jpg, id=176, 401.5pt x 355.327
+5pt>
+File: images/testesOriant/teste_bazan/no_feromonio_l3.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/no_feromonio_l3.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [36 <images/testesOriant/teste_bazan/no_feromonio_l2.jpg>
+ <images/testesOriant/teste_bazan/no_pagina_l2.jpg> <images/testesOriant/teste_
+bazan/no_feromonio_l3.jpg>]
+<images/testesOriant/teste_bazan/no_pagina_l3.jpg, id=180, 573.14125pt x 339.26
+75pt>
+File: images/testesOriant/teste_bazan/no_pagina_l3.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/no_pagina_l3.jpg>
+<images/testesOriant/teste_bazan/no_feromonio_l4.jpg, id=181, 401.5pt x 372.391
+25pt>
+File: images/testesOriant/teste_bazan/no_feromonio_l4.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/no_feromonio_l4.jpg>
+<images/testesOriant/teste_bazan/no_pagina_l4.jpg, id=182, 573.14125pt x 355.32
+75pt>
+File: images/testesOriant/teste_bazan/no_pagina_l4.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/no_pagina_l4.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [37 <images/testesOriant/teste_bazan/no_pagina_l3.jpg> <i
+mages/testesOriant/teste_bazan/no_feromonio_l4.jpg>]
+<images/testesOriant/teste_bazan/no_feromonio_l5.jpg, id=187, 401.5pt x 389.455
+pt>
+File: images/testesOriant/teste_bazan/no_feromonio_l5.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_bazan/no_feromonio_l5.jpg>
+<images/testesOriant/teste_bazan/no_pagina_l5.jpg, id=188, 573.14125pt x 373.39
+5pt>
+File: images/testesOriant/teste_bazan/no_pagina_l5.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_bazan/no_pagina_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [38 <images/testesOriant/teste_bazan/no_pagina_l4.jpg> <i
+mages/testesOriant/teste_bazan/no_feromonio_l5.jpg>]
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg>
+[39 <images/testesOriant/teste_bazan/no_pagina_l5.jpg>]
+<images/testesOriant/teste_mario/na_feromonio_l5.jpg, id=195, 401.5pt x 303.132
+5pt>
+File: images/testesOriant/teste_mario/na_feromonio_l5.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_mario/na_feromonio_l5.jpg>
+<images/testesOriant/teste_mario/na_pagina_l5.jpg, id=196, 572.1375pt x 286.068
+76pt>
+File: images/testesOriant/teste_mario/na_pagina_l5.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_mario/na_pagina_l5.jpg>
+<images/testesOriant/teste_mario/no_feromonio_l5.jpg, id=197, 401.5pt x 337.26p
+t>
+File: images/testesOriant/teste_mario/no_feromonio_l5.jpg Graphic file (type jp
+g)
+ <use images/testesOriant/teste_mario/no_feromonio_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [40 <images/testesOriant/teste_mario/na_feromonio_l5.jpg>
+ <images/testesOriant/teste_mario/na_pagina_l5.jpg>]
+<images/testesOriant/teste_mario/no_pagina_l5.jpg, id=201, 572.1375pt x 321.2pt
+>
+File: images/testesOriant/teste_mario/no_pagina_l5.jpg Graphic file (type jpg)
+ <use images/testesOriant/teste_mario/no_pagina_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg>
+[41 <images/testesOriant/teste_mario/no_feromonio_l5.jpg> <images/testesOriant/
+teste_mario/no_pagina_l5.jpg>]
+<images/testesOriant/teste_thesko/na_feromonio_l5.jpg, id=205, 401.5pt x 319.19
+25pt>
+File: images/testesOriant/teste_thesko/na_feromonio_l5.jpg Graphic file (type j
+pg)
+ <use images/testesOriant/teste_thesko/na_feromonio_l5.jpg>
+<images/testesOriant/teste_thesko/na_pagina_l5.jpg, id=206, 548.0475pt x 322.20
+375pt>
+File: images/testesOriant/teste_thesko/na_pagina_l5.jpg Graphic file (type jpg)
+
+ <use images/testesOriant/teste_thesko/na_pagina_l5.jpg>
+<images/testesOriant/teste_thesko/no_feromonio_l5.jpg, id=207, 401.5pt x 372.39
+125pt>
+File: images/testesOriant/teste_thesko/no_feromonio_l5.jpg Graphic file (type j
+pg)
+ <use images/testesOriant/teste_thesko/no_feromonio_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [42 <images/testesOriant/teste_thesko/na_feromonio_l5.jpg
+> <images/testesOriant/teste_thesko/na_pagina_l5.jpg>]
+<images/testesOriant/teste_thesko/no_pagina_l5.jpg, id=211, 546.04pt x 373.395p
+t>
+File: images/testesOriant/teste_thesko/no_pagina_l5.jpg Graphic file (type jpg)
+
+ <use images/testesOriant/teste_thesko/no_pagina_l5.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+
+<use images/logo.jpg> [43 <images/testesOriant/teste_thesko/no_feromonio_l5.jpg
+> <images/testesOriant/teste_thesko/no_pagina_l5.jpg>]
+<images/testesOriant/geral/feromonio.jpg, id=216, 401.5pt x 304.13625pt>
+File: images/testesOriant/geral/feromonio.jpg Graphic file (type jpg)
+
+<use images/testesOriant/geral/feromonio.jpg>
+<images/testesOriant/geral/pagina.jpg, id=217, 584.1825pt x 251.94125pt>
+File: images/testesOriant/geral/pagina.jpg Graphic file (type jpg)
+
+<use images/testesOriant/geral/pagina.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [44 <images/testesOriant/geral/feromonio.jpg> <images/te
+stesOriant/geral/pagina.jpg>]
+<images/testesOriant/geral/grupo.jpg, id=221, 241.90375pt x 424.58624pt>
+File: images/testesOriant/geral/grupo.jpg Graphic file (type jpg)
+
+<use images/testesOriant/geral/grupo.jpg>
+File: images/logo.jpg Graphic file (type jpg)
+ <use images/logo.jpg> [45 <images/testesOriant/geral/grupo.jpg>] (artefatos.au
+x) ) 
+Here is how much of TeX's memory you used:
+ 4126 strings out of 95400
+ 59782 string characters out of 1186772
+ 117431 words of memory out of 1106765
+ 6847 multiletter control sequences out of 60000
+ 11076 words of font info for 41 fonts, out of 1000000 for 2000
+ 16 hyphenation exceptions out of 8191
+ 35i,18n,43p,264b,448s stack positions out of 5000i,500n,10000p,200000b,32768s
+PDF statistics:
+ 224 PDF objects out of 300000
+ 0 named destinations out of 300000
+ 286 words of extra memory for PDF output out of 10000
+<C:/Arquivos de programas/MiKTeX 2.5/fonts/type1/bluesky/cm/cmmi10.pfb><C:/
+Arquivos de programas/MiKTeX 2.5/fonts/type1/bluesky/cm/cmsy10.pfb><C:/Arquivos
+ de programas/MiKTeX 2.5/fonts/type1/bluesky/cm/cmti10.pfb><C:/Arquivos de prog
+ramas/MiKTeX 2.5/fonts/type1/bluesky/cm/cmbx8.pfb><C:/Arquivos de programas/MiK
+TeX 2.5/fonts/type1/bluesky/cm/cmbx10.pfb><C:/Arquivos de programas/MiKTeX 2.5/
+fonts/type1/bluesky/cm/cmr10.pfb><C:/Arquivos de programas/MiKTeX 2.5/fonts/typ
+e1/bluesky/cm/cmr12.pfb><C:/Arquivos de programas/MiKTeX 2.5/fonts/type1/bluesk
+y/cm/cmbx12.pfb>
+Output written on artefatos.pdf (45 pages, 5864885 bytes).

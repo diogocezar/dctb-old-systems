@@ -1,0 +1,58 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_admin -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionAdmin}" method="post" enctype="multipart/form-data" name="{formAdmin}" id="{formAdmin}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" bgcolor="#525B68" class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloDadosPessoais}</td>
+        </tr>
+      <tr>
+        <td width="93" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td width="306" align="left" bgcolor="#EDEDED"><label>
+          <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" />
+        </label></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Sobrenome&nbsp;</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoSobre}" type="text" class="form" id="{campoSobre}" value="{valorSobre}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;E-mail</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{valorEmail}" size="45" /></td>
+      </tr>
+      <tr>	  
+        <td height="21" colspan="2" align="left" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloCadastro}</span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Login</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoLogin}" type="text" class="form" id="{campoLogin}" value="{valorLogin}" size="30" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Senha</span></td>
+        <td align="left" valign="top" bgcolor="#EDEDED"><input name="{campoSenha}" type="password" class="form" id="{campoSenha}" value="{valorSenha}" size="30" />
+          <span class="texto2">(Senha m&iacute;nima de 6 d&iacute;gitos) </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto2">&nbsp;&nbsp;</span><span class="texto">Confirmar Senha</span></td>
+        <td align="left" valign="top" bgcolor="#EDEDED"><span class="texto2">
+          <input name="{campoConfi}" type="password" class="form" id="{campoConfi}" value="{valorConfi}" size="30" />
+          &nbsp;</span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Tipo</span></td>
+        <td align="left" bgcolor="#EDEDED">
+          <select name="{comboTipo}" size="1" class="form" id="{comboTipo}">
+		  {comboTipoOpcoes}
+          </select>        </td>
+      </tr>
+      <tr>
+        <td height="21" colspan="2" align="center" valign="middle" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_admin -->

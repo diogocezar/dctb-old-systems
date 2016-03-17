@@ -1,0 +1,157 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_form_contato -->
+<form name="{form_contato}" method="post" action="{action}">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="372" height="19"></td>
+    <td colspan="3" align="center" valign="middle" class="titulo">{contato}</td>
+    <td width="392"></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td width="138"></td>
+    <td width="8"></td>
+    <td width="321"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{nome} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="50"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{telefone} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoTelefone}" type="text" class="formulario" id="{campoTelefone}" value="{valorTelefone}" size="15" maxlength="12" onkeypress="formatFone(this,event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{celular} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCelular}" type="text" class="formulario" id="{campoCelular}" value="{valorCelular}" size="15" maxlength="12" onkeypress="formatFone(this,event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{cidade} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCidade}" type="text" class="formulario" id="{campoCidade}" value="{valorCidade}" size="50" maxlength="50" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+    <td rowspan="2" align="left" valign="middle"><select name="{comboEstado}" class="formulario" id="{comboEstado}">
+		{comboEstadoOpcoes}
+    </select>    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="22"></td>
+    <td rowspan="2" align="right" valign="middle" class="letra_padrao">{estado} : </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{email} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoEmail}" type="text" class="formulario" id="{campoEmail}" value="{valorEmail}" size="50" maxlength="50" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{curso} : </span></td>
+    <td></td>
+    <td valign="top"><select name="{comboCurso}" class="formulario" id="{comboCurso}">
+		{comboCursoOpcoes}
+    </select>
+    </td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+  
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+  <tr>
+    <td height="30"></td>
+    <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+      <br />
+      <br />
+      <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+    <td></td>
+  </tr>
+</table>
+<!-- END bloco_form_curso -->
+</form>

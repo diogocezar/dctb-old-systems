@@ -1,0 +1,34 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_esqueci_senha -->
+<table width="417" border="0" class="form" align="center">
+<form action="{actionEsqueci}" method="post" name="{formEsqueci}" id="{formEsqueci}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td width="403" height="21" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloEsqueci}</span></td>
+        </tr>
+      <tr>
+        <td align="center" bgcolor="#EDEDED" class="texto"><table width="80%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" class="texto"><br />
+              <img src="../images/cadeado.jpg" width="48" height="48" /><br />
+              <br />
+              Caso voc&ecirc; tenha dificuldades de lembrar seu   login/senha, preencha o campo abaixo com o seu CPF e voc&ecirc; receber&aacute; um   e-mail contendo o login e senha.<br />
+              <br /></td>
+          </tr>
+        </table></td>
+        </tr>
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;CPF </span>
+          <input name="{campoCpf}" type="text" class="form" id="{campoCpf}" onkeypress="formatCPF(this, event)" size="45" maxlength="14"/></td>
+        </tr>
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}" /></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+</form>
+</table>
+<!-- END bloco_esqueci_senha -->

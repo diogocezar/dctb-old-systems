@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/cssLuthieria.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="75"><img src="../images/topo.jpg" width="766" height="75" /></td>
+  </tr>
+</table>
+<table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="20" height="528" align="left" valign="top"><img src="../images/lat_esquerda.jpg" width="20" height="528" /></td>
+    <td width="171" align="left" valign="top"><table width="171" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="270" align="left" valign="top" background="../images/bg_menu.gif">
+		<!-- BEGIN bloco_menu -->
+        <div id="menu"><img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu1}">{menu1}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu2}">{menu2}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu3}">{menu3}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu4}">{menu4}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu5}">{menu5}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu6}">{menu6}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu7}">{menu7}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu8}">{menu8}</a><br />
+            <img src="../images/seta.gif" width="3" height="5" /> <a href="{linkMenu9}">{menu9}</a></div>
+            <!-- END bloco_menu -->
+          </td>
+      </tr>
+      <tr>
+        <td height="258"><img src="../images/img_guitarra.jpg" width="171" height="258" /></td>
+      </tr>
+    </table></td>
+    <td width="13" align="left" valign="top"><img src="../images/img_guitarra_2.jpg" width="13" height="528" /></td>
+    
+    <td width="542" align="left" valign="top">
+    <div id="bordaPrincipal">
+    <table width="542" border="0" cellpadding="0" cellspacing="0" bgcolor="#242424">
+      <tr>
+        <td width="256" height="169" align="center" valign="top"><br />
+          <table width="225" border="0" cellspacing="0" cellpadding="0">
+          <!-- BEGIN bloco_arte -->
+          <tr>
+            <td height="25" colspan="2" align="left"><a href="{linkArte}"><img src="../images/tit_arte.gif" width="126" height="14" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td width="88" align="left" valign="top"><a href="{linkArte}"><img src="../images/img_pequena.jpg" width="75" height="98" border="0" /></a></td>
+            <td width="137" align="left" valign="top"><div align="justify">{arteLuthieria}</div></td>
+          </tr>
+          <!-- END bloco_arte -->
+        </table>
+          <p>&nbsp;</p>          </td>
+        <td align="center" valign="top"><br />
+          <table width="225" border="0" cellspacing="0" cellpadding="0">
+          <!-- BEGIN bloco_empresa -->
+          <tr>
+            <td height="25" colspan="2" align="left"><a href="{linkEmpresa}"><img src="../images/tit_empresa.gif" width="119" height="19" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td width="88" align="left" valign="top"><a href="{linkEmpresa}"><img src="../images/img_pequena.jpg" width="75" height="98" border="0" /></a></td>
+            <td width="137" align="left" valign="top"><div align="justify">{sobreEmpresa}</div></td>
+          </tr>
+          <!-- END bloco_empresa -->
+        </table></td>
+      </tr>
+      <tr>
+        <td height="359" align="center" valign="top"><table width="225" border="0" cellspacing="0" cellpadding="0">
+          <!-- BEGIN bloco_noticias -->
+          <tr>
+            <td height="25" align="left" valign="top"><a href="{todasNoticias}"><img src="../images/tit_noticias.gif" width="120" height="16" border="0" /></a></td>
+          </tr>
+          <!-- BEGIN bloco_noticias_interno -->
+          <tr>     
+            <td align="left" valign="top"><strong><br />
+                <span class="fonteData"><a href="{linkNoticia}">{dataNoticia} - {tituloNoticia}</a></span></strong><br /> 
+                <div align="justify">{resumoNoticia}</div></td>
+            </tr>
+            <!-- END bloco_noticias_interno -->
+          <tr>
+            <td align="left" valign="bottom" height="20"><div align="right"><img src="../images/seta.gif" width="3" height="5" /> <a href="{todasNoticias}">Veja todas notícias</a></div></td>
+          </tr>
+            <!-- END bloco_noticias -->
+        </table>
+          <br />
+          <table width="225" border="0" cellspacing="0" cellpadding="0">
+          <!-- BEGIN bloco_dicas -->
+            <tr>
+              <td height="25" align="left" valign="top"><a href="{todasDicas}"><img src="../images/tit_dicas.gif" width="99" height="16" border="0" /></a></td>
+            </tr>
+            <!-- BEGIN bloco_dicas_interno -->
+            <tr>              
+              <td height="39" align="left" valign="top"><div align="justify"><strong>                <br />
+                  <span class="fonteData">{tituloDica}</span></strong><br />
+                {resumoDica}</div></td>              
+              </tr>
+              <!-- END bloco_dicas_interno -->
+          <tr>
+            <td align="left" valign="bottom" height="20"><div align="right"><img src="../images/seta.gif" width="3" height="5" /> <a href="{todasDicas}">Veja todas dicas</a></div></td>
+          </tr>
+              <!-- END bloco_dicas -->
+          </table></td>
+        <td align="center" valign="top"><p><img src="../images/img_loja.jpg" width="242" height="320" /></p>          </td>
+      </tr>
+      <tr>
+        <td height="50" colspan="2" align="center" valign="middle">
+          <div id="tituloDepoimentos" align="left"><a href="{linkDepoimentos}"><img src="../images/tit_depoimentos.gif" border="0" /></a></div></td>
+      </tr>
+      <tr>
+        <td height="50" colspan="2" align="center" valign="middle">
+        
+        <!-- BEGIN bloco_depoimento -->
+        
+        <div id="boxDepoimentos">
+        <p align="justify"><span class="depoimento">&quot;</span>{depoimento}<span class="depoimento">&quot;</span></p>
+        <p align="right" class="fonteData">Depoimento de<br />
+          <em><a href="{linkAutorDepoimento}">{autorDepoimento}</a></em></p>
+        </div>
+        <!-- END bloco_depoimento -->
+        </td>
+      </tr>
+    </table>
+    </div>
+    </td>
+    <td width="20" align="left" valign="top"><img src="../images/lat_direita.jpg" width="20" height="528" /></td>
+  </tr>
+</table>
+<table width="766" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="47"><img src="../images/creditos.jpg" width="766" height="47" /></td>
+  </tr>
+</table>
+</body>
+</html>

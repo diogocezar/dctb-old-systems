@@ -1,0 +1,87 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/list.js"></script>
+<!-- BEGIN bloco_configuracoes -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formConfiguracoes}" name="{formConfiguracoes}" enctype="multipart/form-data" method="post" action="{actionConfiguracoes}">
+  <tr>
+	<td width="1" height="0"></td>
+    <td width="536"></td>
+  </tr>
+  <tr>
+    <td height="345"></td>
+    <td valign="top"><table width="90%" height="418" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+      <!--DWLayoutTable-->
+      <tr>
+        <td height="88" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/topAdminConfiguracoes.gif" width="535" height="50" />&nbsp;</td>
+	    </tr>
+      <tr>
+        <td width="59" rowspan="2" valign="top" bgcolor="#ECECEC"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	      <td height="20" colspan="2" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec"><span class="tahoma11"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /></span> <span class="tahoma10">{tituloConfiguracoes}</span></span></td>
+		  </tr>
+      <tr>
+        <td width="133" height="83" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Disponibilidade: </td>
+		  <td width="341" valign="top" bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+		    <input name="{campoDisponibilidade}" type="text" class="form" id="{campoDisponibilidade}" size="25" />
+		    <a href="#ancDisp"><img src="../images/botAdd.jpg" width="27" height="25" border="0" align="absmiddle" onclick="{addDisp}"/></a><a name="ancDisp" id="ancDisp"></a><br />
+		    <span class="texto">
+		      &nbsp;
+		      <select name="{listDisponibilidade}" size="4" multiple="multiple" class="form" id="{listDisponibilidadeID}">
+		      {listDisponibilidadeOpcoes}
+		      </select>
+	        <a href="#ancDisp"><img src="../images/botRem.jpg" width="27" height="25" border="0" align="absmiddle" onclick="{rmvDisp}" /></a></span></td>
+	    </tr>
+      <tr>
+        <td valign="top" bgcolor="#ECECEC"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	      <td height="83" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Classifica&ccedil;&atilde;o: </td>
+	      <td valign="top" bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+            <input name="{campoClassificacao}" type="text" class="form" id="{campoClassificacao}" size="25" />
+            <a href="#ancCla"><img src="../images/botAdd.jpg" width="27" height="25" border="0" align="absmiddle" onclick="{addCla}" /></a><a name="ancCla" id="ancCla"></a><br />
+            <span class="texto"> &nbsp;
+            <select name="{listClassicacao}" size="4" multiple="multiple" class="form" id="{listClassicacaoID}">
+		    {listClassicacaoOpcoes}
+            </select>
+            <a href="#ancCla"><img src="../images/botRem.jpg" width="27" height="25" border="0" align="absmiddle" onclick="{rmvCla}" /></a></span></td>
+	      </tr>
+      <tr>
+        <td rowspan="3" valign="top" bgcolor="#ECECEC"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	      <td rowspan="2" valign="top" bgcolor="#ECECEC"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Produtos: </span></td>
+	      <td height="30" valign="top" bgcolor="#ECECEC" class="tahoma10">&nbsp; N&uacute;mero de produtos na p&aacute;gina principal: <br />
+	        &nbsp;
+	        <select name="{numPrincipal}" class="form" id="{numPrincipal}">
+	          <option value="4"  {selPRI_4}>4</option>
+	          <option value="8"  {selPRI_8}>8</option>
+	          <option value="12" {selPRI_12}>12</option>
+	          <option value="16" {selPRI_16}>16</option>
+            </select>	        </td>
+	      </tr>
+      <tr>
+        <td height="30" valign="top" bgcolor="#ECECEC" class="tahoma10">&nbsp; N&uacute;mero de produtos na <strong>por p&aacute;gina</strong> nas listagens: <br />
+&nbsp;
+		<select name="{numPorPagina}" class="form" id="{numPorPagina}">
+		  <option value="10" {selPOR_10}>10</option>
+		  <option value="15" {selPOR_15}>15</option>
+		  <option value="20" {selPOR_20}>20</option>
+		  <option value="25" {selPOR_25}>25</option>
+		</select>
+      </td>
+      </tr>
+      <tr>
+        <td height="30" colspan="2" valign="middle" bgcolor="#ECECEC" class="tahoma10"><strong>Obs</strong>. O n&uacute;mero de produtos na p&aacute;gina principal ser&aacute; dividido entre 'Novos Produtos' e 'Super Ofertas'. </td>
+        </tr>
+      <tr>
+        <td height="22" colspan="3" align="center" valign="top" bgcolor="ececec"><label>
+          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+          </label></td>
+          </tr>
+      <tr>
+        <td height="22" colspan="3" align="center" valign="top" bgcolor="ececec"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" /></td>
+        </tr>
+	  </table></td>
+  </tr>
+  <tr>
+    <td height="6"></td>
+    <td></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_configuracoes -->

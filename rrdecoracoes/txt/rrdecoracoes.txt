@@ -1,0 +1,29 @@
+1) Iframe nas páginas que o conteúdo será paginado;
+   Deve conter as paginas com o lado esquerdo como principal (indice) e o lado direito como conteudo (iframe).
+   As páginas internas (iframes) devem conter nomes significativos relativos aos seus índices.
+
+2) Separação : Clientes (são os cadastrados no newsletter) Links (São os links dos clientes);
+
+3) Cadastro de Clientes;
+
+4) Cadastro de Links;
+
+5) Cadastro de Serviços;
+
+6) Cadastro de Novidades (Mala direta);
+
+7) Gerenciamento de Clientes; [excluir]
+
+8) Gerenciamento de Links; [alterar, excluir]
+
+9) Gerenciamento de Servicos; [alterar, excluir]
+
+10) Gerenciamento de Novidades; [alterar, re-enviar, utilizar como modelo, excluir]
+
+11) Tela de login (admin);
+
+12) Padronizar todos os campos (formulários) nomes de acordo com o template {nomeCampo}
+
+13) Adicionar as tags <!-- BEGIN form_cliente --> <form ... > </form> <!-- END form_cliente -->
+
+14) Utilizar as especificação para nomenclatura em especificação.txt

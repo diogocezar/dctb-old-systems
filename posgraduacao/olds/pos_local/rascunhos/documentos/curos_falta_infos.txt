@@ -1,0 +1,79 @@
+Curso : Curso de Especialização em Instrumentalização para o Ensino de Matemática
+
+Campos necessários :
+
+1) Apresentação;
+2) Certificado;
+3) Complementar [Opcional porém importante];
+4) Contato (email/telefone).
+
+**********************************************************************************
+
+Curso : Curso de Especialização em Engenharia de Segurança do Trabalho
+
+Campos necessários :
+
+1) Apresentação;
+2) Início do curso;
+3) Término do curso;
+4) Período de inscrição;
+5) Período de matricula;
+
+(As datas fornecidas não estão completas por exemplo, Inicio do curso : setembro de 2005 )
+
+É NECESSÁRIO DIA MES E ANO PARA TODAS AS DATAS.
+
+6) Matrícula, é o valor em reais, e não a data da mesma;
+7) Complementar [Opcional porém importante];
+8) Contato (email/telefone).
+
+
+**********************************************************************************
+
+Curso : Curso de Especialização em Cultura, Tecnologia e Ensino de Línguas
+
+Campos necessários :
+
+1) Apresentação;
+2) Resumo;
+3) Complementar [Opcional porém importante];
+4) Contato (email/telefone).
+
+**********************************************************************************
+
+Curso : Curso de Especialização em Tecnologia Java
+
+Campos necessários :
+
+1) Apresentação;
+2) Resumo;
+3) Término do curso;
+4) Taxa de Inscrição (valor);
+5) Matricula (valor);
+6) Mensalidades (valor);
+7) Complementar [Opcional porém importante];
+8) Contato (email/telefone).
+
+**********************************************************************************
+
+Curso : Curso de Especialização em Gestão da Produção
+
+1) Resumo;
+2) Complementar [Opcional porém importante];
+3) Contato (email/telefone).
+
+**********************************************************************************
+
+Curso : Curso de Especialização em Automação e Controle de Processos Industriais
+
+Peguei as informações no site atual, por favor enviar as informações mais recentes.
+
+Campos necessários :
+
+1) Período de inscirção;
+2) Período de matrícula;
+3) Apresentação;
+4) Certificado;
+5) Complementar [Opcional porém importante];
+6) Resumo;
+7) Contato (email/telefone).

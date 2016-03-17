@@ -1,0 +1,83 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<!-- BEGIN bloco_gerenciar -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formProduto}" name="{formProduto}" method="post" action="{actionProduto}">
+  <tr>
+    <td width="1" height="0"></td>
+    <td width="534"></td>
+    <td width="3"></td>
+  </tr>
+  <tr>
+    <td height="115"></td>
+    <td valign="top">
+	<table width="90%" height="115" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+      <tr>
+        <td height="57" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/{banner}" width="535" height="50" />&nbsp;</td>
+          </tr>
+      <tr>
+        <td height="24" colspan="3" valign="middle" bgcolor="#ECECEC">&nbsp;&nbsp;<img src="../images/seta.gif" width="13" height="13" align="middle" /><span class="tahoma10"> {tituloGerenciar} </span></td>
+          </tr>
+	  <!-- BEGIN bloco_gerenciar_interno -->
+      <tr>
+        <td width="88%" height="25" valign="middle" bgcolor="#ECECEC">&nbsp;&nbsp;<img src="../images/seta.gif" width="13" height="13" align="middle" /><span class="tahoma10"> {linha} </span></td>
+		<td width="6%"  height="25" align="center" valign="middle" bgcolor="#ECECEC"><a href="{linkExcluir}"><img src="../images/botExcluir.jpg" alt="{altExcluir}" width="27" height="25" border="0" align="absmiddle"></a></td>
+		<td width="6%"  height="25" align="center" valign="middle" bgcolor="#ECECEC"><a href="{linkEditar}"><img src="../images/botAlterar.jpg" alt="{altEditar}" width="27" height="25" border="0" align="absmiddle"></a></td>
+	  </tr>      
+	  <!-- END bloco_gerenciar_interno -->
+    </table></td>
+  <td></td>
+  </tr>
+  <tr>
+    <td height="0"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  </form>
+</table>
+<!-- BEGIN bloco_gerenciar_erro -->
+<table width="550" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="tahoma11">{erro}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_erro -->
+<!-- BEGIN bloco_gerenciar_paginacao -->
+<!-- BEGIN bloco_gerenciar_paginacao_controle -->
+<br>
+<table width="550" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"> <span class="tahoma10">{paginacao}          
+          <label></label>
+        </span></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_paginacao_controle -->
+<table width="550" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="tahoma10">{infos}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_gerenciar_paginacao -->
+<table width="550" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" />
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_lista_produtos -->

@@ -1,0 +1,45 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssInagro.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formEmpresa}" action="{actionEmpresa}" method="post" enctype="multipart/form-data">
+	<div id="formTitulo">Nome</div>
+	<input name="{campoNome}" type="text" value="{valorNome}" class="form" />
+	<div id="formTitulo">Descrição</div>
+	<textarea name="{campoDescricao}" cols="" rows="3" class="form">{valorDescricao}</textarea>
+	<div id="formTituloFile">Logo</div>
+	<input type="file" class="formFile" name="{campoLogo}" value="{valorLogo}" >
+	<div id="textoMiniatura">{textoMiniatura0}</div>
+	<div id="miniatura">{miniaturaFoto0}</div>
+	<div id="formTituloFile">Foto 1</div>
+	<input type="file" class="formFile" name="{campoFoto1}" value="{valorFoto1}" >
+	<div id="textoMiniatura">{textoMiniatura1}</div>
+	<div id="miniatura">{miniaturaFoto1}</div>
+	<div id="formTituloFile">Foto 2</div>
+	<input type="file" class="formFile" name="{campoFoto2}" value="{valorFoto2}" >
+	<div id="textoMiniatura">{textoMiniatura2}</div>
+	<div id="miniatura">{miniaturaFoto2}</div>
+	<div id="formTituloFile">Foto 3</div>
+	<input type="file" class="formFile" name="{campoFoto3}" value="{valorFoto3}" >
+	<div id="textoMiniatura">{textoMiniatura3}</div>
+	<div id="miniatura">{miniaturaFoto3}</div>
+	<div id="formTituloFile">Foto 4</div>
+	<input type="file" class="formFile" name="{campoFoto4}" value="{valorFoto4}" >
+	<div id="textoMiniatura">{textoMiniatura4}</div>
+	<div id="miniatura">{miniaturaFoto4}</div>
+	<div id="formTituloFile">Foto 5</div>
+	<input type="file" class="formFile" name="{campoFoto5}" value="{valorFoto5}" >
+	<div id="textoMiniatura">{textoMiniatura5}</div>
+	<div id="miniatura">{miniaturaFoto5}</div>
+	<div id="formTituloFile">Foto 6</div>
+	<input type="file" class="formFile" name="{campoFoto6}" value="{valorFoto6}" >
+	<div id="textoMiniatura">{textoMiniatura6}</div>
+	<div id="miniatura">{miniaturaFoto6}</div>
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" />
+		<input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" />
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

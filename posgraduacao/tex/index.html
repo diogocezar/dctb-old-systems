@@ -1,0 +1,221 @@
+<html>
+<head>
+<title>>> UTeX <<</title>
+<script type="text/javascript" src="jscripts/addclasskillclass.js"></script>
+<script type="text/javascript" src="jscripts/attachevent.js"></script>
+<script type="text/javascript" src="jscripts/addcss.js"></script>
+<script type="text/javascript" src="jscripts/tabtastic.js"></script>
+<style type="text/css">
+body {
+	background-image: url(images/fundo.gif);
+	background-repeat: repeat-x;
+}
+</style>
+<script type="text/javascript">
+function goLink(lnk){
+	location.href=lnk;
+}
+</script>
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td align="left" valign="middle"><a href="http://inf.cp.cefetpr.br/tex/" target="_self"><img src="images/logo.gif" width="168" height="53" border="0"></a></td>
+    <td align="right" valign="middle"><a href="http://www.cp.cefetpr.br/" target="_blank"><img src="images/logo_utf.gif" width="150" height="49" border="0"></a></td>
+  </tr>
+</table>
+<br>
+<ul class="tabset_tabs">
+  <li><a href="#latex" class="active">O que é LaTex ?</a></li>
+  <!-- Opicional colocando um active, a tabela fica ativada. -->
+  <li><a href="#utex">O que é UTeX ?</a></li>
+  <li><a href="#downloads">Downloads</a></li>
+  <li><a href="#palestra">Palestra UTeX</a></li>
+  <li><a href="#equipe">Equipe de Desenvolvimento</a></li>
+  
+  <div id="latex" class="tabset_content">
+  <h2 class="tabset_label">Tab1</h2>
+  	<table>
+		<tr><td><p align="justify"><strong>O que &eacute; LaTeX ? <br>
+		  <br>
+		  TeX</strong> (Pronuncia-se &rdquo;tek&rdquo;) foi criado no final da d&eacute;cada de 1970 por Donald Knuth, e se
+		  resume em ser um sistema de editora&ccedil;&atilde;o de textos.<strong>TeX</strong>oferece um grande controle sobre
+		  a estrutura do documento a ser editado e, justamente por isso, traz uma complexidade
+		  na edi&ccedil;&atilde;o indesej&aacute;vel &agrave; maioria dos usu&aacute;rios comuns.<strong>LaTeX </strong>&eacute; um conjunto de macros escritas para o<strong>TeX</strong>que permite a cria&ccedil;&atilde;o de textos na
+		  mais alta qualidade tipogr&aacute;fica, usando um layout profissional pr&eacute;-definido. Seu criador 
+		  foi o Leslie Lamport que brincou com seu sobrenome e com a l&iacute;ngua espanhola, e colocou
+		  o nome de <strong>LaTeX </strong>em seu programa. Portanto, o <strong>LaTeX </strong>nada mais &eacute; que uma interface
+		  para o <strong>TEX</strong>, mas obviamente, mais simples de ser utilizada. 
+		  </p>
+		    <p align="justify"><strong>WYSIWYG</strong></p>
+		    <p align="justify">Em um sistema <strong>WYSIWYG</strong>, como o MS-Word, o autor do documento define o layout
+		      atrav&eacute;s de comandos interativos enquanto digita o texto na tela. O resultado final da
+		      formata&ccedil;&atilde;o &eacute; visualizado durante todo o processo. O que &eacute; visto na tela &eacute; o que ser&aacute;
+		      impresso. Os comandos para modificar o layout s&atilde;o bastante intuitivos de compreens&atilde;o
+		      f&aacute;cil.	        </p>
+		    <p align="justify">Normalmente os documentos editados com WYSIWYG s&atilde;o verdadeiras obras de arte.
+		      V&aacute;rios tamanhos e faces de fonte diferentes, tamanhos de p&aacute;ginas n&atilde;o-ortodoxos(&ldquo;Se eu
+		      aumentar um pouco o tamanho da p&aacute;gina e diminuir o tamanho da fonte, esta se&ccedil;&atilde;o vai
+		      caber em uma p&aacute;gina&rdquo;), e n&atilde;o raramente cores, muitas cores. Obviamente isto n&atilde;o &eacute; uma
+		      regra absoluta, mas neste tipo de editor, parece ser muito mais f&aacute;cil fazer a coisa errada.
+		      Mesmo aqueles poucos que tem um senso est&eacute;tico apurado s&atilde;o castigados pela (falta de)
+	        filosofia destes editores.</p>
+		    <p align="justify"> Em<strong> LaTeX</strong>, o autor n&atilde;o se preocupa com a formata&ccedil;&atilde;o durante a digita&ccedil;&atilde;o do texto. O
+		      importante &eacute; a estrutura l&oacute;gica, e este &eacute; talvez a grande for&ccedil;a deste sistema, j&aacute; que for&ccedil;a
+		      o autor a criar documentos bem estruturados. Uma vez definidos os cap&iacute;tulos, se&ccedil;&otilde;es,
+		      subse&ccedil;&otilde;es, cita&ccedil;&otilde;es, f&oacute;rmulas, bibliografias, etc., entra em cena o formatador, que escolhe,
+		      a partir de algumas diretivas, o melhor layout para o documento. O resultado final &eacute; um
+	        documento com apar&ecirc;ncia profissional e logicamente consistente.</p>
+		    <p align="justify">Para efeito de compara&ccedil;&atilde;o, seguem algumas vantagens de<strong> LaTeX</strong>sobre <strong>WYSIWYG</strong> (e
+		      o oposto).	        </p>
+		    <p align="justify"><strong>Vantagens:<br>
+		    </strong><br>
+  1. A inclus&atilde;o de f&oacute;rmulas matem&aacute;ticas &eacute; suportada de maneira conveniente.<br>
+  2. O usu&aacute;rio apenas tem de aprender alguns comandos f&aacute;ceis de entender que especificam
+		      a estrutura do documento. Quase nunca &eacute; necess&aacute;rio pensar no layout final do
+		      documento.<br>
+		      3. Estruturas complexas como notas de rodap&eacute;, refer&ecirc;ncias, sum&aacute;rios e bibliografias
+		      s&atilde;o geradas facilmente.<br>
+		      <br>
+		      <strong>Desvantagens:</strong><br>
+		      <br>
+		      1. Apesar de ser poss&iacute;vel ajustar par&acirc;metros de um layout pr&eacute;-definido, a constru&ccedil;&atilde;o
+		      de um novo layout &eacute; dif&iacute;cil e toma muito tempo.<br>
+	        2. &Eacute; muito dif&iacute;cil escrever documentos sem estrutura e desorganizados.</p>
+		    <p align="justify">[Curso introdut&oacute;rio ao Latex por Maur&iacute;cio Correia Lemes Neto] </p>
+		    </td></tr>
+	</table>
+  </div>
+  <div id="utex" class="tabset_content">
+    <h2 class="tabset_label">Tab3</h2>
+      	<table>
+		<tr><td><p align="justify"><strong>O que &eacute; UTeX ? <br>
+		  <br>
+		</strong>{Ultima vers&atilde;o lan&ccedil;ada em : <strong>
+        <!-- #BeginDate format:Br1a -->09.11.06 11:59 AM<!-- #EndDate -->
+		</strong>}</p>
+		    <p align="justify">O <strong>UTeX</strong> &eacute; um projeto realizado para a Universidade Tecnol&oacute;gica Federal do Paran&aacute; (<strong>UTFPR</strong>) unidade de Corn&eacute;lio Proc&oacute;pio, e tem como objetivo padronizar as normas t&eacute;cnicas para elabora&ccedil;&atilde;o de propostas e monografias de conclus&atilde;o de curso.</p>
+		    <p align="justify">O projeto foi iniciado pelos alunos: {Diogo Cezar Teixeira Batista, Rafael Augusto Ambrosio Rosa} do 7&ordm; per&iacute;do correspondente ao segundo semestre de 2006.</p>
+		    <p align="justify">O <strong>UTeX</strong> tem como base a utiliza&ccedil;&atilde;o da classe <strong>ABNTeX</strong>.</p>
+		    <p align="justify">Com int&uacute;ito de se adequar as normas da institui&ccedil;&atilde;o e em espec&iacute;fico as normas do curso de Tecnologia em Inform&aacute;tica, deu-se in&iacute;cio a constru&ccedil;&atilde;o de um arquivos principal [<em>utfPR.sty</em>] que redefine as principais configura&ccedil;&otilde;es propostas pelo pacote <strong>ABNTeX,</strong> ainda nesse arquivo uma s&eacute;rie de comandos com prefixo <strong>UTFPR</strong> foram implementados.</p>
+		    <p align="justify">Al&eacute;m do arquivo de configura&ccedil;&atilde;o <strong>UTeX</strong> existe um modelo de trabalho de diploma&ccedil;&atilde;o mostrando como se utiliza cada um dos comandos redefinidos.</p>
+		    <p align="justify">Fica claro que esse pacote n&atilde;o &eacute; destinado a leigos na linguagem <strong>LaTeX</strong> pois, apesar da intuitivadade dos comandos, n&atilde;o se descarta conhecimentos avan&ccedil;ados para elabora&ccedil;&atilde;o de um bom trabalho.</p>
+		    <p align="center"><strong>***PEDIMOS ENCARECIDAMENTE***</strong></p>
+		    <p align="justify">Que esse projeto n&atilde;o termine por aqui, que os <strong>calouros</strong> percebam que <strong>LaTeX</strong> &eacute; indenpendente, livre, organizado, e uma execelente ferramenta para constru&ccedil;&atilde;o de textos tipogr&aacute;ficos.</p>
+		    <p align="justify">Por favor calouros, d&ecirc;m continuidade a esse trabalho, n&atilde;o fizemos isso para n&oacute;s e sim para voc&ecirc;s. </p>
+		    <p align="justify">Esse pacote tamb&eacute;m serve para constru&ccedil;&atilde;o de trabalhos acad&ecirc;micos.</p>
+		    <p align="justify">Para d&uacute;vidas relacionadas ao <strong>UTeX</strong> (n&atilde;o d&uacute;vidas relacionadas ao <strong>LaTeX</strong>) por favor queiram entrar em contato.</p>
+		    <p align="center">  <strong>***ALTERA&Ccedil;&Otilde;ES***</strong></p>
+		    <p align="left"><strong>[24.08.2006]</strong></p>
+		    <p align="left"> - Retirada das abreviaturas p. das p&aacute;ginas;<br>
+		    - Lista de siglas ordenada alfabeticamente;<br>
+		    - Sess&atilde;o definida com letras em caixa alta;</p>
+		    <p align="left"><strong>[06.10.2006]</strong></p>
+		    <p align="left">- Permitido a escrita de sigla sem estar obrigatoriamente em caixa alta;<br>
+	          - Deve-se enviar o par&acirc;metro para modifica&ccedil;&atilde;o do tamanho da imagem, antes era necess&aacute;rio apenas o envio do tamanho da largura em cent&iacute;metros, agora &eacute; necess&aacute;rio enviar todo o comando;<br>
+		      - Estilo da bibliografia abnt-cite {alf};<br>
+	        - Corre&ccedil;&atilde;o de Apendice e Anexo;</p>
+		    <p align="left"><strong>[09.11.2006]</strong><br>
+	           <br> 
+              - Comando para inser&ccedil;&atilde;o de figura possue um par&acirc;metro opicional caso necess&aacute;rio a refer&ecirc;ncia da fonte da figura; <br>
+  - Par&acirc;metro opicional indicando o label de um cap&iacute;tulo, sub-cap&iacute;tulo etc;<br>
+  - Endenta&ccedil;&atilde;o nos primeiros par&aacute;grafos.</p>
+		    </td></tr>
+	</table>
+  </div>
+  <div id="downloads" class="tabset_content">
+    <h2 class="tabset_label">Tab3</h2>
+      	<table>
+		<tr><td><p align="justify"><strong>Download</strong>s</p>
+		    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		    Pacote UTeX </strong><br>
+		    Pacote para constru&ccedil;&atilde;o de proposta / monografias / trabalhos acad&ecirc;mico da UTFPR.<br>
+		    {Ultima vers&atilde;o lan&ccedil;ada em : <strong>
+            <!-- #BeginDate format:Br1a -->09.11.06 11:59 AM<!-- #EndDate -->
+            </strong>}</p>
+			<p><a href="files/modeloTd09112006.zip">DOWNLOAD</a> <strong>[09.11.2006]*</strong></p>
+		    <p><a href="files/modeloTd06102006.zip">DOWNLOAD</a> [06.10.2006]</p>
+			<p><a href="files/modeloTd24082006.zip">DOWNLOAD</a> [24.08.2006]</p>
+			<p><a href="files/modeloTd22082006.zip">DOWNLOAD</a> [22.08.2006]</p>
+		    <hr>
+            <p> <strong></strong><strong>UTeX DEMOS </strong><br> 
+              Demonstra&ccedil;&atilde;o em PDF do pacote compilado
+<br><br>
+<a href="demo/modeloTd24082006.pdf">DOWNLOAD</a> <strong>[24.08.2006]*</strong></p>
+            <p><a href="demo/modeloTd22082006.pdf">DOWNLOAD</a> [22.08.2006]</p>
+            <p><a href="demo/modeloTd22082006.pdf">DOWNLOAD CAPA</a> [22.08.2006] </p>
+          <hr>
+            <p> <strong></strong><strong>Pacote ABNTeX 0.9</strong><br>
+		    Pacote <strong>ABNTeX</strong> depend&ecirc;ncia direta para se utilizar o <strong>UTeX</strong>, a vers&atilde;o 0.9 ainda &eacute; beta, entretando foi a utilizada para a confec&ccedil;&atilde;o do pacote <strong>UTeX</strong>. <br>
+            <br>
+            <a href="files/abntex-0.9.zip">DOWNLOAD </a> <br>
+          </p>
+          <hr>
+		    <p>            <strong>Pacote ABNTeX 0.8</strong><br>
+            Pacote <strong>ABNTeX</strong> depend&ecirc;ncia direta para se utilizar o <strong>UTeX</strong>, vers&atilde;o est&aacute;vel por&eacute;m n&atilde;o testada com o UTeX.<br> 
+            <br>
+            <a href="files/abntex-0.8.zip">DOWNLOAD </a> <br></p>
+            <hr>
+            <p><strong>Pacote contrib ABNTEX </strong><br>
+              Pacote com altera&ccedil;&otilde;es feitas no pacote <strong>ABNTeX</strong>.<br>
+  <br>
+  <a href="files/abntex-contrib-0.2.zip">DOWNLOAD </a> <br>
+            </p>
+            <hr>
+            <p><strong>Setspace.sty</strong><br>
+              Arquivo necess&aacute;rio para instala&ccedil;&atilde;o do pacote <strong>ABNTeX</strong> <br>
+  <br>
+  <a href="files/setspace.zip">DOWNLOAD </a> <br>
+            </p>
+            <hr>
+            <p><strong>Documenta&ccedil;&atilde;o do Pacote ABTeX </strong><br>
+            Documenta&ccedil;&atilde;o da classe ABNTeX, fonte de conhecimento para utiliza&ccedil;&atilde;o e altera&ccedil;&atilde;o. </p>
+            <p><a href="files/abnt-classe-doc.zip">DOWNLOAD </a></p>
+            <hr>
+            <p>              <strong>Latable</strong><br>
+            Programa que auxilia a cria&ccedil;&atilde;o de tabelas em <strong>LaTeX.</strong></p>
+            <p><a href="files/latable.zip">DOWNLOAD </a></p>
+            <hr>
+          
+            <p><strong>MikTeX</strong>              <br>
+            Compilador <strong>LaTeX</strong> para windows.</p>
+            <p><a href="http://prdownloads.sourceforge.net/miktex/basic-miktex-2.5.2421.exe?download">DOWNLOAD </a></p>
+            <hr>
+            <p><strong>Tutoriais</strong><br>
+            Cole&ccedil;&atilde;o de tutoriais sobre <strong>LaTeX</strong>. </p>
+            <p><a href="files/tutoriais.zip">DOWNLOAD </a></p>
+            <hr>            <p>O espa&ccedil;o para aloca&ccedil;&atilde;o dos arquivos acima foi gentilmente cedido peloa Universidade Tecnol&oacute;gica Federal do Paran&aacute;, qualquer problema com links quebrados por favor querira nos informar para que possamos sempre manter esses arquivos online a maior parte do tempo. </p></td></tr>
+	</table>
+</div>
+  <div id="palestra" class="tabset_content">
+    <h2 class="tabset_label">Tab4</h2>
+          	<table>
+		<tr><td><p align="justify"><strong>Paslestra Ministrada na UTFPR - ExpoUP2006 </strong></p>
+		    <p align="justify"><STRONG>T&iacute;tulo:</STRONG> Modelo para constru&ccedil;&atilde;o de trabalhos acad&ecirc;micos para a   UTFPR Campus Corn&eacute;lio Proc&oacute;pio em LaTeX.</p>
+		    <p align="justify"><STRONG>Data:</STRONG> 09/11/20.</p>
+		    <p align="justify"><STRONG>Hora:</STRONG> 21:20 - 22:50.</p>
+		    <p align="justify"><STRONG>Local:</STRONG> Sala B.</p>
+		    <p align="justify"><STRONG>Palestrante:</STRONG> Diogo Cezar Teixeira Batista e Rafael Augusto   Ambr&oacute;sio Rosa.</p>
+		    <p align="justify"><strong>Conte&uacute;dos:</strong></p>
+		    <p align="justify">Apostila referente &agrave; palestra: <a href="files/apostilaUTeX.pdf">DOWNLOAD</a></p>
+		    <p align="justify">Apresenta&ccedil;&atilde;o referente &agrave; palestra: <a href="files/apresentacaoUTeX.pdf">DOWNLOAD</a></p></td></tr>
+	</table></div>
+
+  <div id="equipe" class="tabset_content">
+    <h2 class="tabset_label">Tab5</h2>
+          	<table>
+		<tr><td><p align="justify"><strong>Equipe de Desenvolvimento</strong></p>
+		  <p align="justify">Atualmente o pacote <strong>UTeX</strong> ainda est&aacute; em constantes modifica&ccedil;&otilde;es, qualquer ajuda seria muito bem vinda, vamos tornar esse pacote propriedade de todos, e para isso estude e nos ajude a desenvolver.</p>
+		  <p align="justify">Criadores:</p>
+		  <p align="justify"><strong>Diogo Cezar Teixeira Batista</strong> <a href="mailto:xgordo@gmail.com">CONTATO</a></p>
+		  <p align="justify"><strong> Rafael Augusto Ambrosio Rosa</strong> <a href="mailto:rafarafarosa@hotmail.com">CONTATO</a></p>
+		  <hr><p align="justify">Membros ativos : </p>
+		  <p align="justify"><strong>Diogo Cezar Teixeira Batista</strong> <a href="mailto:xgordo@gmail.com">CONTATO</a></p>
+		  <p align="justify"><strong> Rafael Augusto Ambrosio Rosa</strong> <a href="mailto:rafarafarosa@hotmail.com">CONTATO</a></p>
+		  <hr><p align="justify">Professor Orientador:</p>
+		  <p align="justify"><strong>Maur&iacute;cio Correia Lemes Neto </strong><a href="mailto:mauricio@cp.cefetpr.br">CONTATO</a></p></td></tr>
+	</table></div>
+</ul>
+<div align="center"><br>
+  Web site desenvolvido com <em>TabStatic</em>. <br>
+Desenvolvido por: <strong>Diogo Cezar Teixeira Batista</strong></div>
+</body>

@@ -1,0 +1,216 @@
+/**
+* Css oriAnt
+*/
+
+/**
+* Configurações dos elementos gerais
+*/
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #9c0000;
+}
+a:active {
+	text-decoration: none;
+	color: #9c0000;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	vertical-align:middle;
+}
+
+body{
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	padding:0;
+	padding-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	padding-right : 0px;	
+	background-color:#ffffff;
+	font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;	
+	font-size:10pt;
+}
+
+/**
+* Configurações dos elementos do site
+*/
+
+#id_container{
+	position:relative;
+	width:775px;
+	text-align:center;
+	margin:0 auto;
+}
+
+#id_logo {
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: scroll;
+	background-image:url(../../../images/skins/beta/logo.png);
+	float:left;
+	width:110px;
+	height:117px;
+}
+
+#id_conteudo{
+	position:relative;
+	width:665px;
+	float:left;
+	text-align:center;
+	margin:0 auto;
+}
+
+#id_titulo{
+	text-align:left;
+	position:relative;
+	clear:none;
+	float:left;
+	width:600px;
+	border-bottom:solid 2px;
+	border-bottom-color:#9c0000;
+}
+
+#id_help{
+	text-align:right;
+	position:relative;
+	clear:none;
+	float:left;
+	width:65px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border-bottom:solid 2px;
+	border-bottom-color:#9c0000;
+}
+
+#id_tipo{
+	position:relative;
+	text-align:left;
+	clear:both;
+	float:left;
+	width:400px;
+	padding-left:1px;
+	padding-top:5px;
+}
+
+#id_informacoes{
+	padding-top:5px;
+	font-size: 11px;
+}
+
+#id_grupos{
+	position:relative;
+	clear:both;
+	float:left;
+	width:665px;
+	padding-top:10px;
+}
+
+#id_in_grupos{
+	position:relative;
+	float:left;
+	width:655px;
+	top:5px;
+	padding:5px;
+	height:40px;
+	text-align:center;
+	overflow-x: hidden; 
+	overflow-y: auto;
+	border:solid 1px;
+	border-color:#9c0000;
+}
+
+#id_box{
+	position:relative;
+	clear:none;
+	float:right;
+	width:222px;
+	padding:2px;
+	text-align:right;
+	border-left:solid 2px;
+	border-left-color:#9c0000;
+	border-right:solid 2px;
+	border-right-color:#9c0000;
+	border-bottom:solid 2px;
+	border-bottom-color:#9c0000;
+}
+
+#id_box_grupo{
+	border-bottom:solid 1px;
+	border-bottom-color:#9c0000;
+}
+
+#id_box_opcoes_tipo_ori{
+	text-align:center;
+	font-size: 11px;
+	padding-top:3px;
+	padding-bottom:4px;
+	border-bottom:solid 1px;
+	border-bottom-color:#9c0000;
+}
+
+#id_box_opcoes_contexto{
+	text-align:center;
+	font-size: 11px;
+	padding-top:3px;
+}
+
+#id_box_opcoes_contexto_ori{
+	text-align:center;
+	font-size: 11px;
+}
+
+/**
+* Configurações das classes
+*/
+
+.titulo{
+	font-size:15pt;
+	color:#9c0000;
+	font-weight:bold;
+}
+
+.vemelho{
+	color:#9c0000;
+}
+
+.negrito{
+	font-weight:bold;
+}
+
+.borda_frame{
+	border-bottom:solid 2px;
+	border-bottom-color:#9c0000;
+}
+
+.comboBox{
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #4f5864;
+}
+
+.cursorLink{
+	cursor:pointer;
+}
+
+.tipoOri{
+	padding-bottom:4px;
+}

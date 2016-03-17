@@ -1,0 +1,17 @@
+C:\Web Pages\xC3\classes\Config.php,
+C:\Web Pages\xC3\classes\Connection.php,
+C:\Web Pages\xC3\classes\ConnectionMy.php,
+C:\Web Pages\xC3\classes\Cookie.php,
+C:\Web Pages\xC3\classes\Cript.php,
+C:\Web Pages\xC3\classes\DataBaseMy.php,
+C:\Web Pages\xC3\classes\DataBase.php,
+C:\Web Pages\xC3\classes\Errors.php,
+C:\Web Pages\xC3\classes\NoticiasRss.php,
+C:\Web Pages\xC3\classes\Photo.php,
+C:\Web Pages\xC3\classes\RssGenerator.php,
+C:\Web Pages\xC3\classes\SendFile.php,
+C:\Web Pages\xC3\classes\SendMail.php,
+C:\Web Pages\xC3\classes\Session.php
+
+C:\Web Pages\xC3\doc
+    var $xml;

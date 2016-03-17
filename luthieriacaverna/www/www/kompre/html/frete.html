@@ -1,0 +1,109 @@
+<html>
+<head>
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<script type="text/javascript" src="../jscripts/library.js"></script>
+<!-- BEGIN bloco_javascript_sajax -->
+<script>
+{sajax_javascript}
+{funcoes_javascript}
+</script>
+<!-- END bloco_javascript_sajax -->
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css">
+</head>
+<!-- BEGIN bloco_frete -->
+<body bgcolor="#f7f9fa" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="258" border="0" cellspacing="0" cellpadding="0" background="../images/repeteDetalhes.jpg">
+      <tr>
+        <td height="43" colspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="../images/topoDetalhes.jpg">
+          <tr>
+            <td width="26" height="19">&nbsp;</td>
+            <td width="200">&nbsp;</td>
+            <td width="32">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="24">&nbsp;</td>
+            <td valign="middle">&nbsp;&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle"> <span class="tahoma11"><strong>{tituloFrete} </strong></span></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>        </td>
+      </tr>
+      <tr>
+        <td width="30" height="13"></td>
+        <td width="190"></td>
+        <td width="38"></td>
+      </tr>
+      <tr>
+        <td height="27"></td>
+        <td align="center" valign="middle" class="tahoma10">Peso do produto: <strong>{peso} KG </strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="11"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="12"></td>
+        <td align="center" valign="middle" class="tahoma10">Digite seu CEP: </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="7"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="22"></td>
+        <td align="center" valign="middle">
+          <input name="{campoCep}" type="text" class="form" id="{campoCep}" onKeyPress="formatCep(this, event)" size="25" maxlength="10" align="absmiddle">
+		</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="5"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="30"></td>
+        <td align="center" valign="middle"><input name="{btnCalcular}" type="button" class="form" id="{btnCalcular}" value="   Calcular Frete   " onClick="{onClickCalcular}" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="5"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="30"></td>
+        <td align="center" valign="middle" class="resultadoFrete"><div id="{resultado}">R$ 0,00</div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="8"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="44"></td>
+        <td valign="top" class="tahoma10"><div align="justify">O valor gerado  &eacute; resgatado do site oficial dos correios, n&atilde;o &eacute; de nossa responsabilidade a altera&ccedil;&atilde;o desse valor, ele &eacute; meramente informativo.<br>
+        <br>
+        Servi&ccedil;o : <strong>SEDEX</strong> </div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="9"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="56" colspan="3" align="center" valign="top" background="../images/baseDetalhes.jpg" class="tahoma10">        Kompre! 2006<br>
+          Todos os direitos reservados.<br>
+        Kreea Web Solutions - 2006 </td>
+      </tr>
+    </table>
+</body>
+<!-- END bloco_frete -->
+</html>

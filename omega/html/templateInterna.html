@@ -1,0 +1,159 @@
+<html>
+<head>
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/omega.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/permutacao.js"></script>
+<script type="text/javascript" src="../jscripts/biblioteca.js"></script>
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+</head>
+<!-- BEGIN bloco_principal -->
+<body bgcolor="#fefdfd" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../images/bot_cadastrese_over.gif','../images/bot_esquecisenha_over.gif','../images/bot_01_over.jpg','../images/bot_02_over.jpg','../images/bot_03_over.jpg','../images/bot_04_over.jpg','../images/bot_05_over.jpg','../images/bot_06_over.jpg');{onLoad}">
+<table width="704" height="109" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4"><img src="../images/borda_top.jpg" width="704" height="32" alt="" /></td>
+  </tr>
+  <tr>
+    <td width="16" rowspan="2" background="../images/borda_esq1.jpg"><img src="../images/borda_esq1.jpg" width="16" height="99" alt="" /></td>
+    <td width="434" height="36" align="left" valign="top"><a href="{linkLogo}"><img src="../images/banner_logo.gif" alt="{altLogo}" width="434" height="58" border="0" align="top" /></a></td>
+    <td width="242" height="58"><table width="100%" height="58" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+	  <!-- BEGIN bloco_login -->
+	  	{abreForm}
+		<td colspan="4" align="right" valign="bottom" background="../images/fundo_login.gif" class="texto5">
+			{conteudo}</td>
+		{fechaForm}
+	  <!-- END bloco_login -->		
+      </tr>
+      <tr>
+        <td width="40%" height="24" valign="bottom"><a href="{linkCadastreSe}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image70','','../images/bot_cadastrese_over.gif',1)"><img src="../images/bot_cadastrese.gif" alt="{altCadastreSe}" name="Image70" width="96" height="24" border="0" id="Image70" /></a></td>
+        <td width="60%" valign="bottom"><a href="{linkEsqueci}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image71','','../images/bot_esquecisenha_over.gif',1)"><img src="../images/bot_esquecisenha.gif" alt="{altEsqueci}" name="Image71" width="146" height="24" border="0" id="Image71" /></a></td>
+      </tr>
+    </table></td>
+    <td width="12" rowspan="2" background="../images/borda_dir1.jpg"><img src="../images/borda_dir1.jpg" width="12" height="99" alt="" /></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"><table width="100%" height="41" border="0" cellpadding="0" cellspacing="0"><!--DWLayoutTable-->
+      <tr>
+        <td width="115" height="41" align="center" valign="middle" class="texto3" id="{menu1}" style="background-image:url(../images/bot_01.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_01_over.jpg')" onMouseOut="altera(this.id, '../images/bot_01.jpg')" onClick="javascript:location.href='{linkMenu1}'">
+		  <strong><a href="{linkMenu1}">{menu1}</a></strong></td>
+        <td width="111" align="center" valign="middle" class="texto3" id="{menu2}" style="background-image:url(../images/bot_02.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_02_over.jpg')" onMouseOut="altera(this.id, '../images/bot_02.jpg')" onClick="javascript:location.href='{linkMenu2}'">
+		  <strong><a href="{linkMenu2}">{menu2}</a></strong></td>
+        <td width="111" align="center" valign="middle" class="texto3" id="{menu3}" style="background-image:url(../images/bot_03.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_03_over.jpg')" onMouseOut="altera(this.id, '../images/bot_03.jpg')" onClick="javascript:location.href='{linkMenu3}'">
+		  <strong><a href="{linkMenu3}">{menu3}</a></strong></td>
+        <td width="111" align="center" valign="middle" class="texto3" id="{menu4}" style="background-image:url(../images/bot_04.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_04_over.jpg')" onMouseOut="altera(this.id, '../images/bot_04.jpg')" onClick="javascript:location.href='{linkMenu4}'">
+		  <strong><a href="{linkMenu4}">{menu4}</a></strong>	</td>
+        <td width="113" align="center" valign="middle" class="texto3" id="{menu5}" style="background-image:url(../images/bot_05.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_05_over.jpg')" onMouseOut="altera(this.id, '../images/bot_05.jpg')" onClick="javascript:location.href='{linkMenu5}'">
+		  <strong><a href="{linkMenu5}">{menu5}</a></strong>	</td>
+        <td width="117" align="center" valign="middle" class="texto3" id="{menu6}" style="background-image:url(../images/bot_06.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_06_over.jpg')" onMouseOut="altera(this.id, '../images/bot_06.jpg')" onClick="javascript:location.href='{linkMenu6}'">
+		  <strong><a href="{linkMenu6}">{menu6}</a></strong>		
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="704" height="292" border="0" align="center" cellpadding="0" cellspacing="0"><!--DWLayoutTable-->
+  <tr>
+    <td width="16" height="292" background="../images/borda_esq1.jpg">&nbsp;</td>
+    <td width="673" valign="top"><table width="100%" height="358" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="33%" height="358" valign="top"><table width="99%" height="226" border="0" cellpadding="0" cellspacing="0">
+		  <!-- BEGIN bloco_busca -->
+		  <form action="{actionBusca}" method="get" name="{formBusca}" id="{formBusca}">	
+          <tr>
+            <td height="201" align="center" valign="bottom" background="../images/fundo_buscarfilmes.jpg"><table width="93%" border="0">
+              <tr>
+                <td width="32%" height="25">&nbsp;</td>
+                <td height="25" align="left"><label>
+                  <select name="{comboGenero}" class="form2" id="{comboGenero}">
+				{comboGeneroOpcoes}
+                  </select>
+                </label></td>
+              </tr>
+              <tr>
+                <td height="25">&nbsp;</td>
+                <td height="25" align="left"><select name="{comboPor}" class="form2" id="{comboPor}">
+				{comboPorOpcoes}
+                </select>
+                </td>
+              </tr>
+              <tr>
+                <td height="25">&nbsp;</td>
+                <td height="24" align="left"><label>
+                  <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="29" />
+                </label></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td align="left" valign="top"><a href="{linkBuscar}"><img src="../images/bot_buscar.jpg" alt="{altBusca}" width="105" height="28" border="0" onClick="{onClickBusca}" /></a></td>
+              </tr>
+              <tr>
+                <td height="23" colspan="2" align="right" valign="top" class="texto"><img src="../images/seta_preta.gif" width="2" height="5" /> <a href="{linkVejaTodos}">Veja <strong>todos</strong> nossos  filmes</a></td>
+              </tr>
+            </table></td>
+          </tr>
+		  </form>
+		  <!-- END bloco_busca -->
+	      <!-- BEGIN bloco_carrinho -->		
+          <tr>
+            <td height="116" align="center" valign="bottom" background="../images/fundo_meupedido.gif"><table width="90%" border="0">
+              <tr>
+                <td width="21%" height="19">&nbsp;</td>
+                <td height="19" colspan="3" align="left" class="texto4">{qtdF}</td>
+              </tr>
+              <tr>
+                <td height="19">&nbsp;</td>
+                <td width="15%" height="19" align="left" class="texto4">&nbsp;</td>
+                <td width="20%" align="left" valign="top" class="texto4">{qtdC}</td>
+                <td width="44%" align="left" valign="top" class="texto4">{valorTotal}</td>
+              </tr>
+              <tr>
+                <td height="29">&nbsp;</td>
+                <td height="32" colspan="3" align="right" valign="top"><a href="{linkFim}"><img src="../images/seta_go.jpg" alt="{altFim}" width="34" height="24" border="0" onClick="{onClickFim}" /></a></td>
+              </tr>
+            </table></td>
+          </tr>
+	      <!-- END bloco_carrinho -->		
+          <tr>
+            <td><img src="../images/top_parceiros.gif" width="226" height="30" alt="" /></td>
+          </tr>
+	      <!-- BEGIN bloco_parceiros -->		
+          <tr>
+            <td align="center" valign="top"><br />
+ {parceiros} <br /></td>
+          </tr>
+	      <!-- END bloco_parceiros -->	
+        </table>
+		</td>
+	    <!-- BEGIN bloco_interno -->		
+        <td width="67%" align="center" valign="top"><table width="424" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="35" align="center" background="../images/top.jpg"><span class="texto2">{titulo_interno}</span></td>
+          </tr>
+        </table>
+          <span class="texto6">{conteudo_interno}</span>
+		</td>
+	    <!-- END bloco_interno -->		
+      </tr>
+    </table>
+	</td>
+    <td width="12" background="../images/borda_dir1.jpg">&nbsp;</td>
+  </tr>
+</table>
+<table width="704" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="16" background="../images/borda_esq1.jpg">&nbsp;</td>
+    <td><a href="{linkKreea}"><img src="../images/copyright.gif" alt="" width="676" height="31" border="0" /></a></td>
+    <td width="12" background="../images/borda_dir1.jpg">&nbsp;</td>
+  </tr>
+</table>
+<table width="704" border="0" align="center" cellpadding="0" cellspacing="0"><!--DWLayoutTable-->
+  <tr>
+    <td width="706"><img src="../images/borda_down.jpg" width="704" height="24" alt="" /></td>
+  </tr>
+</table>
+</body>
+<!-- END bloco_principal -->
+</html>

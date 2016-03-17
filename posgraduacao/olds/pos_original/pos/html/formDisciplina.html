@@ -1,0 +1,111 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_form_disciplina -->
+<form name="{form_disciplina}" method="post" action="{action}">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="377" height="19"></td>
+    <td colspan="3" align="center" valign="middle" class="titulo">{disciplina}</td>
+    <td width="384"></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td width="139"></td>
+    <td width="9"></td>
+    <td width="322"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{curso} : </td>
+    <td></td>
+    <td align="left" valign="middle">
+	<select name="{comboCurso}" class="formulario" id="{comboCurso}">
+		{comboCursoOpcoes}
+    </select>    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{professor} : </td>
+    <td></td>
+    <td align="left" valign="middle"><span class="letra_padrao">
+      <select name="{comboProfessor}" class="formulario" id="{comboProfessor}">
+		{comboProfessorOpcoes}
+      </select>
+      </span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{nome} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="200" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="2" align="right" valign="middle" class="letra_padrao">{cargaHoraria} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoCargaHoraria}" type="text" class="formulario" id="{campoCargaHoraria}" value="{valorCargaHoraria}" size="5" maxlength="5" onkeypress="isNum(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{descricao} : </span></td>
+    <td></td>
+    <td rowspan="2" align="left" valign="middle"><textarea name="{campoDescricao}" cols="50" rows="3" class="formulario" id="{campoDescricao}">{valorDescricao}</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="30"></td>
+    <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+      <br />
+      <br />
+      <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+    <td></td>
+  </tr>
+</table>
+<!-- END bloco_form_disciplina -->
+</form>

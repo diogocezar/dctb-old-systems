@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class SendMail</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> SendMail</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Esta classe é responsavel por enviar e-mails.</p>
+<p class="description"><p>Esta classe é responsavel por enviar e-mails. xC3 || xClasses 3.0 || 2005</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">copyright:</span> Copyright © 2005, Kakitus.com LTDA.</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">author:</span> xg0rd0 &lt;<a href="mailto:xgordo@kakitus.com">xgordo@kakitus.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_SendMail_php.html">/SendMail.php</a> (line <span class="field"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a32">32</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$autor" title="details" class="var-name">$autor</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$conteudo" title="details" class="var-name">$conteudo</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$destino" title="details" class="var-name">$destino</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$header" title="details" class="var-name">$header</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$msgFinal" title="details" class="var-name">$msgFinal</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$origem" title="details" class="var-name">$origem</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$templateHtmlDir" title="details" class="var-name">$templateHtmlDir</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$templateHtmlName" title="details" class="var-name">$templateHtmlName</a>
+				</div>
+								<div class="var-title">
+					<img src="../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">String</span>
+					<a href="#$titulo" title="details" class="var-name">$titulo</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#SendMail" title="details" class="method-name">SendMail</a>
+											(<span class="var-type">String</span>&nbsp;<span class="var-name">$titulo</span>, <span class="var-type">String</span>&nbsp;<span class="var-name">$conteudo</span>, <span class="var-type">String</span>&nbsp;<span class="var-name">$destino</span>, [<span class="var-type">String</span>&nbsp;<span class="var-name">$origem</span> = <span class="var-default">ORIGEM</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$autor</span> = <span class="var-default">AUTOR</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$msgFinal</span> = <span class="var-default">MSG_FINAL</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$templateHtmlDir</span> = <span class="var-default">TEMPLATE_HTML_DIR</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$templateHtmlName</span> = <span class="var-default">TEMPLATE_HTML_NAME</span>], <span class="var-type">String</span>&nbsp;<span class="var-name">$templateHtml</span>)
+									</div>
+								
+				<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#goMail" title="details" class="method-name">goMail</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$autor" id="$autor"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$autor</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a72">72</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar Empresa/Autor do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar Empresa/Autor do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $origem</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$conteudo" id="$conteudo"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$conteudo</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o conteúdo do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar o conteúdo do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $conteudo</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$destino" id="$destino"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$destino</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a56">56</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o destino do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar o destino do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $destino</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$header" id="$header"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$header</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a88">88</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o cabeçalho do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar o cabeçalho do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $header</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$msgFinal" id="$msgFinal"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$msgFinal</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a80">80</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar a a mensagem do rodapé do email.</p>
+<p class="description"><p>Atributo que irá armazenar a a mensagem do rodapé do email.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $origem</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$origem" id="$origem"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$origem</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a64">64</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar a origem do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar a origem do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $origem</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$templateHtmlDir" id="$templateHtmlDir"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$templateHtmlDir</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a95">95</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o diretório do arquivo de template.</p>
+<p class="description"><p>Atributo que irá armazenar o diretório do arquivo de template.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $templateHtmlDir</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$templateHtmlName" id="$templateHtmlName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$templateHtmlName</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a102">102</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o nome do arquivo de template.</p>
+<p class="description"><p>Atributo que irá armazenar o nome do arquivo de template.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $templateHtmlName</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$titulo" id="$titulo"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">String</span>
+			<span class="var-name">$titulo</span>
+						(line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Atributo que irá armazenar o título do email a ser enviado.</p>
+<p class="description"><p>Atributo que irá armazenar o título do email a ser enviado.</p></p>
+	<ul class="tags">
+				<li><span class="field">name:</span> $titulo</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodSendMail" id="SendMail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor SendMail</span> (line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a114">114</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Método CONSTRUTOR que inicializa os atributos passados como parâmetro.</p>
+<p class="description"><p>Método CONSTRUTOR que inicializa os atributos passados como parâmetro.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SendMail
+		</span>
+					(<span class="var-type">String</span>&nbsp;<span class="var-name">$titulo</span>, <span class="var-type">String</span>&nbsp;<span class="var-name">$conteudo</span>, <span class="var-type">String</span>&nbsp;<span class="var-name">$destino</span>, [<span class="var-type">String</span>&nbsp;<span class="var-name">$origem</span> = <span class="var-default">ORIGEM</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$autor</span> = <span class="var-default">AUTOR</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$msgFinal</span> = <span class="var-default">MSG_FINAL</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$templateHtmlDir</span> = <span class="var-default">TEMPLATE_HTML_DIR</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$templateHtmlName</span> = <span class="var-default">TEMPLATE_HTML_NAME</span>], <span class="var-type">String</span>&nbsp;<span class="var-name">$templateHtml</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$titulo</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$conteudo</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$destino</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$origem</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$templateHtml</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodgoMail" id="goMail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">goMail</span> (line <span class="line-number"><a href="..//__filesource/fsource_SendMail__SendMail.php.html#a155">155</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Método que envia o email.</p>
+<p class="description"><p>Método que envia o email.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			goMail
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 17 Nov 2005 01:05:33 -0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>====== -->

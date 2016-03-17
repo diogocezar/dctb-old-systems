@@ -1,0 +1,165 @@
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_locacoes --><table width="417" border="0" class="form" align="center">
+  <tr>
+	<td height="21" colspan="2" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloLocacoes}</span></td>
+  </tr>
+</table>
+<br>
+<!-- BEGIN bloco_locacoes_pag -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+	  <!--DWLayoutTable-->
+	  <!-- BEGIN bloco_locacoes_header -->
+      <tr>
+        <td height="21" colspan="6" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloLocacao} </span></td>
+      </tr>
+      <tr>
+        <td height="26" colspan="2" bgcolor="#EDEDED"><span class="texto">&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" /> Filmes Locados: </span><span class="texto2">{qtdF}</span></td>
+        <td colspan="2" bgcolor="#EDEDED"><span class="texto">&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" /> Conveni&ecirc;ncias: </span><span class="texto2">{qtdP}</span></td>
+        <td colspan="2" bgcolor="#EDEDED"><span class="texto">&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" /> Valor Total: </span><span class="texto2">R$ {valor}</span></td>
+      </tr>
+	  <!-- END bloco_locacoes_header -->
+	  <!-- BEGIN bloco_locacoes_dados -->
+      <tr>
+        <td height="21" colspan="6" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloDados} </span></td>
+      </tr>
+      <tr>
+        <td width="99" height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{nome}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Email</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{email}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Rua</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{rua}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;N&uacute;mero</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto"> &nbsp;{numero} </td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto"> &nbsp;&nbsp;Bairro</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{bairro}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Telefone</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{telefone}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Taxa de Entrefa </span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{taxa}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Observa&ccedil;&atilde;o</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{obs}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Status</span></td>
+        <td colspan="5" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;{status}</td>
+      </tr>
+      <tr>
+        <td height="21" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;C&oacute;digo : <strong>{cod} </strong></span></td>
+        <td colspan="5" align="right" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" />&nbsp;<a href="{linkVejaMais}">{vejaMais}&nbsp;</a></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;Loca&ccedil;&atilde;o</td>
+        <td colspan="2" align="center" valign="middle" bgcolor="#EDEDED"><span class="texto"><strong>{dLoc}</strong></span></td>
+        <td colspan="2" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;Devolu&ccedil;&atilde;o</td>
+        <td width="98" align="center" valign="middle" bgcolor="#EDEDED"><span class="texto"><strong>{dBus}</strong></span></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;Hora Loca&ccedil;&atilde;o</td>
+        <td colspan="2" align="center" valign="middle" bgcolor="#EDEDED"><span class="texto"><strong>{hLoc}</strong></span></td>
+        <td colspan="2" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Hora Devolu&ccedil;&atilde;o</span></td>
+        <td align="center" valign="middle" bgcolor="#EDEDED"><span class="texto"><strong>{hBus}</strong></span></td>
+      </tr>
+	  <!-- END bloco_locacoes_dados -->
+	  <!-- BEGIN bloco_locacoes_filmes -->
+      <tr>
+        <td height="21" colspan="6" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloFilmes} </span></td>
+      </tr>
+	      <!-- BEGIN bloco_locacoes_filmes_linha -->
+		  <tr>
+			<td height="21" colspan="6" bgcolor="#EDEDED"><span class="texto">&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" /> {filmesLocados} </span><span class="texto2"></span></td>
+		  </tr>
+	      <!-- END bloco_locacoes_filmes_linha -->
+	  <!-- END bloco_locacoes_filmes -->
+	  <!-- BEGIN bloco_locacoes_conv -->
+      <tr>
+        <td height="21" colspan="6" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloConv} </span></td>
+      </tr>
+	      <!-- BEGIN bloco_locacoes_conv_linha -->
+		  <tr>
+			<td height="21" colspan="6" bgcolor="#EDEDED"><span class="texto">&nbsp;<img src="../images/seta_preta.gif" width="2" height="5" /> {produtosComprados} </span><span class="texto2"></span></td>
+		  </tr>
+	      <!-- END bloco_locacoes_conv_linha -->
+	  <!-- END bloco_locacoes_conv -->
+	  <tr>
+		<td height="27" colspan="6" align="center" valign="middle" bgcolor="#EDEDED" class="texto">{locar}{fechar}{concluido}</td>
+	 </tr>
+	  <tr>
+	    <td height="0"></td>
+	    <td width="17"></td>
+	    <td width="74"></td>
+	    <td width="25"></td>
+	    <td width="70"></td>
+	    <td></td>
+	  </tr>
+      </table>
+   </td>
+  </tr>
+</table>
+<table width="417" border="0" align="center">
+  <tr>
+    <td height="5" width="100%" align="center" class="texto"></td>
+  </tr>
+</table>
+<!-- END bloco_locacoes_pag -->
+<!-- BEGIN bloco_locacoes_erro -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{erro}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_locacoes_erro -->
+<!-- BEGIN bloco_locacoes_paginacao -->
+<!-- BEGIN bloco_locacoes_paginacao_controle -->
+<br>
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><span class="texto"> {paginacao}</span></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_locacoes_paginacao_controle -->
+<table width="417" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="100%" align="center" class="texto">{infos}</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_locacoes_paginacao -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td align="center" bgcolor="#EDEDED"><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_locacoes -->

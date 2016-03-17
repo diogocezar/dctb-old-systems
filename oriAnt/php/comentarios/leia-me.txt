@@ -1,0 +1,40 @@
+**ARQUIVO LEIA-ME**
+
+Autora: Vanessa Schissato
+www.vs-solutions.com
+webmaster@vs-solutions.com
+nessa_uepa@yahoo.com.br
+
+// MODIFICADO POR:
+DIEGO CODU
+PSI - PROFESSIONAL SERVICES
+HTTP://WWW.COT.ORG.BR
+
+=> Crie um banco de dados e importe o arquivo bd.sql
+
+=> Modifique o arquivo conecta.php (localhost, usuario, senha e banco)
+
+=> Execute o arquivo index.php no ser servidor
+
+ ----------------------------------------------------------------------------------------
+
+=> Para inserir um sistema de comentários em uma página apenas:
+	
+	* Insira o arquivo Javascript do Ajax na página:
+
+     <script type="text/javascript" src="script/ajax.js"></script>
+
+	* Acrescente 
+
+    <?php include "../comentario.php"; ?>
+
+    <div id=comunicacao></div>
+
+
+OBS.:
+    *Colocando esse trecho de código em páginas diferentes o código reconhecerá como sistemas de comentários diferentes.
+    Se mais de um sistema de comentário será inserido em uma mesma página, deve-se mudar o parâmetro passado na funcao InserirComentario(), trocando em todos os arquivos a variavel $pg pela chave desejada, que identificará o sistema de comentário como único.
+
+
+
+

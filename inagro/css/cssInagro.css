@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+/* Construção do Layout */
+
+#header{
+	position:relative;
+	clear:both;
+	height:79px;
+	width:100%;
+	background-image:url(../images/header.gif);
+}
+
+#logo{
+	background-image:url(../images/logo.gif);
+	height:79px;
+	width:110px;
+}
+
+#faixa{
+	position:relative;
+	clear:both;
+	height:22px;
+	width:100%;
+	background-image:url(../images/faixa.gif);
+	color:#FFFFFF;
+}
+
+#welcome{
+	position:relative;
+	float:left;
+	height:18px;
+	width:300px;
+	padding-top:4px;
+	padding-left:5px;
+}
+
+#exit{
+	position:relative;
+	float:right;
+	height:18px;
+	text-align:right;
+	padding-top:4px;
+	padding-right:5px;
+}
+
+#menu{
+	position:relative;
+	float:left;
+	clear:both;
+	height:40px;
+	width:100%;
+}
+
+#login{
+	top:10px;
+	position:relative;
+	clear:both;
+	width: 700px;
+	height:100%;
+	text-align:left;
+	padding:12px;
+	border: 1px solid #CCCCCC;
+}
+
+
+#separador{
+	height:60px;
+}
+
+#separadorEnviar{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#separadorParcelas{
+	position:relative;
+	float:left;
+	height:15px;
+	width:100%;
+}
+
+#titulo{
+	position:relative;
+	width:300px;
+	clear:both;
+	text-align:center;
+	margin:0 auto;
+	height:17px;
+	padding-top:3px;
+	background-color: #f1f1f1;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+
+#container{
+	position:relative;
+	width:700px;
+	text-align:justify;
+	margin:0 auto;
+	padding:12px;
+	height:100%;
+	background-color: #FCFCFC;
+	border: 1px solid #CCCCCC;
+}
+
+#footer{
+	top:20px;
+	position:relative;
+	clear:both;
+	height:20px;
+	width:100%;
+	background-image:url(../images/footer.gif);
+	color:#DDFABE;
+	text-align:center;
+}
+
+#textFooter{
+	position:relative;
+	float:none;
+	height:18px;
+	padding-top:3px;
+	padding-left:5px;
+	text-align:center;
+}
+
+/* formularios */
+
+#padraoFormAdmin{
+	position:relative;
+	float:none;
+}
+
+#formTitulo{
+	width:200px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	padding:5px;
+	font-family:Tahoma;
+}
+
+#formTituloFile{
+	width:200px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	padding:5px;
+	font-family:Tahoma;
+}
+
+#formTituloLogin{
+	width:150px;
+	float:none;
+	text-align:left;
+	position:relative;
+	clear:both;
+	padding:5px;
+	font-family:Tahoma;
+}
+
+#formCampo{
+	position:relative;
+	float:none;
+}
+
+/* Parcelas */
+
+#id_parcelas{
+	position:relative;
+	width:255px;
+	height:25px;
+}
+
+#id_conta{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_data{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_valor{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#id_pagar{
+	padding:3px;
+	float:left;
+	position:relative;
+}
+
+#textoMiniatura{
+	position:relative;
+	padding-top:10px;
+}
+
+#miniatura{
+	position:relative;
+	padding-top:10px;
+}
+
+.cursorLink{
+	cursor:pointer;
+	height:20px;
+	padding:3px;
+	width:100%;	
+}
+
+.form{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:200px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+}
+
+.formLogin{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:150px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+}
+
+.formPequeno{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background-color:#F4F4F4;
+	padding-left:3px;
+}
+
+.formFile{
+	font-size:11px;
+	font-family:Tahoma;
+	width:200px;
+	background-color:#F4F4F4;
+}
+
+.formParcela{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:60px;
+	background-color:#F4F4F4;
+	height:15px;
+	padding-left:3px;
+}
+
+.botao{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:100px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.botaoPagar{
+	border: 1px solid #666666;
+	font-size:11px;
+	font-family:Tahoma;
+	width:50px;
+	background:#f1f1f1;
+	padding:1px;
+}
+
+.linkBranco{
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+.linkBranco:hover{
+		text-decoration: none;
+		color: #FFFFFF;
+}
+
+.linkCreditos{
+		text-decoration: none;
+		color:#DDFABE;
+}
+
+.linkCreditos:hover{
+		text-decoration: none;
+		color:#DDFABE;
+}
+.imgMin{
+	border: 1px solid #666666;
+	padding:5px;
+	background-color:#F4F4F4;
+}
+

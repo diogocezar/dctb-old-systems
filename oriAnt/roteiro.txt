@@ -1,0 +1,77 @@
+1) Mostrar Gerenciar (Será anexado ao módulo de administração)
+
+	Filtro parecido com DB.locate do dephi (Ajax)
+	Ao se passar o mouse em um registro seus detalhes são exibidos
+	Tudo se altera, apenas alterando o nome da tabela e os campos desejados
+
+2) Perguntar Sobre as Cores dos Links
+
+	
+	
+3) Mostrar sistema criado para testes RSS.
+
+	Deve-se também escrever sobre o sistema (documentação)
+	Banco de dados MySQL (demonstrar integração da camada)
+	Notícias extraídas automaticamente em períodos de tempo
+	Inserção de novos feeds pelo adminsitrador
+	Criação de um menu em árvore (Uffa)
+
+4) Novo Layout (Ainda em construção)
+
+	Logos
+	Loading
+
+5) Diagramas
+
+	Casos de Uso
+	Classes (Esqueleto) : Necessário diagrama de análise e projeto?
+
+	Deve-se criar tudo que é diagrama?
+
+6) Alteração do tamanho dos nomes do grupos de acordo com a sua quantidade de visita, um grupo mais visitado ficará maior.
+
+7) Nome do Sistema RSS: Go! Notícias RSS.
+
+______________________________________
+
+
+O que falta?
+ 
+
+OriAnt: 
+
+1) Tela de administração:
+ 
+	1.1) Links para o gerenciamento deverão se feitos;
+
+	1.2) Sistema de cores dos links.
+
+		O sistema de cores foi proposto, entretanto após analisar profundamente sua UTILIDADE estou em dúvida se se torna viavel, não pela implementação pois isso seria a parte menos significativa, mas como a camada funciona independentemente do site, creio que as cores não devam ser relevantes, pois os links dispostos são apenas os "sugeridos" as cores poderiam ser interessantes caso os links estivessem em meio ao site. É uma questão, o que acha?
+
+	1.3) Sistema para seleção de skins.
+		
+		Como todo o layout do site foi feito com XHTML (CSS) e Table Less, a alteração do layout fica muito fácil, eu vou disponibilizar 3 skins básicos para a camada e 3 skins para o sistema de Go!.
+
+
+ 
+
+2) Arquivo de "HELP" com a explicação do sistema.
+
+3) Testar a dedução de feromônio em massa.
+
+4) Coletar resultados do sistema funcionando. 
+
+Go!: 
+
+Completo, só falta re-debugar, mas creio que esteja OK. 
+
+E depois disso, gerar diagramas e..? ESCREVER!
+
+___________________________________
+
+Dúvidas:
+
+1) Na barra de apoio, talvéz links de páginas com feromônios sejam mostradadas, mas esse link não existe na página atual, ou seja a ligação não existe, ao se clicar
+no link ele irá criar uma ligação falsa.
+
+2) Os links com nome insignificantes podem não dizer ao usuário o que ele deseja saber, apenas sua relevância.

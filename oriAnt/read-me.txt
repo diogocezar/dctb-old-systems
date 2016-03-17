@@ -1,0 +1,35 @@
+SpaceBraid | oriAnt
+
+Esse conjunto de classes implementa conceito de cérebro e neurônios, assim os neurônios ou (classes de apoio) são todos instanciados no mesmo objeto, o cerebro.
+
+Descrição das pastas:
+
+[ bd ]		Armazena conteúdos referêntes ao banco de dados.
+     |
+     '--[ sql ]		Armazena as estruturas SQL do projeto.
+     |
+     '--[ modelagem ] 	Armazena os arquivos de modelagem do projeto.
+
+[ cerebro ] 	Armazena a classe cerebro do sistema.
+
+[ classes ]	Armazena as classes reais do sistema, são as classes que representam o sistema na orientaçào a objetos, ou seja que serão armazenados no banco de dados.
+
+[ conf ]	Armazena os arquivos de configuração do sistema.
+
+[ css ]		Armazena os arquivos css do sistema.
+
+[ frameworks ]	Armazena as camadas de trabalho (outros sistemas) utilizados no projeto.
+
+[ html ]	Armazena os arquivos HTML do sistema.
+
+[ images ]	Armazena as imagens do sistema.
+
+[ jscripts ]	Armazena os arquivos java script.
+
+[ lib ] 	Armazena bibliotecas de funções utilizados no projeto.
+
+[ log ]		Armazena arquivo de log do sistema, utilizado no login administrativo.
+
+[ neuronios ]	Armazena os neuronios do projeto.
+
+[ php ] 	Armazena os arquivos php do projeto.

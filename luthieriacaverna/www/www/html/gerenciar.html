@@ -1,0 +1,44 @@
+<!-- BEGIN bloco_html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>{titulo}</title>
+<script>{js_sajax}</script>
+<script src="../jscripts/constants/constants.js"></script>
+<script src="../jscripts/effects/effects.js"></script>
+<script src="../jscripts/codify/codify.js"></script>
+<script src="../jscripts/manage/manage.js"></script>
+<script>
+var tabela = '{js_tabela}';
+var campo  = '{js_campos}';
+</script>
+</head>
+<body onload="{js_onLoad}">
+<link href="../css/gerenciar.css" rel="stylesheet" type="text/css"/>
+<div id="titulo_gerenciar"></div>
+<div id="id_container">    	
+    <div id="id_topo">
+        <div id="id_titulo">{cmp_titulo}</div>
+        <div id="id_container_procura">
+            <div id="id_form_procura" class="id_form">
+                <input name="{cmp_form_procura}" type="text" id="{cmp_form_procura}" class="form_gerenciar" size="40" maxlength="60" onkeyup="{cmp_form_key_up}" />
+            </div>
+            <div id="id_procura">{cmp_procura}</div>
+            <div id="id_campos_procura">{cmp_campos_procura}</div>
+        </div>
+    </div>
+    <div id="id_items">
+    
+    </div>
+    <div id="titulo_detalhe">{cmp_detalhe_titulo}</div>
+    <div id="id_detalhes">
+    
+    </div>
+    <div id="id_voltar">
+    	<a href="{linkVoltar}"><img src="../images/botVoltar.jpg" alt="Voltar" border="0" onclick="{onClickVoltar}"/></a>
+    </div>
+</div>
+</body>
+</html>
+<!-- END bloco_html -->

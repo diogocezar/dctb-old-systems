@@ -1,0 +1,64 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<script type="text/javascript" src="../jscripts/bb_code.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_ator -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionAtor}" method="post" enctype="multipart/form-data" name="{formAtor}" id="{formAtor}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68" class="texto5"> &nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloAtor}</td>
+        </tr>
+      <tr>
+        <td width="102" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome Art&iacute;stico </span></td>
+        <td width="297" align="left" bgcolor="#EDEDED"><input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome Nascimento</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoNomeNas}" type="text" class="form" id="{campoNomeNas}" value="{valorNomeNas}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Profiss&atilde;o </span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoProfissao}" type="text" class="form" id="{campoProfissao}" value="{valorProfissao}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Data de nascimento</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoDataNasc}" type="text" class="form" id="{campoDataNasc}" onkeypress="formatDate(this, event)" value="{valorDataNasc}" size="45" maxlength="10"/></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Pa&iacute;s Natal</span></td>
+        <td align="left" bgcolor="#EDEDED">
+		          <select class="form"  name="{comboPais}">
+				  	{comboPaisOpcoes}
+                  </select>			</td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Cidade Natal</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoCidade}" type="text" class="form" id="{campoCidade}" value="{valorCidade}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Biografia</span></td>
+        <td align="left" bgcolor="#EDEDED"><a href="#"><img src="../images/bot_negrito.jpg" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito}" /></a><a href="#"><img src="../images/bot_italico.jpg" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico}" /></a><a href="#"><img src="../images/bot_sublinhado.jpg" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado}" /></a><br />
+          <textarea name="{campoBiografia}" cols="45" rows="5" class="form" id="{campoBiografia}">{valorBiografia}</textarea></td>
+      </tr>
+	  <!-- BEGIN bloco_ator_foto -->
+      <tr>
+        <td height="21" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Foto Anexada </td>
+        <td align="left" valign="middle" bgcolor="#EDEDED" class="texto"><strong>{fotoAnexada}</strong></td>
+      </tr>
+	  <!-- END bloco_ator_foto -->
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Foto</span></td>
+        <td align="left" bgcolor="#EDEDED"><label>
+          <input name="{campoFoto}" type="file" class="form" id="{campoFoto}" size="45"/>
+        </label></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><p><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></p>          </td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_ator -->

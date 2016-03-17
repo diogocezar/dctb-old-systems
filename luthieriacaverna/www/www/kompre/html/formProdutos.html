@@ -1,0 +1,152 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<script type="text/javascript" src="../jscripts/file.js"></script>
+<script type="text/javascript" src="../jscripts/bbcode.js"></script>
+<!-- BEGIN bloco_javascript_sajax -->
+<script>
+{sajax_javascript}
+{funcoes_javascript}
+</script>
+<!-- END bloco_javascript_sajax -->
+<!-- BEGIN bloco_produtos -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formProduto}" name="{formProduto}" method="post" action="{actionProduto}" enctype="multipart/form-data">
+  <tr>
+    <td><table width="90%" height="887" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+      <tr>
+        <td height="50" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/topAdminProdutos.gif" width="535" height="50" />&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="46" rowspan="17" valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td height="20" colspan="2" valign="middle" bgcolor="#ECECEC"><span class="tahoma11"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /></span> <span class="tahoma10">{tituloProduto}</span></span></td>
+        </tr>
+      <tr>
+        <td width="122" height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Nome: </td>
+        <td width="365" valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><label>
+          &nbsp;
+          <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" />
+        </label></td>
+      </tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Peso:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <select name="{comboPeso}" size="1" class="form" id="{comboPeso}">
+          	{comboPesoOpcoes}
+          </select>
+          <span class="tahoma10">Kilogramas </span></td>
+      </tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Pre&ccedil;o:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <input name="{campoPreco}" type="text" class="form" id="{campoPreco}" onkeypress="reais(this, event)" value="{valorPreco}" size="15" maxlength="10" /></td></tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Quantidade:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <input name="{campoQtd}" type="text" class="form" id="{campoQtd}" onkeypress="isNum(this, event)" value="{valorQtd}" size="15" maxlength="5" /></td></tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Disponibilidade:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <select name="{comboDisponibilidade}" size="1" class="form" id="{comboDisponibilidade}">
+          	{comboDisponibilidadesOpcoes}
+        </select>        </td></tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Classifica&ccedil;&atilde;o:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <select name="{comboClassificacao}" size="1" class="form" id="{comboClassificacao}">
+          	{comboClassificacaoOpcoes}
+        </select>        </td></tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Promo&ccedil;&atilde;o: </td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;
+          <select name="{comboPromocao}" size="1" class="form" id="{comboPromocao}">
+            <option value="Sim">Sim</option>
+            <option value="N&atilde;o">N&atilde;o</option>
+          </select>          </td>
+      </tr>
+      <tr>
+        <td height="94" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Descri&ccedil;&atilde;o:<br />
+          <br /></td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec"><label>
+          &nbsp;<a href="#bbc1"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito1}" /></a><a href="#bbc1"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico1}" /></a><a href="#"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado1}" /></a><a name="bbc1" id="bbc1"></a><br />
+          &nbsp;
+          <textarea name="{campoDescricao}" cols="45" rows="5" class="form" id="{campoDescricao}">{valorDescricao}
+</textarea>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="94" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Especifica&ccedil;&atilde;o:<br /></td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec"><p>&nbsp;<a href="#bbc2"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito2}" /></a><a href="#bbc2"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico2}" /></a><a href="#bbc2"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado2}" /></a><a name="bbc2" id="bbc2"></a><br />
+          &nbsp;
+          <textarea name="{campoEspecificacao}" cols="45" rows="5" class="form" id="{campoEspecificacao}">{valorEspecificacao}</textarea>
+            </p>          </td>
+      </tr>
+      <tr>
+        <td height="94" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Dados T&eacute;cnicos: </td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;<a href="#bbc3"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito3}" /></a><a href="#bbc3"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico3}" /></a><a href="#bbc3"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado3}" /></a><a name="bbc3" id="bbc3"></a><br />
+          &nbsp;
+          <textarea name="{campoDadosTecnicos}" cols="45" rows="5" class="form" id="{campoDadosTecnicos}">{valorDadosTecnicos}</textarea></td>
+      </tr>
+      <tr>
+        <td height="94" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> &Iacute;tens Inclusos:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;<a href="#bbc4"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito4}" /></a><a href="#bbc4"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico4}" /></a><a href="#bbc4"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado4}" /></a><a name="bbc4" id="bbc4"></a><br />
+          &nbsp;
+          <textarea name="{campoItensInclusos}" cols="45" rows="5" class="form" id="{campoItensInclusos}">{valorItensInclusos}</textarea></td>
+      </tr>
+      <tr>
+        <td height="94" valign="top" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Garantia:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">&nbsp;<a href="#bbc5"><img src="../images/botNegrito.gif" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito5}" /></a><a href="#bbc5"><img src="../images/botItalico.gif" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico5}" /></a><a href="#bbc3"><img src="../images/botSublinhado.gif" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado5}" /></a><a name="bbc5" id="bbc5"></a><br />
+          &nbsp;
+          <textarea name="{campoGarantia}" cols="45" rows="5" class="form" id="{campoGarantia}">{valorGarantia}</textarea></td>
+      </tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Categoria:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec"><label>
+          &nbsp;
+          <select name="{comboCategoria}" size="1" class="form" id="{comboCategoria}">
+          	{comboCategoriaOpcoes}
+          </select>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Fabricante:</td>
+        <td bordercolor="#FFFFFF" bgcolor="ececec">
+		&nbsp;
+		<select name="{comboFabricante}" size="1" class="form" id="{comboFabricante}">
+			{comboFabricanteOpcoes}
+        </select></td>
+      </tr>
+      <tr>
+        <td height="29" valign="top" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Foto(s):</td>
+        <td align="center" valign="middle" bgcolor="ececec"><a href="#ancFotos"><img src="../images/botAdicionarFoto.jpg" width="95" height="25" border="0" onclick="{onClickFoto}" /></a>
+		  <a name="ancFotos"></a>
+		  <div id="{idFotos}"></div><br>
+		</td>
+      </tr>
+      <tr>
+        <td height="36" colspan="2" align="left" valign="middle" bgcolor="ececec" class="tahoma10"><strong><strong>1</strong>. </strong>Voc&ecirc; OBRIGATORIAMENTE anexar pelo menos 1 foto ao produto. <strong><br />
+2</strong>. Envie imagens apenas nos formatos GIF, JPG/JPEG ou PNG.<br />
+          <strong>3</strong>. Envie fotos de no m&aacute;ximo 500 kb.<br />
+          <strong>4</strong>. Antes de selecionar os arquivos, adicione o n&uacute;mero de fotos desejado. </td>
+      </tr>
+      <tr id="{mostaEsconde1}" style="display:none">
+        <td height="36" colspan="3" align="left" valign="middle" bgcolor="ececec" class="tahoma10"><div id="{preVisualizacaoMostra}" align="center"></div></td>
+      </tr>
+      <tr id="{mostaEsconde2}" style="display:none">
+        <td height="36" colspan="3" align="left" valign="middle" bgcolor="ececec" class="tahoma10"><div id="{preVisualizacao}" align="center"><img src="#" name="{imgPre}" id="{imgPre}"></div><br></td>
+      </tr>
+      <tr id="{mostaEsconde3}" style="display:none">
+        <td height="36" colspan="3" align="left" valign="middle" bgcolor="ececec" class="tahoma10"><div id="{existeHTML}" align="center">{atuImgs}</div></td>
+      </tr>
+      <tr>
+        <td height="22" colspan="3" align="center" bgcolor="ececec"><label>
+          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+        </label></td>
+        </tr>
+      <tr>
+        <td height="22" colspan="3" align="center" bgcolor="ececec"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_produtos -->

@@ -1,0 +1,152 @@
+/**
+* Css comentários
+*/
+
+#id_container_comentarios_form{
+	float:left;
+	overflow:visible;
+	clear:both;
+	position:relative;
+	width:225px;
+	text-align:center;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	padding:0;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;	
+	font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;	
+	font-size:10pt;
+}
+
+#id_titulo{
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+#id_botao{
+	position:relative;
+	top:10px;
+}
+
+.form{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #d3d3d3;
+	width:210px;
+}
+
+.id_campo{
+	text-align:left;
+	position:relative;
+	float:left;
+	width:100%;
+	font-size:10px;
+}
+
+.id_form{
+	text-align:left;
+	position:relative;
+	float:left;
+	height:auto;
+	clear:both;
+}
+
+.botao{
+	font-family: tahoma;
+	font-size: 10px;
+	color: #000000;
+	background-color: #f1f1f1;
+	border-color:#d3d3d3;
+	border:solid 1px;
+}
+
+/***************************************/
+
+#id_container_comentarios{
+	float:left;
+	text-align:left;
+	overflow:visible;
+	height:auto;
+	clear:both;
+	position:relative;
+	width:500px;
+	height:auto;
+	text-align:center;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	padding:0;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;	
+	font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;	
+	font-size:10pt;
+}
+
+#id_qtd_comentarios{
+	text-align:left;
+	position:relative;
+	float:left;
+	clear:both;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#id_item_comentarios{
+	top:5px;
+	position:relative;
+	float:left;
+	clear:both;
+	font-size:12px;
+	padding-bottom:5px;
+	border-bottom:#CCCCCC solid 1px;
+	width:100%;
+}
+
+#id_num_coment{
+	position:relative;
+	float:left;
+	font-weight:bold;
+	color:#990000;
+}
+
+#id_nome_coment{
+	left:5px;
+	position:relative;
+	float:left;
+}
+
+#id_quando_coment{
+	left:10px;
+	position:relative;
+	float:left;
+	font-size:10px;
+	color:#999999;
+}
+
+#id_email_coment{
+	left:15px;
+	position:relative;
+	float:left;
+}
+
+#id_site_coment{
+	left:20px;
+	position:relative;
+	float:left;
+}
+
+#id_coment{
+	position:relative;
+	float:left;
+	clear:both;
+}

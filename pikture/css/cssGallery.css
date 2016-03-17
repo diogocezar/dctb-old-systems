@@ -1,0 +1,28 @@
+.fonteGalerias {
+	font-family: verdana;
+	font-size: 12px;
+	font-style: normal;
+	color: #666666;
+}
+.fonteFotos {
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	color: #666666;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #525b68;
+}
+a:active {
+	text-decoration: none;
+	color: #525B68;
+}

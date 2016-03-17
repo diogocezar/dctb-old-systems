@@ -1,0 +1,113 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<script type="text/javascript" src="../jscripts/bb_code.js"></script>
+<script type="text/javascript" src="../jscripts/biblioteca.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_filme -->
+<table width="417" border="0" align="center" class="form">
+  <form action="{actionFilme}" method="post" enctype="multipart/form-data" name="{formFilme}" id="{formFilme}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+   	    <td height="21" colspan="2" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloFilme}</td>
+          </tr>
+      <tr>
+        <td width="77" height="21" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;T&iacute;tulo </td>
+        <td width="322" align="left" bgcolor="#EDEDED" class="texto"><input name="{campoTitulo}" type="text" class="form" id="{campoTitulo}" value="{valorTitulo}" size="45" /></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Titulo Original</td>
+        <td align="left" bgcolor="#EDEDED" class="texto"><input name="{campoTituloOri}" type="text" class="form" id="{campoTituloOri}" value="{valorTituloOri}" size="45" /></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Ano</td>
+        <td align="left" bgcolor="#EDEDED" class="texto"><input name="{campoAno}" type="text" class="form" id="{campoAno}" value="{valorAno}" size="45" onkeypress="isNum(this, event)"/></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Dura&ccedil;&atilde;o </td>
+        <td align="left" bgcolor="#EDEDED" class="texto"><input name="{campoDuracao}" type="text" class="form" id="{campoDuracao}" value="{valorDuracao}" size="45" onkeypress="isNum(this, event)"/>
+          <span class="texto3">          (Em minutos) </span></td>
+      </tr>
+      <tr>
+        <td height="21" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Distribuidora</td>
+        <td align="left" bgcolor="#EDEDED" class="texto"><input name="{campoDistribuidora}" type="text" class="form" id="{campoDistribuidora}" value="{valorDistribuidora}" size="45"/></td>
+      </tr>
+      <tr>
+        <td height="20" align="left" bgcolor="#EDEDED" class="texto"><label>&nbsp;&nbsp;Categoria</label></td>
+        <td align="left" bgcolor="#EDEDED" class="texto">
+		<select name="{comboCategoria}" size="1" class="form" id="{comboCategoria}">
+          {comboCategoriaOpcoes}
+		</select>	  </td>
+      </tr>
+	  <tr>
+	    <td height="20" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Classificação</td>
+	    <td align="left" bgcolor="#EDEDED" class="texto">
+		<select name="{comboClassificacao}" size="1" class="form" id="{comboClassificacao}">
+	      {comboClassificacaoOpcoes}
+	    </select>	    </td>
+	    </tr>
+	    <tr>
+	    <td height="81" align="left" valign="top" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Atores </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><select name="{comboAtores}" size="1" class="form" id="atores">
+		{comboAtoresOpcoes}
+	    </select>
+          <a href="#"><img src="../images/bot_add.jpg" alt="Adicionar" width="27" height="25" border="0" align="absmiddle" onclick="{addAtor}" /></a><br />
+		  <select name="{listAtores}" size="4" multiple class="form2" id="{listAtoresID}">
+		  {listAtoresOpcoes}
+          </select>
+          <a href="#"><img src="../images/bot_rem.jpg" alt="Remover" width="27" height="25" border="0" align="top" onclick="{rmvAtor}" /></a></td>
+	    </tr>
+	  <tr>
+	    <td height="81" align="left" valign="top" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Diretores </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><select name="{comboDiretores}" size="1" class="form" id="{comboDiretores}">
+		{comboDiretoresOpcoes}
+	    </select>
+          <a href="#"><img src="../images/bot_add.jpg" alt="Adicionar" width="27" height="25" border="0" align="absmiddle" onclick="{addDiretor}" /></a><br />
+		  <select name="{listDiretores}" size="4" multiple class="form2" id="{listDiretoresID}">
+		  {listDiretoresOpcoes}
+          </select>
+          <a href="#"><img src="../images/bot_rem.jpg" alt="Remover" width="27" height="25" border="0" align="top" onclick="{rmvDiretor}" /></a></td>
+	    </tr>
+	  <tr>
+	    <td height="81" align="left" valign="top" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;G&ecirc;nereos </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><select name="{comboGeneros}" size="1" class="form"  id="{comboGeneros}"> 
+		{comboGenerosOpcoes}
+	    </select>
+          <a href="#"><img src="../images/bot_add.jpg" alt="Adicionar" width="27" height="25" border="0" align="absmiddle" onclick="{addGenero}" /></a><br />
+		  <select name="{listGeneros}" size="4" multiple class="form2" id="{listGenerosID}">
+		  {listGenereosOpcoes}
+          </select>
+          <a href="#"><img src="../images/bot_rem.jpg" alt="Remover" width="27" height="25" border="0" align="top" onclick="{rmvGenero}" /></a></td>
+	    </tr>
+	  <tr>
+	    <td height="92" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Sinopse </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><label><a href="#"><img src="../images/bot_negrito.jpg" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito}" /></a><a href="#"><img src="../images/bot_italico.jpg" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico}" /></a><a href="#"><img src="../images/bot_sublinhado.jpg" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado}" /></a><br />
+	    <textarea name="{campoSinopse}" cols="45" rows="5" class="form" id="{campoSinopse}">{valorSinopse}</textarea>
+	    </label></td>
+	    </tr>
+	  <!-- BEGIN bloco_filme_foto -->
+	  <tr>
+	    <td height="24" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Foto Anexada </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><strong>{fotoAnexada}</strong></td>
+	  </tr>
+	  <!-- END bloco_filme_foto -->
+	  <tr>
+	    <td height="24" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Foto </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><input name="{campoFoto}" type="file" class="form" id="{campoFoto}" size="45" /></td>
+	    </tr>
+	  <tr>
+	    <td height="20" align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Destaque </td>
+	    <td align="left" bgcolor="#EDEDED" class="texto"><select name="{comboDestaque}" size="1" class="form" id="{comboDestaque}">
+          <option value="Sim" {selSim}>Sim</option>
+          <option value="Não" {selNao}>N&atilde;o</option>
+        </select>		</td>
+	    </tr>
+	  <tr>
+	    <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+	    </tr>
+    </table>
+	</td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_filme -->

@@ -1,0 +1,236 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/faixaSite.gif);
+	background-position: center;
+}
+* {
+	text-decoration:none;
+	font-style:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+ hr {
+	border: 0;
+	width: 100%;
+	background-color: #000000;
+	height: 1px;
+}
+#servilhaIntro {
+	text-align:left;
+	float: left;
+	height: 40px;
+	width: 320px;
+	color: #000000;
+	padding-left: 35px;
+	padding-right: 40px;
+	padding-top: 25px;
+	padding-bottom: 18px;
+	font-size: 9px;
+}
+#areaAtuacao {
+	float: left;
+	height: 61px;
+	width: 335px;
+	background-image: url(../images/bgAreaAtuacao.gif);
+	color: #aba9a1;
+	padding-left: 21px;
+	padding-right: 40px;
+	padding-top: 31px;
+	padding-bottom: 18px;
+	font-size: 9px;
+}
+#ultimosArtigos {
+	float: left;
+	height: 66px;
+	width: 198px;
+	background-image: url(../images/bgUltimosArtigos.gif);
+	padding-left: 16px;
+	padding-right: 26px;
+	padding-top: 25px;
+	padding-bottom: 12px;
+}
+#vocabularioJuridico {
+	float: left;
+	height: 71px;
+	width: 198px;
+	background-image: url(../images/bgVocabularioJuridico.gif);
+	padding-right: 26px;
+	padding-left: 16px;
+	padding-top: 25px;
+	padding-bottom: 12px;
+}
+#links {
+	float: left;
+	height: 66px;
+	width: 198px;
+	background-image: url(../images/bgLinks.gif);
+	padding-right: 26px;
+	padding-left: 16px;
+	padding-bottom: 16px;
+	padding-top: 30px;
+}
+#sobreServilha {
+	float: left;
+	height: 138px;
+	width: 198px;
+	background-image: url(../images/bgCurriculo.gif);
+	padding-left: 36px;
+	padding-right: 59px;
+	padding-top: 46px;
+	padding-bottom: 27px;
+}
+#caixaLogin {
+	height: 19px;
+	width: 95px;
+	margin-left: 123px;
+	margin-top: 25px;
+	margin-right: 18px;
+	clear: both;
+}
+#botaoLogin {
+	margin-left: 123px;
+	height: 17px;
+	margin-right: 20px;
+	text-align: right;
+}
+
+#caixaSenha {
+	margin-left: 123px;
+	height: 19px;
+	width: 95px;
+	margin-top: 3px;
+	clear: both;
+}
+.form {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	background-color: #BEBBB3;
+	border: 1px solid #666633;
+}
+h2 {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+}
+h4 {
+	color: #666666;
+	font-size: 10px;
+	font-weight: normal;
+	line-height: normal;
+	font-variant: normal;
+}
+#lateralInterna {
+	background-image: url(../images/lateralInterna.jpg);
+	background-repeat: repeat-x;
+	height: 352px;
+}
+#tituloForm{
+	padding-top:5px;
+	font-weight:bold;
+	font-size:12px;
+	color:#666633;
+}
+
+/* Links */
+
+
+.link_cinza:active {
+	text-decoration: none;
+	color: #aba9a1;
+}
+.link_cinza:link {
+	color: #aba9a1;
+	text-decoration: none;
+}
+
+.link_cinza:visited {
+	text-decoration: none;
+	color: #aba9a1;
+}
+
+.link_cinza:hover {
+	text-decoration:underline;
+	color: #aba9a1;
+}
+
+
+
+.link_marrom:active {
+	text-decoration: none;
+	color: #bd9e61;
+}
+.link_marrom:link {
+	color: #bd9e61;
+	text-decoration: none;
+}
+
+.link_marrom:visited {
+	text-decoration: none;
+	color: #bd9e61;
+}
+
+.link_marrom:hover {
+	text-decoration:underline;
+	color: #bd9e61;
+}
+
+
+
+
+
+.link_preto:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+.link_preto:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.link_preto:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.link_preto:hover {
+	text-decoration:underline;
+	color: #000000;
+}
+
+
+
+
+.link_vocabulario:active {
+	font-size:12px;
+	font-weight:bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.link_vocabulario:link {
+	font-size:12px;
+	font-weight:bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.link_vocabulario:visited {
+	font-size:12px;
+	font-weight:bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.link_vocabulario:hover {
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:underline;
+	color: #000000;
+}

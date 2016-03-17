@@ -1,0 +1,31 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_taxa -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionTx}" method="post" enctype="multipart/form-data" name="{formTx}" id="{formTx}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloTaxa}</span></td>
+        </tr>
+      <tr>
+        <td width="89" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Localiza&ccedil;&atilde;o</span></td>
+        <td width="74%" align="left" valign="middle" bgcolor="#EDEDED"><label>
+          <input name="{campoLoc}" type="text" class="form" id="{campoLoc}" value="{valorLoc}" size="45" />
+        </label></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Valor</span></td>
+        <td align="left" valign="middle" bgcolor="#EDEDED"><label>
+          <input name="{campoValor}" type="text" class="form" id="{campoValor}" value="{valorValor}" size="45" onkeypress="reais(this, event)"/>
+        </label></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_taxa -->

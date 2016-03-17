@@ -1,0 +1,23 @@
+<?php
+/*
+	# CONEXAO.PHP
+
+	[ Arquivo de configuração do site da informática CEFET-PR CP ]
+	
+	O arquivo conexao.php tem como objetivo fazer a conexão com o banco de dados
+	é nesse arquivo que ficam armazenadas as configurações para para conexão.
+
+*/
+
+/* Inclue a classe de conexão com o Banco de Dados MySQL */
+
+include('./classes/mysql.class.php');
+
+/* Instancia um novo objeto da classe incluida */
+
+$MySQL = new MySQL();
+
+/* Chama o método de conexão com o banco de dados */
+
+$MySQL->Conectar();
+?>

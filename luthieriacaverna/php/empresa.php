@@ -1,0 +1,31 @@
+<?php
+/**
+* arquivo de configuração
+*/
+include("../conf/config.php");
+
+/**
+* cerebro do sistema
+*/
+include("../cerebro/includeCerebro.php");
+
+/**
+* biblioteca de funcoes
+*/
+include("../lib/library.php");
+include("../lib/util.php");
+
+/* definições para página interna */
+$pagina = getPaginaAtual();
+$escopo = "Sobre a Empresa";
+$caminho = "Página Inicial";
+
+/* objeto */
+$objeto = $controlador['informacoes'];
+$objeto->__toFillGeneric();
+$objeto->__get_db();
+
+$conteudo = $objeto->getHistorico();
+
+include('includeInterna.php');
+?>

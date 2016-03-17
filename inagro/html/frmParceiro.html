@@ -1,0 +1,20 @@
+<!-- BEGIN bloco_formulario -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../css/cssInagro.css" rel="stylesheet" type="text/css">
+<div id="padraoFormAdmin" align="center">
+	<form name= "{formParceiro}" action="{actionParceiro}" method="post" enctype="multipart/form-data">
+	<div id="formTitulo">Foto</div>
+	<input type="file" class="formFile" name="{campoFoto}" value="{valorFoto}">
+	<div id="textoMiniatura">{textoMiniatura}</div>
+	<div id="formTitulo">Nome</div>
+	<input name="{campoNome}" type="text" value="{valorNome}" class="form" />
+	<div id="formTitulo">Link</div>
+	<input name="{campoLink}" type="text" value="{valorLink}" class="form" />
+	<div id="separadorEnviar"></div>
+	<div id="formCampo" align="center">
+		<input name="enviar" type="button" value="Enviar" class="botao" onClick="{onClickEnviar}" />
+		<input name="voltar" type="button" value="Voltar" class="botao" onClick="{onClickVoltar}" />
+	</div>
+	</form>
+</div>
+<!-- END bloco_formulario -->

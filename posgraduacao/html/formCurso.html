@@ -1,0 +1,278 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_form_curso -->
+<form name="{form_curso}" method="post" action="{action}">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="374" height="19"></td>
+    <td colspan="3" align="center" valign="middle" class="titulo">{curso}</td>
+    <td width="378"></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td width="138"></td>
+    <td width="9"></td>
+    <td width="319"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{nome} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoNome}" type="text" class="formulario" id="{campoNome}" value="{valorNome}" size="50" maxlength="100"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle" class="letra_padrao">{inicioCurso} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoInicioCurso}" type="text" class="formulario" id="{campoInicioCurso}" value="{valorInicioCurso}" size="15" maxlength="10" onkeypress="formatDate(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="2" align="right" valign="middle" class="letra_padrao">{terminoCurso} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoTerminoCurso}" type="text" class="formulario" id="{campoTerminoCurso}" value="{valorTerminoCurso}" size="15" maxlength="10" onkeypress="formatDate(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="2" align="right" valign="middle" class="letra_padrao">{periodoInscricao} : </td>
+    <td></td>
+    <td align="left" valign="middle"><input name="{campoPeriodoInscricao}" type="text" class="formulario" id="{campoPeriodoInscricao}" value="{valorPeriodoInscricao}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+    <td rowspan="2" align="left" valign="middle"><input name="{campoPeriodoMatricula}" type="text" class="formulario" id="{campoPeriodoMatricula}" value="{valorPeriodoMatricula}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2" align="right" valign="middle" class="letra_padrao">{periodoMatricula} : </td>
+    <td height="22"></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td height="1"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td height="23" colspan="2" align="right" valign="middle"><span class="letra_padrao">{turnoFuncionamento} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoTurnoFuncionamento}" type="text" class="formulario" id="{campoTurnoFuncionamento}" value="{valorTurnoFuncionamento}" size="50" maxlength="100" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{vagas} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoVagas}" type="text" class="formulario" id="{campoVagas}" value="{valorVagas}" size="5" maxlength="5" onkeypress="isNum(this, event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="2" align="right" valign="middle"><span class="letra_padrao">{txInscricao} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoTxInscricao}" type="text" class="formulario" id="{campoTxInscricao}" value="{valorTxInscricao}" size="15" maxlength="15" onkeypress="reais(this, event)"/></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{matricula} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoMatricula}" type="text" class="formulario" id="{campoMatricula}" value="{valorMatricula}" size="15" maxlength="15" onkeypress="reais(this, event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{mensalidades} : </span></td>
+    <td></td>
+    <td valign="top"><input name="{campoMensalidades}" type="text" class="formulario" id="{campoMensalidades}" value="{valorMensalidades}" size="15" maxlength="15" onkeypress="reais(this, event)" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{apresentacao} : </span></td>
+    <td></td>
+    <td rowspan="2" align="left" valign="middle"><textarea name="{campoApresentacao}" cols="50" rows="3" class="formulario" id="{campoApresentacao}">{valorApresentacao}
+</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{objetivos} : </span></td>
+    <td></td>
+    <td rowspan="2" valign="top"><textarea name="{campoObjetivos}" cols="50" rows="3" class="formulario" id="{campoObjetivos}">{valorObjetivos}</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{certificado} : </span></td>
+    <td></td>
+    <td rowspan="2" valign="top"><textarea name="{campoCertificado}" cols="50" rows="3" class="formulario" id="{campoCertificado}">{valorCertificado}</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{complementar} : </span></td>
+    <td></td>
+    <td rowspan="2" valign="top"><textarea name="{campoComplementar}" cols="50" rows="3" class="formulario" id="{campoComplementar}">{valorComplementar}</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="23"></td>
+    <td align="right" valign="middle"><span class="letra_padrao">{resumo} : </span></td>
+    <td></td>
+    <td rowspan="2" valign="top"><textarea name="{campoResumo}" cols="50" rows="3" class="formulario" id="{campoResumo}">{valorResumo}</textarea></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="26"></td>
+    <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="30"></td>
+    <td colspan="3" align="center" valign="middle"><input name="{nomeBotao}" type="button" class="botao" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}">
+      <br />
+      <br />
+      <input name="{nomeBotaoVoltar}" type="button" class="botao" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" /></td>
+    <td></td>
+  </tr>
+</table>
+<!-- END bloco_form_curso -->
+</form>

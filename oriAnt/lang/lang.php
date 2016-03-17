@@ -1,0 +1,18 @@
+<?php
+/**
+* Arquivo para a configuração da linguagem utilizada no sistema oriant.
+* esse arquivo deverá ser incluído na página principal do sistema onde a subistituição das
+* variáveis do template é feita.
+*/
+
+$language = $_GET['language'];
+
+if(empty($language)){
+	include('pt-br.php');
+}
+else{
+	$pageLang = $language.'.php';
+	include($pageLang);
+}
+
+?>

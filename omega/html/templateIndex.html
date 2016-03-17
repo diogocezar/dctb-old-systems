@@ -1,0 +1,351 @@
+<html>
+<head>
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/biblioteca.js"></script>
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+</head>
+<!-- BEGIN bloco_principal -->
+<body bgcolor="#fefdfd" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../images/bot_cadastrese_over.gif','../images/bot_esquecisenha_over.gif','../images/bot_01_over.jpg','../images/bot_02_over.jpg','../images/bot_03_over.jpg','../images/bot_04_over.jpg','../images/bot_05_over.jpg','../images/bot_06_over.jpg');{onLoad}">
+<table width="705" height="971" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+	<tr>
+		<td colspan="11"><img src="../images/borda_top.jpg" width="704" height="32" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="32" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="../images/borda_esq1.jpg" width="16" height="99" alt=""></td>
+		<td colspan="5" rowspan="2">
+			<a href="{linkLogo}"><img src="../images/banner_logo.gif" alt="{altLogo}" width="434" height="58" border="0"></a></td>
+	  <!-- BEGIN bloco_login -->
+	  	{abreForm}
+		<td colspan="4" align="right" valign="bottom" background="../images/fundo_login.gif" class="texto5">
+			{conteudo}</td>
+		{fechaForm}
+	  <!-- END bloco_login -->		
+		<td rowspan="3">
+			<img src="../images/borda_dir1.jpg" width="12" height="99" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="34" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2"><a href="{linkCadastreSe}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image70','','../images/bot_cadastrese_over.gif',1)"><img src="../images/bot_cadastrese.gif" alt="{altCadastreSe}" name="Image70" width="96" height="24" border="0"></a></td>
+		<td colspan="2"><a href="{linkEsqueci}" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image71','','../images/bot_esquecisenha_over.gif',1)"><img src="../images/bot_esquecisenha.gif" alt="{altEsqueci}" name="Image71" width="146" height="24" border="0"></a></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="24" alt=""></td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle" class="texto3" id="{menu1}" style="background-image:url(../images/bot_01.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_01_over.jpg')" onMouseOut="altera(this.id, '../images/bot_01.jpg')" onClick="javascript:location.href='{linkMenu1}'">
+			<strong><a href="{linkMenu1}">{menu1}</a></strong>		</td>
+		<td align="center" valign="middle" class="texto3" id="{menu2}" style="background-image:url(../images/bot_02.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_02_over.jpg')" onMouseOut="altera(this.id, '../images/bot_02.jpg')" onClick="javascript:location.href='{linkMenu2}'">
+			<strong><a href="{linkMenu2}">{menu2}</a></strong>		</td>
+		<td align="center" valign="middle" class="texto3" id="{menu3}" style="background-image:url(../images/bot_03.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_03_over.jpg')" onMouseOut="altera(this.id, '../images/bot_03.jpg')" onClick="javascript:location.href='{linkMenu3}'">
+			<strong><a href="{linkMenu3}">{menu3}</a></strong>		</td>
+		<td colspan="3" align="center" valign="middle" class="texto3" id="{menu4}" style="background-image:url(../images/bot_04.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_04_over.jpg')" onMouseOut="altera(this.id, '../images/bot_04.jpg')" onClick="javascript:location.href='{linkMenu4}'">
+			<strong><a href="{linkMenu4}">{menu4}</a></strong>		</td>
+		<td colspan="2" align="center" valign="middle" class="texto3" id="{menu5}" style="background-image:url(../images/bot_05.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_05_over.jpg')" onMouseOut="altera(this.id, '../images/bot_05.jpg')" onClick="javascript:location.href='{linkMenu5}'">
+			<strong><a href="{linkMenu5}">{menu5}</a></strong>		</td>
+		<td align="center" valign="middle" class="texto3" id="{menu6}" style="background-image:url(../images/bot_06.jpg);cursor:hand;" onMouseOver="altera(this.id, '../images/bot_06_over.jpg')" onMouseOut="altera(this.id, '../images/bot_06.jpg')" onClick="javascript:location.href='{linkMenu6}'">
+			<strong><a href="{linkMenu6}">{menu6}</a></strong>		</td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="41" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="7" background="../images/borda_esq1.jpg">&nbsp;</td>
+	  <!-- BEGIN bloco_busca -->
+	  <form action="{actionBusca}" method="get" name="{formBusca}" id="{formBusca}">	
+		<td colspan="2" align="center" background="../images/fundo_buscarfilmes.jpg">
+		<br><br><br>
+		<table width="90%" border="0">
+          <tr>
+            <td width="34%" height="25">&nbsp;</td>
+            <td width="66%" height="25">
+              <select name="{comboGenero}" class="form2" id="{comboGenero}">
+				{comboGeneroOpcoes}
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td height="25">&nbsp;</td>
+            <td height="25"><select name="{comboPor}" class="form2" id="{comboPor}">
+				{comboPorOpcoes}
+            </select>
+            </td>
+          </tr>
+          <tr>
+            <td height="25">&nbsp;</td>
+            <td height="25"><label>
+              <input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="29">
+            </label></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="{linkBuscar}"><img src="../images/bot_buscar.jpg" alt="{altBusca}" width="105" height="28" border="0" onClick="{onClickBusca}"></a></td>
+          </tr>
+          <tr>
+            <td height="25" colspan="2" align="right" valign="top" class="texto"><img src="../images/seta_preta.gif" width="2" height="5" /> <a href="{linkVejaTodos}">Veja <strong>todos</strong> nossos  filmes</a></td>
+          </tr>
+        </table></td>
+	  </form>
+		<!-- END bloco_busca -->
+	  <!-- BEGIN bloco_mais_locados -->
+		<td colspan="7" align="center" background="../images/fundo_maislocados.gif">
+		<br><br>
+		<table border="0" cellspacing="0">
+          <tr>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{ML1}</td>
+            <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{ML2}</td>
+            <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{ML3}</td>
+            <td width="10" align="left" valign="top">&nbsp;</td>
+            <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{ML4}</td>
+            <td width="10" align="left" valign="top">&nbsp;</td>
+            <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{ML5}</td>
+          </tr>
+          <tr>
+            <td width="64" height="40" align="center" valign="top" class="texto">{MLT1}</td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{MLT2}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{MLT3}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{MLT4}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{MLT5}</span></td>
+          </tr>
+          <tr>
+            <td height="21" colspan="9" align="right" valign="top" class="texto"><img src="../images/seta_preta.gif" width="2" height="5"> <a href="{linkMaisLocados}">Veja todos os filmes da sess&atilde;o de <strong>Mais Locados</strong></a></td>
+          </tr>
+
+        </table></td>
+	 <!-- END bloco_mais_locados -->
+		<td rowspan="7" background="../images/borda_dir1.jpg">&nbsp;</td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="200" alt=""></td>
+	</tr>
+	<tr>
+	  <!-- BEGIN bloco_carrinho -->		
+		<td colspan="2" align="center" valign="bottom" background="../images/fundo_meupedido.gif"><table width="90%" border="0">
+          <tr>
+            <td width="21%" height="19">&nbsp;</td>
+            <td height="19" colspan="3" class="texto4">{qtdF}</td>
+          </tr>
+          <tr>
+            <td height="19">&nbsp;</td>
+            <td width="15%" height="19" class="texto4">&nbsp;</td>
+            <td width="20%" valign="top" class="texto4">{qtdC}</td>
+            <td width="44%" valign="top" class="texto4">{valorTotal}</td>
+          </tr>
+          <tr>
+            <td height="29">&nbsp;</td>
+            <td height="29" colspan="3" align="right" valign="top"><a href="{linkFim}"><img src="../images/seta_go.jpg" alt="{altFim}" width="34" height="24" border="0" onClick="{onClickFim}"></a></td>
+          </tr>
+        </table>		</td>
+	  <!-- END bloco_carrinho -->
+	  <!-- BEGIN bloco_lancamentos -->		
+		<td colspan="7" rowspan="4" align="center" valign="bottom" background="../images/fundo_lancamentos.gif">
+		<table border="0" cellspacing="0">
+		  <tr>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L1}</td>
+            <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L2}</td>
+            <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+            <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L3}</td>
+            <td width="10" align="left" valign="top">&nbsp;</td>
+            <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{L4}</td>
+            <td width="10" align="left" valign="top">&nbsp;</td>
+            <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{L5}</td>
+          </tr>
+          <tr>
+            <td width="64" height="40" align="center" valign="top" class="texto">{LT1}</td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{LT2}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{LT3}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{LT4}</span></td>
+            <td height="40" align="center" valign="top">&nbsp;</td>
+            <td width="64" height="40" align="center" valign="top"><span class="texto">{LT5}</span></td>
+          </tr>
+
+        </table>
+		<table border="0" cellspacing="0">
+        <tr>
+          <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L6}</td>
+          <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+          <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L7}</td>
+          <td width="10" height="98" align="left" valign="top">&nbsp;</td>
+          <td width="64" height="98" align="left" valign="top" background="../images/fundo_filme.gif">{L8}</td>
+          <td width="10" align="left" valign="top">&nbsp;</td>
+          <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{L9}</td>
+          <td width="10" align="left" valign="top">&nbsp;</td>
+          <td width="64" align="left" valign="top" background="../images/fundo_filme.gif">{L10}</td>
+        </tr>
+        <tr>
+          <td width="64" height="40" align="center" valign="top" class="texto">{LT6}</td>
+          <td height="40" align="center" valign="top">&nbsp;</td>
+          <td width="64" height="40" align="center" valign="top"><span class="texto">{LT7}</span></td>
+          <td height="40" align="center" valign="top">&nbsp;</td>
+          <td width="64" height="40" align="center" valign="top"><span class="texto">{LT8}</span></td>
+          <td height="40" align="center" valign="top">&nbsp;</td>
+          <td width="64" height="40" align="center" valign="top"><span class="texto">{LT9}</span></td>
+          <td height="40" align="center" valign="top">&nbsp;</td>
+          <td width="64" height="40" align="center" valign="top"><span class="texto">{LT10}</span></td>
+        </tr>
+        <tr>
+          <td height="21" colspan="9" align="right" valign="top" class="texto"><img src="../images/seta_preta.gif" width="2" height="5"> <a href="{linkLancamentos}">Veja todos os filmes da sess&atilde;o<strong> Lan&ccedil;amentos</strong></a> </td>
+        </tr>
+      </table></td>
+	  <!-- END bloco_lancamentos -->		
+		<td>
+			<img src="../images/spacer.gif" width="1" height="112" alt=""></td>
+	</tr>
+	<tr>
+	    <!-- BEGIN bloco_news -->
+	    <form action="{actionNews}" method="post" name="{formNews}" id="{formNews}">	
+		<td colspan="2" align="center" background="../images/fundo_newsletter.gif">
+		<br><br><br><br>
+		<table width="90%" border="0">
+          <tr>
+            <td align="right"><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{valorEmail}" size="35"></td>
+          </tr>
+          <tr>
+            <td height="34" align="right" valign="top"><label class="texto">
+              <input name="{opNews}" type="radio" value="{cadastrar}" checked>
+            Cadastrar
+            <input name="{opNews}" type="radio" value="{remover}"> 
+            Remover
+            <a href="{linkNews}"><img src="../images/seta_go2.jpg" alt="{altNews}" width="39" height="25" border="0" align="middle" onClick="{clickNews}"></a></label></td>
+          </tr>
+        </table>		</td>
+		</form>
+	    <!-- END bloco_news -->		
+		<td>
+			<img src="../images/spacer.gif" width="1" height="143" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="../images/top_parceiros.gif" width="226" height="30" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+	    <!-- BEGIN bloco_parceiros -->		
+		<td colspan="2" rowspan="2" align="center" valign="top" background="../images/index_22.gif"><br>
+		{parceiros}		</td>
+		<td>
+	    <!-- END bloco_parceiros -->		
+			<img src="../images/spacer.gif" width="1" height="59" alt=""></td>
+	</tr>
+	<tr>
+	    <!-- BEGIN bloco_enquete -->
+	    <form action="{actionEnquete}" method="post" name="{formEnquete}" id="{formEnquete}">	
+		<td colspan="2" align="center" valign="baseline" background="../images/fundo_enquete.gif"><table width="90%" border="0">
+          <tr>
+            <td height="155" class="texto">{pergunta}<br>
+		<input name="{opEnquete}" type="radio" value="{r1}" checked>
+		  {resposta1}<br>
+		  <input name="{opEnquete}" type="radio" value="{r2}">
+		  {resposta2}
+		  <br>
+		  <input name="{opEnquete}" type="radio" value="{r3}">
+		  {resposta3}<br>
+		  <input name="{opEnquete}" type="radio" value="{r4}">
+		  {resposta4}</td>
+          </tr>
+          <tr>
+            <td height="33" align="center" valign="top"><span class="texto"><a href="{linkVotar}"><img src="../images/bot_votar.jpg" alt="{altVotar}" width="106" height="26" border="0" onClick="{clickVotar}"></a></span></td>
+          </tr>
+          <tr>
+            <td height="25" align="right" valign="top"><span class="texto"><img src="../images/seta_preta.gif" width="2" height="5"> <a href="{linkResultadoParcial}">Ver resultado parcial</a> </span></td>
+          </tr>
+        </table></td>
+		</form>
+		<!-- END bloco_enquete -->
+		
+		<!-- BEGIN bloco_novidades -->
+		<td colspan="5" align="center" valign="top" background="../images/fundo_noticias.gif"><br>
+		  <table width="90%" border="0">
+            <tr>
+              <td height="34" class="texto"><div align="justify"><img src="../images/seta_preta.gif" width="2" height="5"> <a href="{linkN1}"> {novidade1} </a></div></td>
+            </tr>
+            <tr>
+              <td><img src="../images/linha.gif" width="255" height="3"></td>
+            </tr>
+        </table>
+		    <table width="90%" border="0">
+        <tr>
+          <td height="34" class="texto"><div align="justify"><img src="../images/seta_preta.gif" width="2" height="5"><a href="{linkN2}"> {novidade2}</a></div></td>
+        </tr>
+        <tr>
+          <td><img src="../images/linha.gif" width="255" height="3"></td>
+        </tr>
+      </table>
+      <table width="90%" border="0">
+        <tr>
+          <td height="34" class="texto"><div align="justify"><img src="../images/seta_preta.gif" width="2" height="5"><a href="{linkN3}"> {novidade3}</a></div></td>
+        </tr>
+        <tr>
+          <td><img src="../images/linha.gif" width="255" height="3"></td>
+        </tr>
+      </table>
+      <table width="90%" border="0">
+        <tr>
+          <td height="34" class="texto"><div align="justify"><img src="../images/seta_preta.gif" width="2" height="5"><a href="{linkN2}"> {novidade4}</a></div></td>
+        </tr>
+        <tr>
+          <td><img src="../images/linha.gif" width="255" height="3"></td>
+        </tr>
+        <tr>
+          <td align="right" class="texto"><img src="../images/seta_preta.gif" width="2" height="5"> <a href="{linkVerTodas}">Ver todas novidades </a></td>
+        </tr>
+      </table>	  </td>
+	  <!-- END bloco_novidades -->
+		<td>
+			<img src="../images/spacer.gif" width="1" height="240" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="9">
+			<a href="{linkKreea}"><img src="../images/copyright.gif" alt="" width="676" height="31" border="0"></a></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="31" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="11">
+			<img src="../images/borda_down.jpg" width="704" height="24" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="1" height="24" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../images/spacer.gif" width="16" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="111" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="111" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="62" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="35" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="14" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="82" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="29" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="117" height="1" alt=""></td>
+		<td>
+			<img src="../images/spacer.gif" width="12" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+</body>
+<!-- END bloco_principal -->
+</html>

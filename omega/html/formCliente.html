@@ -1,0 +1,100 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_cliente -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionCliente}" method="post" enctype="multipart/form-data" name="{formCliente}" id="{formCliente}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloDadosPessoais}</span></td>
+        </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Sobrenome</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoSobre}" type="text" class="form" id="{campoSobre}" value="{valorSobre}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Email</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{valorEmail}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Newsletter</td>
+        <td align="left" valign="middle" bgcolor="#EDEDED" class="texto"><input name="{checkNovidades}" type="checkbox" id="{checkNovidades}" value="Sim" {opNovidades}/>
+          Receber novidades da locadora omega ?</td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Cpf</td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoCpf}" type="text" class="form" id="{campoCpf}" onkeypress="formatCPF(this, event)" value="{valorCpf}" size="45" maxlength="14" {habilita}/>
+          <span class="texto2">(Sem separadores) </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Rg</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoRg}" type="text" class="form" id="{campoRg}" value="{valorRg}" size="45" maxlength="30" onkeypress="isNum(this, event)"/>
+          <span class="texto2">(Sem separadores) </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Rua</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoRua}" type="text" class="form" id="{campoRua}" value="{valorRua}" size="35" />
+          <span class="texto">&nbsp;&nbsp;Numero
+          <input name="{campoNumero}" type="text" class="form" id="{campoNumero}" onkeypress="isNum(this, event)" value="{valorNumero}" size="10" maxlength="10"/>
+          </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Bairro</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoBairro}" type="text" class="form" id="{campoBairro}" value="{valorBairro}" size="45" maxlength="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Complemento</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoComplemento}" type="text" class="form" id="{campoComplemento}" value="{valorComplemento}" size="45" maxlength="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Telefone</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoTelefone}" type="text" class="form" id="{campoTelefone}" onkeypress="formatFone(this,event)" value="{valorTelefone}" size="15" maxlength="12"/>
+          <span class="texto">&nbsp;&nbsp;Celular
+          <input name="{campoCelular}" type="text" class="form" id="{campoCelular}" value="{valorCelular}" size="15" maxlength="12" onkeypress="formatFone(this,event)"/>
+          <span class="texto2">(00-0000-0000) </span></span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Data de nascimento</span></td>
+        <td align="left" bgcolor="#EDEDED" class="texto2"><input name="{campoDataNasc}" type="text" class="form" id="{campoDataNasc}" onkeypress="formatDate(this, event)" value="{valorDataNasc}" size="20" maxlength="10"/> 
+          (Sem separadores) </td>
+      </tr>
+      <tr>
+        <td align="left" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Localiza&ccedil;&atilde;o</td>
+        <td align="left" bgcolor="#EDEDED" class="texto2">
+		<select name="{comboLoc}" class="form" id="{comboLoc}">
+			{comboLocOpcoes}
+        </select> <br />
+		Essa ser&aacute; a taxa de entrega cobrada a cada loca&ccedil;&atilde;o.</td>
+      </tr>
+      <tr>
+        <td height="21" colspan="2" align="left" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloCadastro}</span></td>
+        </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Login</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoLogin}" type="text" class="form" id="{campoLogin}" value="{valorLogin}" size="30" maxlength="10" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Senha</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoSenha}" type="password" class="form" id="{campoSenha}" value="{valorSenha}" size="30" maxlength="10" />
+          <span class="texto2">(Senha m&iacute;nima de 6 d&iacute;gitos) </span></td>
+      </tr>
+      <tr>
+        <td width="27%" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Confirmar Senha </span></td>
+        <td width="73%" align="left" bgcolor="#EDEDED"><label>
+          <input name="{campoConfi}" type="password" class="form" id="{campoConfi}" value="{valorConfi}" size="30" maxlength="10" />
+        </label>	  </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+
+  </tr>
+  </form>
+</table>
+<!-- END bloco_cliente -->

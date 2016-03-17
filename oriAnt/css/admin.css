@@ -1,0 +1,56 @@
+/**
+* Css admin
+*/
+
+a:link {
+	color: #E4E4E4;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #E4E4E4;
+}
+a:hover {
+	color: #CCCCCC;
+}
+a:active {
+	text-decoration: none;
+	color: #E4E4E4;
+}
+
+body {
+	background-color: #33383B;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/admin/bg.jpg);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #E4E4E4;
+}
+
+#admin{
+	text-align:center;
+	padding-bottom:10px;
+	width:300px;
+}
+
+.form {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #4f5864;
+}
+
+.tahoma10 {
+	font-family: verdana;
+	font-size: 10px;
+	font-style: normal;
+	color: #666666;
+}

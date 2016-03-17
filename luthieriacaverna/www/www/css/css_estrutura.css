@@ -1,0 +1,30 @@
+@charset "utf-8";
+body {
+	background-image: url(../images/bg.jpg);
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+h3 {
+	font-size: 16px;
+	text-transform: none;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+.breadcrump {
+	font-size: 10px;
+	color: #D2D2D2;
+}
+
+#menu {
+	padding-top: 18px;
+	padding-left: 23px;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #cccccc;
+	line-height: 20px;
+	font-weight: normal;
+}

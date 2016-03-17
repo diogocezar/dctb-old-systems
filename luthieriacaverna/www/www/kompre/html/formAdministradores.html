@@ -1,0 +1,48 @@
+<link href="../css/cssShoroom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jscripts/validate.js"></script>
+<!-- BEGIN bloco_administradores -->
+<table width="535" border="0" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#ECECEC">
+  <form id="{formAdministrador}" name="{formAdministrador}" method="post" action="{actionAdministrador}">
+  <tr>
+	<td><table width="90%" height="220" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+	  <!--DWLayoutTable-->
+	  <tr>
+		<td height="50" colspan="3" bgcolor="#ECECEC">&nbsp;<img src="../images/topAdminConfiguracoes.gif" width="535" height="50" />&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td width="59" rowspan="6" valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	    <td height="20" colspan="2" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec"><span class="tahoma11"><span class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /></span> <span class="tahoma10">{tituloAdministrador}</span></span></td>
+		</tr>
+	  <tr>
+	    <td width="109" height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Nome: </td>
+		<td width="365" valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" /></td>
+	  </tr>
+	  <tr>
+	    <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Email: </td>
+		<td bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" value="{valorEmail}" size="45" /></td>
+	  </tr>
+	  <tr>
+	    <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Login: </td>
+		<td bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoLogin}" type="text" class="form" id="{campoLogin}" value="{valorLogin} " size="20" maxlength="15" /></td>
+	  </tr>
+	  <tr>
+	    <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Senha: </td>
+		<td bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoSenha}" type="password" class="form" id="{campoSenha}" value="{valorSenha}" size="20" maxlength="15" /></td>
+	  </tr>
+	  <tr>
+	    <td height="20" valign="middle" bordercolor="#FFFFFF" bgcolor="ececec" class="tahoma10">&nbsp;<img src="../images/seta.gif" width="13" height="13" align="absmiddle" /> Confirma&ccedil;&atilde;o : </td>
+	    <td valign="top" bordercolor="#FFFFFF" bgcolor="ececec"><input name="{campoConfi}" type="password" class="form" id="{campoConfi}" value="{valorConfi}" size="20" maxlength="15" /></td>
+	    </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><label>
+          <input name="{btnEnviar}" type="button" class="form" id="{btnEnviar}" value="   Enviar   " onclick="{onClickEnviar}" />
+        </label></td>
+        </tr>
+      <tr>
+        <td height="20" colspan="3" align="center" bgcolor="ececec"><input name="{btnVoltar}" type="button" class="form" id="{btnVoltar}" value=" &laquo; Voltar   " onclick="{onClickVoltar}" /></td>
+      </tr>
+	</table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_administradores -->

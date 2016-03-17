@@ -1,0 +1,155 @@
+<link href="../css/cssServilha.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-color: #33383B;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(bg.jpg);
+	background-repeat: repeat-x;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #E4E4E4;
+}
+-->
+</style>
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="topAdm.jpg" width="775" height="84" /></td>
+  </tr>
+</table>
+<table width="535" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="535" height="220" valign="top"><table width="90%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="535" height="50"><img src="menuConsulta.jpg" alt="Clientes" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela1" style="display:none">
+          <!-- BEGIN bloco_produtos_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkPro}" class="link_claro">{menuPro}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_produtos_menu -->
+          <!-- BEGIN_INFORMACOES -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> {infoPro}</td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END_INFORMACOES -->
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="menuGrupos.jpg" alt="Clientes" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela2" style="display:none">
+          <!-- BEGIN bloco_categorias_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkCat}" class="link_claro">{menuCat}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_categorias_menu -->
+          <!-- BEGIN_INFORMACOES -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> {infoCat}</td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END_INFORMACOES -->
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="menuTemplates.jpg" alt="Clientes" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela3" style="display:none">
+          <!-- BEGIN bloco_fabricantes_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkFab}" class="link_claro">{menuFab}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_fabricantes_menu -->
+          <!-- BEGIN_INFORMACOES -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> {infoFab}</td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END_INFORMACOES -->
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="menuParamentros.jpg" alt="Clientes" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela4" style="display:none">
+          <!-- BEGIN bloco_configuracoes_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkCon}" class="link_claro">{menuCon}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_configuracoes_menu -->
+          
+        </table></td>
+      </tr>
+      <tr> </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="535" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="535" valign="top"><table width="90%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="535" height="50"><img src="menuConsulta.jpg" alt="Clientes" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela5" style="display:none">
+          <!-- BEGIN bloco_produtos_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkPro}" class="link_claro">{menuPro}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_produtos_menu -->
+          <!-- BEGIN_INFORMACOES -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> {infoPro}</td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END_INFORMACOES -->
+        </table></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela6" style="display:none">
+          <!-- BEGIN bloco_categorias_menu -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> <a href="{linkCat}" class="link_claro">{menuCat}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END bloco_categorias_menu -->
+          <!-- BEGIN_INFORMACOES -->
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/seta.gif" width="13" height="13" align="top" /> {infoCat}</td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <!-- END_INFORMACOES -->
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<br />

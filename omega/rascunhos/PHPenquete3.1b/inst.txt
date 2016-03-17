@@ -1,0 +1,54 @@
+    ##########################################
+    #        PHPenquete - COMO USAR          #
+    ##########################################
+    # Código Gerado por Tadeu Pires Pasetto  #
+    # Modificado por Diogo Gomes             #
+    ##########################################
+    #http://info.integrando.com.br/~al-u6zcg #
+    ##########################################
+    #Código Livre desde que os Créditos sejam#
+    #   mantidos. Também podem ser feitas    #
+    #alterações para  melhor funcionabildade #
+    ##########################################
+
+
+
+Passos:
+  1º passo: Executar no MySQL o arquivo enq.txt
+  2º passo: colocar seu usuário, sua senha e o banco de dados no arquivo conec.inc.php
+  3º passo: Inserir os arquivos em sua página (antigo.php, conec.inc.php, enquete.php, resul.php)
+  4º passo: Divulgar sua enquete
+  
+  Arquivos
+   - antigo.php: Exibe o Resultado das enquetes antigas (onde exibir='N')
+   - conec.inc.php: configuração para conexão com o BD
+   - enq.txt: Arquivo com o código SQl para criar a tabela
+   - enquete.php: Arquivo onde serão feitas as votações nas enquetes
+   - ins.txt: este arquivo, contém as instuções
+   - resul.php: Exibe os resultados
+
+Tabelas
++-----------+
+| perg      |
++-----------+-----------------+
+| id        | id da enquete   |
++-----------+-----------------+
+| perg      |A Pergunta da enq|
++-----------+-----------------+
+| exibir    | 'S'ou 'N'       |
++-----------+-----------------+
+
++-----------+
+| rspostas  |
++-----------+-----------------+
+| id        | id da enquete   |
++-----------+-----------------+
+| resp      |A opção da enq   |
++-----------+-----------------+
+| idperg    |a pergunta que   |
+|           | pertence        |
++-----------+-----------------+
+| votos     |votos recebidos  |
++-----------+-----------------+
+
+

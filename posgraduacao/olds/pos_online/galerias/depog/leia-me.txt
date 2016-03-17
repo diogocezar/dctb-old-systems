@@ -1,0 +1,27 @@
+#################
+# A T E N Ç Ã O #
+#################
+
+1. As imagens devem ser divididas em pastas, e essas pastas devem ficar dentro de galerias/%curso%
+
+   Onde curso pode ser qualquer curso cadastrado ou o próprio depog.
+
+   Atuais pastas :
+
+	depog
+	gestao
+	java
+	matematica
+	processos
+	seguranca
+	cultura   
+
+2. As imagens devem conter apenas as seguintes extenções : jpg, png, gif
+
+3. As extenções devem ser escritas em letras minúsculas, exemplo "bola.jpg"
+
+################
+
+Qualquer dúvida mande um e-mail para: xgordo@gmail.com
+
+Diogo Cezar Teixeira Batista

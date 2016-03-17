@@ -1,0 +1,112 @@
+<!-- BEGIN bloco_html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+<script src="../jscripts/tabselect/tabselect.js"></script>
+<body>
+<!-- BEGIN bloco_admin -->
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="../images/admin/topAdm.jpg" width="775" height="84" /></td>
+  </tr>
+  <tr>
+    <td align="center"><div id="admin">Bem vindo, {nomeAdmin} - <a href="{logOutLink}">{logOut}</a></div></td>
+  </tr>
+</table>
+<table width="535" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="535" height="220" valign="top"><table width="90%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="535" height="50"><img src="../images/admin/menuConsulta.jpg" alt="Consultas" width="550" height="50" onclick="tabSelect(1)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela1" style="display:none">
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkFrequencia}">{frequencia}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkPaginasCadastradas}">{paginasCadastradas}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="../images/admin/menuGrupos.jpg" alt="Grupos" width="550" height="50" onclick="tabSelect(2)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela2" style="display:none">
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkInserir}">{inserirGrupo}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkGerenciarGrupos}">{gerenciarGrupos}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="../images/admin/menuTemplates.jpg" alt="Templates" width="550" height="50" onclick="tabSelect(3)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela3" style="display:none">
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkAlterarTemplate}">{alterarTemplate}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkInstrucoesTemplate}">{instrucoesTemplate}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50" valign="top"><img src="../images/admin/menuParamentros.jpg" alt="Par&acirc;metros Administrativos" width="550" height="50" onclick="tabSelect(4)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela4" style="display:none">
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkAlterarParametros}">{alterarParametros}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr> </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="535" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="535" valign="top"><table width="90%" height="30" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="535" height="50"><img src="../images/admin/menuRegistro.jpg" alt="registro do sistema" width="550" height="50" onclick="tabSelect(5)"/></td>
+      </tr>
+      <tr>
+        <td height="5" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="tabela5" style="display:none">
+          <tr>
+            <td width="48" height="19">&nbsp;</td>
+            <td width="305" align="left" valign="top" class="tahoma10"><img src="../images/admin/seta.gif" width="13" height="13" align="top" /> <a href="{linkConFeromonio}" class="link_claro">{consultarFeromonio}</a></td>
+            <td width="183">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<!-- END bloco_admin -->
+</body>
+</html>
+<!-- END bloco_html -->

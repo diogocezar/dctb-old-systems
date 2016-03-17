@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- BEGIN bloco_titulo -->
+<title>{titulo}</title>
+<!-- END bloco_titulo -->
+<link href="../css/noticiasRss.css" rel="stylesheet" type="text/css"/>
+<link href="../css/avaliacao.css" rel="stylesheet" type="text/css"/>
+<link href="../css/comentarios.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<!-- BEGIN bloco_javascript -->
+<script>{sjax}</script>
+<script type="text/javascript" src="../avaliacao/ajax/ajax.js"></script>
+<script type="text/javascript" src="../comentarios/ajax/ajax.js"></script>
+<script type="text/javascript" src="../jscripts/tree/tree.js"></script>
+<script type="text/javascript" src="../ajax/ajax.js"></script>
+<!-- END bloco_javascript -->
+<!-- BEGIN bloco_html -->
+<body>
+<div id="id_container">
+	<div id="id_borda">
+		<div id="id_header">{header}</div>
+		<div id="id_lateral">
+			<div id="id_menu">
+				<div id="arvoreMenu">Menu</div>
+			</div>
+			<div id="id_base">
+				<span class="fonteTituloPreto">{base}</span><br />
+				<span class="fonteQuando">{time}</span>
+			</div>
+			<div id="id_login">{conteudo_box_login}</div>
+		</div>
+		<div id="id_conteudo" align="justify">
+			<div id="id_voltar">{voltar}</div>
+			<div id="id_infos">
+				<span class="fonteTituloPreto">{feed} - {categoria}</span><br />
+				<span class="fonteQuando">Feeds:{count}</span>
+			</div>
+			<!-- BEGIN bloco_box -->
+				<div id="id_top_box"></div>
+				<div id="id_middle_box">
+					<span class="fonteTitulo">{titulo}</span>
+					{estrelas} <span class="fonteComentarios">{comentarios}</span> <span class="fonteQuando">{quando}</span>
+				  	{link} {link_completo}
+					<span class="fonteTitulo">{titulo_detalhes}</span>
+					{conteudo_detalhes} {link_completo_detalhes}				</div>
+				<div id="id_footer_box"></div>
+				<div id="id_space"></div>
+			<!-- END bloco_box -->
+		</div>
+		<div id="id_footer">{footer}</div>
+	</div>
+</div>
+<!-- BEGIN bloco_menu_arvore -->
+<script>
+var menu = new arvore('menu','arvoreMenu','');
+{lista_menu}
+menu.construir();
+menu.abrir_fechar_arvore();
+</script>
+<!-- END bloco_menu_arvore -->
+</body>
+</html>
+<!-- END bloco_html -->

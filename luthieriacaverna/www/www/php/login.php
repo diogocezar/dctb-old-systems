@@ -1,0 +1,16 @@
+<?php
+/**
+* arquivo de configuração
+*/
+include("../conf/config.php");
+
+/**
+* cerebro do sistema
+*/
+include("../cerebro/includeCerebro.php");
+
+/**
+* incluindo controle de sessão
+*/
+include("../php/controlaSession.php");
+?>

@@ -1,0 +1,60 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_locacao -->
+<table width="420" border="0" class="form" align="center">
+  <form action="{actionLocacao}" method="post" name="{formLocacao}" id="{formLocacao}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="4" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloLocacao}</span></td>
+        </tr>
+      <tr>
+        <td width="125" height="21" align="left" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Data da Loca&ccedil;&atilde;o </span></td>
+        <td width="82" align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>{dataLoc}</strong></td>
+        <td width="96" align="left" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Hora Entrega </span></td>
+        <td width="91" align="left" valign="top" bgcolor="#EDEDED"><select name="{comboHoraEntrega}" size="1" class="form" id="{comboHoraEntrega}">
+          
+         {comboOpcoesHoraEntrega}
+        
+        </select>        </td>
+      </tr>
+      <tr>
+        <td height="21" align="left" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Previs&atilde;o da Devolu&ccedil;&atilde;o </span></td>
+        <td align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>{dataDev}</strong></td>
+        <td align="left" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;Hora Devolu&ccedil;&atilde;o </span></td>
+        <td align="left" valign="top" bgcolor="#EDEDED"><select name="{comboHoraDevolucao}" size="1" class="form" id="{comboHoraDevolucao}">
+          
+          {comboOpcoesHoraDevolucao}
+        
+        </select>        </td>
+      </tr>
+      <tr>
+        <td height="67" valign="top" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;Observa&ccedil;&atilde;o</td>
+        <td colspan="3" valign="top" bgcolor="#EDEDED"><textarea name="{campoObs}" cols="56" rows="5" class="form" id="{campoObs}"></textarea></td>
+        </tr>
+      <tr>
+        <td height="27" colspan="4" align="center" bgcolor="#EDEDED"><a href="{linkComprar}"><img src="../images/bot_finalizarcompra.jpg" alt="{altComprar}" width="118" height="25" border="0" onclick="{onClickComprar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <input type="hidden" name="{dataLocacao}" value="{dataLoc}">
+  <input type="hidden" name="{dataDevolucao}" value="{dataDev}">
+  <input type="hidden" name="{valor}" value="{valorEnvia}">
+  </form>
+</table>
+<br>
+<!-- BEGIN bloco_locacao_obs -->
+<table width="420" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table height="100%" border="0">
+      <tr>
+        <td height="21"  width="408" align="center" valign="middle" bgcolor="#FFFFFF" class="texto">{obs}</td>
+      </tr>
+	</table>
+	</td>
+  </tr>
+</table>
+<!-- END bloco_locacao_obs -->
+<!-- END bloco_locacao -->

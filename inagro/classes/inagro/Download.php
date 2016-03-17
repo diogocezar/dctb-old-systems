@@ -1,0 +1,110 @@
+<?php
+
+class Download extends Generic{
+
+	/**
+	* Atributos
+	*/
+	protected
+		$id,
+		$titulo,
+		$url;
+		
+	/**
+	* Construtor
+	* __construct_Download()
+	*/
+	public function __construct_Download(){}	
+	
+	/** 
+	* Método que será implementado nas classes herdeiras, esse método deve preencher os atributos da classe pai (Generic).
+	* @access public
+	*/  
+    public function __toFillGeneric(){
+	
+		/* Identificando as variaveis globais */	
+		global $tabelaMap;
+		global $camposMap;
+		
+		$cod = $this->getId();
+		
+		/* Parâmetro true, faz com que o método __toFillGeneric não seja chamado novamente */
+		
+		$condicao = $camposMap['download'][0]." = ".$cod;
+		
+		$valores = array($this->getId(),
+						 $this->getTitulo(),
+						 $this->getUrl()
+						 );
+					 		
+		$this->setTabela($tabelaMap['download'], true);
+		$this->setCampos($camposMap['download'], true);        
+		$this->setCondicao($condicao, true);
+		$this->setValores($valores, true);
+
+    }//__toFillGeneric
+	
+	/** 
+	* Método que extrai do banco de dados um registro com determinado índice.
+	* @parm String $key
+	* @access public
+	*/  
+	public function __get_db($key){
+	
+		$this->setId($key);
+		
+		$this->__toFillGeneric();
+		$resultado = Generic::uniqueKey($key);
+		if(!DB::isError($resultado)){
+			$dados = $resultado->fetchRow(DB_FETCHMODE_ASSOC);
+			
+			$this->setId             ($dados[$this->campos[0]]);
+			$this->setTitulo         ($dados[$this->campos[1]]);
+			$this->setUrl            ($dados[$this->campos[2]]);
+		}
+	}//__get
+	
+	/** 
+	* Método que exclue todos os arquivos do objeto
+	* @parm String $data
+	* @access public
+	*/  
+	function deletePictures(){
+		if(file_exists($this->url)){
+			unlink($this->url);
+		}
+	}
+	
+	/** 
+	* Método que retorna o resultado de uma query
+	* @parm String $sql
+	* @access public
+	*/
+	function query($sql){
+		$db = Generic::dataBase();
+		$resultado = $db->query($sql);
+		if(!DB::isError($resultado)){
+			return $resultado;		
+		}
+	}
+		
+	/** 
+	* GETS e SETS
+	* Método __call que é verificado a cada chamada de uma função da classe, o seguinte método implementa automaticamente as funções de GET e SET.
+	* @access public 
+	*/  	
+	public function __call($metodo, $parametros){
+		if (substr($metodo, 0, 3) == 'set') {
+			$var = substr(strtolower(preg_replace('/([a-z])([A-Z])/', "$1_$2", $metodo)), 4);
+			$this->$var = $parametros[0];
+			if(empty($parametros[1])){
+				$this->__toFillGeneric();
+			}
+		}
+		elseif (substr($metodo, 0, 3) == 'get'){
+			$var = substr(strtolower(preg_replace('/([a-z])([A-Z])/', "$1_$2", $metodo)), 4);
+			return $this->$var;
+		}
+	}//__call
+}//Artigo
+?>

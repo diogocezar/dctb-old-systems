@@ -1,0 +1,149 @@
+Página Inicial
+
+- Sobre o Ecosul - 
+descrição do website
+
+- Ecorotas - (naum precisa ser de banco de dados agora)
+
+Cadastro de rotas
+
+  - Titulo
+  - Descrição
+
+- Onde Hospedar? - (naum precisa ser de banco de dados agora)
+
+Cidade
+Categoria
+Descrição
+
+Agenda (naum precisa ser de banco de dados agora)
+Agenda de eventos
+
+
+_ Links - (naum precisa ser de banco de dados agora)
+Cadastro de links
+
+- Fale conosco - 
+Formulário de Contato
+
+
+- CIDADES - 
+
+- Nome da Cidade
+- Descrição
+- Localização
+- Acesso
+- Fotos
+- Atividades
+  - Ecoturismo
+  - Aventura
+
+Exemplo:
+-----------------------------------
+Foz do Igaçu
+
+Descrição:
+
+Foz do Iguaçu guarda a oitava maravilha do mundo, as majestosas Cataratas do Iguaçu. Formadas pelo Rio Iguaçu, o maior do Paraná, as Cataratas se constituem de 272 quedas com até 83m de altura. O ponto de maior vazão é a Garganta do Diabo, que se encontra do lado argentino. O volume de água é tão grande que, ao cair, forma um vapor constante envolvendo a vegetação.
+
+Em cerca de 225 mil hectares de florestas, o Parque Nacional do Iguaçu encerra uma das reservas ecológicas mais belas do planeta, sendo reconhecido pela Unesco como Patrimônio Natural da Humanidade. Além das Cataratas e da vegetação exuberante, o Parque protege mais de 340 espécies de aves, 40 de mamíferos, 700 de borboletas e o Rio Floriano, totalmente sem poluição.
+
+O município de Foz do Iguaçu é limitado pelos dois maiores rios do Estado do Paraná: o Iguaçu e o Paraná. Seus afluentes formam o sistema de drenagem natural, incluindo várias micro-bacias hidrográficas. Dentre os afluentes do rio Iguaçu, destacam-se o Rio São João, cuja nascente situa-se fora dos limites do município, e o Rio Tamanduá, com sua micro-bacia situada no interior do município.
+
+Foz do Iguaçu ainda oferece outras atrações como Furnas, a Ponte da Amizade e Itaipu. Há a possibilidade de uma visita ao Parque Nacional del Iguazu, na Argentina, país com a noite agitada pelos diversos cassinos.
+
+
+Localização: 
+ 
+O Parque Nacional do Iguaçu localiza-se no extremo oeste do Estado do Paraná, próximo à foz do rio Iguaçu, no rio Paraná, na divisa com Paraguai e Argentina. Está a 639km de Curitiba.  
+
+Acesso: 
+ 
+Por Terra: A partir de Curitiba, seguir pela BR-469 até Foz do Iguaçu. Chega-se a Foz do Iguaçu de ônibus ou de carro. A entrada do parque fica a 24km da cidade, no final da Rodovia das Cataratas. 
+
+Por Ar: Vôos diários partindo das principais capitais brasileiras para o Aeroporto Internacional de Foz do Iguaçú.  
+
+Atividades
+  - Ecoturismo
+Cachoeira
+Canions
+Floresta Tropicais
+Rio, Lagoa ou Lago
+Trilha Ecologica
+
+  - Aventura
+Arvorismo
+Passeio Náutico
+Rafting
+Rapel
+
+Fotos
+
+- ECOTURISMO - 
+
+- Nome
+- Descrição
+- Localização
+- Acesso
+- Fotos
+- Atividades
+
+
+Exemplo
+
+-------------------------------------
+
+Nome
+Cachoeira Véu de Noiva (86m)
+
+Descrição
+A Cachoeira do Véu de Noiva fica no Parque Nacional do Parque Nacional de Chapada dos Guimarães, há 12 km do centro da cidade junto ao Centro de visitantes do Ibama.
+
+Localização
+Diamantina
+
+Acesso
+Km 51 da Rodovia Emanuel Pinheiro, Tem ônibus de linha para Cuiabá de hora em hora ou nos passeios regulares das agências de turismo da cidade.
+
+Fotos
+
+Atividades
+Escalada
+Caminhada
+Montain Bike
+
+
+
+-----------------------------------
+
+- AVENTURA - 
+
+- Nome
+- Descrição
+- Localização
+- Acesso
+- Fotos
+
+Exemplo
+-----------------------------------
+
+Nome
+Rafting nas corredeiras do Rio Iguaçu
+
+Descrição
+O rafting no Rio Iguaçu consiste em uma descida de bote em corredeiras por aproximadamente 4 km, com trechos de águas calmas onde é possível nadar. As corredeiras são consideradas de nível médio (classe III+), acessível a pessoas de todas as idades. O rafting tem duração de cerca de 1:40h, partindo do Campo de Desafios.
+
+Localização
+Foz do Iguaçu
+
+Acesso:
+Descrição acesso
+
+Fotos
+-------------------------------------
+
+
+
+
+
+

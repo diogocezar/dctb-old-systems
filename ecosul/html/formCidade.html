@@ -1,0 +1,90 @@
+<script language="javascript" src="../jscripts/validaCampos.js"></script>
+<script type="text/javascript" src="../jscripts/biblioteca.js"></script>
+<link href="../css/cssEcosul.css" rel="stylesheet" type="text/css">
+<!-- BEGIN blk_cidade -->
+<form id="{form_cidade}" name="{form_cidade}" method="post" action="{action}">
+  <table width="464" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="464"><img src="../images/topAdmin.jpg" width="464" height="20" /></td>
+    </tr>
+    <tr>
+      <td height="25" align="center" valign="middle" class="textoInterna">{titulo}</td>
+    </tr>
+    <tr>
+      <td height="25" align="center" valign="middle" class="textoInterna"><table width="90%" border="0" cellspacing="2" cellpadding="0">
+          <tr>
+            <td width="22%" align="right" valign="middle" class="textoInterna">{nome} </td>
+            <td width="78%"><label>
+              <input name="{campoNome}" type="text" class="comboMarrom" id="{campoNome}" value="{valorNome}" size="51" />
+              </label></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{descricao}</td>
+            <td><textarea name="{campoDescricao}" cols="50" rows="5" class="comboMarrom" id="{campoDescricao}">{valorDescricao}</textarea></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{localizacao}</td>
+            <td><textarea name="{campoLocalizacao}" cols="50" rows="5" class="comboMarrom" id="{campoLocalizacao}">{valorLocalizacao}</textarea></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{acesso}</td>
+            <td><textarea name="{campoAcesso}" cols="50" rows="5" class="comboMarrom" id="{campoAcesso}">{valorAcesso}</textarea></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{fotos}</td>
+            <td><input name="{campoFotos}" type="text" class="comboMarrom" id="{campoFotos}" value="{valorFotos}" /></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{atividades}</td>
+            <td><span class="texto">
+              <select name="{comboAtividades}" size="1" class="comboMarrom" id="{comboAtividades}">
+                
+		{comboAtividadesOpcoes}
+	    
+              
+              </select>
+              <a href="#"><img src="../images/bot_add.jpg" alt="Adicionar" width="27" height="25" border="0" align="absmiddle" onclick="{addAtividade}" /></a><br />
+              <select name="{listAtividades}" size="4" multiple="multiple" class="comboMarrom" id="{listAtividadesID}">
+                
+		  {listAtividadesOpcoes}
+          
+              
+              </select>
+              <a href="#"><img src="../images/bot_rem.jpg" alt="Remover" width="27" height="25" border="0" align="top" onclick="{rmvAtividade}" /></a></span></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle" class="textoInterna">{ecoturismos}</td>
+            <td><span class="texto">
+              <select name="{comboEcoturismos}" size="1" class="comboMarrom" id="{comboEcoturismos}">
+                
+		{comboEcoturismosOpcoes}
+	    
+              
+              </select>
+              <a href="#"><img src="../images/bot_add.jpg" alt="Adicionar" width="27" height="25" border="0" align="absmiddle" onclick="{addEcoturismo}" /></a><br />
+              <select name="{listEcoturismos}" size="4" multiple="multiple" class="comboMarrom" id="{listEcoturismosID}">
+                
+		  {listEcoturismosOpcoes}
+          
+              
+              </select>
+              <a href="#"><img src="../images/bot_rem.jpg" alt="Remover" width="27" height="25" border="0" align="top" onclick="{rmvEcoturismo}" /></a></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center" valign="middle"><input name="{nomeBotaoVoltar}" type="button" class="comboMarrom" id="{nomeBotaoVoltar}" value="{voltar}" onclick="{onClickVoltar}" />
+              &nbsp;&nbsp;
+              <input name="{nomeBotao}" type="button" class="comboMarrom" id="{nomeBotao}" value="{enviar}" onclick="{onClickEnviar}" />
+              <label> </label></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td height="25" align="center" valign="middle" class="textoInterna">&nbsp;</td>
+    </tr>
+  </table>
+</form>
+<!-- END blk_cidade -->

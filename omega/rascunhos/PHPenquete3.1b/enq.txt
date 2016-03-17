@@ -1,0 +1,43 @@
+    ##########################################
+    # Código Gerado por Tadeu Pires Pasetto  #
+    ##########################################
+    #         t.pasetto@bol.com.br           #
+    ##########################################
+    #Código Livre desde que os Créditos sejam#
+    #   mantidos. Também podem ser feitas    #
+    #alterações para  melhor funcionabildade #
+    ##########################################
+
+# Arquivo para executar no mysql
+#
+# Estrutura da tabela `perg`
+#
+
+CREATE TABLE `perg` (
+  `id` char(3) NOT NULL default '',
+  `perg` varchar(225) NOT NULL default '',
+  `exibir` char(1) NOT NULL default ''
+) TYPE=MyISAM;
+
+#
+# Extraindo dados da tabela `perg`
+#
+
+INSERT INTO `perg` VALUES ('1', 'Você gostou deste site?', 'S');
+
+# --------------------------------------------------------
+
+#
+# Estrutura da tabela `respostas`
+#
+
+CREATE TABLE `respostas` (
+  `id` varchar(5) NOT NULL default '',
+  `resp` varchar(225) NOT NULL default '',
+  `idperg` char(3) NOT NULL default '',
+  `votos` int(4) NOT NULL default '0'
+) TYPE=MyISAM;
+
+#
+
+

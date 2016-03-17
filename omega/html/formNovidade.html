@@ -1,0 +1,31 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<script type="text/javascript" src="../jscripts/bb_code.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_novidade -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionNovidade}" method="post" enctype="multipart/form-data" name="{formNovidade}" id="{formNovidade}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloNovidade}</span></td>
+        </tr>
+      <tr>
+        <td width="89" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;T&iacute;tulo</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoTitulo}" type="text" class="form" id="{campoTitulo}" value="{valorTitulo}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#EDEDED"><span class="texto">&nbsp;Conte&uacute;do</span></td>
+        <td width="74%" align="left" bgcolor="#EDEDED"><label><a href="#"><img src="../images/bot_negrito.jpg" alt="Negrito" width="27" height="25" border="0" onclick="{onClickNegrito}" /></a><a href="#"><img src="../images/bot_italico.jpg" alt="It&aacute;lico" width="27" height="25" border="0" onclick="{onClickItalico}" /></a><a href="#"><img src="../images/bot_sublinhado.jpg" alt="Sublinhado" width="27" height="25" border="0" onclick="{onClickSublinhado}" /></a><br />
+          <textarea name="{campoConteudo}" cols="45" rows="5" class="form" id="{campoConteudo}">{valorConteudo}
+</textarea>
+        </label></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- BEGIN bloco_novidade -->

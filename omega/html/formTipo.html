@@ -1,0 +1,53 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_tipo -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionTipo}" method="post" enctype="multipart/form-data" name="{formTipo}" id="{formTipo}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+	  <!--DWLayoutTable-->
+      <tr>
+        <td height="21" colspan="3" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloTipo}</span></td>
+        </tr>
+      <tr>
+        <td colspan="2" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Tipo</span></td>
+        <td width="297" align="left" bgcolor="#EDEDED"><input name="{campoTipo}" type="text" class="form" id="{campoTipo}" value="{valorTipo}" size="45" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;N&iacute;vel</span></td>
+        <td align="left" bgcolor="#EDEDED"><label>
+          <select name="{comboNivel}" size="1" class="form" id="{comboNivel}">
+            <option value="2" {sel2}>2</option>
+            <option value="3" {sel3}>3</option>
+          </select>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="21" colspan="3" align="left" valign="middle" bgcolor="#EDEDED" class="texto"> Descri&ccedil;&atilde;o dos n&iacute;veis : </td>
+      </tr>
+      <tr>
+        <td width="24" height="21" align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>1</strong></td>
+        <td colspan="2" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&Eacute; o nivel b&aacute;sico, nesse nivel o usu&aacute;rio do site poder&aacute; fazer apenas loca&ccedil;&otilde;es. Em resumo &eacute; o nivel do cliente. (<strong>indisponivel para cadastro</strong>) </td>
+      </tr>
+      <tr>
+        <td height="21" align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>2</strong></td>
+        <td colspan="2" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&Eacute; o nivel de administra&ccedil;&atilde;o intermedi&aacute;rio, esse usu&aacute;rio ter&aacute; acesso a algumas informa&ccedil;&otilde;es do painel de controle. mas n&atilde;o ter&aacute; acesso total. </td>
+      </tr>
+      <tr>
+        <td height="21" align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>3</strong></td>
+        <td colspan="2" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&Eacute; o maior nivel do sistema, quem possuir esse nivel ter&aacute; acesso total &agrave; administra&ccedil;&atilde;o do site. </td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+      <tr>
+        <td height="3"></td>
+        <td width="74"></td>
+        <td></td>
+      </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_tipo -->

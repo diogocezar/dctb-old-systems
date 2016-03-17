@@ -1,0 +1,49 @@
+.fonte10 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	text-align: justify;
+	white-space: normal;
+}
+.fonte12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #A7A28C;
+	text-align: justify;
+	white-space: normal;
+}
+.form {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #AFADA4;
+	border: 1px solid #79735D;
+}
+.botao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #444133;
+	border: 1px solid #79735D;
+	background-color: #F4F5EF;
+}
+.botao_preenchido{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #F4F6E9;
+	border: 1px solid #C9C4B1;
+}
+a:link {
+	color: #666666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+a:hover {
+	text-decoration: underline;
+	color: #666666;
+}
+a:active {
+	text-decoration: none;
+	color: #666666;
+}

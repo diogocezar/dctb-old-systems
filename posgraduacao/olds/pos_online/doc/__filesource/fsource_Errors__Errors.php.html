@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for Errors.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file Errors.php</h1>
+<p>Documentation is available at <a href="../Errors/_Errors_php.html">Errors.php</a></p>
+<div class="src-code">
+<pre><ol><li><a name="a1"></a><span class="src-php">&lt;?php</span></li>
+<li><a name="a2"></a>&nbsp;</li>
+<li><a name="a3"></a>     <span class="src-doc">/** </span></li>
+<li><a name="a4"></a><span class="src-doc">     * Esta classe é responsavel por imprimir os eventuais erros ocorridos</span></li>
+<li><a name="a5"></a><span class="src-doc">     * xC3 || xClasses 3.0 || 2005</span></li>
+<li><a name="a6"></a><span class="src-doc">     *</span></li>
+<li><a name="a7"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@author</span><span class="src-doc"> xg0rd0 &lt;xgordo@kakitus.com&gt;</span></li>
+<li><a name="a8"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@version</span><span class="src-doc"> 1.0</span></li>
+<li><a name="a9"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@copyright</span><span class="src-doc"> Copyright © 2005, Kakitus.com LTDA.</span></li>
+<li><a name="a10"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a11"></a><span class="src-doc">     * </span><span class="src-doc-coretag">@package</span><span class="src-doc"> Errors</span></li>
+<li><a name="a12"></a><span class="src-doc">     */</span></li>
+<li><a name="a13"></a>      </li>
+<li><a name="a14"></a>      </li>
+<li><a name="a15"></a>      <span class="src-doc">/**</span></li>
+<li><a name="a16"></a><span class="src-doc">      * Array global com os erros, para possível alteração futura caso necessário.</span></li>
+<li><a name="a17"></a><span class="src-doc">      */</span></li>
+<li><a name="a18"></a>       </li>
+<li><a name="a19"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'CONNECT_TO_DATA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Não foi possível estabelecer uma conexão com o banco de dados : &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a20"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'QUERY_GERA_ERRO'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A sentença escrita parece está com erro : &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a21"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'NENHUM_BANCO_SE'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Nenhum \&quot;tipo\&quot; de banco de dados foi selecionado.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a22"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'PARMS_INSUFICIE'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Parâmetros insuficientes para conectar ao banco de dados.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a23"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'ERRO_NA_CONEXÃO'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Não foi possível estabelecer uma conexão com o banco de dados : &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a24"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'ERRO_NA_SELECÃO'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Não foi possível selecionar o banco de dados indicado : &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a25"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'INSERT_ERRO_CAM'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Houve um erro inserir um novo registro no banco de dados.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a26"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'DELETE_ERRO_CAM'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Houve um erro excluir dados da tabela.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a27"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'DELETE_UPDA_CAM'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Houve um erro atualizar dados da tabela.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a28"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'QUERY_ERRO_CAMP'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Houve um erro ao se executar uma instrução sql&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a29"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'CRIPT_STR_CRIPT'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A string já está criptografada.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a30"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'CRIPT_STR_VAZIA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A string está vazia.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a31"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'CRIPT_STR_DESCR'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A string já está descriptografada.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a32"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'TEMPL_PARMS_VAZ'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Parâmtros necessários estão em branco.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a33"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'TEMPL_TAG_REPLA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Número de tags e replaces incompativel.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a34"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'E-MAIL_NOT_SEND'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Erro ao enviar o e-mail.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a35"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'TEMPLATE_NAO_EN'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O arquivo de template não foi encontrado.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a36"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'SESSION_NOT_ARR'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A sessão passada como parâmetro não é um array.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a37"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'INDI_OR_VALUE_E'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O índice ou valor da session está em branco.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a38"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'SESSION_NOT_EXI'</span><span class="src-sym">] </span>= <span class="src-str">&quot;Não é possivel retornar o valor indexado pelo índice passo como parâmetro.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a39"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'SE_INDICE_EMPTY'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O índice passado como parâmetro está vazio.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a40"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'INDI_OR_VALUE_C'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O índice ou valor da cookie está em branco.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a41"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'COOKIE_NOT_ARRA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A cookie passada como parâmetro não é um array.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a42"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'DIRETORIO_INVAL'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O diretório passado não é válido&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a43"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'ARQUI_INCOMPLET'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O arquivo não está completo, não foi possível obter todas suas informações.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a44"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'EXT_ARQUIV_INVA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A extensão do arquivo enviado não é válida.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a45"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'TAMANHO_MAIOR_P'</span><span class="src-sym">] </span>= <span class="src-str">&quot;O arquivo ultrapassou o tamanho limite para envio.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a46"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'LOCALIZA_INVALI'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A localização enviada para montar a imagem não é válida.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a47"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'ALTU_LARG_VAZIA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A largura e/ou altura da imagem está(ão) vazia(s).&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a48"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'LIB_TO_GIF_INVA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A biblioteca para tratamento de imagens no formato GIF não foi encontrada.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a49"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'LIB_TO_JPG_INVA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A biblioteca para tratamento de imagens no formato JPG não foi encontrada.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a50"></a>       <span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'LIB_TO_PNG_INVA'</span><span class="src-sym">] </span>= <span class="src-str">&quot;A biblioteca para tratamento de imagens no formato PNG não foi encontrada.&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a51"></a>&nbsp;</li>
+<li><a name="a52"></a>      <span class="src-doc">/**</span></li>
+<li><a name="a53"></a><span class="src-doc">      * Array local com as decorações das fontes ao se exibir um erro.</span></li>
+<li><a name="a54"></a><span class="src-doc">      */</span></li>
+<li><a name="a55"></a>      </li>
+<li><a name="a56"></a>      <span class="src-var">$style</span><span class="src-sym">[</span><span class="src-str">'ERRO_OPEN'</span><span class="src-sym">] </span>= <span class="src-str">&quot;&lt;font face='Tahoma' size='1,7' color='#1F1A17'&gt;&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a57"></a>      <span class="src-var">$style</span><span class="src-sym">[</span><span class="src-str">'FECHA'</span><span class="src-sym">]     </span>= <span class="src-str">&quot;&lt;/font&gt;&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a58"></a>             </li>
+<li><a name="a59"></a><span class="src-key">class </span><a href="../Errors/Errors.html">Errors</a><span class="src-sym">{</span></li>
+<li><a name="a60"></a>      <span class="src-doc">/**</span></li>
+<li><a name="a61"></a><span class="src-doc">      * Construtor</span></li>
+<li><a name="a62"></a><span class="src-doc">      */</span></li>
+<li><a name="a63"></a>       </li>
+<li><a name="a64"></a>      <span class="src-doc">/** </span></li>
+<li><a name="a65"></a><span class="src-doc">      * Método CONSTRUTOR Errors para parar o código e exibir o erro passado como parâmetro.</span></li>
+<li><a name="a66"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a67"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">void </span></li>
+<li><a name="a68"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">String </span><span class="src-doc-var">$erro </span><span class="src-doc">Erro ocorrido.</span></li>
+<li><a name="a69"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">integer </span><span class="src-doc-var">$qtd </span><span class="src-doc">Representa se o erro é de apenas uma linha ou de várias, caso seja de várias a instrução exit() não é executada.</span></li>
+<li><a name="a70"></a><span class="src-doc">      */  </span></li>
+<li><a name="a71"></a>       </li>
+<li><a name="a72"></a>       <span class="src-key">function </span><a href="../Errors/Errors.html#methodErrors">Errors</a><span class="src-sym">(</span><span class="src-var">$erro</span><span class="src-sym">, </span><span class="src-var">$qtd</span>=<span class="src-num">1</span><span class="src-sym">)</span><span class="src-sym">{</span></li>
+<li><a name="a73"></a>               <span class="src-key">static </span><span class="src-var">$contLinhas</span><span class="src-sym">; </span><span class="src-comm">// Conta as linhas inseridas.</span></li>
+<li><a name="a74"></a>            <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-key">empty</span><span class="src-sym">(</span><span class="src-var">$erro</span><span class="src-sym">))</span><span class="src-sym">{</span></li>
+<li><a name="a75"></a>                echo <span class="src-str">&quot;</span></li>
+<li><a name="a76"></a><span class="src-str">                &lt;script language = javascript&gt;</span></li>
+<li><a name="a77"></a><span class="src-str">                alert('&quot;</span>.<span class="src-var">$erro</span>.<span class="src-str">&quot;');</span></li>
+<li><a name="a78"></a><span class="src-str">                &lt;/script&gt;        </span></li>
+<li><a name="a79"></a><span class="src-str">                &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a80"></a>                <span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$contLinhas</span>+<span class="src-num">1 </span>== <span class="src-var">$qtd</span><span class="src-sym">)</span><span class="src-sym">{</span></li>
+<li><a name="a81"></a>                    <span class="src-key">exit</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a82"></a>                <span class="src-sym">}</span></li>
+<li><a name="a83"></a>                <span class="src-key">else</span><span class="src-sym">{</span></li>
+<li><a name="a84"></a>                    <span class="src-var">$contLinhas</span>++<span class="src-sym">;</span></li>
+<li><a name="a85"></a>                <span class="src-sym">}</span></li>
+<li><a name="a86"></a>            <span class="src-sym">}</span></li>
+<li><a name="a87"></a>       <span class="src-sym">}</span></li>
+<li><a name="a88"></a>       </li>
+<li><a name="a89"></a>      <span class="src-doc">/** </span></li>
+<li><a name="a90"></a><span class="src-doc">      * Método para exibição de um erro de conexão (NÃO É EXIBIDO EM JAVASCRIPT [ALERT]).</span></li>
+<li><a name="a91"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@access</span><span class="src-doc"> public</span></li>
+<li><a name="a92"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@return </span><span class="src-doc-type">void </span></li>
+<li><a name="a93"></a><span class="src-doc">      * </span><span class="src-doc-coretag">@param </span><span class="src-doc-type">String </span><span class="src-doc-var">$erro </span><span class="src-doc">Erro ocorrido.</span></li>
+<li><a name="a94"></a><span class="src-doc">      */  </span></li>
+<li><a name="a95"></a>       </li>
+<li><a name="a96"></a>       <span class="src-key">function </span><a href="../Errors/Errors.html#methoderroConnection">erroConnection</a><span class="src-sym">(</span><span class="src-var">$erro</span><span class="src-sym">)</span><span class="src-sym">{</span></li>
+<li><a name="a97"></a>               <span class="src-key">global </span><span class="src-var">$style</span><span class="src-sym">; </span><span class="src-comm">//Variavel de decoração.</span></li>
+<li><a name="a98"></a>               <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-key">empty</span><span class="src-sym">(</span><span class="src-var">$erro</span><span class="src-sym">))</span><span class="src-sym">{</span></li>
+<li><a name="a99"></a>                echo <span class="src-var">$style</span><span class="src-sym">[</span><span class="src-str">'ERRO_OPEN'</span><span class="src-sym">]</span>.<span class="src-var">$erro</span>.<span class="src-var">$style</span><span class="src-sym">[</span><span class="src-str">'FECHA'</span><span class="src-sym">]</span><span class="src-sym">;</span></li>
+<li><a name="a100"></a>                <span class="src-key">exit</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a101"></a>            <span class="src-sym">}</span></li>
+<li><a name="a102"></a>       <span class="src-sym">}</span></li>
+<li><a name="a103"></a><span class="src-sym">}</span></li>
+<li><a name="a104"></a><span class="src-php">?&gt;</span></li>
+</ol></pre>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 17 Nov 2005 01:05:29 -0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</body>
+</html>ass="src-sym">(</span><span class="src-var">$tabela</span><span class="src-sym">, </span><span class="src-var">$condicao</span><span class="src-sym">, </span><span class="src-var">$campos</span><span class="src-sym">, </span><span class="src-var">$valores</span><span class="src-sym">)</span><span class="src-sym">{</span></li>
+<li><a name="a332"></a>        <span class="src-key">global </span><span class="src-var">$erro</span><span class="src-sym">; </span><span class="src-comm">// Reconhecendo variavel global para os erros.</span></li>
+<li><a name="a333"></a>            </li>
+<li><a name="a334"></a>        <span class="src-key">if</span><span class="src-sym">(</span><span class="src-key">empty</span><span class="src-sym">(</span><span class="src-var">$tabela</span><span class="src-sym">) </span>|| <a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$campos</span><span class="src-sym">) </span>!= <a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$valores</span><span class="src-sym">))</span><span class="src-sym">{</span></li>
+<li><a name="a335"></a>            <span class="src-var">$erroUpd </span>= <span class="src-key">new </span><span class="src-id"><a href="../Errors/Errors.html">Errors</a></span><span class="src-sym">(</span><span class="src-var">$erro</span><span class="src-sym">[</span><span class="src-str">'DELETE_UPDA_CAM'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;    </span></li>
+<li><a name="a336"></a>        <span class="src-sym">}</span></li>
+<li><a name="a337"></a>        </li>
+<li><a name="a338"></a>        <span class="src-var">$limite </span>= <a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$campos</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li><a name="a339"></a>        <span class="src-var">$sql </span>= <span class="src-str">&quot;</span><span class="src-str"><span class="src-id">UPDATE</span> <span class="src-var">$TABELA</span> <span class="src-id">SET</span> </span><span class="src-str">&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a340"></a>        <span class="src-var">$igual </span>= <span class="src-str">&quot; = &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a341"></a>        <span class="src-var">$virgula </span>= <span class="src-str">&quot;, &quot;</span><span class="src-sym">;</span></li>
+<li><a name="a342"></a>        <span class="src-key">for</span><span class="src-sym">(</span><span class="src-var">$i</span>=<span class="src-num">0</span><span class="src-sym">; </span><span class="src-var">$i</span>&lt;<span class="src-var">$limite</span><span class="src-sym">; </span><span class="src-var">$i</span>++<span class="src-sym">)</span><span class="src-sym">{</span></li>
+<li><a name="a343"></a>            <span class="src-var">$sql</span>.= <span class="src-var">$campos</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span>.<span class="src-var">$igual</span>.<span class="src-str">&quot;'&quot;</span>.<span class="src-var">$valores</span><span class="src-sym">[</span><span class="src-var">$i</span><span class="src-sym">]</span>.<span class="src-str">&quot;'&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a344"></a>            <span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$i</span>&lt;<span class="src-sym">(</span><span class="src-var">$limite</span>-<span class="src-num">1</span><span class="src-sym">))</span><span class="src-sym">{</span></li>
+<li><a name="a345"></a>                <span class="src-var">$sql</span>.= <span class="src-var">$virgula</span><span class="src-sym">;</span></li>
+<li><a name="a346"></a>            <span class="src-sym">}        </span></li>
+<li><a name="a347"></a>        <span class="src-sym">}</span></li>
+<li><a name="a348"></a>        <span class="src-key">if</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-key">empty</span><span class="src-sym">(</span><span class="src-var">$condicao</span><span class="src-sym">))</span><span class="src-sym">{</span></li>
+<li><a name="a349"></a>            <span class="src-var">$sql</span>.= <span class="src-str">&quot;</span><span class="src-str"> <span class="src-id">WHERE</span> <span class="src-var">$condicao</span></span><span class="src-str">&quot;</span><span class="src-sym">;</span></li>
+<li><a name="a350"></a>        <span class="src-sym">}</span></li>
+<li><a name="a351"></a>        <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../DataBase/DataBase.html#methodQuery">Query</a><span class="src-sym">(</span><span class="src-var">$sql</span><span class="src-sym">)</span><span class="src-sym">;        </span></li>
+<li><a name="a352"></a>    <span class="src-sym">}</span><span class="src-comm">//Update</span></li>
+<li><a name="a353"></a><span class="src-sym">}</span><span class="src-comm">//DataBase</span></li>
+<li><a name="a354"></a><span class="src-php">?&gt;</span></li>
+</ol></pre>

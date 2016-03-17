@@ -1,0 +1,53 @@
+1) Ao sair da página de origem, deve-se atualizar o campo "ultimo_acesso" ? ou incrementar a contagem ? [não]
+2) O algorítmo para redução do feromônio é chamado a todo clique do site ?
+
+	Atualização 1 vez por dia, compensa dia e noite.
+	
+	Atualização feita a cada clique.
+
+3) Se o site acessado localmente grava as infos dos sites como http://localhost/. [ok]
+
+4) Como mapear a disposição orientada.
+
+	Para o grupo escolhido, saindo do destino verificar qual a aresta que têm mais feromônio e ser o processo até a página desejada.
+
+
+5) Se perde o "atualizar" da página, pois toda vez que acionado, atualiza as 2 página e volta para a principal.
+
+
+----
+
+Análise de resultados:
+
+Criar dados fictícios, para verificar se numa matriz de feroônio grande os resultados de tempo são relevantes para 
+criar uma nova forma de atualização de feromônio.
+
+
+---
+
+A constante de acrécimo -> QUANTO VALE 1 CLICK
+
+A constande de evaporação -> QUANTO DURA 1 CLICK
+
+
+_______________________________________
+
+1) Ao se executar o algorítmo de subtração de feromônio, deve ter alguma preoculpação com os grupos? o algorítmo pega todas as páginas
+e altera na tabela FEROMÔNIO a qtd_feromonio na página de destino
+
+_______________________________________
+
+1) Como saber qual a página mais relevante entre todas para 1 grupo?
+
+2) Essa página mais relevante deve ser mostrada? ou deve ser mostrada a página mais relevante a partir de uma página de origem (atual);
+
+3) As páginas mais relevantes devem ser mostradas, mais relevantes para o grupo ou para a página atual ?
+
+_______________________________________
+
+1) Na barra de apoio, talvéz links de páginas com feromônios sejam mostradadas, mas esse link não existe na página atual, ou seja a ligação não existe, ao se clicar
+no link ele irá criar uma ligação falsa.
+
+_______________________________________
+
+1) Os links com nome insignificantes podem não dizer ao usuário o que ele deseja saber, apenas sua relevância.

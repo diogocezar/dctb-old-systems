@@ -1,0 +1,33 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_produtos -->
+<table width="417" border="0" class="form" align="center">
+  <form action="{actionProdutos}" method="post" enctype="multipart/form-data" name="{formProdutos}" id="{formProdutos}">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloProdutos}</span></td>
+        </tr>
+      <tr>
+        <td width="89" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoNome}" type="text" class="form" id="{campoNome}" value="{valorNome}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Quantidade </span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoQtd}" type="text" class="form" id="{campoQtd}" value="{valorQtd}" size="45" onkeypress="isNum(this, event)"/></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Pre&ccedil;o</span></td>
+        <td width="74%" align="left" bgcolor="#EDEDED"><label>
+          <input name="{campoPreco}" type="text" class="form" id="{campoPreco}" value="{valorPreco}" size="45" onkeypress="reais(this, event)"/>
+        </label></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkVoltar}"><img src="../images/bot_voltar2.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  </form>
+</table>
+<!-- END bloco_produtos -->

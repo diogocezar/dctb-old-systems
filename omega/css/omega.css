@@ -1,0 +1,72 @@
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #525b68;
+}
+a:active {
+	text-decoration: none;
+	color: #525B68;
+}
+.texto {
+	font-family: tahoma;
+	font-size: 10px;
+	color: 000000;
+}
+.texto2 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: 525b68;
+}
+.texto3 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: 525b68;
+}
+.texto4 {
+	font-family: tahoma;
+	font-size: 11px;
+	color: fffc0b;
+}
+.form {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #4f5864;
+}
+.form2 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #ffffff;
+	background-color: #4f5864;
+	border: 1px solid #4f5864;
+}
+.texto5 {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.texto6 {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #525b68;
+}
+.textoBold {
+	font-family: tahoma;
+	font-size: 11px;
+	color: 000000;
+	font-weight: normal;
+}
+.texto2-11 {
+
+	font-family: tahoma;
+	font-size: 11px;
+	color: 525b68;
+}

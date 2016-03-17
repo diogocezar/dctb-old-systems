@@ -1,0 +1,79 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<!-- BEGIN bloco_contatos -->
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+      <tr>
+        <td height="21" colspan="2" valign="middle" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloContato} </span></td>
+        </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="393" height="90" valign="top" class="textoBold" al><br />
+			  <div align="justify"><img src="../images/seta_preta.gif" width="2" height="5" />&nbsp;&nbsp;Entre em contato com a Locadora Omega para esclarecer d&uacute;vidas, enviar cr&iacute;ticas ou sugest&otilde;es pelo formul&aacute;rio de e-mail, ou se preferir, utilize os dados abaixo que responderemos o mais r&aacute;pido poss&iacute;vel.</div>			  
+			  <p><img src="../images/seta_preta.gif" width="2" height="5" />&nbsp;A<strong> Equipe Omega</strong> agradece sua prefer&ecirc;ncia. <br />
+			    </p></td>
+          </tr>
+        </table></td>
+        </tr>
+      <tr>
+        <td height="21" colspan="2" align="left" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloEmail} </span></td>
+        </tr>
+	  <form action="{actionContatos}" method="post" name="{formContatos}" id="{formContatos}">
+      <tr>
+        <td width="89" align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Nome</span></td>
+        <td width="74%" align="left" bgcolor="#EDEDED"><input name="{campoNome}" type="text" class="form" id="{campoNome}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;E-mail</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoEmail}" type="text" class="form" id="{campoEmail}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Telefone</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoTelefone}" type="text" class="form" id="{campoTelefone}" onkeypress="formatFone(this,event)" size="15" maxlength="12" />
+          <span class="texto2">(00-0000-0000) </span></td>
+      </tr>
+      <tr>
+        <td align="left" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Cidade</span></td>
+        <td align="left" bgcolor="#EDEDED"><input name="{campoCidade}" type="text" class="form" id="{campoCidade}" size="45" /></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#EDEDED"><span class="texto">&nbsp;&nbsp;Coment&aacute;rio</span></td>
+        <td align="left" bgcolor="#EDEDED"><textarea name="{campoComentario}" cols="45" rows="5" class="form" id="{campoComentario}"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" valign="top" bgcolor="#EDEDED"><a href="{linkEnviar}"><img src="../images/bot_enviar.jpg" alt="{altEnviar}" width="85" height="25" border="0" onclick="{onClickEnviar}"/></a><a href="{linkRedefinir}"><img src="../images/bot_redefinir.jpg" alt="{altRedefinir}" onclick="{onClickRedefinir}" width="85" height="25" border="0" /></a></td>
+        </tr>
+      <tr>
+	  </form>
+        <td height="21" colspan="2" align="left" bgcolor="#525B68"><span class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {tituloEndTel} </span></td>
+        </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="#EDEDED"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="textoBold"><p><br />
+              <img src="../images/seta_preta.gif" width="2" height="5" /> Respons&aacute;vel: <span class="texto2">Gl&aacute;uber Vin&iacute;cius </span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> E-mail: <span class="texto2"><a href="mailto:contatos@locadoraomega.com.br">contatos@locadoraomega.com.br</a></span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> Endere&ccedil;o:<span class="texto2"> Rua Amazonas, 226</span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> Bairro:<span class="texto2"> Centro </span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> Cidade: <span class="texto2">Corn&eacute;lio Proc&oacute;pio </span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> Cep:<span class="texto2"> 86300-000 - Paran&aacute; </span><br />
+                <img src="../images/seta_preta.gif" width="2" height="5" /> Fone: <span class="texto2">(43) 3523-1035
+                <br />
+                </span><img src="../images/seta_preta.gif" width="2" height="5" /> Celular: <span class="texto2">(43) 9932-5882
+                <br />
+                <br />
+                </span></p>
+              </td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<br>
+<div align="center"><a href="{linkVoltar}"><img src="../images/bot_voltar.jpg" alt="{altVoltar}" width="85" height="25" border="0" onclick="{onClickVoltar}" /></a></div>
+<!-- END bloco_contatos -->
+

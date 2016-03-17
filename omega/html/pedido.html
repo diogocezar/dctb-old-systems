@@ -1,0 +1,97 @@
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<table width="417" border="0" class="form" align="center">
+  <tr>
+  <!-- BEGIN bloco_pedido -->
+    <td>
+	<table width="100%" border="0">
+	  <!--DWLayoutTable-->
+    <form name="{formProdutos}" method="post" id="{formProdutos}">
+      <tr>
+        <td height="21" colspan="5" align="left" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;Filmes : </td>
+      </tr>
+      <tr>
+        <td width="27" height="21" valign="top" bgcolor="#DBDBDB"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td width="35" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">Qntd</td>
+        <td width="205" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Produto</td>
+        <td width="55" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Valor</td>
+        <td width="65" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Sub Total </td>
+      </tr>
+	  <!-- BEGIN bloco_pedido_filme -->
+      <tr>
+        <td align="center" bgcolor="#EDEDED">
+          <input name="{checkProdutos}" type="checkbox" id="{checkProdutos}" value="{valorProduto}">        </td>
+        <td align="center" bgcolor="#EDEDED">
+          <input name="{qtdProdutos}" type="text" class="form" id="{qtdProdutos}" value="{valorQtd}" size="3" maxlength="3" disabled="disabled"></td>
+        <td bgcolor="#EDEDED" class="texto">&nbsp;{prod}</td>
+        <td align="center" bgcolor="#EDEDED" class="texto">R$ {valor}</td>
+        <td align="center" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;{subtotal}</span></td>
+      </tr>
+	  <!-- END bloco_pedido_filme -->
+      <tr>
+        <td height="21" colspan="5" align="left" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;Conveni&ecirc;ncia : </td>
+      </tr>
+      <tr>
+        <td width="27" height="21" valign="top" bgcolor="#DBDBDB"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td width="35" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">Qntd</td>
+        <td width="205" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Produto</td>
+        <td width="55" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Valor</td>
+        <td width="65" align="center" valign="middle" bgcolor="#DBDBDB" class="texto">&nbsp;&nbsp;Sub Total </td>
+      </tr>
+	  <!-- BEGIN bloco_pedido_prod -->
+      <tr>
+        <td align="center" bgcolor="#EDEDED">
+          <input name="{checkProdutos}" type="checkbox" id="{checkProdutos}" value="{valorProduto}">        </td>
+        <td align="center" bgcolor="#EDEDED">
+          <input name="{qtdProdutos}" type="text" class="form" id="{qtdProdutos}" value="{valorQtd}" size="3" maxlength="3">        </td>
+        <td bgcolor="#EDEDED" class="texto">&nbsp;{prod}</td>
+        <td align="center" bgcolor="#EDEDED" class="texto">R$ {valor}</td>
+        <td align="center" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;{subtotal}</span></td>
+      </tr>
+	  <!-- END bloco_pedido_prod -->
+      <tr>
+        <td height="39" colspan="3" align="left" valign="middle" bgcolor="#EDEDED"><a href="{linkExcluir}"><img src="../images/bot_excluir.jpg" alt="{altExcluir}" width="79" height="25" border="0" onclick="{onClickExcluir}"></a><a href="{linkAtualizar}"><img src="../images/bot_atualizar.jpg" alt="{altAtualizar}" width="79" height="25" border="0" onclick="{onClickAtualizar}"></a></td>
+        <td align="center" valign="middle" bgcolor="#EDEDED" class="texto"><strong>Total</strong></td>
+        <td align="center" valign="middle" bgcolor="#EDEDED"><span class="texto">&nbsp;R$&nbsp;&nbsp;{total}<strong></strong></span></td>
+        </tr>
+      <tr>
+        <td height="38" colspan="5" align="center" valign="middle" bgcolor="#EDEDED"><label><a href="{linkContinuar}"><img src="../images/bot_continuarlocando.jpg" alt="Continuar Locando !" width="120" height="25" border="0"></a><a href="{linkEfetuar}"><img src="../images/bot_efpedido.jpg" alt="Finalizar Compra !" width="105" height="25" border="0"></a></label></td>
+        </tr>
+	</form>
+    </table>
+	</td>
+  <!-- END bloco_pedido -->
+  </tr>
+</table>
+<br>
+<table width="421" border="0"  align="center">
+  <tr>
+    <td><table width="100%" border="0" class="form">
+      <tr>
+        <td><p align="center" class="texto6"><strong>ANTES DE FINALIZAR SEU PEDIDO, LEIA ATENTAMENTE AS INSTRU&Ccedil;&Otilde;ES ABAIXO </strong></p>
+            <p align="justify" class="texto6"><strong>Finaliza&ccedil;&atilde;o do Pedido</strong><br>
+              Antes de finalizar o pedido, verifique os filmes locados (n&atilde;o aceitamos devolu&ccedil;&atilde;o de filmes ap&oacute;s os mesmos serem entregues).<br>
+              <br>
+              <strong>Exclus&atilde;o da Loca&ccedil;&atilde;o</strong><br>
+              O Ap&oacute;s a realiza&ccedil;&atilde;o da loca&ccedil;&atilde;o, voc&ecirc; poder&aacute; exclui-la (enquanto a mesma estiver com status &quot;<strong>{status_pendente}</strong>&quot;).<br>
+              <br>
+              <strong>Entrega/Devolu&ccedil;&atilde;o</strong><br>
+              O cliente, ou uma pessoa de sua confian&ccedil;a, dever&aacute; estar presente no per&iacute;odo e endere&ccedil;o estipulados para receber/devolver a loca&ccedil;&atilde;o. Caso n&atilde;o haja ningu&eacute;m no endere&ccedil;o e per&iacute;odo de hor&aacute;rio indicados, a loca&ccedil;&atilde;o ser&aacute; cancelada ou a devolu&ccedil;&atilde;o reprogramada para o dia seguinte no mesmo per&iacute;odo e endere&ccedil;o com cobran&ccedil;a de nova di&aacute;ria e taxa (nossos entregadores permanecer&atilde;o no endere&ccedil;o por at&eacute; 5 (cinco) minutos).<br>
+              <br>
+              <strong>Danos &agrave; Capa/Estojo</strong><br>
+              Nossas m&iacute;dias s&atilde;o enviadas aos nossos clientes em suas capas/estojos originais sendo que n&atilde;o h&aacute; como substitu&iacute;-las junto aos distribuidores/fornecedores. Qualquer dano causado &agrave;s mesmas, ser&aacute; cobrado o valor adicional de R$ 25,00. <br>
+              <br>
+              <strong>Sugest&otilde;es/Reclama&ccedil;&otilde;es</strong><br>
+              Dever&atilde;o ser enviadas somente atrav&eacute;s da &quot;central de ajuda&quot; ou pelo e-mail<br>
+              <span class="style1">atendimento@locadoraomega.com.br</span><br>
+              Sugest&otilde;es/Reclama&ccedil;&otilde;es enviadas atrav&eacute;s de nossos entregadores, n&atilde;o ser&atilde;o consideradas.<br>
+              <br>
+              <strong>Midias com problemas de reprodu&ccedil;&atilde;o</strong><br>
+              Informamos que as m&iacute;dias poder&atilde;o dar problemas de reprodu&ccedil;&atilde;o caso haja:<br>
+              - Riscos profundos<br>
+              - Esteja quebrada<br>
+              - Muitas impress&otilde;es digitais<br>
+              Caso a m&iacute;dia n&atilde;o apresente as caracter&iacute;sticas acima, o problema poder&aacute; ser do aparelho de DVD. Nestes casos, solicitamos o envio de e-mail informando o problema e a faixa na qual o problema se apresenta. Ap&oacute;s o recebimento da m&iacute;dia pela central, a mesma ser&aacute; testada e, se comprovado o problema, uma outra m&iacute;dia do mesmo titulo ser&aacute; enviada ao cliente sem qualquer custo (sujeito &agrave; disponibilidade).</p></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

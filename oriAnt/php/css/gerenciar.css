@@ -1,0 +1,175 @@
+/**
+* Css gerenciar
+*/
+
+#id_container{
+	top:0px;
+	left:0px;
+	position:relative;
+	width:100%;
+	text-align:center;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	padding:0;
+	padding-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	padding-right : 0px;	
+	font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;	
+	font-size:10pt;
+}
+
+.id_form{
+	text-align:left;
+	position:relative;
+	float:left;
+	clear:both;
+}
+
+.form{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #4f5864;
+	width:150px;
+}
+
+.cursorLink{
+	cursor:pointer;
+}
+
+/***************************************/
+
+#id_titulo{
+	position:relative;
+	float:left;
+	font-weight:bold;
+	color:#990000;
+	clear:none;
+	font-size:16px;
+}
+
+#id_topo{
+	position:relative;
+	float:left;
+	border-bottom:#333333 solid 1px;
+}
+
+#id_container_procura{
+	position:relative;
+	float:right;
+	width:500px;
+	right:5px;
+	padding-bottom:5px;
+}
+
+#id_procura{
+	position:relative;
+	float:right;
+}
+
+#id_campos_procura{
+	text-align:right;
+	left:5px;
+	position:relative;
+	float:right;
+	font-size:10px;
+	clear:both;
+	color:#666666;
+}
+
+#id_form_procura{
+	left:5px;
+	position:relative;
+	float:right;
+	clear:left;
+}
+
+/* ITEM */
+
+#id_item{
+	top:5px;
+	position:relative;
+	float:left;
+	border-bottom:#CCCCCC solid 1px;
+}
+
+#id_titulo_item{
+	position:relative;
+	float:left;
+	font-weight:bold;
+	color:#990000;
+	clear:none;
+}
+
+#id_container_gerenciar{
+	position:relative;
+	float:right;
+	width:350px;
+	right:5px;
+	padding-bottom:5px;
+}
+
+#id_excluir{
+	left:5px;
+	position:relative;
+	float:right;
+}
+
+#id_alterar{
+	position:relative;
+	float:right;
+	clear:left;
+}
+
+/* DETALHES */
+
+#id_detalhes{
+	top:20px;
+	position:relative;
+	float:right;
+	width:100%;
+	font-size:10px;
+	text-align:left;
+	border: 1px solid #4f5864;
+}
+
+#titulo_detalhe{
+	font-size:10px;
+	top:20px;
+	position:relative;
+	float:left;
+	padding-top:3px;
+	padding-left:3px;
+	padding-right:3px;
+	border-top:#333333 1px solid;
+	border-left:#333333 1px solid;
+	border-right:#333333 1px solid;
+	background-color:#EBEBEB;
+}
+
+#id_detalhe_item{
+	position:relative;
+	float:left;
+	clear:both;
+	width:100%;
+	border-bottom:#E4E4E4 solid 1px;
+}
+
+#id_titulo_detalhe_item{
+	float:left;
+	position:relative;
+	padding-left:5px;
+	padding-top:1px;
+	color:#999999;
+}
+
+#id_titulo_detalhe_valor{
+	float:left;
+	position:relative;
+	padding-left:3px;
+	padding-top:1px;
+}

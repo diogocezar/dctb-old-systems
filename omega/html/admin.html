@@ -1,0 +1,52 @@
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<table width="417" border="0" class="form" align="center">
+  <tr>
+    <td>
+	<table width="100%" border="0">
+	  <!--DWLayoutTable-->
+	  <!-- BEGIN bloco_titulo -->
+      <tr>
+	    <td height="21" colspan="2" valign="middle" bgcolor="#525B68" class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {bemVindo}<br />
+	       &nbsp;<img src="../images/seta_branca.gif" width="2" height="5" /> {infos}<br /></td>
+        <td width="85" align="center" valign="middle" bgcolor="#525B68"><a href="{linkSair}"><img src="../images/bot_sair_2.jpg" alt="{altSair}" width="85" height="25" border="0" /></a></td>
+        <!-- END bloco_titulo -->
+        </tr>
+	  <!-- BEGIN bloco_busca_adm -->
+	  <form action="{actionBuscaAdm}" method="get" name="{formBuscaAdm}" id="{formBuscaAdm}">
+      <tr>
+        <td height="30" colspan="3" align="right" valign="middle" bgcolor="#525B68">
+		<span class="texto5"> {buscar} 
+          <input name="{campoBuscaAdm}" type="text" class="form" id="{campoBuscaAdm}" size="20" />
+          &nbsp;{buscarPor}
+          <select name="{selectOp}" class="form" id="{selectOp}">
+            <option value="filme">Filme</option>
+            <option value="midia">M&iacute;dia</option>
+            <option value="ator">Ator</option>
+            <option value="diretor">Diretor</option>
+            <option value="locacao">Loca&ccedil;&atilde;o</option>
+          </select>
+          <a href="{linkOk}"><img src="../images/seta_go.jpg" alt="{altOk}" width="34" height="24" border="0" align="absmiddle" onclick="{onClickOk}"/></a>&nbsp;         </span>        </td>
+      </tr>
+	  </form>
+	  <!-- END bloco_busca_adm -->
+	  <!-- BEGIN bloco_admin_menu -->
+      <tr>
+        <td width="223" align="left" bgcolor="#EDEDED" class="texto"> &nbsp;&nbsp;{menuOpcao}</td>
+        <td width="87" align="center" bgcolor="#EDEDED" class="texto"><a href="{linkGerenciar}"><img src="../images/bot_gerenciar.jpg" alt="{altGerenciar}" width="85" height="25" border="0" onclick="{clickGerenciar}"></a></td>
+        <td align="center" bgcolor="#EDEDED"><a href="{linkInserir}"><img src="../images/bot_inserir.jpg" alt="{altInserir}" width="85" height="25" border="0" onclick="{clickInserir}"></a></td>
+      </tr>
+      <!-- END bloco_admin_menu -->
+		<tr>
+		  <td height="5" colspan="3" align="center" valign="middle"><img src="../images/linha.gif" width="400" height="3"></td>
+		</tr>
+	  <!-- BEGIN bloco_admin_menu_gerenciar -->
+      <tr>
+        <td height="21" colspan="2" align="left" valign="middle" bgcolor="#EDEDED" class="texto">&nbsp;&nbsp;{menuGerenciar} </td>
+        <td align="center" bgcolor="#EDEDED"><a href="{linkGerenciar}"><img src="../images/bot_gerenciar.jpg" alt="{altGerenciar}" width="85" height="25" border="0" onclick="{clickGerenciar}" /></a></td>
+      </tr>
+	  <!-- END bloco_admin_menu_gerenciar -->
+    </table>
+	</td>
+  </tr>
+</table>

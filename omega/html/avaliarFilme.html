@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>{titulo}</title>
+<link href="../css/omega.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jscripts/permutacao.js"></script>
+<script type="text/javascript" src="../jscripts/valCampos.js"></script>
+</head>
+<body bgcolor="#fefdfd" leftmargin="1" topmargin="1" marginwidth="0" marginheight="0">
+<link href="../css/omega.css" rel="stylesheet" type="text/css" />
+<!-- BEGIN bloco_avaliar -->
+<table width="330" border="0" cellpadding="0" cellspacing="0">
+  <tr class="form">
+    <form action="{actionAvaliar}" method="post" name="{formAvaliar}" id="{formAvaliar}">
+    <td width="350" valign="top"><table width="100%" height="218" border="0">
+        <tr>
+          <td height="21" bgcolor="#525B68" class="texto5">&nbsp;<img src="../images/seta_branca.gif" width="2" height="5" />&nbsp;{tituloAvaliar} </td>
+        </tr>
+        <tr>
+          <td height="191" align="center" valign="top" bgcolor="#EDEDED"><br />
+            <span class="textoBold">{tituloFilme}</span><br />
+            <br />
+            <table width="95%" height="25" border="1" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF">
+            <tr>
+              <td width="68" height="24" align="center" valign="middle"><input name="{avaliacao}" type="radio" value="{val5}" checked="checked" /></td>
+              <td width="120" align="left" valign="top"><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /></td>
+              <td align="center" class="texto2">&Oacute;TIMO</td>
+            </tr>
+            <tr>
+              <td height="24" align="center" valign="middle"><input name="{avaliacao}" type="radio" value="{val4}" /></td>
+              <td align="left" valign="top"><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /></td>
+              <td align="center" class="texto2">MUITO BOM </td>
+            </tr>
+            <tr>
+              <td height="24" align="center" valign="middle"><input name="{avaliacao}" type="radio" value="{val3}" /></td>
+              <td align="left" valign="top"><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /></td>
+              <td align="center" class="texto2">BOM </td>
+            </tr>
+            <tr>
+              <td height="24" align="center" valign="middle"><input name="{avaliacao}" type="radio" value="{val2}" /></td>
+              <td align="left" valign="top"><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /></td>
+              <td align="center" class="texto2">REGULAR </td>
+            </tr>
+            <tr>
+              <td height="24" align="center" valign="middle"><input name="{avaliacao}" type="radio" value="{val1}" /></td>
+              <td align="left" valign="top"><img src="../images/star.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /><img src="../images/star_null.jpg" width="15" height="15" /></td>
+              <td align="center" class="texto2">RUIM </td>
+            </tr>
+          </table>          
+          <br />
+          <a href="{linkAvaliar}"><img src="../images/bot_avaliar.jpg" alt="{altAvaliar}" width="85" height="25" border="0" onClick="{onClickAvaliar}" /></a></td>
+        </tr>
+    </table>
+	</td>
+	</form>
+  </tr>
+</table>
+<!-- END bloco_avaliar -->
+</body>
+</html>
